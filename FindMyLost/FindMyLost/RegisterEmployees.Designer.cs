@@ -180,6 +180,8 @@
             this.btnEditUserPic.Text = "✏️";
             this.btnEditUserPic.UseVisualStyleBackColor = false;
             this.btnEditUserPic.Click += new System.EventHandler(this.btnEditUserPic_Click);
+            this.btnEditUserPic.MouseEnter += new System.EventHandler(this.btnEditUserPic_MouseEnter);
+            this.btnEditUserPic.MouseLeave += new System.EventHandler(this.btnEditUserPic_MouseLeave);
             // 
             // pbUserImage
             // 
@@ -360,6 +362,7 @@
             this.btnRegister.TabIndex = 154;
             this.btnRegister.Text = "REGISTER";
             this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // RegisterEmployees
             // 
