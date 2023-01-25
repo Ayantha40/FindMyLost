@@ -121,6 +121,7 @@
             this.btnReset.FlatAppearance.BorderSize = 0;
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.Font = new System.Drawing.Font("Exo 2 Semi Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnReset.ForeColor = System.Drawing.Color.White;
             this.btnReset.Location = new System.Drawing.Point(645, 659);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(111, 43);
@@ -136,6 +137,7 @@
             this.btnSubmit.FlatAppearance.BorderSize = 0;
             this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubmit.Font = new System.Drawing.Font("Exo 2 Semi Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSubmit.ForeColor = System.Drawing.Color.White;
             this.btnSubmit.Location = new System.Drawing.Point(762, 659);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(111, 43);
@@ -192,7 +194,7 @@
             this.btnBrowse.FlatAppearance.BorderSize = 0;
             this.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBrowse.Font = new System.Drawing.Font("Exo 2 Semi Bold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnBrowse.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnBrowse.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnBrowse.Location = new System.Drawing.Point(97, 74);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(133, 46);
@@ -204,9 +206,9 @@
             // imgItem
             // 
             this.imgItem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.imgItem.Location = new System.Drawing.Point(312, 21);
+            this.imgItem.Location = new System.Drawing.Point(306, 21);
             this.imgItem.Name = "imgItem";
-            this.imgItem.Size = new System.Drawing.Size(180, 158);
+            this.imgItem.Size = new System.Drawing.Size(186, 158);
             this.imgItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgItem.TabIndex = 3;
             this.imgItem.TabStop = false;
@@ -216,7 +218,7 @@
             this.groupBox4.Controls.Add(this.btnBrowse);
             this.groupBox4.Controls.Add(this.imgItem);
             this.groupBox4.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBox4.ForeColor = System.Drawing.Color.White;
             this.groupBox4.Location = new System.Drawing.Point(21, 457);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(509, 196);
