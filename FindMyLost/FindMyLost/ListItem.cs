@@ -16,6 +16,7 @@ namespace FindMyLost
         public PictureBox pb1;
         //public TextBox tb1;
 
+
         public ListItem()
         {
             InitializeComponent();
@@ -51,7 +52,7 @@ namespace FindMyLost
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            if ((txtCategory.Text != "") && (txtBrand.Text != "") /*&& (txtColor.Text != "")*/)
+            if ((txtCategory.Text != "") && (txtBrand.Text != "") )
             {
                 MessageBox.Show("Confirm submission?", "LostBadu", MessageBoxButtons.YesNo);
             }
