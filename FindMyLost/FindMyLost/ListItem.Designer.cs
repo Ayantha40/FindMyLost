@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListItem));
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.txtLocation = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -60,9 +60,7 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox6.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgItem)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -76,43 +74,43 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.txtLocation);
             this.groupBox6.Controls.Add(this.tableLayoutPanel4);
             this.groupBox6.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox6.Location = new System.Drawing.Point(536, 369);
+            this.groupBox6.Location = new System.Drawing.Point(613, 492);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(337, 81);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox6.Size = new System.Drawing.Size(385, 108);
             this.groupBox6.TabIndex = 30;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Last seen location";
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.tableLayoutPanel4.ColumnCount = 1;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Controls.Add(this.txtLocation, 0, 1);
-            this.tableLayoutPanel4.ForeColor = System.Drawing.Color.White;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(73, 20);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 3;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(258, 39);
-            this.tableLayoutPanel4.TabIndex = 167;
             // 
             // txtLocation
             // 
             this.txtLocation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtLocation.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLocation.ForeColor = System.Drawing.Color.White;
-            this.txtLocation.Location = new System.Drawing.Point(3, 11);
-            this.txtLocation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtLocation.Location = new System.Drawing.Point(100, 43);
             this.txtLocation.Name = "txtLocation";
-            this.txtLocation.Size = new System.Drawing.Size(238, 15);
+            this.txtLocation.Size = new System.Drawing.Size(256, 19);
             this.txtLocation.TabIndex = 167;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.ForeColor = System.Drawing.Color.White;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(83, 27);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 3;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(295, 52);
+            this.tableLayoutPanel4.TabIndex = 167;
             // 
             // btnReset
             // 
@@ -120,11 +118,12 @@
             this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReset.FlatAppearance.BorderSize = 0;
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReset.Font = new System.Drawing.Font("Exo 2 Semi Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnReset.ForeColor = System.Drawing.Color.White;
-            this.btnReset.Location = new System.Drawing.Point(645, 659);
+            this.btnReset.Location = new System.Drawing.Point(737, 879);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(111, 43);
+            this.btnReset.Size = new System.Drawing.Size(127, 57);
             this.btnReset.TabIndex = 29;
             this.btnReset.Text = "RESET";
             this.btnReset.UseVisualStyleBackColor = false;
@@ -136,11 +135,12 @@
             this.btnSubmit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSubmit.FlatAppearance.BorderSize = 0;
             this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubmit.Font = new System.Drawing.Font("Exo 2 Semi Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSubmit.ForeColor = System.Drawing.Color.White;
-            this.btnSubmit.Location = new System.Drawing.Point(762, 659);
+            this.btnSubmit.Location = new System.Drawing.Point(871, 879);
+            this.btnSubmit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(111, 43);
+            this.btnSubmit.Size = new System.Drawing.Size(127, 57);
             this.btnSubmit.TabIndex = 25;
             this.btnSubmit.Text = "SUBMIT";
             this.btnSubmit.UseVisualStyleBackColor = false;
@@ -148,12 +148,15 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.txtAdditional);
             this.groupBox5.Controls.Add(this.tableLayoutPanel5);
             this.groupBox5.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox5.Location = new System.Drawing.Point(536, 457);
+            this.groupBox5.Location = new System.Drawing.Point(613, 609);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(337, 196);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox5.Size = new System.Drawing.Size(385, 261);
             this.groupBox5.TabIndex = 27;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Additional Information";
@@ -163,16 +166,14 @@
             this.tableLayoutPanel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.tableLayoutPanel5.ColumnCount = 1;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Controls.Add(this.txtAdditional, 0, 1);
             this.tableLayoutPanel5.ForeColor = System.Drawing.Color.White;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(73, 42);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(83, 56);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 3;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(258, 127);
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(295, 169);
             this.tableLayoutPanel5.TabIndex = 167;
             // 
             // txtAdditional
@@ -180,11 +181,10 @@
             this.txtAdditional.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtAdditional.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAdditional.ForeColor = System.Drawing.Color.White;
-            this.txtAdditional.Location = new System.Drawing.Point(3, 33);
-            this.txtAdditional.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtAdditional.Location = new System.Drawing.Point(100, 72);
             this.txtAdditional.Multiline = true;
             this.txtAdditional.Name = "txtAdditional";
-            this.txtAdditional.Size = new System.Drawing.Size(252, 59);
+            this.txtAdditional.Size = new System.Drawing.Size(256, 134);
             this.txtAdditional.TabIndex = 167;
             // 
             // btnBrowse
@@ -193,11 +193,12 @@
             this.btnBrowse.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBrowse.FlatAppearance.BorderSize = 0;
             this.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBrowse.Font = new System.Drawing.Font("Exo 2 Semi Bold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnBrowse.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnBrowse.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBrowse.Location = new System.Drawing.Point(97, 74);
+            this.btnBrowse.Location = new System.Drawing.Point(111, 99);
+            this.btnBrowse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(133, 46);
+            this.btnBrowse.Size = new System.Drawing.Size(152, 61);
             this.btnBrowse.TabIndex = 4;
             this.btnBrowse.Text = "BROWSE ";
             this.btnBrowse.UseVisualStyleBackColor = false;
@@ -206,9 +207,10 @@
             // imgItem
             // 
             this.imgItem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.imgItem.Location = new System.Drawing.Point(306, 21);
+            this.imgItem.Location = new System.Drawing.Point(350, 28);
+            this.imgItem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.imgItem.Name = "imgItem";
-            this.imgItem.Size = new System.Drawing.Size(186, 158);
+            this.imgItem.Size = new System.Drawing.Size(212, 210);
             this.imgItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgItem.TabIndex = 3;
             this.imgItem.TabStop = false;
@@ -219,18 +221,21 @@
             this.groupBox4.Controls.Add(this.imgItem);
             this.groupBox4.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(21, 457);
+            this.groupBox4.Location = new System.Drawing.Point(24, 609);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(509, 196);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox4.Size = new System.Drawing.Size(582, 261);
             this.groupBox4.TabIndex = 28;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Upload Image";
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(306, 34);
+            this.pictureBox3.Location = new System.Drawing.Point(350, 45);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(152, 30);
+            this.pictureBox3.Size = new System.Drawing.Size(174, 40);
             this.pictureBox3.TabIndex = 22;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
@@ -240,9 +245,11 @@
             this.groupBox3.Controls.Add(this.tableLayoutPanel3);
             this.groupBox3.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox3.Location = new System.Drawing.Point(21, 369);
+            this.groupBox3.Location = new System.Drawing.Point(24, 492);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(509, 81);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox3.Size = new System.Drawing.Size(582, 108);
             this.groupBox3.TabIndex = 26;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Brand *";
@@ -254,14 +261,13 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Controls.Add(this.txtBrand, 0, 1);
             this.tableLayoutPanel3.ForeColor = System.Drawing.Color.White;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(306, 20);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(350, 27);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 3;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(186, 39);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(213, 52);
             this.tableLayoutPanel3.TabIndex = 167;
             // 
             // txtBrand
@@ -269,10 +275,9 @@
             this.txtBrand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtBrand.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBrand.ForeColor = System.Drawing.Color.White;
-            this.txtBrand.Location = new System.Drawing.Point(3, 11);
-            this.txtBrand.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBrand.Location = new System.Drawing.Point(3, 16);
             this.txtBrand.Name = "txtBrand";
-            this.txtBrand.Size = new System.Drawing.Size(180, 15);
+            this.txtBrand.Size = new System.Drawing.Size(206, 19);
             this.txtBrand.TabIndex = 167;
             this.txtBrand.TextChanged += new System.EventHandler(this.txtBrand_TextChanged);
             // 
@@ -280,9 +285,10 @@
             // 
             this.picPick.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picPick.Image = ((System.Drawing.Image)(resources.GetObject("picPick.Image")));
-            this.picPick.Location = new System.Drawing.Point(464, 39);
+            this.picPick.Location = new System.Drawing.Point(530, 52);
+            this.picPick.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.picPick.Name = "picPick";
-            this.picPick.Size = new System.Drawing.Size(27, 25);
+            this.picPick.Size = new System.Drawing.Size(31, 33);
             this.picPick.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPick.TabIndex = 17;
             this.picPick.TabStop = false;
@@ -294,9 +300,11 @@
             this.groupBox2.Controls.Add(this.picPick);
             this.groupBox2.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox2.Location = new System.Drawing.Point(21, 275);
+            this.groupBox2.Location = new System.Drawing.Point(24, 367);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(509, 87);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox2.Size = new System.Drawing.Size(582, 116);
             this.groupBox2.TabIndex = 24;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Color *";
@@ -307,9 +315,9 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(21, 25);
+            this.label1.Location = new System.Drawing.Point(24, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(267, 24);
+            this.label1.Size = new System.Drawing.Size(337, 29);
             this.label1.TabIndex = 22;
             this.label1.Text = "LOST ITEM INFORMATION";
             // 
@@ -317,9 +325,10 @@
             // 
             this.radioOther.AutoSize = true;
             this.radioOther.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioOther.Location = new System.Drawing.Point(201, 122);
+            this.radioOther.Location = new System.Drawing.Point(230, 163);
+            this.radioOther.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioOther.Name = "radioOther";
-            this.radioOther.Size = new System.Drawing.Size(60, 20);
+            this.radioOther.Size = new System.Drawing.Size(75, 25);
             this.radioOther.TabIndex = 13;
             this.radioOther.Text = "Other";
             this.radioOther.UseVisualStyleBackColor = true;
@@ -329,9 +338,10 @@
             // 
             this.radioDocuments.AutoSize = true;
             this.radioDocuments.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioDocuments.Location = new System.Drawing.Point(367, 77);
+            this.radioDocuments.Location = new System.Drawing.Point(419, 103);
+            this.radioDocuments.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioDocuments.Name = "radioDocuments";
-            this.radioDocuments.Size = new System.Drawing.Size(96, 20);
+            this.radioDocuments.Size = new System.Drawing.Size(118, 25);
             this.radioDocuments.TabIndex = 12;
             this.radioDocuments.Text = "Documents";
             this.radioDocuments.UseVisualStyleBackColor = true;
@@ -340,9 +350,10 @@
             // radioClothing
             // 
             this.radioClothing.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioClothing.Location = new System.Drawing.Point(19, 27);
+            this.radioClothing.Location = new System.Drawing.Point(22, 36);
+            this.radioClothing.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioClothing.Name = "radioClothing";
-            this.radioClothing.Size = new System.Drawing.Size(110, 36);
+            this.radioClothing.Size = new System.Drawing.Size(126, 48);
             this.radioClothing.TabIndex = 7;
             this.radioClothing.Text = "Clothing";
             this.radioClothing.UseVisualStyleBackColor = true;
@@ -353,9 +364,10 @@
             // 
             this.radioBag.AutoSize = true;
             this.radioBag.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioBag.Location = new System.Drawing.Point(367, 34);
+            this.radioBag.Location = new System.Drawing.Point(419, 45);
+            this.radioBag.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioBag.Name = "radioBag";
-            this.radioBag.Size = new System.Drawing.Size(115, 20);
+            this.radioBag.Size = new System.Drawing.Size(144, 25);
             this.radioBag.TabIndex = 11;
             this.radioBag.Text = "Bags/ Luggage";
             this.radioBag.UseVisualStyleBackColor = true;
@@ -365,9 +377,10 @@
             // 
             this.radioAccessories.AutoSize = true;
             this.radioAccessories.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioAccessories.Location = new System.Drawing.Point(19, 77);
+            this.radioAccessories.Location = new System.Drawing.Point(22, 103);
+            this.radioAccessories.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioAccessories.Name = "radioAccessories";
-            this.radioAccessories.Size = new System.Drawing.Size(94, 20);
+            this.radioAccessories.Size = new System.Drawing.Size(116, 25);
             this.radioAccessories.TabIndex = 8;
             this.radioAccessories.Text = "Accessories";
             this.radioAccessories.UseVisualStyleBackColor = true;
@@ -377,9 +390,10 @@
             // 
             this.radioAnimal.AutoSize = true;
             this.radioAnimal.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioAnimal.Location = new System.Drawing.Point(201, 77);
+            this.radioAnimal.Location = new System.Drawing.Point(230, 103);
+            this.radioAnimal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioAnimal.Name = "radioAnimal";
-            this.radioAnimal.Size = new System.Drawing.Size(107, 20);
+            this.radioAnimal.Size = new System.Drawing.Size(134, 25);
             this.radioAnimal.TabIndex = 10;
             this.radioAnimal.Text = "Animals/ Pets";
             this.radioAnimal.UseVisualStyleBackColor = true;
@@ -389,9 +403,10 @@
             // 
             this.radioElec.AutoSize = true;
             this.radioElec.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioElec.Location = new System.Drawing.Point(201, 34);
+            this.radioElec.Location = new System.Drawing.Point(230, 45);
+            this.radioElec.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioElec.Name = "radioElec";
-            this.radioElec.Size = new System.Drawing.Size(91, 20);
+            this.radioElec.Size = new System.Drawing.Size(112, 25);
             this.radioElec.TabIndex = 9;
             this.radioElec.Text = "Electronics";
             this.radioElec.UseVisualStyleBackColor = true;
@@ -409,9 +424,11 @@
             this.groupBox1.Controls.Add(this.radioElec);
             this.groupBox1.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox1.Location = new System.Drawing.Point(21, 72);
+            this.groupBox1.Location = new System.Drawing.Point(24, 96);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(509, 197);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Size = new System.Drawing.Size(582, 263);
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Category *";
@@ -423,14 +440,13 @@
             this.tlpFirstName.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpFirstName.Controls.Add(this.txtCategory, 0, 1);
             this.tlpFirstName.ForeColor = System.Drawing.Color.White;
-            this.tlpFirstName.Location = new System.Drawing.Point(306, 133);
-            this.tlpFirstName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tlpFirstName.Location = new System.Drawing.Point(350, 177);
             this.tlpFirstName.Name = "tlpFirstName";
             this.tlpFirstName.RowCount = 3;
             this.tlpFirstName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpFirstName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpFirstName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpFirstName.Size = new System.Drawing.Size(186, 39);
+            this.tlpFirstName.Size = new System.Drawing.Size(213, 52);
             this.tlpFirstName.TabIndex = 166;
             this.tlpFirstName.Paint += new System.Windows.Forms.PaintEventHandler(this.tlpFirstName_Paint);
             // 
@@ -439,10 +455,9 @@
             this.txtCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtCategory.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCategory.ForeColor = System.Drawing.Color.White;
-            this.txtCategory.Location = new System.Drawing.Point(3, 11);
-            this.txtCategory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCategory.Location = new System.Drawing.Point(3, 16);
             this.txtCategory.Name = "txtCategory";
-            this.txtCategory.Size = new System.Drawing.Size(180, 15);
+            this.txtCategory.Size = new System.Drawing.Size(206, 19);
             this.txtCategory.TabIndex = 167;
             // 
             // tableLayoutPanel1
@@ -469,15 +484,15 @@
             this.textBox1.Location = new System.Drawing.Point(3, 2);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 16);
+            this.textBox1.Size = new System.Drawing.Size(194, 20);
             this.textBox1.TabIndex = 167;
             // 
             // ListItem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.ClientSize = new System.Drawing.Size(896, 749);
+            this.ClientSize = new System.Drawing.Size(1024, 999);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnSubmit);
@@ -487,16 +502,15 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ListItem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListItem";
             this.Load += new System.EventHandler(this.ListItem_Load);
             this.groupBox6.ResumeLayout(false);
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
+            this.groupBox6.PerformLayout();
             this.groupBox5.ResumeLayout(false);
-            this.tableLayoutPanel5.ResumeLayout(false);
-            this.tableLayoutPanel5.PerformLayout();
+            this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgItem)).EndInit();
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
