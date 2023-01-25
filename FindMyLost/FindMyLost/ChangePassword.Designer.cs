@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblNew = new System.Windows.Forms.Label();
+            this.lbl1splchar = new System.Windows.Forms.Label();
+            this.lbl1uppercase = new System.Windows.Forms.Label();
+            this.lbl1num = new System.Windows.Forms.Label();
+            this.lbl7Char = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -49,14 +49,14 @@
             this.txtOldPassword = new System.Windows.Forms.TextBox();
             this.tlpFirstName = new System.Windows.Forms.TableLayoutPanel();
             this.lblOld = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnViewOP = new System.Windows.Forms.Button();
+            this.btnViewNP = new System.Windows.Forms.Button();
             this.lblNewPassword = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.txtNP = new System.Windows.Forms.TextBox();
             this.lblCorrect = new System.Windows.Forms.Label();
             this.lblWrong = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnViewCNP = new System.Windows.Forms.Button();
             this.lblConfirmNew = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.txtCNP = new System.Windows.Forms.TextBox();
@@ -66,55 +66,50 @@
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label12
+            // lblNew
             // 
-            this.label12.AutoSize = true;
-            this.label12.ForeColor = System.Drawing.Color.Lime;
-            this.label12.Location = new System.Drawing.Point(14, 144);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(24, 16);
-            this.label12.TabIndex = 21;
-            this.label12.Text = "✔";
+            this.lblNew.AutoSize = true;
+            this.lblNew.ForeColor = System.Drawing.Color.Lime;
+            this.lblNew.Location = new System.Drawing.Point(14, 144);
+            this.lblNew.Name = "lblNew";
+            this.lblNew.Size = new System.Drawing.Size(0, 16);
+            this.lblNew.TabIndex = 21;
             // 
-            // label11
+            // lbl1splchar
             // 
-            this.label11.AutoSize = true;
-            this.label11.ForeColor = System.Drawing.Color.Lime;
-            this.label11.Location = new System.Drawing.Point(14, 116);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(24, 16);
-            this.label11.TabIndex = 20;
-            this.label11.Text = "✔";
+            this.lbl1splchar.AutoSize = true;
+            this.lbl1splchar.ForeColor = System.Drawing.Color.Lime;
+            this.lbl1splchar.Location = new System.Drawing.Point(14, 116);
+            this.lbl1splchar.Name = "lbl1splchar";
+            this.lbl1splchar.Size = new System.Drawing.Size(0, 16);
+            this.lbl1splchar.TabIndex = 20;
             // 
-            // label10
+            // lbl1uppercase
             // 
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.Color.Lime;
-            this.label10.Location = new System.Drawing.Point(14, 90);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(24, 16);
-            this.label10.TabIndex = 19;
-            this.label10.Text = "✔";
+            this.lbl1uppercase.AutoSize = true;
+            this.lbl1uppercase.ForeColor = System.Drawing.Color.Lime;
+            this.lbl1uppercase.Location = new System.Drawing.Point(14, 90);
+            this.lbl1uppercase.Name = "lbl1uppercase";
+            this.lbl1uppercase.Size = new System.Drawing.Size(0, 16);
+            this.lbl1uppercase.TabIndex = 19;
             // 
-            // label9
+            // lbl1num
             // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.Color.Lime;
-            this.label9.Location = new System.Drawing.Point(14, 61);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(24, 16);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "✔";
+            this.lbl1num.AutoSize = true;
+            this.lbl1num.ForeColor = System.Drawing.Color.Lime;
+            this.lbl1num.Location = new System.Drawing.Point(14, 61);
+            this.lbl1num.Name = "lbl1num";
+            this.lbl1num.Size = new System.Drawing.Size(0, 16);
+            this.lbl1num.TabIndex = 18;
             // 
-            // label8
+            // lbl7Char
             // 
-            this.label8.AutoSize = true;
-            this.label8.ForeColor = System.Drawing.Color.Lime;
-            this.label8.Location = new System.Drawing.Point(14, 34);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(24, 16);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "✔";
+            this.lbl7Char.AutoSize = true;
+            this.lbl7Char.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl7Char.Location = new System.Drawing.Point(14, 34);
+            this.lbl7Char.Name = "lbl7Char";
+            this.lbl7Char.Size = new System.Drawing.Size(0, 16);
+            this.lbl7Char.TabIndex = 17;
             // 
             // label7
             // 
@@ -173,11 +168,11 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.lblNew);
+            this.groupBox1.Controls.Add(this.lbl1splchar);
+            this.groupBox1.Controls.Add(this.lbl1uppercase);
+            this.groupBox1.Controls.Add(this.lbl1num);
+            this.groupBox1.Controls.Add(this.lbl7Char);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
@@ -195,10 +190,12 @@
             // btnCancel
             // 
             this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(128)))), ((int)(((byte)(45)))));
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Exo 2 Semi Bold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnCancel.Location = new System.Drawing.Point(457, 348);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(251, 34);
             this.btnCancel.TabIndex = 43;
@@ -209,16 +206,19 @@
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(128)))), ((int)(((byte)(45)))));
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Exo 2 Semi Bold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Location = new System.Drawing.Point(457, 306);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(251, 36);
             this.btnSave.TabIndex = 42;
             this.btnSave.TabStop = false;
             this.btnSave.Text = "SAVE";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // lblWrong2
             // 
@@ -279,19 +279,23 @@
             // 
             this.txtOldPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtOldPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtOldPassword.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtOldPassword.ForeColor = System.Drawing.Color.White;
             this.txtOldPassword.Location = new System.Drawing.Point(3, 11);
             this.txtOldPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtOldPassword.Multiline = true;
             this.txtOldPassword.Name = "txtOldPassword";
-            this.txtOldPassword.Size = new System.Drawing.Size(193, 15);
+            this.txtOldPassword.PasswordChar = '●';
+            this.txtOldPassword.Size = new System.Drawing.Size(185, 15);
             this.txtOldPassword.TabIndex = 166;
+            this.txtOldPassword.TextChanged += new System.EventHandler(this.txtOldPassword_TextChanged);
             // 
             // tlpFirstName
             // 
             this.tlpFirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.tlpFirstName.ColumnCount = 1;
+            this.tlpFirstName.ColumnCount = 2;
             this.tlpFirstName.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpFirstName.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tlpFirstName.Controls.Add(this.txtOldPassword, 0, 1);
             this.tlpFirstName.ForeColor = System.Drawing.Color.White;
             this.tlpFirstName.Location = new System.Drawing.Point(457, 87);
@@ -315,33 +319,37 @@
             this.lblOld.TabIndex = 166;
             this.lblOld.Text = "Old Password";
             // 
-            // button1
+            // btnViewOP
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(659, 87);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(49, 39);
-            this.button1.TabIndex = 167;
-            this.button1.Text = "👁";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnViewOP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.btnViewOP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnViewOP.FlatAppearance.BorderSize = 0;
+            this.btnViewOP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewOP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnViewOP.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnViewOP.Location = new System.Drawing.Point(665, 87);
+            this.btnViewOP.Name = "btnViewOP";
+            this.btnViewOP.Size = new System.Drawing.Size(51, 41);
+            this.btnViewOP.TabIndex = 167;
+            this.btnViewOP.Text = "👁";
+            this.btnViewOP.UseVisualStyleBackColor = false;
+            this.btnViewOP.Click += new System.EventHandler(this.btnViewOP_Click);
             // 
-            // button2
+            // btnViewNP
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(659, 164);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(49, 39);
-            this.button2.TabIndex = 172;
-            this.button2.Text = "👁";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnViewNP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.btnViewNP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnViewNP.FlatAppearance.BorderSize = 0;
+            this.btnViewNP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewNP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnViewNP.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnViewNP.Location = new System.Drawing.Point(665, 165);
+            this.btnViewNP.Name = "btnViewNP";
+            this.btnViewNP.Size = new System.Drawing.Size(49, 39);
+            this.btnViewNP.TabIndex = 172;
+            this.btnViewNP.Text = "👁";
+            this.btnViewNP.UseVisualStyleBackColor = false;
+            this.btnViewNP.Click += new System.EventHandler(this.btnViewNP_Click);
             // 
             // lblNewPassword
             // 
@@ -375,11 +383,13 @@
             // 
             this.txtNP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtNP.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNP.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtNP.ForeColor = System.Drawing.Color.White;
             this.txtNP.Location = new System.Drawing.Point(3, 11);
             this.txtNP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNP.Multiline = true;
             this.txtNP.Name = "txtNP";
+            this.txtNP.PasswordChar = '●';
             this.txtNP.Size = new System.Drawing.Size(190, 15);
             this.txtNP.TabIndex = 166;
             this.txtNP.TextChanged += new System.EventHandler(this.txtNP_TextChanged);
@@ -406,19 +416,21 @@
             this.lblWrong.TabIndex = 39;
             this.lblWrong.Text = "❌";
             // 
-            // button3
+            // btnViewCNP
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(662, 237);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(49, 39);
-            this.button3.TabIndex = 175;
-            this.button3.Text = "👁";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnViewCNP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.btnViewCNP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnViewCNP.FlatAppearance.BorderSize = 0;
+            this.btnViewCNP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewCNP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnViewCNP.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnViewCNP.Location = new System.Drawing.Point(665, 237);
+            this.btnViewCNP.Name = "btnViewCNP";
+            this.btnViewCNP.Size = new System.Drawing.Size(49, 39);
+            this.btnViewCNP.TabIndex = 175;
+            this.btnViewCNP.Text = "👁";
+            this.btnViewCNP.UseVisualStyleBackColor = false;
+            this.btnViewCNP.Click += new System.EventHandler(this.btnViewCNP_Click);
             // 
             // lblConfirmNew
             // 
@@ -452,11 +464,13 @@
             // 
             this.txtCNP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtCNP.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCNP.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtCNP.ForeColor = System.Drawing.Color.White;
             this.txtCNP.Location = new System.Drawing.Point(3, 11);
             this.txtCNP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCNP.Multiline = true;
             this.txtCNP.Name = "txtCNP";
+            this.txtCNP.PasswordChar = '●';
             this.txtCNP.Size = new System.Drawing.Size(193, 15);
             this.txtCNP.TabIndex = 166;
             this.txtCNP.TextChanged += new System.EventHandler(this.txtCNP_TextChanged);
@@ -467,13 +481,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.ClientSize = new System.Drawing.Size(758, 408);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnViewCNP);
             this.Controls.Add(this.lblConfirmNew);
             this.Controls.Add(this.tableLayoutPanel2);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnViewNP);
             this.Controls.Add(this.lblNewPassword);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnViewOP);
             this.Controls.Add(this.lblOld);
             this.Controls.Add(this.tlpFirstName);
             this.Controls.Add(this.groupBox1);
@@ -503,11 +517,11 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblNew;
+        private System.Windows.Forms.Label lbl1splchar;
+        private System.Windows.Forms.Label lbl1uppercase;
+        private System.Windows.Forms.Label lbl1num;
+        private System.Windows.Forms.Label lbl7Char;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -524,14 +538,14 @@
         private System.Windows.Forms.TextBox txtOldPassword;
         private System.Windows.Forms.TableLayoutPanel tlpFirstName;
         private System.Windows.Forms.Label lblOld;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnViewOP;
+        private System.Windows.Forms.Button btnViewNP;
         private System.Windows.Forms.Label lblNewPassword;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TextBox txtNP;
         private System.Windows.Forms.Label lblCorrect;
         private System.Windows.Forms.Label lblWrong;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnViewCNP;
         private System.Windows.Forms.Label lblConfirmNew;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TextBox txtCNP;
