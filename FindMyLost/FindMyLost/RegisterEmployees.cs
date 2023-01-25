@@ -46,7 +46,7 @@ namespace FindMyLost
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            if (txtFirstName.Text == "" || txtLastName.Text == "" || txtEmail.Text == "" || txtAddress.Text == "" || txtMobileNum.Text == "" || txtTelNumber.Text == "" || pbUserImage.Image == null)
+            if (txtFirstName.Text == "" || txtLastName.Text == "" || txtEmail.Text == "" || txtAddress.Text == "" || txtMobileNum.Text == "" || txtTelNumber.Text == "" || pbUserImage.Image == null || cbPosition.Text == "")
             {
                 MessageBox.Show("Please fill in all the employee details!", "LostBadu", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
@@ -60,7 +60,7 @@ namespace FindMyLost
                     employee_image.Save(ms, ImageFormat.Jpeg);
                     imageBytes = ms.ToArray();
 
-                    string sql = "INSERT INTO Employee (first_name, last_name, email, address, mobile_number, telephone_number, password, picture, position) VALUES ('" + txtFirstName.Text + "', '" + txtLastName.Text + "', '" + txtEmail.Text + "', '" + txtAddress.Text + "', '" + txtMobileNum.Text + "', '" + txtTelNumber.Text + "', 'aaAA12!@', @image, '" + txtPosition.Text + "')";
+                    string sql = "INSERT INTO Employee (first_name, last_name, email, address, mobile_number, telephone_number, password, picture, position) VALUES ('" + txtFirstName.Text + "', '" + txtLastName.Text + "', '" + txtEmail.Text + "', '" + txtAddress.Text + "', '" + txtMobileNum.Text + "', '" + txtTelNumber.Text + "', 'aaAA12!@', @image, '" + cbPosition.Text + "')";
                     SqlCommand cmd = new SqlCommand(sql, conn);
                     cmd.Parameters.AddWithValue("@image", imageBytes);
                     conn.Open();
