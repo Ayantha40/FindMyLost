@@ -399,8 +399,10 @@
             this.Controls.Add(this.tlpEmail);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.btnRegister);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "RegisterEmployees";
-            this.Text = "RegisterEmployees";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Register Employees";
             ((System.ComponentModel.ISupportInitialize)(this.pbUserImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
