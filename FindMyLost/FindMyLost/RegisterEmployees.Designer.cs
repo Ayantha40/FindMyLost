@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterEmployees));
-            this.txtPosition = new System.Windows.Forms.TextBox();
-            this.tlpPosition = new System.Windows.Forms.TableLayoutPanel();
             this.lblPosition = new System.Windows.Forms.Label();
             this.txtTelNumber = new System.Windows.Forms.TextBox();
             this.tlpTelNumber = new System.Windows.Forms.TableLayoutPanel();
@@ -54,33 +52,10 @@
             this.tlpEmail = new System.Windows.Forms.TableLayoutPanel();
             this.lblEmail = new System.Windows.Forms.Label();
             this.btnRegister = new System.Windows.Forms.Button();
+            this.cbPosition = new System.Windows.Forms.ComboBox();
+            this.tlpPosition = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pbUserImage)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtPosition
-            // 
-            this.txtPosition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.txtPosition.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPosition.ForeColor = System.Drawing.Color.White;
-            this.txtPosition.Location = new System.Drawing.Point(83, 628);
-            this.txtPosition.Name = "txtPosition";
-            this.txtPosition.Size = new System.Drawing.Size(542, 20);
-            this.txtPosition.TabIndex = 178;
-            // 
-            // tlpPosition
-            // 
-            this.tlpPosition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.tlpPosition.ColumnCount = 1;
-            this.tlpPosition.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpPosition.ForeColor = System.Drawing.Color.White;
-            this.tlpPosition.Location = new System.Drawing.Point(72, 614);
-            this.tlpPosition.Name = "tlpPosition";
-            this.tlpPosition.RowCount = 3;
-            this.tlpPosition.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpPosition.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpPosition.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpPosition.Size = new System.Drawing.Size(568, 52);
-            this.tlpPosition.TabIndex = 177;
             // 
             // lblPosition
             // 
@@ -121,7 +96,7 @@
             // lblTelNumber
             // 
             this.lblTelNumber.AutoSize = true;
-            this.lblTelNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(20)))), ((int)(((byte)(32)))));
+            this.lblTelNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.lblTelNumber.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTelNumber.ForeColor = System.Drawing.Color.White;
             this.lblTelNumber.Location = new System.Drawing.Point(359, 502);
@@ -158,7 +133,7 @@
             // lblMobileNumber
             // 
             this.lblMobileNumber.AutoSize = true;
-            this.lblMobileNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(20)))), ((int)(((byte)(32)))));
+            this.lblMobileNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.lblMobileNumber.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblMobileNumber.ForeColor = System.Drawing.Color.White;
             this.lblMobileNumber.Location = new System.Drawing.Point(72, 502);
@@ -364,13 +339,46 @@
             this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
+            // cbPosition
+            // 
+            this.cbPosition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.cbPosition.DropDownHeight = 200;
+            this.cbPosition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbPosition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbPosition.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbPosition.ForeColor = System.Drawing.Color.White;
+            this.cbPosition.FormattingEnabled = true;
+            this.cbPosition.IntegralHeight = false;
+            this.cbPosition.ItemHeight = 21;
+            this.cbPosition.Items.AddRange(new object[] {
+            "Employee",
+            "IT Admin"});
+            this.cbPosition.Location = new System.Drawing.Point(83, 630);
+            this.cbPosition.Name = "cbPosition";
+            this.cbPosition.Size = new System.Drawing.Size(542, 29);
+            this.cbPosition.TabIndex = 178;
+            // 
+            // tlpPosition
+            // 
+            this.tlpPosition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.tlpPosition.ColumnCount = 1;
+            this.tlpPosition.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpPosition.Location = new System.Drawing.Point(72, 617);
+            this.tlpPosition.Name = "tlpPosition";
+            this.tlpPosition.RowCount = 3;
+            this.tlpPosition.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tlpPosition.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpPosition.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tlpPosition.Size = new System.Drawing.Size(568, 52);
+            this.tlpPosition.TabIndex = 177;
+            // 
             // RegisterEmployees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.ClientSize = new System.Drawing.Size(713, 827);
-            this.Controls.Add(this.txtPosition);
+            this.Controls.Add(this.cbPosition);
             this.Controls.Add(this.tlpPosition);
             this.Controls.Add(this.lblPosition);
             this.Controls.Add(this.txtTelNumber);
@@ -396,6 +404,7 @@
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.btnRegister);
             this.Name = "RegisterEmployees";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegisterEmployees";
             ((System.ComponentModel.ISupportInitialize)(this.pbUserImage)).EndInit();
             this.ResumeLayout(false);
@@ -404,9 +413,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtPosition;
-        private System.Windows.Forms.TableLayoutPanel tlpPosition;
         private System.Windows.Forms.Label lblPosition;
         private System.Windows.Forms.TextBox txtTelNumber;
         private System.Windows.Forms.TableLayoutPanel tlpTelNumber;
@@ -430,5 +436,7 @@
         private System.Windows.Forms.TableLayoutPanel tlpEmail;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.ComboBox cbPosition;
+        private System.Windows.Forms.TableLayoutPanel tlpPosition;
     }
 }
