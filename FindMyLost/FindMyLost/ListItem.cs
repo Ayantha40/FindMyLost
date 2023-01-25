@@ -111,5 +111,25 @@ namespace FindMyLost
         {
            // pictureBox3.BackColor = Color.Empty;
         }
+
+        private void ListItem_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tlpFirstName_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtBrand_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

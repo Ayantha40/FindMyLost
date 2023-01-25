@@ -119,7 +119,7 @@
             this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(128)))), ((int)(((byte)(45)))));
             this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnReset.Font = new System.Drawing.Font("Exo 2 Semi Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnReset.Location = new System.Drawing.Point(645, 659);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(111, 43);
@@ -133,7 +133,7 @@
             this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(128)))), ((int)(((byte)(45)))));
             this.btnSubmit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSubmit.Font = new System.Drawing.Font("Exo 2 Semi Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSubmit.Location = new System.Drawing.Point(762, 659);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(111, 43);
@@ -188,7 +188,7 @@
             this.btnBrowse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(128)))), ((int)(((byte)(45)))));
             this.btnBrowse.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBrowse.Font = new System.Drawing.Font("Exo 2 Semi Bold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnBrowse.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnBrowse.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnBrowse.Location = new System.Drawing.Point(97, 74);
             this.btnBrowse.Name = "btnBrowse";
@@ -228,6 +228,7 @@
             this.pictureBox3.Size = new System.Drawing.Size(152, 30);
             this.pictureBox3.TabIndex = 22;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // groupBox3
             // 
@@ -268,6 +269,7 @@
             this.txtBrand.Name = "txtBrand";
             this.txtBrand.Size = new System.Drawing.Size(180, 15);
             this.txtBrand.TabIndex = 167;
+            this.txtBrand.TextChanged += new System.EventHandler(this.txtBrand_TextChanged);
             // 
             // picPick
             // 
@@ -298,11 +300,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label1.Font = new System.Drawing.Font("Exo 2 Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(21, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(232, 23);
+            this.label1.Size = new System.Drawing.Size(267, 24);
             this.label1.TabIndex = 22;
             this.label1.Text = "LOST ITEM INFORMATION";
             // 
@@ -425,6 +427,7 @@
             this.tlpFirstName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpFirstName.Size = new System.Drawing.Size(186, 39);
             this.tlpFirstName.TabIndex = 166;
+            this.tlpFirstName.Paint += new System.Windows.Forms.PaintEventHandler(this.tlpFirstName_Paint);
             // 
             // txtCategory
             // 
@@ -482,6 +485,7 @@
             this.Name = "ListItem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListItem";
+            this.Load += new System.EventHandler(this.ListItem_Load);
             this.groupBox6.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
