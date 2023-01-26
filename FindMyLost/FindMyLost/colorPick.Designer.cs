@@ -42,33 +42,37 @@
             // 
             this.groupBox1.Controls.Add(this.pnlSelected);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox1.Location = new System.Drawing.Point(331, 107);
+            this.groupBox1.Location = new System.Drawing.Point(378, 143);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(190, 217);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Size = new System.Drawing.Size(217, 289);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Selected Color";
             // 
             // pnlSelected
             // 
-            this.pnlSelected.Location = new System.Drawing.Point(23, 39);
+            this.pnlSelected.Location = new System.Drawing.Point(26, 52);
+            this.pnlSelected.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlSelected.Name = "pnlSelected";
-            this.pnlSelected.Size = new System.Drawing.Size(152, 147);
+            this.pnlSelected.Size = new System.Drawing.Size(174, 196);
             this.pnlSelected.TabIndex = 6;
             // 
             // lblSmallScreen
             // 
             this.lblSmallScreen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblSmallScreen.Location = new System.Drawing.Point(437, 49);
+            this.lblSmallScreen.Location = new System.Drawing.Point(499, 65);
             this.lblSmallScreen.Name = "lblSmallScreen";
-            this.lblSmallScreen.Size = new System.Drawing.Size(84, 55);
+            this.lblSmallScreen.Size = new System.Drawing.Size(96, 73);
             this.lblSmallScreen.TabIndex = 7;
             // 
             // picColors
             // 
             this.picColors.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picColors.Image = ((System.Drawing.Image)(resources.GetObject("picColors.Image")));
-            this.picColors.Location = new System.Drawing.Point(19, 49);
+            this.picColors.Location = new System.Drawing.Point(22, 65);
+            this.picColors.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.picColors.Name = "picColors";
             this.picColors.Size = new System.Drawing.Size(300, 300);
             this.picColors.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -82,10 +86,11 @@
             this.btnSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(128)))), ((int)(((byte)(45)))));
             this.btnSelect.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSelect.Font = new System.Drawing.Font("Exo 2 Semi Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSelect.Location = new System.Drawing.Point(410, 330);
+            this.btnSelect.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSelect.Location = new System.Drawing.Point(469, 440);
+            this.btnSelect.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSelect.Name = "btnSelect";
-            this.btnSelect.Size = new System.Drawing.Size(111, 43);
+            this.btnSelect.Size = new System.Drawing.Size(127, 57);
             this.btnSelect.TabIndex = 30;
             this.btnSelect.Text = "SELECT";
             this.btnSelect.UseVisualStyleBackColor = false;
@@ -93,14 +98,15 @@
             // 
             // colorPick
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.ClientSize = new System.Drawing.Size(540, 415);
+            this.ClientSize = new System.Drawing.Size(617, 553);
             this.Controls.Add(this.btnSelect);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblSmallScreen);
             this.Controls.Add(this.picColors);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "colorPick";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "colorPick";

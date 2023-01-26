@@ -13,7 +13,7 @@ namespace FindMyLost
     public partial class ListItem : Form
     {
         public static ListItem instance;
-        public PictureBox pb1;
+        public static PictureBox pb1;
         //public TextBox tb1;
 
 
