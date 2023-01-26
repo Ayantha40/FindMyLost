@@ -40,7 +40,7 @@
             this.btnBrowse = new System.Windows.Forms.Button();
             this.imgItem = new System.Windows.Forms.PictureBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pbColor = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.txtBrand = new System.Windows.Forms.TextBox();
@@ -63,7 +63,7 @@
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgItem)).BeginInit();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbColor)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPick)).BeginInit();
@@ -230,15 +230,14 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Upload Image";
             // 
-            // pictureBox3
+            // pbColor
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(350, 45);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(174, 40);
-            this.pictureBox3.TabIndex = 22;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pbColor.Location = new System.Drawing.Point(306, 34);
+            this.pbColor.Name = "pbColor";
+            this.pbColor.Size = new System.Drawing.Size(152, 30);
+            this.pbColor.TabIndex = 22;
+            this.pbColor.TabStop = false;
+            this.pbColor.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // groupBox3
             // 
@@ -296,7 +295,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.pictureBox3);
+            this.groupBox2.Controls.Add(this.pbColor);
             this.groupBox2.Controls.Add(this.picPick);
             this.groupBox2.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -513,7 +512,7 @@
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgItem)).EndInit();
             this.groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbColor)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
@@ -536,7 +535,7 @@
         private System.Windows.Forms.Button btnBrowse;
         private System.Windows.Forms.PictureBox imgItem;
         private System.Windows.Forms.GroupBox groupBox4;
-        public System.Windows.Forms.PictureBox pictureBox3;
+        public System.Windows.Forms.PictureBox pbColor;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.PictureBox picPick;
         private System.Windows.Forms.GroupBox groupBox2;

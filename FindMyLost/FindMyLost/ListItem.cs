@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
+using System.Data.SqlClient;
+using System.IO;
+using System.Drawing.Imaging;
 
 namespace FindMyLost
 {
@@ -16,11 +20,13 @@ namespace FindMyLost
         public static string form;
         //public TextBox tb1;
 
+        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConString"].ToString());
 
         public ListItem()
         {
             InitializeComponent();
-            pb1 = pictureBox3;
+            instance = this;
+            pb1 = pbColor;
             //tb1 = txtColor;
         }
 
@@ -46,14 +52,40 @@ namespace FindMyLost
             txtAdditional.Clear();
             txtLocation.Clear();
             imgItem.ImageLocation = "";
-            pictureBox3.BackColor = Color.Empty;
+            pbColor.BackColor = Color.Empty;
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             if ((txtCategory.Text != "") && (txtBrand.Text != "") )
             {
-                MessageBox.Show("Confirm submission?", "LostBadu", MessageBoxButtons.YesNo);
+                try
+                {
+                    var item_image = imgItem.Image;
+                    byte[] imageBytes;
+                    MemoryStream ms = new MemoryStream();
+                    item_image.Save(ms, ImageFormat.Jpeg);
+                    imageBytes = ms.ToArray();
+                    int argb = pbColor.BackColor.ToArgb();
+
+                    //find how to save color to database
+
+                    string sql = "INSERT INTO Lost_Item (item_category, item_colour, item_picture, last_seen_location, item_brand, additional_info) VALUES ('" + txtCategory.Text + "', '" + argb +"', @image,'" + txtLocation.Text + "','" + txtBrand.Text + "','" + txtAdditional.Text + "')";
+                    SqlCommand cmd = new SqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@image", imageBytes);
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Item Listed", "LostBadu", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "LostBadu", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    conn.Close();
+                }
+                
             }
             else
             {
