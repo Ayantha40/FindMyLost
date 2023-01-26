@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
+using System.Data.SqlClient;
+using System.IO;
+using System.Drawing.Imaging;
 
 namespace FindMyLost
 {
@@ -14,17 +18,19 @@ namespace FindMyLost
     {
         public static PictureBox pb1;
         public static string form;
-        
+
+        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConString"].ToString());
+
         public EditLostItemDescription()
         {
             InitializeComponent();
-            pb1 = pictureBox3;
+            pb1 = pbColor;
          
         }
 
         private void EditLostItemDescription_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -138,7 +144,40 @@ namespace FindMyLost
             txtAdditional.Clear();
             txtLocation.Clear();
             imgItem.ImageLocation = "";
-            pictureBox3.BackColor = Color.Empty;
+            pbColor.BackColor = Color.Empty;
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            //to check if color is getting retrieved
+            //it is 
+            //yay
+            try
+            {
+               
+                string sql = "SELECT * FROM Lost_Item WHERE item_id = '" + txtItemID.Text + "'";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                conn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                if (dr.Read())
+                {
+                    var myColor = Color.FromArgb(Convert.ToInt32(dr["item_colour"]));
+                    pbColor.BackColor = myColor;
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Item ID.", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
     }
 }
