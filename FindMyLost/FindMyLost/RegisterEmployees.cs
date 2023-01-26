@@ -48,7 +48,7 @@ namespace FindMyLost
         {
             if (txtFirstName.Text == "" || txtLastName.Text == "" || txtEmail.Text == "" || txtAddress.Text == "" || txtMobileNum.Text == "" || txtTelNumber.Text == "" || pbUserImage.Image == null || cbPosition.Text == "")
             {
-                MessageBox.Show("Please fill in all the employee details!", "LostBadu", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Please fill in all the employee details!", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
             {
@@ -65,11 +65,11 @@ namespace FindMyLost
                     cmd.Parameters.AddWithValue("@image", imageBytes);
                     conn.Open();
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Employee Registration Successful!", "LostBadu", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Employee Registration Successful!", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message, "LostBadu", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(ex.Message, "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 finally
                 {

@@ -70,12 +70,12 @@ namespace FindMyLost
                 }
                 else
                 {
-                    MessageBox.Show("Invalid Employee ID.", "LostBadu", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("Invalid Employee ID.", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "LostBadu", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
@@ -99,12 +99,12 @@ namespace FindMyLost
                 cmd.Parameters.AddWithValue("@image", imageBytes);
                 conn.Open();
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Employee details updated successfully!", "LostBadu", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Employee details updated successfully!", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "LostBadu", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
