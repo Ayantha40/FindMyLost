@@ -21,7 +21,7 @@ namespace FindMyLost
         public Color clr;
         string form = ListItem.form;
         string form2 = EditLostItemDescription.form;
-        string form3;
+        string form3 = ClaimItem.form;
 
         private void picColors_MouseMove(object sender, MouseEventArgs e)
         {
@@ -51,10 +51,8 @@ namespace FindMyLost
             }
             else if (form3 == "ClaimItem")
             {
-
+                ClaimItem.Colour.BackColor = pnlSelected.BackColor;
             }
-            //ListItem.pb1.BackColor = pnlSelected.BackColor;
-            //ListItem.instance.tb1.Text = "selected";
         }
     }
 }

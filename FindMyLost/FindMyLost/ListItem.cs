@@ -25,7 +25,6 @@ namespace FindMyLost
         public ListItem()
         {
             InitializeComponent();
-            instance = this;
             pb1 = pbColor;
             //tb1 = txtColor;
         }
