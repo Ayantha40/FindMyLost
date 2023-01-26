@@ -46,17 +46,17 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox1.Size = new System.Drawing.Size(217, 289);
+            this.groupBox1.Size = new System.Drawing.Size(217, 222);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Selected Color";
             // 
             // pnlSelected
             // 
-            this.pnlSelected.Location = new System.Drawing.Point(26, 52);
+            this.pnlSelected.Location = new System.Drawing.Point(23, 49);
             this.pnlSelected.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlSelected.Name = "pnlSelected";
-            this.pnlSelected.Size = new System.Drawing.Size(174, 196);
+            this.pnlSelected.Size = new System.Drawing.Size(174, 143);
             this.pnlSelected.TabIndex = 6;
             // 
             // lblSmallScreen
@@ -87,7 +87,7 @@
             this.btnSelect.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSelect.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSelect.Location = new System.Drawing.Point(469, 440);
+            this.btnSelect.Location = new System.Drawing.Point(468, 398);
             this.btnSelect.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSelect.Name = "btnSelect";
             this.btnSelect.Size = new System.Drawing.Size(127, 57);
@@ -101,7 +101,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.ClientSize = new System.Drawing.Size(617, 553);
+            this.ClientSize = new System.Drawing.Size(617, 490);
             this.Controls.Add(this.btnSelect);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblSmallScreen);

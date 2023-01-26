@@ -12,15 +12,16 @@ namespace FindMyLost
 {
     public partial class colorPick : Form
     {
-        public static colorPick instance;
 
         public colorPick()
         {
             InitializeComponent();
-            instance = this;
         }
 
         public Color clr;
+        string form = ListItem.form;
+        string form2 = EditLostItemDescription.form;
+        string form3;
 
         private void picColors_MouseMove(object sender, MouseEventArgs e)
         {
@@ -40,7 +41,19 @@ namespace FindMyLost
         {
             MessageBox.Show("Color Selected");
             this.Close();
-            ListItem.instance.pb1.BackColor = pnlSelected.BackColor;
+            if (form == "ListItem")
+            {
+                ListItem.pb1.BackColor = pnlSelected.BackColor;
+            }
+            else if (form2 == "EditItem")
+            {
+                EditLostItemDescription.pb1.BackColor = pnlSelected.BackColor;
+            }
+            else if (form3 == "ClaimItem")
+            {
+
+            }
+            //ListItem.pb1.BackColor = pnlSelected.BackColor;
             //ListItem.instance.tb1.Text = "selected";
         }
     }

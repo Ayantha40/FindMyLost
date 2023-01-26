@@ -39,7 +39,7 @@ namespace FindMyLost
         {
             MessageBox.Show("Color Selected");
             this.Close();
-            EditLostItemDescription.instance.pb1.BackColor = pnlSelected.BackColor;
+            EditLostItemDescription.pb1.BackColor = pnlSelected.BackColor;
             //EditLostItemDescription.instance.tb1.Text = "selected";
         }
     }

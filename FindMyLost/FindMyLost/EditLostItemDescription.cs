@@ -12,13 +12,12 @@ namespace FindMyLost
 {
     public partial class EditLostItemDescription : Form
     {
-        public static EditLostItemDescription instance;
-        public PictureBox pb1;
+        public static PictureBox pb1;
+        public static string form;
         
         public EditLostItemDescription()
         {
             InitializeComponent();
-            instance = this;
             pb1 = pictureBox3;
          
         }
@@ -109,7 +108,8 @@ namespace FindMyLost
 
         private void picPick_Click(object sender, EventArgs e)
         {
-            editcolorpick cp = new editcolorpick();
+            form = "EditItem";
+            colorPick cp = new colorPick();
             cp.Show();
         }
         private void txtColor_TextChanged(object sender, EventArgs e)

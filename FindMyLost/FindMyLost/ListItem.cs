@@ -12,15 +12,14 @@ namespace FindMyLost
 {
     public partial class ListItem : Form
     {
-        public static ListItem instance;
         public static PictureBox pb1;
+        public static string form;
         //public TextBox tb1;
 
 
         public ListItem()
         {
             InitializeComponent();
-            instance = this;
             pb1 = pictureBox3;
             //tb1 = txtColor;
         }
@@ -104,6 +103,7 @@ namespace FindMyLost
 
         private void picPick_Click(object sender, EventArgs e)
         {
+            form = "ListItem";
             colorPick cp = new colorPick();
             cp.Show();
         }
