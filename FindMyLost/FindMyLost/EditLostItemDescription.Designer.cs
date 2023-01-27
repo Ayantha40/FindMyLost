@@ -114,7 +114,6 @@
             this.tlpFirstName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpFirstName.Size = new System.Drawing.Size(186, 39);
             this.tlpFirstName.TabIndex = 166;
-            this.tlpFirstName.Visible = false;
             // 
             // txtCategory
             // 
