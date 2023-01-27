@@ -57,7 +57,7 @@ namespace FindMyLost
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            if ((txtCategory.Text != "") && (txtBrand.Text != "") )
+            if ((txtCategory.Text != "") && (txtBrand.Text != "") && (pbColor.BackColor != Color.Empty))
             {
                 try
                 {
@@ -66,9 +66,9 @@ namespace FindMyLost
                     MemoryStream ms = new MemoryStream();
                     item_image.Save(ms, ImageFormat.Jpeg);
                     imageBytes = ms.ToArray();
+
                     int argb = pbColor.BackColor.ToArgb();
 
-                    //find how to save color to database
 
                     string sql = "INSERT INTO Lost_Item (item_category, item_colour, item_picture, last_seen_location, item_brand, additional_info) VALUES ('" + txtCategory.Text + "', '" + argb +"', @image,'" + txtLocation.Text + "','" + txtBrand.Text + "','" + txtAdditional.Text + "')";
                     SqlCommand cmd = new SqlCommand(sql, conn);
@@ -147,7 +147,7 @@ namespace FindMyLost
 
         private void ListItem_Load(object sender, EventArgs e)
         {
-
+            pbColor.BackColor = Color.Empty;
         }
 
         private void tlpFirstName_Paint(object sender, PaintEventArgs e)

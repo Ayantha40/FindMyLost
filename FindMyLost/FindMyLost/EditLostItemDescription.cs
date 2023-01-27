@@ -154,7 +154,8 @@ namespace FindMyLost
             //yay
             try
             {
-               
+                byte[] imageBytes;
+
                 string sql = "SELECT * FROM Lost_Item WHERE item_id = '" + txtItemID.Text + "'";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 conn.Open();
@@ -162,8 +163,19 @@ namespace FindMyLost
 
                 if (dr.Read())
                 {
+                    
                     var myColor = Color.FromArgb(Convert.ToInt32(dr["item_colour"]));
                     pbColor.BackColor = myColor;
+
+                    txtCategory.Text = dr["item_category"].ToString();
+                    txtLocation.Text = dr["last_seen_location"].ToString();
+                    txtBrand.Text = dr["item_brand"].ToString();
+                    txtAdditional.Text = dr["additional_info"].ToString();
+                    
+                    imageBytes = (byte[])dr["item_picture"];
+                    MemoryStream ms = new MemoryStream(imageBytes);
+                    Image img = Image.FromStream(ms);
+                    imgItem.Image = img;
                 }
                 else
                 {
