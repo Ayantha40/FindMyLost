@@ -22,6 +22,8 @@ namespace FindMyLost
             InitializeComponent();
         }
 
+        string empID = Login.empId;
+
         private static Regex PasswordValidation()
         {
             string pattern = "^.*(?=.{7,})(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!*@#$%^&+=]).*$";
@@ -41,7 +43,18 @@ namespace FindMyLost
             lblWrong2.Hide();
             lblCorrect0.Hide();
             lblWrong0.Hide();
-        }
+
+            string sql = "SELECT * FROM Employee WHERE employee_id = '" + empID + "'";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            conn.Open();
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            if (dr.Read())
+            {
+                txtOldPassword.Text = dr["password"].ToString();
+            }
+
+        }   
 
         private void tlpFirstName_Paint(object sender, PaintEventArgs e)
         {
@@ -216,7 +229,7 @@ namespace FindMyLost
             {
                 try
                 {
-                    string empID = Login.empId;
+                    
 
                     string sql = "UPDATE Employee SET password = '" + txtNP.Text + "' WHERE employee_id = '" + empID + "'";
                     SqlCommand cmd = new SqlCommand(sql, conn);
