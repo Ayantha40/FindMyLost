@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditLostItemDescription));
-            this.txtCategory = new System.Windows.Forms.TextBox();
-            this.tlpFirstName = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tlpFirstName = new System.Windows.Forms.TableLayoutPanel();
+            this.txtCategory = new System.Windows.Forms.TextBox();
             this.radioOther = new System.Windows.Forms.RadioButton();
             this.radioDocuments = new System.Windows.Forms.RadioButton();
             this.radioClothing = new System.Windows.Forms.RadioButton();
@@ -61,8 +61,8 @@
             this.btnEdit = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.txtItemID = new System.Windows.Forms.TextBox();
-            this.tlpFirstName.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.tlpFirstName.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbColor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPick)).BeginInit();
@@ -77,35 +77,6 @@
             this.groupBox7.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txtCategory
-            // 
-            this.txtCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.txtCategory.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCategory.ForeColor = System.Drawing.Color.White;
-            this.txtCategory.Location = new System.Drawing.Point(3, 11);
-            this.txtCategory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtCategory.Name = "txtCategory";
-            this.txtCategory.Size = new System.Drawing.Size(180, 15);
-            this.txtCategory.TabIndex = 167;
-            this.txtCategory.TabStop = false;
-            // 
-            // tlpFirstName
-            // 
-            this.tlpFirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.tlpFirstName.ColumnCount = 1;
-            this.tlpFirstName.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpFirstName.Controls.Add(this.txtCategory, 0, 1);
-            this.tlpFirstName.ForeColor = System.Drawing.Color.White;
-            this.tlpFirstName.Location = new System.Drawing.Point(306, 133);
-            this.tlpFirstName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tlpFirstName.Name = "tlpFirstName";
-            this.tlpFirstName.RowCount = 3;
-            this.tlpFirstName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpFirstName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpFirstName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpFirstName.Size = new System.Drawing.Size(186, 39);
-            this.tlpFirstName.TabIndex = 166;
             // 
             // groupBox1
             // 
@@ -126,6 +97,36 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Category *";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // tlpFirstName
+            // 
+            this.tlpFirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.tlpFirstName.ColumnCount = 1;
+            this.tlpFirstName.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpFirstName.Controls.Add(this.txtCategory, 0, 1);
+            this.tlpFirstName.ForeColor = System.Drawing.Color.White;
+            this.tlpFirstName.Location = new System.Drawing.Point(306, 133);
+            this.tlpFirstName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tlpFirstName.Name = "tlpFirstName";
+            this.tlpFirstName.RowCount = 3;
+            this.tlpFirstName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tlpFirstName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpFirstName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tlpFirstName.Size = new System.Drawing.Size(186, 39);
+            this.tlpFirstName.TabIndex = 166;
+            this.tlpFirstName.Visible = false;
+            // 
+            // txtCategory
+            // 
+            this.txtCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.txtCategory.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCategory.ForeColor = System.Drawing.Color.White;
+            this.txtCategory.Location = new System.Drawing.Point(3, 11);
+            this.txtCategory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCategory.Name = "txtCategory";
+            this.txtCategory.Size = new System.Drawing.Size(180, 15);
+            this.txtCategory.TabIndex = 167;
+            this.txtCategory.TabStop = false;
             // 
             // radioOther
             // 
@@ -314,28 +315,31 @@
             // 
             // btnBrowse
             // 
-            this.btnBrowse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(128)))), ((int)(((byte)(45)))));
+            this.btnBrowse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.btnBrowse.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBrowse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBrowse.FlatAppearance.BorderSize = 0;
+            this.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBrowse.ForeColor = System.Drawing.Color.White;
-            this.btnBrowse.Location = new System.Drawing.Point(97, 74);
+            this.btnBrowse.Location = new System.Drawing.Point(443, 128);
+            this.btnBrowse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(110, 45);
-            this.btnBrowse.TabIndex = 4;
-            this.btnBrowse.TabStop = false;
-            this.btnBrowse.Text = "BROWSE ";
+            this.btnBrowse.Size = new System.Drawing.Size(30, 26);
+            this.btnBrowse.TabIndex = 149;
+            this.btnBrowse.Text = "✏️";
             this.btnBrowse.UseVisualStyleBackColor = false;
             this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
+            this.btnBrowse.MouseEnter += new System.EventHandler(this.btnBrowse_MouseEnter);
+            this.btnBrowse.MouseLeave += new System.EventHandler(this.btnBrowse_MouseLeave);
             // 
             // imgItem
             // 
-            this.imgItem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.imgItem.Location = new System.Drawing.Point(312, 21);
+            this.imgItem.Image = ((System.Drawing.Image)(resources.GetObject("imgItem.Image")));
+            this.imgItem.Location = new System.Drawing.Point(306, 20);
+            this.imgItem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.imgItem.Name = "imgItem";
-            this.imgItem.Size = new System.Drawing.Size(180, 158);
-            this.imgItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgItem.TabIndex = 3;
+            this.imgItem.Size = new System.Drawing.Size(186, 134);
+            this.imgItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgItem.TabIndex = 148;
             this.imgItem.TabStop = false;
             // 
             // txtAdditional
@@ -380,7 +384,7 @@
             this.btnReset.Size = new System.Drawing.Size(110, 45);
             this.btnReset.TabIndex = 176;
             this.btnReset.TabStop = false;
-            this.btnReset.Text = "RESET";
+            this.btnReset.Text = "CANCEL";
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -538,10 +542,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditLostItemDescription";
             this.Load += new System.EventHandler(this.EditLostItemDescription_Load);
-            this.tlpFirstName.ResumeLayout(false);
-            this.tlpFirstName.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.tlpFirstName.ResumeLayout(false);
+            this.tlpFirstName.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbColor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPick)).EndInit();
@@ -565,8 +569,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txtCategory;
-        private System.Windows.Forms.TableLayoutPanel tlpFirstName;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton radioOther;
         private System.Windows.Forms.RadioButton radioDocuments;
@@ -583,8 +585,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button btnBrowse;
-        private System.Windows.Forms.PictureBox imgItem;
         private System.Windows.Forms.TextBox txtAdditional;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Button btnReset;
@@ -597,5 +597,9 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TextBox txtItemID;
         private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnBrowse;
+        private System.Windows.Forms.PictureBox imgItem;
+        private System.Windows.Forms.TableLayoutPanel tlpFirstName;
+        private System.Windows.Forms.TextBox txtCategory;
     }
 }

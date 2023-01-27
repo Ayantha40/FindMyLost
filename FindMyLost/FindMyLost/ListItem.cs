@@ -46,8 +46,6 @@ namespace FindMyLost
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            txtCategory.Clear();
-            //txtColor.Clear();
             txtBrand.Clear();
             txtAdditional.Clear();
             txtLocation.Clear();
@@ -57,35 +55,34 @@ namespace FindMyLost
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            if ((txtCategory.Text != "") && (txtBrand.Text != "") && (pbColor.BackColor != Color.Empty))
+            if ((category != "") && (txtBrand.Text != "") && (pbColor.BackColor != Color.Empty))
             {
-                try
-                {
-                    var item_image = imgItem.Image;
-                    byte[] imageBytes;
-                    MemoryStream ms = new MemoryStream();
-                    item_image.Save(ms, ImageFormat.Jpeg);
-                    imageBytes = ms.ToArray();
+                    try
+                    {
+                        var item_image = imgItem.Image;
+                        byte[] imageBytes;
+                        MemoryStream ms = new MemoryStream();
+                        item_image.Save(ms, ImageFormat.Jpeg);
+                        imageBytes = ms.ToArray();
 
-                    int argb = pbColor.BackColor.ToArgb();
+                        int argb = pbColor.BackColor.ToArgb();
 
 
-                    string sql = "INSERT INTO Lost_Item (item_category, item_colour, item_picture, last_seen_location, item_brand, additional_info) VALUES ('" + txtCategory.Text + "', '" + argb +"', @image,'" + txtLocation.Text + "','" + txtBrand.Text + "','" + txtAdditional.Text + "')";
-                    SqlCommand cmd = new SqlCommand(sql, conn);
-                    cmd.Parameters.AddWithValue("@image", imageBytes);
-                    conn.Open();
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Item Listed", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message, "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                finally
-                {
-                    conn.Close();
-                }
-                
+                        string sql = "INSERT INTO Lost_Item (item_category, item_colour, item_picture, last_seen_location, item_brand, additional_info) VALUES ('" + category + "', '" + argb + "', @image,'" + txtLocation.Text + "','" + txtBrand.Text + "','" + txtAdditional.Text + "')";
+                        SqlCommand cmd = new SqlCommand(sql, conn);
+                        cmd.Parameters.AddWithValue("@image", imageBytes);
+                        conn.Open();
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("Item Listed", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    finally
+                    {
+                        conn.Close();
+                    }              
             }
             else
             {
@@ -98,39 +95,40 @@ namespace FindMyLost
 
         }
 
+        string category;
         private void radioClothing_Click(object sender, EventArgs e)
         {
-            txtCategory.Text = radioClothing.Text;
+            category = radioClothing.Text;
         }
 
         private void radioElec_Click(object sender, EventArgs e)
         {
-            txtCategory.Text = radioElec.Text;
+            category = radioElec.Text;
         }
 
         private void radioBag_Click(object sender, EventArgs e)
         {
-            txtCategory.Text = radioBag.Text;
+            category = radioBag.Text;
         }
 
         private void radioAccessories_Click(object sender, EventArgs e)
         {
-            txtCategory.Text = radioAccessories.Text;
+            category = radioAccessories.Text;
         }
 
         private void radioAnimal_Click(object sender, EventArgs e)
         {
-            txtCategory.Text = radioAnimal.Text;
+            category = radioAnimal.Text;
         }
 
         private void radioDocuments_Click(object sender, EventArgs e)
         {
-            txtCategory.Text = radioDocuments.Text;
+            category = radioDocuments.Text;
         }
 
         private void radioOther_Click(object sender, EventArgs e)
         {
-            txtCategory.Text = radioOther.Text;
+            category = radioOther.Text;
         }
 
         private void picPick_Click(object sender, EventArgs e)
@@ -163,6 +161,17 @@ namespace FindMyLost
         private void pictureBox3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnBrowse_MouseEnter(object sender, EventArgs e)
+        {
+            btnBrowse.ForeColor = Color.Black;
+            btnBrowse.BackColor = Color.White;
+        }
+
+        private void btnBrowse_MouseLeave(object sender, EventArgs e)
+        {
+            btnBrowse.ForeColor = Color.White;
         }
     }
 }

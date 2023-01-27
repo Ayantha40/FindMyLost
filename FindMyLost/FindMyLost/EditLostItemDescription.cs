@@ -63,6 +63,18 @@ namespace FindMyLost
 
         }
 
+        private void btnBrowse_MouseEnter(object sender, EventArgs e)
+        {
+            btnBrowse.ForeColor = Color.Black;
+            btnBrowse.BackColor = Color.White;
+        }
+
+        private void btnBrowse_MouseLeave(object sender, EventArgs e)
+        {
+            btnBrowse.ForeColor = Color.White;
+            btnBrowse.BackColor = Color.Black;
+        }
+
         private void btnBrowse_Click(object sender, EventArgs e)
         {
             string ImageLocation = "";
@@ -77,39 +89,40 @@ namespace FindMyLost
             }
         }
 
+        string category;
         private void radioClothing_CheckedChanged(object sender, EventArgs e)
         {
-            txtCategory.Text = radioClothing.Text;
+            category = radioClothing.Text;
         }
 
         private void radioElec_CheckedChanged(object sender, EventArgs e)
         {
-            txtCategory.Text = radioElec.Text;
+            category = radioElec.Text;
         }
 
         private void radioBag_CheckedChanged(object sender, EventArgs e)
         {
-            txtCategory.Text = radioBag.Text;
+            category = radioBag.Text;
         }
 
         private void radioAccessories_CheckedChanged(object sender, EventArgs e)
         {
-            txtCategory.Text = radioAccessories.Text;
+            category = radioAccessories.Text;
         }
 
         private void radioAnimal_CheckedChanged(object sender, EventArgs e)
         {
-            txtCategory.Text = radioAnimal.Text;
+            category = radioAnimal.Text;
         }
 
         private void radioDocuments_CheckedChanged(object sender, EventArgs e)
         {
-            txtCategory.Text = radioDocuments.Text;
+            category = radioDocuments.Text;
         }
 
         private void radioOther_CheckedChanged(object sender, EventArgs e)
         {
-            txtCategory.Text = radioOther.Text;
+            category = radioOther.Text;
         }
 
         private void picPick_Click(object sender, EventArgs e)
@@ -120,14 +133,41 @@ namespace FindMyLost
         }
         private void txtColor_TextChanged(object sender, EventArgs e)
         {
-            // pictureBox3.BackColor = Color.Empty;
+            
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if ((txtCategory.Text != "") && (txtBrand.Text != "") /*&& (txtColor.Text != "")*/)
+            if ((category != "") && (txtBrand.Text != "") && (pbColor.BackColor != Color.Empty))
             {
-                MessageBox.Show("Confirm Updation?", "FindMyLost", MessageBoxButtons.YesNo);
+                try
+                {
+                    int argb = pbColor.BackColor.ToArgb();
+
+                    string sql = "UPDATE Lost_Item SET item_category = '" + category + "', item_colour = '" + argb + "', item_picture =  @image , last_seen_location = '" + txtLocation.Text + "', item_brand = '" + txtBrand.Text + "', additional_info = '" + txtAdditional.Text + "' WHERE item_id = '" + txtItemID.Text + "'";
+                    SqlCommand cmd = new SqlCommand(sql, conn);
+
+                    var img = imgItem.Image;
+                    byte[] imageBytes;
+                    MemoryStream ms = new MemoryStream();
+                    img.Save(ms, ImageFormat.Jpeg);
+                    imageBytes = ms.ToArray();
+
+                    cmd.Parameters.AddWithValue("@image", imageBytes);
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Item details updated successfully!", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    conn.Close();
+                }
+
             }
             else
             {
@@ -137,14 +177,8 @@ namespace FindMyLost
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            txtCategory.Clear();
-            //txtColor.Clear();
-            txtBrand.Clear();
-            txtItemID.Clear();
-            txtAdditional.Clear();
-            txtLocation.Clear();
-            imgItem.ImageLocation = "";
-            pbColor.BackColor = Color.Empty;
+            MessageBox.Show("Details update process cancelled", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Close();
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
