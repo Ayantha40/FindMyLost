@@ -78,7 +78,7 @@
             this.groupBox6.Controls.Add(this.tableLayoutPanel4);
             this.groupBox6.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox6.Location = new System.Drawing.Point(536, 369);
+            this.groupBox6.Location = new System.Drawing.Point(536, 352);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(337, 81);
             this.groupBox6.TabIndex = 30;
@@ -118,9 +118,9 @@
             this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReset.FlatAppearance.BorderSize = 0;
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnReset.Font = new System.Drawing.Font("Exo 2 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnReset.ForeColor = System.Drawing.Color.White;
-            this.btnReset.Location = new System.Drawing.Point(645, 659);
+            this.btnReset.Location = new System.Drawing.Point(579, 634);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(111, 43);
             this.btnReset.TabIndex = 29;
@@ -134,9 +134,9 @@
             this.btnSubmit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSubmit.FlatAppearance.BorderSize = 0;
             this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSubmit.Font = new System.Drawing.Font("Exo 2 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSubmit.ForeColor = System.Drawing.Color.White;
-            this.btnSubmit.Location = new System.Drawing.Point(762, 659);
+            this.btnSubmit.Location = new System.Drawing.Point(726, 634);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(111, 43);
             this.btnSubmit.TabIndex = 25;
@@ -150,9 +150,9 @@
             this.groupBox5.Controls.Add(this.tableLayoutPanel5);
             this.groupBox5.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox5.Location = new System.Drawing.Point(536, 457);
+            this.groupBox5.Location = new System.Drawing.Point(536, 439);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(337, 196);
+            this.groupBox5.Size = new System.Drawing.Size(337, 183);
             this.groupBox5.TabIndex = 27;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Additional Information";
@@ -175,14 +175,14 @@
             this.tableLayoutPanel5.ColumnCount = 1;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel5.ForeColor = System.Drawing.Color.White;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(73, 42);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(73, 21);
             this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 3;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(258, 127);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(258, 148);
             this.tableLayoutPanel5.TabIndex = 167;
             // 
             // btnBrowse
@@ -191,7 +191,7 @@
             this.btnBrowse.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBrowse.FlatAppearance.BorderSize = 0;
             this.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBrowse.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnBrowse.Font = new System.Drawing.Font("Exo 2 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnBrowse.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnBrowse.Location = new System.Drawing.Point(97, 74);
             this.btnBrowse.Name = "btnBrowse";
@@ -206,7 +206,7 @@
             this.imgItem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.imgItem.Location = new System.Drawing.Point(306, 21);
             this.imgItem.Name = "imgItem";
-            this.imgItem.Size = new System.Drawing.Size(186, 158);
+            this.imgItem.Size = new System.Drawing.Size(186, 148);
             this.imgItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgItem.TabIndex = 3;
             this.imgItem.TabStop = false;
@@ -217,19 +217,19 @@
             this.groupBox4.Controls.Add(this.imgItem);
             this.groupBox4.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(21, 457);
+            this.groupBox4.Location = new System.Drawing.Point(21, 439);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(509, 196);
+            this.groupBox4.Size = new System.Drawing.Size(509, 183);
             this.groupBox4.TabIndex = 28;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Upload Image";
             // 
             // pbColor
             // 
-            this.pbColor.Location = new System.Drawing.Point(268, 26);
+            this.pbColor.Location = new System.Drawing.Point(309, 39);
             this.pbColor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbColor.Name = "pbColor";
-            this.pbColor.Size = new System.Drawing.Size(133, 22);
+            this.pbColor.Size = new System.Drawing.Size(133, 25);
             this.pbColor.TabIndex = 22;
             this.pbColor.TabStop = false;
             this.pbColor.Click += new System.EventHandler(this.pictureBox3_Click);
@@ -239,7 +239,7 @@
             this.groupBox3.Controls.Add(this.tableLayoutPanel3);
             this.groupBox3.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox3.Location = new System.Drawing.Point(21, 369);
+            this.groupBox3.Location = new System.Drawing.Point(21, 352);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(509, 81);
             this.groupBox3.TabIndex = 26;
@@ -293,7 +293,7 @@
             this.groupBox2.Controls.Add(this.picPick);
             this.groupBox2.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox2.Location = new System.Drawing.Point(21, 275);
+            this.groupBox2.Location = new System.Drawing.Point(21, 259);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(509, 87);
             this.groupBox2.TabIndex = 24;
@@ -304,11 +304,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Exo 2 Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(21, 25);
+            this.label1.Location = new System.Drawing.Point(21, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(267, 24);
+            this.label1.Size = new System.Drawing.Size(251, 25);
             this.label1.TabIndex = 22;
             this.label1.Text = "LOST ITEM INFORMATION";
             // 
@@ -408,7 +408,7 @@
             this.groupBox1.Controls.Add(this.radioElec);
             this.groupBox1.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox1.Location = new System.Drawing.Point(21, 72);
+            this.groupBox1.Location = new System.Drawing.Point(21, 56);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(509, 197);
             this.groupBox1.TabIndex = 23;
@@ -476,7 +476,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.ClientSize = new System.Drawing.Size(896, 749);
+            this.ClientSize = new System.Drawing.Size(896, 689);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnSubmit);
