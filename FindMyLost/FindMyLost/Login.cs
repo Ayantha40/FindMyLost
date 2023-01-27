@@ -36,7 +36,7 @@ namespace FindMyLost
 
             if ((ds.Tables[0].Rows.Count != 0) && (txtpassword.Text != "") && (txtempid.Text != ""))
             {
-                this.Close();
+               
                 ChangePassword cp = new ChangePassword();
                 cp.Show();
             }
