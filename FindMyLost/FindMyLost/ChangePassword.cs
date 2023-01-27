@@ -252,5 +252,19 @@ namespace FindMyLost
 
             }
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+           DialogResult result = MessageBox.Show("Cancel Change Password?", "FindMyLost", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                Close();
+            }
+            else
+            {
+              
+            }
+           
+        }
     }
 }

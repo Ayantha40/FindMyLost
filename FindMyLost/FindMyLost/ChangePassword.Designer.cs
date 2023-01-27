@@ -72,7 +72,7 @@
             this.lblNew.ForeColor = System.Drawing.Color.Lime;
             this.lblNew.Location = new System.Drawing.Point(14, 144);
             this.lblNew.Name = "lblNew";
-            this.lblNew.Size = new System.Drawing.Size(0, 16);
+            this.lblNew.Size = new System.Drawing.Size(0, 15);
             this.lblNew.TabIndex = 21;
             // 
             // lbl1splchar
@@ -81,7 +81,7 @@
             this.lbl1splchar.ForeColor = System.Drawing.Color.Lime;
             this.lbl1splchar.Location = new System.Drawing.Point(14, 116);
             this.lbl1splchar.Name = "lbl1splchar";
-            this.lbl1splchar.Size = new System.Drawing.Size(0, 16);
+            this.lbl1splchar.Size = new System.Drawing.Size(0, 15);
             this.lbl1splchar.TabIndex = 20;
             // 
             // lbl1uppercase
@@ -90,7 +90,7 @@
             this.lbl1uppercase.ForeColor = System.Drawing.Color.Lime;
             this.lbl1uppercase.Location = new System.Drawing.Point(14, 90);
             this.lbl1uppercase.Name = "lbl1uppercase";
-            this.lbl1uppercase.Size = new System.Drawing.Size(0, 16);
+            this.lbl1uppercase.Size = new System.Drawing.Size(0, 15);
             this.lbl1uppercase.TabIndex = 19;
             // 
             // lbl1num
@@ -99,7 +99,7 @@
             this.lbl1num.ForeColor = System.Drawing.Color.Lime;
             this.lbl1num.Location = new System.Drawing.Point(14, 61);
             this.lbl1num.Name = "lbl1num";
-            this.lbl1num.Size = new System.Drawing.Size(0, 16);
+            this.lbl1num.Size = new System.Drawing.Size(0, 15);
             this.lbl1num.TabIndex = 18;
             // 
             // lbl7Char
@@ -108,7 +108,7 @@
             this.lbl7Char.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl7Char.Location = new System.Drawing.Point(14, 34);
             this.lbl7Char.Name = "lbl7Char";
-            this.lbl7Char.Size = new System.Drawing.Size(0, 16);
+            this.lbl7Char.Size = new System.Drawing.Size(0, 15);
             this.lbl7Char.TabIndex = 17;
             // 
             // label7
@@ -178,7 +178,7 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox1.Location = new System.Drawing.Point(13, 122);
             this.groupBox1.Name = "groupBox1";
@@ -192,7 +192,7 @@
             this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(128)))), ((int)(((byte)(45)))));
             this.btnCancel.FlatAppearance.BorderSize = 0;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Exo 2 Semi Bold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnCancel.Location = new System.Drawing.Point(457, 348);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -202,13 +202,14 @@
             this.btnCancel.TabStop = false;
             this.btnCancel.Text = "CANCEL";
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(128)))), ((int)(((byte)(45)))));
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Exo 2 Semi Bold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Location = new System.Drawing.Point(457, 306);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -267,11 +268,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Exo 2 Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(13, 62);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(187, 23);
+            this.label1.Size = new System.Drawing.Size(219, 24);
             this.label1.TabIndex = 32;
             this.label1.Text = "CHANGE PASSWORD";
             // 
@@ -311,11 +312,11 @@
             // lblOld
             // 
             this.lblOld.AutoSize = true;
-            this.lblOld.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblOld.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblOld.ForeColor = System.Drawing.Color.White;
             this.lblOld.Location = new System.Drawing.Point(457, 62);
             this.lblOld.Name = "lblOld";
-            this.lblOld.Size = new System.Drawing.Size(92, 16);
+            this.lblOld.Size = new System.Drawing.Size(83, 15);
             this.lblOld.TabIndex = 166;
             this.lblOld.Text = "Old Password";
             // 
@@ -354,11 +355,11 @@
             // lblNewPassword
             // 
             this.lblNewPassword.AutoSize = true;
-            this.lblNewPassword.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblNewPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblNewPassword.ForeColor = System.Drawing.Color.White;
             this.lblNewPassword.Location = new System.Drawing.Point(457, 139);
             this.lblNewPassword.Name = "lblNewPassword";
-            this.lblNewPassword.Size = new System.Drawing.Size(99, 16);
+            this.lblNewPassword.Size = new System.Drawing.Size(89, 15);
             this.lblNewPassword.TabIndex = 171;
             this.lblNewPassword.Text = "New Password";
             // 
@@ -435,11 +436,11 @@
             // lblConfirmNew
             // 
             this.lblConfirmNew.AutoSize = true;
-            this.lblConfirmNew.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblConfirmNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblConfirmNew.ForeColor = System.Drawing.Color.White;
             this.lblConfirmNew.Location = new System.Drawing.Point(460, 212);
             this.lblConfirmNew.Name = "lblConfirmNew";
-            this.lblConfirmNew.Size = new System.Drawing.Size(154, 16);
+            this.lblConfirmNew.Size = new System.Drawing.Size(135, 15);
             this.lblConfirmNew.TabIndex = 174;
             this.lblConfirmNew.Text = "Confirm New Password";
             // 
@@ -501,6 +502,7 @@
             this.Controls.Add(this.lblCorrect0);
             this.Controls.Add(this.label1);
             this.Name = "ChangePassword";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChangePassword";
             this.Load += new System.EventHandler(this.ChangePassword_Load);
             this.groupBox1.ResumeLayout(false);
