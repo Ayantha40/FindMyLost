@@ -21,9 +21,11 @@ namespace FindMyLost
             InitializeComponent();
         }
 
+        public static string empId = "";
+
         private void btnlogin_Click(object sender, EventArgs e)
         {
-            string emp_id = txtempid.Text;
+            empId = txtempid.Text;
             string sql = "select * from Employee where employee_id = '" + txtempid.Text + "' and password = '" + txtpassword.Text + "' ";
             SqlCommand cmd = new SqlCommand(sql, conn);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -34,9 +36,9 @@ namespace FindMyLost
 
             if ((ds.Tables[0].Rows.Count != 0) && (txtpassword.Text != "") && (txtempid.Text != ""))
             {
-                this.Hide();
-                EditLostItemDescription m = new EditLostItemDescription();
-                m.Show();
+                this.Close();
+                ChangePassword cp = new ChangePassword();
+                cp.Show();
             }
 
             else

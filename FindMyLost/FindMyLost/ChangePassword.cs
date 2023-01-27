@@ -8,11 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using System.Configuration;
+using System.Data.SqlClient;
 
 namespace FindMyLost
 {
     public partial class ChangePassword : Form
     {
+        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConString"].ToString());
+
         public ChangePassword()
         {
             InitializeComponent();
@@ -210,8 +214,28 @@ namespace FindMyLost
 
             else
             {
-                MessageBox.Show("Your password has been changed successfully");
-                this.Hide();
+                try
+                {
+                    string empID = Login.empId;
+
+                    string sql = "UPDATE Employee SET password = '" + txtNP.Text + "' WHERE employee_id = '" + empID + "'";
+                    SqlCommand cmd = new SqlCommand(sql, conn);
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Your password has been changed successfully", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    conn.Close();
+                }
+                
+                
 
             }
         }

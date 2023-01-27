@@ -279,7 +279,7 @@
             // 
             this.txtOldPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtOldPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOldPassword.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtOldPassword.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtOldPassword.ForeColor = System.Drawing.Color.White;
             this.txtOldPassword.Location = new System.Drawing.Point(3, 11);
             this.txtOldPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -383,7 +383,7 @@
             // 
             this.txtNP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtNP.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNP.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtNP.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtNP.ForeColor = System.Drawing.Color.White;
             this.txtNP.Location = new System.Drawing.Point(3, 11);
             this.txtNP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -464,7 +464,7 @@
             // 
             this.txtCNP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtCNP.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCNP.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCNP.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtCNP.ForeColor = System.Drawing.Color.White;
             this.txtCNP.Location = new System.Drawing.Point(3, 11);
             this.txtCNP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
