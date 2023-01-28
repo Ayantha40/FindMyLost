@@ -225,6 +225,11 @@ namespace FindMyLost
         {
             
         }
+
+        private void txtCategory_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

@@ -126,6 +126,7 @@
             this.txtCategory.Size = new System.Drawing.Size(180, 15);
             this.txtCategory.TabIndex = 167;
             this.txtCategory.TabStop = false;
+            this.txtCategory.TextChanged += new System.EventHandler(this.txtCategory_TextChanged);
             // 
             // radioOther
             // 
