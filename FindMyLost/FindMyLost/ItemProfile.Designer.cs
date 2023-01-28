@@ -38,9 +38,9 @@
             this.label1.Font = new System.Drawing.Font("Exo 2 Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(26, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 25);
+            this.label1.Size = new System.Drawing.Size(142, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Item Profile";
+            this.label1.Text = "ITEM PROFILE";
             // 
             // ItemProfile
             // 

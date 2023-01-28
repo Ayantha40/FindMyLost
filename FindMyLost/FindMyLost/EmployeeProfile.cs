@@ -16,5 +16,43 @@ namespace FindMyLost
         {
             InitializeComponent();
         }
+
+        private void lblPosition_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTelNumber_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtFirstName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEditUserPic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblLastName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure?", "FindMyLost", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                Close();
+            }
+            else
+            {
+
+            }
+        }
     }
 }
