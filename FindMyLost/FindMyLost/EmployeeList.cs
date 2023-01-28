@@ -13,12 +13,12 @@ using System.Data.SqlClient;
 
 namespace FindMyLost
 {
-    public partial class ItemList : MaterialSkin.Controls.MaterialForm
+    public partial class EmployeeList : MaterialSkin.Controls.MaterialForm
     {
         MaterialSkinManager skinManager;
         SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConString"].ToString());
 
-        public ItemList()
+        public EmployeeList()
         {
             InitializeComponent();
             skinManager = MaterialSkinManager.Instance;
@@ -27,13 +27,13 @@ namespace FindMyLost
             skinManager.ColorScheme = new ColorScheme(Primary.Green800, Primary.Green700, Primary.Green700, Accent.LightBlue100, TextShade.WHITE);
         }
 
-        private void ItemList_Load(object sender, EventArgs e)
+        private void EmployeeList_Load(object sender, EventArgs e)
         {
-            lvItemList.FullRowSelect = true;
+            lvEmployeeList.FullRowSelect = true;
 
             try
             {
-                string sql = "SELECT item_id, item_category, item_colour, item_brand, last_seen_location FROM Lost_Item";
+                string sql = "SELECT employee_id, first_name, last_name, mobile_number, position FROM Employee";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 conn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
@@ -45,7 +45,7 @@ namespace FindMyLost
                     item.SubItems.Add(dr.GetString(3));
                     item.SubItems.Add(dr.GetString(4));
 
-                    lvItemList.Items.Add(item);
+                    lvEmployeeList.Items.Add(item);
                 }
 
             }
@@ -59,16 +59,14 @@ namespace FindMyLost
             }
         }
 
-        public static string SelectedItemID;
+        public static string SelectedEmployeeID;
 
-        private void lvItemList_MouseClick(object sender, MouseEventArgs e)
+        private void lvEmployeeList_MouseClick(object sender, MouseEventArgs e)
         {
-            ListViewItem item = lvItemList.SelectedItems[0];
-            SelectedItemID = item.SubItems[0].Text;
-            ItemProfile itemProfile = new ItemProfile();
-            itemProfile.Show();
+            ListViewItem item = lvEmployeeList.SelectedItems[0];
+            SelectedEmployeeID = item.SubItems[0].Text;
+            EmployeeProfile employeeProfile = new EmployeeProfile();
+            employeeProfile.Show();
         }
-
-        
     }
 }
