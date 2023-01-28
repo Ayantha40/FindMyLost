@@ -192,7 +192,7 @@
             this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(128)))), ((int)(((byte)(45)))));
             this.btnCancel.FlatAppearance.BorderSize = 0;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCancel.Font = new System.Drawing.Font("Exo 2", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnCancel.Location = new System.Drawing.Point(457, 348);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -209,7 +209,7 @@
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(128)))), ((int)(((byte)(45)))));
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSave.Font = new System.Drawing.Font("Exo 2", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Location = new System.Drawing.Point(457, 306);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -268,11 +268,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Exo 2", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(13, 62);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(219, 24);
+            this.label1.Size = new System.Drawing.Size(188, 23);
             this.label1.TabIndex = 32;
             this.label1.Text = "CHANGE PASSWORD";
             // 
@@ -312,11 +312,11 @@
             // lblOld
             // 
             this.lblOld.AutoSize = true;
-            this.lblOld.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblOld.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblOld.ForeColor = System.Drawing.Color.White;
             this.lblOld.Location = new System.Drawing.Point(457, 62);
             this.lblOld.Name = "lblOld";
-            this.lblOld.Size = new System.Drawing.Size(83, 15);
+            this.lblOld.Size = new System.Drawing.Size(92, 16);
             this.lblOld.TabIndex = 166;
             this.lblOld.Text = "Old Password";
             // 
@@ -355,11 +355,11 @@
             // lblNewPassword
             // 
             this.lblNewPassword.AutoSize = true;
-            this.lblNewPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblNewPassword.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblNewPassword.ForeColor = System.Drawing.Color.White;
             this.lblNewPassword.Location = new System.Drawing.Point(457, 139);
             this.lblNewPassword.Name = "lblNewPassword";
-            this.lblNewPassword.Size = new System.Drawing.Size(89, 15);
+            this.lblNewPassword.Size = new System.Drawing.Size(99, 16);
             this.lblNewPassword.TabIndex = 171;
             this.lblNewPassword.Text = "New Password";
             // 
@@ -436,11 +436,11 @@
             // lblConfirmNew
             // 
             this.lblConfirmNew.AutoSize = true;
-            this.lblConfirmNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblConfirmNew.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblConfirmNew.ForeColor = System.Drawing.Color.White;
             this.lblConfirmNew.Location = new System.Drawing.Point(460, 212);
             this.lblConfirmNew.Name = "lblConfirmNew";
-            this.lblConfirmNew.Size = new System.Drawing.Size(135, 15);
+            this.lblConfirmNew.Size = new System.Drawing.Size(154, 16);
             this.lblConfirmNew.TabIndex = 174;
             this.lblConfirmNew.Text = "Confirm New Password";
             // 
