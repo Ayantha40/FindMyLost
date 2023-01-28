@@ -42,9 +42,9 @@
             this.lblCategory = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblID = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbItemPic)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbColor)).BeginInit();
@@ -60,7 +60,6 @@
             this.pbItemPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbItemPic.TabIndex = 146;
             this.pbItemPic.TabStop = false;
-            this.pbItemPic.Click += new System.EventHandler(this.pbItemPic_Click);
             // 
             // label6
             // 
@@ -70,7 +69,6 @@
             this.label6.Size = new System.Drawing.Size(10, 15);
             this.label6.TabIndex = 156;
             this.label6.Text = ":";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // btnEdit
             // 
@@ -81,7 +79,7 @@
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.Font = new System.Drawing.Font("Exo 2 Semi Bold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Location = new System.Drawing.Point(94, 390);
+            this.btnEdit.Location = new System.Drawing.Point(78, 378);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(95, 46);
@@ -99,7 +97,7 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Exo 2 Semi Bold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(206, 390);
+            this.btnDelete.Location = new System.Drawing.Point(190, 378);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(95, 46);
@@ -110,6 +108,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lblBrand);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
@@ -118,13 +118,11 @@
             this.panel1.Controls.Add(this.lblCategory);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.lblID);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Location = new System.Drawing.Point(23, 208);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(326, 133);
+            this.panel1.Size = new System.Drawing.Size(326, 134);
             this.panel1.TabIndex = 196;
             // 
             // lblBrand
@@ -200,33 +198,54 @@
             this.lblID.Size = new System.Drawing.Size(0, 16);
             this.lblID.TabIndex = 200;
             // 
+            // label7
+            // 
+            this.label7.Location = new System.Drawing.Point(135, 86);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(15, 23);
+            this.label7.TabIndex = 209;
+            this.label7.Text = ":";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(15, 10);
+            this.label1.Location = new System.Drawing.Point(15, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(142, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ITEM PROFILE";
+            this.label1.Size = new System.Drawing.Size(21, 16);
+            this.label1.TabIndex = 210;
+            this.label1.Text = "ID";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(15, 123);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(44, 16);
+            this.label8.TabIndex = 211;
+            this.label8.Text = "Brand";
             // 
             // ItemProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.ClientSize = new System.Drawing.Size(361, 463);
+            this.ClientSize = new System.Drawing.Size(361, 446);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.pbItemPic);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.White;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "ItemProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ItemProfile";
             this.Load += new System.EventHandler(this.ItemProfile_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbItemPic)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbColor)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -246,8 +265,24 @@
         private System.Windows.Forms.Label lblCategory;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblID;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox imgItem;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label lblItemBrand;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lblItemCategory;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblItemID;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnDelete2;
+        private System.Windows.Forms.Button btnEdit2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label1;
     }
 }

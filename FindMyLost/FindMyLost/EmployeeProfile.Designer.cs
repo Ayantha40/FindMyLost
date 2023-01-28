@@ -223,11 +223,11 @@
             // lblRegister
             // 
             this.lblRegister.AutoSize = true;
-            this.lblRegister.Font = new System.Drawing.Font("Exo 2 Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblRegister.ForeColor = System.Drawing.Color.White;
             this.lblRegister.Location = new System.Drawing.Point(64, 18);
             this.lblRegister.Name = "lblRegister";
-            this.lblRegister.Size = new System.Drawing.Size(198, 25);
+            this.lblRegister.Size = new System.Drawing.Size(224, 25);
             this.lblRegister.TabIndex = 186;
             this.lblRegister.Text = "EMPLOYEE PROFILE";
             // 
@@ -319,7 +319,7 @@
             this.btnRegister.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnRegister.FlatAppearance.BorderSize = 0;
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegister.Font = new System.Drawing.Font("Exo 2 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnRegister.ForeColor = System.Drawing.Color.White;
             this.btnRegister.Location = new System.Drawing.Point(64, 633);
             this.btnRegister.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

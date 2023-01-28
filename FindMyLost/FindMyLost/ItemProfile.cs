@@ -23,7 +23,82 @@ namespace FindMyLost
             InitializeComponent();
         }
 
+        public static string itemID = "";
+
         private void ItemProfile_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                byte[] imageBytes;
+
+                string sql = "SELECT * FROM Lost_Item WHERE item_id = '" + 2 + "'";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                conn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                if (dr.Read())
+                {
+
+                    var myColor = Color.FromArgb(Convert.ToInt32(dr["item_colour"]));
+                    pbColor.BackColor = myColor;
+
+                    lblCategory.Text = dr["item_category"].ToString();
+                    lblID.Text = dr["item_id"].ToString();
+                    lblBrand.Text = dr["item_brand"].ToString();
+                    
+
+                    imageBytes = (byte[])dr["item_picture"];
+                    MemoryStream ms = new MemoryStream(imageBytes);
+                    Image img = Image.FromStream(ms);
+                    pbItemPic.Image = img;
+
+                    itemID = lblID.Text;
+
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Item ID.", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        private void btnEdit2_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            EditLostItemDescription ed = new EditLostItemDescription();
+            ed.Show();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Delete Item?", "FindMyLost", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                string sql = "DELETE from Lost_Item WHERE item_id = '"+lblID.Text+"'";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Item deleted.", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Close();
+            }
+            else
+            {
+
+            }
+        }
+
+        private void label8_Click(object sender, EventArgs e)
         {
 
         }
