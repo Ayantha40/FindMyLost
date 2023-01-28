@@ -7,11 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
+using System.Data.SqlClient;
+using System.IO;
+using System.Drawing.Imaging;
 
 namespace FindMyLost
 {
     public partial class ItemProfile : Form
     {
+        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConString"].ToString());
+
         public ItemProfile()
         {
             InitializeComponent();
