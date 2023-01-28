@@ -31,7 +31,7 @@ namespace FindMyLost
             {
                 byte[] imageBytes;
 
-                string sql = "SELECT * FROM Lost_Item WHERE item_id = '" + 2 + "'";
+                string sql = "SELECT * FROM Lost_Item WHERE item_id = '" + 1 + "'";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 conn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();

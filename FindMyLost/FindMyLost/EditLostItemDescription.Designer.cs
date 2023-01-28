@@ -57,10 +57,6 @@
             this.txtLocation = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.txtItemID = new System.Windows.Forms.TextBox();
-            this.btnEdit = new System.Windows.Forms.Button();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.tlpFirstName.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -74,8 +70,6 @@
             this.groupBox5.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.groupBox7.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -90,9 +84,9 @@
             this.groupBox1.Controls.Add(this.radioElec);
             this.groupBox1.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(33, 204);
+            this.groupBox1.Location = new System.Drawing.Point(33, 88);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(509, 197);
+            this.groupBox1.Size = new System.Drawing.Size(509, 241);
             this.groupBox1.TabIndex = 170;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Category *";
@@ -105,7 +99,7 @@
             this.tlpFirstName.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpFirstName.Controls.Add(this.txtCategory, 0, 1);
             this.tlpFirstName.ForeColor = System.Drawing.Color.White;
-            this.tlpFirstName.Location = new System.Drawing.Point(306, 133);
+            this.tlpFirstName.Location = new System.Drawing.Point(306, 158);
             this.tlpFirstName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tlpFirstName.Name = "tlpFirstName";
             this.tlpFirstName.RowCount = 3;
@@ -306,9 +300,9 @@
             this.groupBox4.Controls.Add(this.imgItem);
             this.groupBox4.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(33, 416);
+            this.groupBox4.Location = new System.Drawing.Point(33, 375);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(509, 189);
+            this.groupBox4.Size = new System.Drawing.Size(509, 230);
             this.groupBox4.TabIndex = 175;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Upload Image";
@@ -334,10 +328,10 @@
             // imgItem
             // 
             this.imgItem.Image = ((System.Drawing.Image)(resources.GetObject("imgItem.Image")));
-            this.imgItem.Location = new System.Drawing.Point(306, 20);
+            this.imgItem.Location = new System.Drawing.Point(306, 29);
             this.imgItem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.imgItem.Name = "imgItem";
-            this.imgItem.Size = new System.Drawing.Size(186, 134);
+            this.imgItem.Size = new System.Drawing.Size(186, 166);
             this.imgItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgItem.TabIndex = 148;
             this.imgItem.TabStop = false;
@@ -461,67 +455,6 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Last seen location";
             // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.txtItemID, 0, 1);
-            this.tableLayoutPanel1.ForeColor = System.Drawing.Color.White;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(6, 27);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(186, 39);
-            this.tableLayoutPanel1.TabIndex = 167;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
-            // 
-            // txtItemID
-            // 
-            this.txtItemID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.txtItemID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtItemID.ForeColor = System.Drawing.Color.White;
-            this.txtItemID.Location = new System.Drawing.Point(3, 11);
-            this.txtItemID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtItemID.Name = "txtItemID";
-            this.txtItemID.Size = new System.Drawing.Size(180, 15);
-            this.txtItemID.TabIndex = 167;
-            this.txtItemID.TabStop = false;
-            this.txtItemID.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(128)))), ((int)(((byte)(45)))));
-            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEdit.FlatAppearance.BorderSize = 0;
-            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Location = new System.Drawing.Point(353, 21);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(110, 45);
-            this.btnEdit.TabIndex = 168;
-            this.btnEdit.TabStop = false;
-            this.btnEdit.Text = "EDIT";
-            this.btnEdit.UseVisualStyleBackColor = false;
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.btnEdit);
-            this.groupBox7.Controls.Add(this.tableLayoutPanel1);
-            this.groupBox7.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox7.ForeColor = System.Drawing.Color.White;
-            this.groupBox7.Location = new System.Drawing.Point(33, 91);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(509, 87);
-            this.groupBox7.TabIndex = 178;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Enter Your Lost Item ID ";
-            // 
             // EditLostItemDescription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -529,7 +462,6 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ControlText;
             this.ClientSize = new System.Drawing.Size(1141, 693);
-            this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label1);
@@ -563,9 +495,6 @@
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
             this.groupBox6.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            this.groupBox7.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -600,9 +529,5 @@
         private System.Windows.Forms.PictureBox imgItem;
         private System.Windows.Forms.TableLayoutPanel tlpFirstName;
         private System.Windows.Forms.TextBox txtCategory;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TextBox txtItemID;
-        private System.Windows.Forms.Button btnEdit;
-        private System.Windows.Forms.GroupBox groupBox7;
     }
 }
