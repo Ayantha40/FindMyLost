@@ -43,7 +43,7 @@ namespace FindMyLost
 
             else
             {
-                MessageBox.Show("Invalid Employee ID or Password", "Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid Employee ID or Password", "FindMyLost", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
             }
             conn.Close();
         }

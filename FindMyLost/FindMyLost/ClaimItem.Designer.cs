@@ -79,10 +79,9 @@
             // 
             this.radioAnimal.AutoSize = true;
             this.radioAnimal.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioAnimal.Location = new System.Drawing.Point(202, 103);
-            this.radioAnimal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioAnimal.Location = new System.Drawing.Point(177, 77);
             this.radioAnimal.Name = "radioAnimal";
-            this.radioAnimal.Size = new System.Drawing.Size(138, 25);
+            this.radioAnimal.Size = new System.Drawing.Size(110, 20);
             this.radioAnimal.TabIndex = 187;
             this.radioAnimal.Text = "Animals / Pets";
             this.radioAnimal.UseVisualStyleBackColor = true;
@@ -92,10 +91,9 @@
             // 
             this.radioOther.AutoSize = true;
             this.radioOther.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioOther.Location = new System.Drawing.Point(202, 149);
-            this.radioOther.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioOther.Location = new System.Drawing.Point(177, 112);
             this.radioOther.Name = "radioOther";
-            this.radioOther.Size = new System.Drawing.Size(75, 25);
+            this.radioOther.Size = new System.Drawing.Size(60, 20);
             this.radioOther.TabIndex = 190;
             this.radioOther.Text = "Other";
             this.radioOther.UseVisualStyleBackColor = true;
@@ -105,10 +103,9 @@
             // 
             this.radioElec.AutoSize = true;
             this.radioElec.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioElec.Location = new System.Drawing.Point(202, 55);
-            this.radioElec.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioElec.Location = new System.Drawing.Point(177, 41);
             this.radioElec.Name = "radioElec";
-            this.radioElec.Size = new System.Drawing.Size(112, 25);
+            this.radioElec.Size = new System.Drawing.Size(91, 20);
             this.radioElec.TabIndex = 186;
             this.radioElec.Text = "Electronics";
             this.radioElec.UseVisualStyleBackColor = true;
@@ -133,11 +130,9 @@
             this.LostItemInfo.Controls.Add(this.pbItemPic);
             this.LostItemInfo.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.LostItemInfo.ForeColor = System.Drawing.Color.White;
-            this.LostItemInfo.Location = new System.Drawing.Point(655, 140);
-            this.LostItemInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.LostItemInfo.Location = new System.Drawing.Point(573, 105);
             this.LostItemInfo.Name = "LostItemInfo";
-            this.LostItemInfo.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.LostItemInfo.Size = new System.Drawing.Size(568, 473);
+            this.LostItemInfo.Size = new System.Drawing.Size(497, 355);
             this.LostItemInfo.TabIndex = 191;
             this.LostItemInfo.TabStop = false;
             this.LostItemInfo.Text = "Lost Item Description";
@@ -145,11 +140,11 @@
             // lblAddInfo
             // 
             this.lblAddInfo.AutoSize = true;
-            this.lblAddInfo.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAddInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblAddInfo.ForeColor = System.Drawing.Color.White;
-            this.lblAddInfo.Location = new System.Drawing.Point(215, 241);
+            this.lblAddInfo.Location = new System.Drawing.Point(188, 181);
             this.lblAddInfo.Name = "lblAddInfo";
-            this.lblAddInfo.Size = new System.Drawing.Size(180, 21);
+            this.lblAddInfo.Size = new System.Drawing.Size(126, 15);
             this.lblAddInfo.TabIndex = 170;
             this.lblAddInfo.Text = "Additional Information";
             // 
@@ -158,10 +153,11 @@
             this.txtAddInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtAddInfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAddInfo.ForeColor = System.Drawing.Color.White;
-            this.txtAddInfo.Location = new System.Drawing.Point(230, 281);
+            this.txtAddInfo.Location = new System.Drawing.Point(201, 211);
+            this.txtAddInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAddInfo.Multiline = true;
             this.txtAddInfo.Name = "txtAddInfo";
-            this.txtAddInfo.Size = new System.Drawing.Size(297, 134);
+            this.txtAddInfo.Size = new System.Drawing.Size(260, 100);
             this.txtAddInfo.TabIndex = 168;
             // 
             // tlpAddInfo
@@ -170,25 +166,26 @@
             this.tlpAddInfo.ColumnCount = 1;
             this.tlpAddInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpAddInfo.ForeColor = System.Drawing.Color.White;
-            this.tlpAddInfo.Location = new System.Drawing.Point(215, 264);
+            this.tlpAddInfo.Location = new System.Drawing.Point(188, 198);
+            this.tlpAddInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tlpAddInfo.Name = "tlpAddInfo";
             this.tlpAddInfo.RowCount = 3;
             this.tlpAddInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tlpAddInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tlpAddInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tlpAddInfo.Size = new System.Drawing.Size(326, 170);
+            this.tlpAddInfo.Size = new System.Drawing.Size(285, 128);
             this.tlpAddInfo.TabIndex = 169;
             // 
             // txtLocation
             // 
             this.txtLocation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtLocation.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtLocation.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtLocation.ForeColor = System.Drawing.Color.White;
-            this.txtLocation.Location = new System.Drawing.Point(35, 185);
-            this.txtLocation.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
+            this.txtLocation.Location = new System.Drawing.Point(31, 139);
+            this.txtLocation.Margin = new System.Windows.Forms.Padding(18, 2, 3, 2);
             this.txtLocation.Name = "txtLocation";
-            this.txtLocation.Size = new System.Drawing.Size(494, 16);
+            this.txtLocation.Size = new System.Drawing.Size(432, 12);
             this.txtLocation.TabIndex = 65;
             // 
             // tlpLocation
@@ -196,22 +193,24 @@
             this.tlpLocation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.tlpLocation.ColumnCount = 1;
             this.tlpLocation.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpLocation.Location = new System.Drawing.Point(24, 168);
+            this.tlpLocation.Location = new System.Drawing.Point(21, 126);
+            this.tlpLocation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tlpLocation.Name = "tlpLocation";
             this.tlpLocation.RowCount = 3;
             this.tlpLocation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpLocation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpLocation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpLocation.Size = new System.Drawing.Size(517, 52);
+            this.tlpLocation.Size = new System.Drawing.Size(452, 39);
             this.tlpLocation.TabIndex = 64;
             // 
             // panelColorPicker
             // 
             this.panelColorPicker.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.panelColorPicker.Controls.Add(this.pbColorPicker);
-            this.panelColorPicker.Location = new System.Drawing.Point(215, 73);
+            this.panelColorPicker.Location = new System.Drawing.Point(188, 55);
+            this.panelColorPicker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelColorPicker.Name = "panelColorPicker";
-            this.panelColorPicker.Size = new System.Drawing.Size(58, 52);
+            this.panelColorPicker.Size = new System.Drawing.Size(51, 39);
             this.panelColorPicker.TabIndex = 154;
             // 
             // pbColorPicker
@@ -219,10 +218,9 @@
             this.pbColorPicker.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.pbColorPicker.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbColorPicker.Image = ((System.Drawing.Image)(resources.GetObject("pbColorPicker.Image")));
-            this.pbColorPicker.Location = new System.Drawing.Point(12, 11);
-            this.pbColorPicker.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pbColorPicker.Location = new System.Drawing.Point(10, 8);
             this.pbColorPicker.Name = "pbColorPicker";
-            this.pbColorPicker.Size = new System.Drawing.Size(30, 30);
+            this.pbColorPicker.Size = new System.Drawing.Size(26, 22);
             this.pbColorPicker.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbColorPicker.TabIndex = 150;
             this.pbColorPicker.TabStop = false;
@@ -231,11 +229,11 @@
             // lblLocation
             // 
             this.lblLocation.AutoSize = true;
-            this.lblLocation.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblLocation.ForeColor = System.Drawing.Color.White;
-            this.lblLocation.Location = new System.Drawing.Point(24, 148);
+            this.lblLocation.Location = new System.Drawing.Point(21, 111);
             this.lblLocation.Name = "lblLocation";
-            this.lblLocation.Size = new System.Drawing.Size(150, 21);
+            this.lblLocation.Size = new System.Drawing.Size(112, 15);
             this.lblLocation.TabIndex = 63;
             this.lblLocation.Text = "Last Seen Location";
             // 
@@ -243,12 +241,12 @@
             // 
             this.txtBrand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtBrand.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBrand.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtBrand.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtBrand.ForeColor = System.Drawing.Color.White;
-            this.txtBrand.Location = new System.Drawing.Point(304, 90);
-            this.txtBrand.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
+            this.txtBrand.Location = new System.Drawing.Point(266, 68);
+            this.txtBrand.Margin = new System.Windows.Forms.Padding(18, 2, 3, 2);
             this.txtBrand.Name = "txtBrand";
-            this.txtBrand.Size = new System.Drawing.Size(225, 16);
+            this.txtBrand.Size = new System.Drawing.Size(197, 12);
             this.txtBrand.TabIndex = 153;
             // 
             // tlpBrand
@@ -256,23 +254,24 @@
             this.tlpBrand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.tlpBrand.ColumnCount = 1;
             this.tlpBrand.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpBrand.Location = new System.Drawing.Point(293, 73);
+            this.tlpBrand.Location = new System.Drawing.Point(256, 55);
+            this.tlpBrand.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tlpBrand.Name = "tlpBrand";
             this.tlpBrand.RowCount = 3;
             this.tlpBrand.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpBrand.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpBrand.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpBrand.Size = new System.Drawing.Size(248, 52);
+            this.tlpBrand.Size = new System.Drawing.Size(217, 39);
             this.tlpBrand.TabIndex = 152;
             // 
             // lblBrand
             // 
             this.lblBrand.AutoSize = true;
-            this.lblBrand.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblBrand.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblBrand.ForeColor = System.Drawing.Color.White;
-            this.lblBrand.Location = new System.Drawing.Point(293, 53);
+            this.lblBrand.Location = new System.Drawing.Point(256, 40);
             this.lblBrand.Name = "lblBrand";
-            this.lblBrand.Size = new System.Drawing.Size(56, 21);
+            this.lblBrand.Size = new System.Drawing.Size(40, 15);
             this.lblBrand.TabIndex = 151;
             this.lblBrand.Text = "Brand";
             // 
@@ -280,31 +279,32 @@
             // 
             this.pbColor.BackColor = System.Drawing.Color.Transparent;
             this.pbColor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbColor.Location = new System.Drawing.Point(25, 73);
+            this.pbColor.Location = new System.Drawing.Point(22, 55);
+            this.pbColor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbColor.Name = "pbColor";
-            this.pbColor.Size = new System.Drawing.Size(184, 52);
+            this.pbColor.Size = new System.Drawing.Size(161, 40);
             this.pbColor.TabIndex = 149;
             this.pbColor.TabStop = false;
             // 
             // lblColor
             // 
             this.lblColor.AutoSize = true;
-            this.lblColor.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblColor.ForeColor = System.Drawing.Color.White;
-            this.lblColor.Location = new System.Drawing.Point(25, 53);
+            this.lblColor.Location = new System.Drawing.Point(22, 40);
             this.lblColor.Name = "lblColor";
-            this.lblColor.Size = new System.Drawing.Size(59, 21);
+            this.lblColor.Size = new System.Drawing.Size(44, 15);
             this.lblColor.TabIndex = 148;
             this.lblColor.Text = "Color *";
             // 
             // lblPic
             // 
             this.lblPic.AutoSize = true;
-            this.lblPic.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPic.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblPic.ForeColor = System.Drawing.Color.White;
-            this.lblPic.Location = new System.Drawing.Point(25, 243);
+            this.lblPic.Location = new System.Drawing.Point(22, 182);
             this.lblPic.Name = "lblPic";
-            this.lblPic.Size = new System.Drawing.Size(122, 21);
+            this.lblPic.Size = new System.Drawing.Size(88, 15);
             this.lblPic.TabIndex = 147;
             this.lblPic.Text = "Upload Picture";
             // 
@@ -314,9 +314,10 @@
             this.btnEditItemPic.FlatAppearance.BorderSize = 0;
             this.btnEditItemPic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditItemPic.ForeColor = System.Drawing.Color.White;
-            this.btnEditItemPic.Location = new System.Drawing.Point(153, 400);
+            this.btnEditItemPic.Location = new System.Drawing.Point(134, 300);
+            this.btnEditItemPic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEditItemPic.Name = "btnEditItemPic";
-            this.btnEditItemPic.Size = new System.Drawing.Size(34, 34);
+            this.btnEditItemPic.Size = new System.Drawing.Size(30, 26);
             this.btnEditItemPic.TabIndex = 146;
             this.btnEditItemPic.Text = "✏️";
             this.btnEditItemPic.UseVisualStyleBackColor = false;
@@ -327,9 +328,10 @@
             // pbItemPic
             // 
             this.pbItemPic.Image = ((System.Drawing.Image)(resources.GetObject("pbItemPic.Image")));
-            this.pbItemPic.Location = new System.Drawing.Point(25, 264);
+            this.pbItemPic.Location = new System.Drawing.Point(22, 198);
+            this.pbItemPic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbItemPic.Name = "pbItemPic";
-            this.pbItemPic.Size = new System.Drawing.Size(162, 170);
+            this.pbItemPic.Size = new System.Drawing.Size(142, 128);
             this.pbItemPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbItemPic.TabIndex = 145;
             this.pbItemPic.TabStop = false;
@@ -338,10 +340,9 @@
             // 
             this.radioDocuments.AutoSize = true;
             this.radioDocuments.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioDocuments.Location = new System.Drawing.Point(384, 103);
-            this.radioDocuments.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioDocuments.Location = new System.Drawing.Point(336, 77);
             this.radioDocuments.Name = "radioDocuments";
-            this.radioDocuments.Size = new System.Drawing.Size(118, 25);
+            this.radioDocuments.Size = new System.Drawing.Size(96, 20);
             this.radioDocuments.TabIndex = 189;
             this.radioDocuments.Text = "Documents";
             this.radioDocuments.UseVisualStyleBackColor = true;
@@ -353,11 +354,12 @@
             this.btnPublishClaim.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnPublishClaim.FlatAppearance.BorderSize = 0;
             this.btnPublishClaim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPublishClaim.Font = new System.Drawing.Font("Exo 2", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPublishClaim.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPublishClaim.ForeColor = System.Drawing.Color.White;
-            this.btnPublishClaim.Location = new System.Drawing.Point(655, 639);
+            this.btnPublishClaim.Location = new System.Drawing.Point(573, 488);
+            this.btnPublishClaim.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPublishClaim.Name = "btnPublishClaim";
-            this.btnPublishClaim.Size = new System.Drawing.Size(568, 52);
+            this.btnPublishClaim.Size = new System.Drawing.Size(497, 39);
             this.btnPublishClaim.TabIndex = 193;
             this.btnPublishClaim.Text = "PUBLISH CLAIM";
             this.btnPublishClaim.UseVisualStyleBackColor = false;
@@ -367,10 +369,9 @@
             // 
             this.radioAccessories.AutoSize = true;
             this.radioAccessories.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioAccessories.Location = new System.Drawing.Point(34, 103);
-            this.radioAccessories.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioAccessories.Location = new System.Drawing.Point(30, 77);
             this.radioAccessories.Name = "radioAccessories";
-            this.radioAccessories.Size = new System.Drawing.Size(116, 25);
+            this.radioAccessories.Size = new System.Drawing.Size(94, 20);
             this.radioAccessories.TabIndex = 185;
             this.radioAccessories.Text = "Accessories";
             this.radioAccessories.UseVisualStyleBackColor = true;
@@ -379,12 +380,12 @@
             // lblClaimItem
             // 
             this.lblClaimItem.AutoSize = true;
-            this.lblClaimItem.Font = new System.Drawing.Font("Exo 2", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblClaimItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblClaimItem.ForeColor = System.Drawing.Color.White;
-            this.lblClaimItem.Location = new System.Drawing.Point(64, 76);
+            this.lblClaimItem.Location = new System.Drawing.Point(56, 57);
             this.lblClaimItem.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblClaimItem.Name = "lblClaimItem";
-            this.lblClaimItem.Size = new System.Drawing.Size(209, 28);
+            this.lblClaimItem.Size = new System.Drawing.Size(168, 24);
             this.lblClaimItem.TabIndex = 189;
             this.lblClaimItem.Text = "Claim a Lost Item";
             // 
@@ -401,11 +402,9 @@
             this.ClaimerInfo.Controls.Add(this.lblName);
             this.ClaimerInfo.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ClaimerInfo.ForeColor = System.Drawing.Color.White;
-            this.ClaimerInfo.Location = new System.Drawing.Point(64, 140);
-            this.ClaimerInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ClaimerInfo.Location = new System.Drawing.Point(56, 105);
             this.ClaimerInfo.Name = "ClaimerInfo";
-            this.ClaimerInfo.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ClaimerInfo.Size = new System.Drawing.Size(568, 334);
+            this.ClaimerInfo.Size = new System.Drawing.Size(497, 250);
             this.ClaimerInfo.TabIndex = 190;
             this.ClaimerInfo.TabStop = false;
             this.ClaimerInfo.Text = "Claimer Information*";
@@ -414,12 +413,12 @@
             // 
             this.txtPhoneNum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtPhoneNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPhoneNum.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPhoneNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtPhoneNum.ForeColor = System.Drawing.Color.White;
-            this.txtPhoneNum.Location = new System.Drawing.Point(34, 262);
-            this.txtPhoneNum.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
+            this.txtPhoneNum.Location = new System.Drawing.Point(30, 196);
+            this.txtPhoneNum.Margin = new System.Windows.Forms.Padding(18, 2, 3, 2);
             this.txtPhoneNum.Name = "txtPhoneNum";
-            this.txtPhoneNum.Size = new System.Drawing.Size(494, 16);
+            this.txtPhoneNum.Size = new System.Drawing.Size(432, 12);
             this.txtPhoneNum.TabIndex = 62;
             // 
             // tlpPhoneNum
@@ -427,23 +426,24 @@
             this.tlpPhoneNum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.tlpPhoneNum.ColumnCount = 1;
             this.tlpPhoneNum.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpPhoneNum.Location = new System.Drawing.Point(23, 245);
+            this.tlpPhoneNum.Location = new System.Drawing.Point(20, 184);
+            this.tlpPhoneNum.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tlpPhoneNum.Name = "tlpPhoneNum";
             this.tlpPhoneNum.RowCount = 3;
             this.tlpPhoneNum.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpPhoneNum.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpPhoneNum.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpPhoneNum.Size = new System.Drawing.Size(517, 52);
+            this.tlpPhoneNum.Size = new System.Drawing.Size(452, 39);
             this.tlpPhoneNum.TabIndex = 61;
             // 
             // lblPhoneNum
             // 
             this.lblPhoneNum.AutoSize = true;
-            this.lblPhoneNum.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPhoneNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblPhoneNum.ForeColor = System.Drawing.Color.White;
-            this.lblPhoneNum.Location = new System.Drawing.Point(23, 225);
+            this.lblPhoneNum.Location = new System.Drawing.Point(20, 169);
             this.lblPhoneNum.Name = "lblPhoneNum";
-            this.lblPhoneNum.Size = new System.Drawing.Size(126, 21);
+            this.lblPhoneNum.Size = new System.Drawing.Size(91, 15);
             this.lblPhoneNum.TabIndex = 60;
             this.lblPhoneNum.Text = "Phone Number";
             // 
@@ -451,12 +451,12 @@
             // 
             this.txtAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtAddress.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtAddress.ForeColor = System.Drawing.Color.White;
-            this.txtAddress.Location = new System.Drawing.Point(34, 176);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
+            this.txtAddress.Location = new System.Drawing.Point(30, 132);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(18, 2, 3, 2);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(494, 16);
+            this.txtAddress.Size = new System.Drawing.Size(432, 12);
             this.txtAddress.TabIndex = 59;
             // 
             // tlpAddress
@@ -464,23 +464,24 @@
             this.tlpAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.tlpAddress.ColumnCount = 1;
             this.tlpAddress.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpAddress.Location = new System.Drawing.Point(23, 159);
+            this.tlpAddress.Location = new System.Drawing.Point(20, 119);
+            this.tlpAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tlpAddress.Name = "tlpAddress";
             this.tlpAddress.RowCount = 3;
             this.tlpAddress.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpAddress.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpAddress.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpAddress.Size = new System.Drawing.Size(517, 52);
+            this.tlpAddress.Size = new System.Drawing.Size(452, 39);
             this.tlpAddress.TabIndex = 58;
             // 
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
-            this.lblAddress.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblAddress.ForeColor = System.Drawing.Color.White;
-            this.lblAddress.Location = new System.Drawing.Point(23, 139);
+            this.lblAddress.Location = new System.Drawing.Point(20, 104);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(70, 21);
+            this.lblAddress.Size = new System.Drawing.Size(51, 15);
             this.lblAddress.TabIndex = 57;
             this.lblAddress.Text = "Address";
             // 
@@ -488,12 +489,12 @@
             // 
             this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtName.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtName.ForeColor = System.Drawing.Color.White;
-            this.txtName.Location = new System.Drawing.Point(34, 90);
-            this.txtName.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
+            this.txtName.Location = new System.Drawing.Point(30, 68);
+            this.txtName.Margin = new System.Windows.Forms.Padding(18, 2, 3, 2);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(494, 16);
+            this.txtName.Size = new System.Drawing.Size(432, 12);
             this.txtName.TabIndex = 56;
             // 
             // tlpName
@@ -501,33 +502,33 @@
             this.tlpName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.tlpName.ColumnCount = 1;
             this.tlpName.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpName.Location = new System.Drawing.Point(23, 73);
+            this.tlpName.Location = new System.Drawing.Point(20, 55);
+            this.tlpName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tlpName.Name = "tlpName";
             this.tlpName.RowCount = 3;
             this.tlpName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpName.Size = new System.Drawing.Size(517, 52);
+            this.tlpName.Size = new System.Drawing.Size(452, 39);
             this.tlpName.TabIndex = 55;
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblName.ForeColor = System.Drawing.Color.White;
-            this.lblName.Location = new System.Drawing.Point(23, 53);
+            this.lblName.Location = new System.Drawing.Point(20, 40);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(56, 21);
+            this.lblName.Size = new System.Drawing.Size(41, 15);
             this.lblName.TabIndex = 54;
             this.lblName.Text = "Name";
             // 
             // radioClothing
             // 
             this.radioClothing.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioClothing.Location = new System.Drawing.Point(34, 54);
-            this.radioClothing.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioClothing.Location = new System.Drawing.Point(30, 40);
             this.radioClothing.Name = "radioClothing";
-            this.radioClothing.Size = new System.Drawing.Size(99, 24);
+            this.radioClothing.Size = new System.Drawing.Size(87, 18);
             this.radioClothing.TabIndex = 184;
             this.radioClothing.Text = "Clothing";
             this.radioClothing.UseVisualStyleBackColor = true;
@@ -544,11 +545,9 @@
             this.LostItemCategory.Controls.Add(this.radioBag);
             this.LostItemCategory.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.LostItemCategory.ForeColor = System.Drawing.Color.White;
-            this.LostItemCategory.Location = new System.Drawing.Point(64, 491);
-            this.LostItemCategory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.LostItemCategory.Location = new System.Drawing.Point(56, 368);
             this.LostItemCategory.Name = "LostItemCategory";
-            this.LostItemCategory.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.LostItemCategory.Size = new System.Drawing.Size(568, 212);
+            this.LostItemCategory.Size = new System.Drawing.Size(497, 159);
             this.LostItemCategory.TabIndex = 192;
             this.LostItemCategory.TabStop = false;
             this.LostItemCategory.Text = "Lost Item Category*";
@@ -557,10 +556,9 @@
             // 
             this.radioBag.AutoSize = true;
             this.radioBag.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioBag.Location = new System.Drawing.Point(384, 55);
-            this.radioBag.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioBag.Location = new System.Drawing.Point(336, 41);
             this.radioBag.Name = "radioBag";
-            this.radioBag.Size = new System.Drawing.Size(148, 25);
+            this.radioBag.Size = new System.Drawing.Size(118, 20);
             this.radioBag.TabIndex = 188;
             this.radioBag.Text = "Bags / Luggage";
             this.radioBag.UseVisualStyleBackColor = true;
@@ -568,16 +566,17 @@
             // 
             // ClaimItem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.ClientSize = new System.Drawing.Size(1285, 774);
+            this.ClientSize = new System.Drawing.Size(1124, 562);
             this.Controls.Add(this.LostItemInfo);
             this.Controls.Add(this.btnPublishClaim);
             this.Controls.Add(this.lblClaimItem);
             this.Controls.Add(this.ClaimerInfo);
             this.Controls.Add(this.LostItemCategory);
             this.ForeColor = System.Drawing.Color.White;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ClaimItem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Claima Lost Item";

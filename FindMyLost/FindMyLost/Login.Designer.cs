@@ -56,7 +56,7 @@
             this.btnlogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnlogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnlogin.Font = new System.Drawing.Font("Exo 2 Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnlogin.Font = new System.Drawing.Font("Exo 2 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnlogin.ForeColor = System.Drawing.Color.White;
             this.btnlogin.Location = new System.Drawing.Point(338, 382);
             this.btnlogin.Name = "btnlogin";
