@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace FindMyLost
 {
-    public partial class ItemProfile : Form
+    public partial class EmployeeProfile : Form
     {
-        public ItemProfile()
+        public EmployeeProfile()
         {
             InitializeComponent();
-        }
-
-        private void ItemProfile_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
