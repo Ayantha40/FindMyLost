@@ -24,6 +24,7 @@ namespace FindMyLost
         }
 
         public static string itemID = "";
+        string SelectedItemID = ItemList.SelectedItemID;
 
         private void ItemProfile_Load(object sender, EventArgs e)
         {
@@ -31,7 +32,7 @@ namespace FindMyLost
             {
                 byte[] imageBytes;
 
-                string sql = "SELECT * FROM Lost_Item WHERE item_id = '" + 1 + "'";
+                string sql = "SELECT * FROM Lost_Item WHERE item_id = '" + SelectedItemID + "'";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 conn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
@@ -52,7 +53,7 @@ namespace FindMyLost
                     Image img = Image.FromStream(ms);
                     pbItemPic.Image = img;
 
-                    itemID = lblID.Text;
+                    itemID = SelectedItemID;
 
                 }
                 else
@@ -85,7 +86,7 @@ namespace FindMyLost
             DialogResult result = MessageBox.Show("Delete Item?", "FindMyLost", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
             {
-                string sql = "DELETE from Lost_Item WHERE item_id = '"+lblID.Text+"'";
+                string sql = "DELETE from Lost_Item WHERE item_id = '" + SelectedItemID + "'";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 conn.Open();
                 cmd.ExecuteNonQuery();
