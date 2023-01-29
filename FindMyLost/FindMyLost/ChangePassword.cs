@@ -27,8 +27,6 @@ namespace FindMyLost
         private static Regex PasswordValidation()
         {
             string pattern = "^.*(?=.{7,})(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!*@#$%^&+=]).*$";
-            //string pattern = "^.*(?=.{7,})(?=.*\\d)(?=.*[a-zA-Z])(?=.*[!*@#$%^&+=]).*$";
-            //string pattern = "(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,15})$";
 
             return new Regex(pattern, RegexOptions.IgnoreCase);
         }
@@ -56,15 +54,7 @@ namespace FindMyLost
 
         }   
 
-        private void tlpFirstName_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblOld_Click(object sender, EventArgs e)
-        {
-
-        }
+ 
 
         private void txtNP_TextChanged(object sender, EventArgs e)
         {

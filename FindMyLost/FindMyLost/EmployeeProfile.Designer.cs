@@ -30,349 +30,266 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeProfile));
             this.lblPosition = new System.Windows.Forms.Label();
-            this.tlpTelNumber = new System.Windows.Forms.TableLayoutPanel();
             this.lblTelNumber = new System.Windows.Forms.Label();
-            this.tlpMobileNumber = new System.Windows.Forms.TableLayoutPanel();
             this.lblMobileNumber = new System.Windows.Forms.Label();
-            this.pbUserImage = new System.Windows.Forms.PictureBox();
-            this.txtLastName = new System.Windows.Forms.TextBox();
-            this.tlpLastName = new System.Windows.Forms.TableLayoutPanel();
             this.lblLastName = new System.Windows.Forms.Label();
-            this.txtFirstName = new System.Windows.Forms.TextBox();
-            this.tlpFirstName = new System.Windows.Forms.TableLayoutPanel();
             this.lblFirstName = new System.Windows.Forms.Label();
             this.lblRegister = new System.Windows.Forms.Label();
-            this.txtAddress = new System.Windows.Forms.TextBox();
-            this.tlpAddress = new System.Windows.Forms.TableLayoutPanel();
             this.lblAddress = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.tlpEmail = new System.Windows.Forms.TableLayoutPanel();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.btnRegister = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.lblID = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pbUserImage = new System.Windows.Forms.PictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.bthUpdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbUserImage)).BeginInit();
-            this.tlpLastName.SuspendLayout();
-            this.tlpFirstName.SuspendLayout();
-            this.tlpAddress.SuspendLayout();
-            this.tlpEmail.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblPosition
             // 
             this.lblPosition.AutoSize = true;
-            this.lblPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPosition.Font = new System.Drawing.Font("Montserrat Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblPosition.ForeColor = System.Drawing.Color.White;
-            this.lblPosition.Location = new System.Drawing.Point(73, 740);
+            this.lblPosition.Location = new System.Drawing.Point(64, 358);
             this.lblPosition.Name = "lblPosition";
-            this.lblPosition.Size = new System.Drawing.Size(62, 18);
+            this.lblPosition.Size = new System.Drawing.Size(0, 22);
             this.lblPosition.TabIndex = 201;
-            this.lblPosition.Text = "Position";
             this.lblPosition.Click += new System.EventHandler(this.lblPosition_Click);
-            // 
-            // tlpTelNumber
-            // 
-            this.tlpTelNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.tlpTelNumber.ColumnCount = 1;
-            this.tlpTelNumber.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpTelNumber.Enabled = false;
-            this.tlpTelNumber.ForeColor = System.Drawing.Color.White;
-            this.tlpTelNumber.Location = new System.Drawing.Point(361, 668);
-            this.tlpTelNumber.Name = "tlpTelNumber";
-            this.tlpTelNumber.RowCount = 3;
-            this.tlpTelNumber.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpTelNumber.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpTelNumber.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpTelNumber.Size = new System.Drawing.Size(281, 52);
-            this.tlpTelNumber.TabIndex = 199;
             // 
             // lblTelNumber
             // 
             this.lblTelNumber.AutoSize = true;
             this.lblTelNumber.BackColor = System.Drawing.Color.Transparent;
-            this.lblTelNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTelNumber.Font = new System.Drawing.Font("Montserrat Light", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTelNumber.ForeColor = System.Drawing.Color.White;
-            this.lblTelNumber.Location = new System.Drawing.Point(361, 645);
+            this.lblTelNumber.Location = new System.Drawing.Point(93, 505);
             this.lblTelNumber.Name = "lblTelNumber";
-            this.lblTelNumber.Size = new System.Drawing.Size(131, 18);
+            this.lblTelNumber.Size = new System.Drawing.Size(0, 18);
             this.lblTelNumber.TabIndex = 198;
-            this.lblTelNumber.Text = "Telephone number";
-            // 
-            // tlpMobileNumber
-            // 
-            this.tlpMobileNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.tlpMobileNumber.ColumnCount = 1;
-            this.tlpMobileNumber.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpMobileNumber.Enabled = false;
-            this.tlpMobileNumber.ForeColor = System.Drawing.Color.White;
-            this.tlpMobileNumber.Location = new System.Drawing.Point(73, 668);
-            this.tlpMobileNumber.Name = "tlpMobileNumber";
-            this.tlpMobileNumber.RowCount = 3;
-            this.tlpMobileNumber.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpMobileNumber.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpMobileNumber.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpMobileNumber.Size = new System.Drawing.Size(281, 52);
-            this.tlpMobileNumber.TabIndex = 196;
             // 
             // lblMobileNumber
             // 
             this.lblMobileNumber.AutoSize = true;
             this.lblMobileNumber.BackColor = System.Drawing.Color.Transparent;
-            this.lblMobileNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMobileNumber.Font = new System.Drawing.Font("Montserrat Light", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblMobileNumber.ForeColor = System.Drawing.Color.White;
-            this.lblMobileNumber.Location = new System.Drawing.Point(73, 645);
+            this.lblMobileNumber.Location = new System.Drawing.Point(93, 533);
             this.lblMobileNumber.Name = "lblMobileNumber";
-            this.lblMobileNumber.Size = new System.Drawing.Size(106, 18);
+            this.lblMobileNumber.Size = new System.Drawing.Size(0, 18);
             this.lblMobileNumber.TabIndex = 195;
-            this.lblMobileNumber.Text = "Mobile number";
-            // 
-            // pbUserImage
-            // 
-            this.pbUserImage.Image = ((System.Drawing.Image)(resources.GetObject("pbUserImage.Image")));
-            this.pbUserImage.Location = new System.Drawing.Point(285, 88);
-            this.pbUserImage.Name = "pbUserImage";
-            this.pbUserImage.Size = new System.Drawing.Size(159, 157);
-            this.pbUserImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbUserImage.TabIndex = 193;
-            this.pbUserImage.TabStop = false;
-            // 
-            // txtLastName
-            // 
-            this.txtLastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.txtLastName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtLastName.ForeColor = System.Drawing.Color.White;
-            this.txtLastName.Location = new System.Drawing.Point(3, 16);
-            this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(363, 20);
-            this.txtLastName.TabIndex = 192;
-            // 
-            // tlpLastName
-            // 
-            this.tlpLastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.tlpLastName.ColumnCount = 1;
-            this.tlpLastName.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpLastName.Controls.Add(this.txtLastName, 0, 1);
-            this.tlpLastName.Enabled = false;
-            this.tlpLastName.ForeColor = System.Drawing.Color.White;
-            this.tlpLastName.Location = new System.Drawing.Point(74, 381);
-            this.tlpLastName.Name = "tlpLastName";
-            this.tlpLastName.RowCount = 3;
-            this.tlpLastName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpLastName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpLastName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpLastName.Size = new System.Drawing.Size(567, 52);
-            this.tlpLastName.TabIndex = 191;
             // 
             // lblLastName
             // 
             this.lblLastName.AutoSize = true;
-            this.lblLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblLastName.Font = new System.Drawing.Font("Montserrat Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblLastName.ForeColor = System.Drawing.Color.White;
-            this.lblLastName.Location = new System.Drawing.Point(73, 359);
+            this.lblLastName.Location = new System.Drawing.Point(175, 324);
             this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(80, 18);
+            this.lblLastName.Size = new System.Drawing.Size(0, 26);
             this.lblLastName.TabIndex = 190;
-            this.lblLastName.Text = "Last Name";
             this.lblLastName.Click += new System.EventHandler(this.lblLastName_Click);
-            // 
-            // txtFirstName
-            // 
-            this.txtFirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.txtFirstName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtFirstName.Enabled = false;
-            this.txtFirstName.ForeColor = System.Drawing.Color.White;
-            this.txtFirstName.Location = new System.Drawing.Point(3, 16);
-            this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(363, 20);
-            this.txtFirstName.TabIndex = 189;
-            // 
-            // tlpFirstName
-            // 
-            this.tlpFirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.tlpFirstName.ColumnCount = 1;
-            this.tlpFirstName.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpFirstName.Controls.Add(this.txtFirstName, 0, 1);
-            this.tlpFirstName.Enabled = false;
-            this.tlpFirstName.ForeColor = System.Drawing.Color.White;
-            this.tlpFirstName.Location = new System.Drawing.Point(77, 288);
-            this.tlpFirstName.Name = "tlpFirstName";
-            this.tlpFirstName.RowCount = 3;
-            this.tlpFirstName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpFirstName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpFirstName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpFirstName.Size = new System.Drawing.Size(565, 52);
-            this.tlpFirstName.TabIndex = 188;
             // 
             // lblFirstName
             // 
             this.lblFirstName.AutoSize = true;
-            this.lblFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblFirstName.Font = new System.Drawing.Font("Montserrat Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblFirstName.ForeColor = System.Drawing.Color.White;
-            this.lblFirstName.Location = new System.Drawing.Point(73, 265);
+            this.lblFirstName.Location = new System.Drawing.Point(64, 324);
             this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(81, 18);
+            this.lblFirstName.Size = new System.Drawing.Size(0, 26);
             this.lblFirstName.TabIndex = 187;
-            this.lblFirstName.Text = "First Name";
             // 
             // lblRegister
             // 
             this.lblRegister.AutoSize = true;
-            this.lblRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblRegister.Font = new System.Drawing.Font("Exo 2 Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblRegister.ForeColor = System.Drawing.Color.White;
-            this.lblRegister.Location = new System.Drawing.Point(73, 24);
+            this.lblRegister.Location = new System.Drawing.Point(64, 25);
             this.lblRegister.Name = "lblRegister";
-            this.lblRegister.Size = new System.Drawing.Size(286, 31);
+            this.lblRegister.Size = new System.Drawing.Size(122, 33);
             this.lblRegister.TabIndex = 186;
-            this.lblRegister.Text = "EMPLOYEE PROFILE";
-            // 
-            // txtAddress
-            // 
-            this.txtAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.txtAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtAddress.Enabled = false;
-            this.txtAddress.ForeColor = System.Drawing.Color.White;
-            this.txtAddress.Location = new System.Drawing.Point(3, 16);
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(542, 20);
-            this.txtAddress.TabIndex = 185;
-            this.txtAddress.TabStop = false;
-            // 
-            // tlpAddress
-            // 
-            this.tlpAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.tlpAddress.ColumnCount = 1;
-            this.tlpAddress.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpAddress.Controls.Add(this.txtAddress, 0, 1);
-            this.tlpAddress.Enabled = false;
-            this.tlpAddress.ForeColor = System.Drawing.Color.White;
-            this.tlpAddress.Location = new System.Drawing.Point(74, 572);
-            this.tlpAddress.Name = "tlpAddress";
-            this.tlpAddress.RowCount = 3;
-            this.tlpAddress.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpAddress.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpAddress.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpAddress.Size = new System.Drawing.Size(568, 52);
-            this.tlpAddress.TabIndex = 184;
+            this.lblRegister.Text = " PROFILE";
             // 
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
-            this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAddress.Font = new System.Drawing.Font("Montserrat Light", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblAddress.ForeColor = System.Drawing.Color.White;
-            this.lblAddress.Location = new System.Drawing.Point(73, 549);
+            this.lblAddress.Location = new System.Drawing.Point(93, 476);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(62, 18);
+            this.lblAddress.Size = new System.Drawing.Size(0, 18);
             this.lblAddress.TabIndex = 183;
-            this.lblAddress.Text = "Address";
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmail.ForeColor = System.Drawing.Color.White;
-            this.txtEmail.Location = new System.Drawing.Point(3, 16);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(542, 20);
-            this.txtEmail.TabIndex = 182;
-            // 
-            // tlpEmail
-            // 
-            this.tlpEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.tlpEmail.ColumnCount = 1;
-            this.tlpEmail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpEmail.Controls.Add(this.txtEmail, 0, 1);
-            this.tlpEmail.Enabled = false;
-            this.tlpEmail.ForeColor = System.Drawing.Color.White;
-            this.tlpEmail.Location = new System.Drawing.Point(74, 480);
-            this.tlpEmail.Name = "tlpEmail";
-            this.tlpEmail.RowCount = 3;
-            this.tlpEmail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpEmail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpEmail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpEmail.Size = new System.Drawing.Size(567, 52);
-            this.tlpEmail.TabIndex = 181;
+            this.lblAddress.Click += new System.EventHandler(this.lblAddress_Click);
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblEmail.Font = new System.Drawing.Font("Montserrat Light", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblEmail.ForeColor = System.Drawing.Color.White;
-            this.lblEmail.Location = new System.Drawing.Point(73, 457);
+            this.lblEmail.Location = new System.Drawing.Point(93, 441);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(45, 18);
+            this.lblEmail.Size = new System.Drawing.Size(0, 18);
             this.lblEmail.TabIndex = 180;
-            this.lblEmail.Text = "Email";
             // 
-            // btnRegister
+            // btnDelete
             // 
-            this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(128)))), ((int)(((byte)(45)))));
-            this.btnRegister.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnRegister.FlatAppearance.BorderSize = 0;
-            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnRegister.ForeColor = System.Drawing.Color.White;
-            this.btnRegister.Location = new System.Drawing.Point(73, 844);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(568, 52);
-            this.btnRegister.TabIndex = 179;
-            this.btnRegister.Text = "DELETE ACCOUNT";
-            this.btnRegister.UseVisualStyleBackColor = false;
-            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(128)))), ((int)(((byte)(45)))));
+            this.btnDelete.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnDelete.FlatAppearance.BorderSize = 0;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Exo 2 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Location = new System.Drawing.Point(428, 576);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(133, 39);
+            this.btnDelete.TabIndex = 179;
+            this.btnDelete.Text = "DELETE  👤";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // tableLayoutPanel1
+            // btnEdit
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Enabled = false;
-            this.tableLayoutPanel1.ForeColor = System.Drawing.Color.White;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(73, 763);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 43.58974F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28.20513F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(568, 52);
-            this.tableLayoutPanel1.TabIndex = 202;
+            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(128)))), ((int)(((byte)(45)))));
+            this.btnEdit.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnEdit.FlatAppearance.BorderSize = 0;
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.Font = new System.Drawing.Font("Exo 2 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEdit.ForeColor = System.Drawing.Color.White;
+            this.btnEdit.Location = new System.Drawing.Point(64, 576);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(133, 39);
+            this.btnEdit.TabIndex = 203;
+            this.btnEdit.Text = "EDIT  ✒️";
+            this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.Font = new System.Drawing.Font("Montserrat Light", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblID.Location = new System.Drawing.Point(64, 393);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(0, 18);
+            this.lblID.TabIndex = 204;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(61, 442);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(26, 17);
+            this.label1.TabIndex = 205;
+            this.label1.Text = "📧";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(61, 476);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(26, 17);
+            this.label2.TabIndex = 206;
+            this.label2.Text = "📫";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(61, 505);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(26, 17);
+            this.label3.TabIndex = 207;
+            this.label3.Text = "📱";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(61, 533);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(26, 17);
+            this.label4.TabIndex = 208;
+            this.label4.Text = "☎️";
+            // 
+            // pbUserImage
+            // 
+            this.pbUserImage.Image = ((System.Drawing.Image)(resources.GetObject("pbUserImage.Image")));
+            this.pbUserImage.Location = new System.Drawing.Point(162, 21);
+            this.pbUserImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbUserImage.Name = "pbUserImage";
+            this.pbUserImage.Size = new System.Drawing.Size(186, 186);
+            this.pbUserImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbUserImage.TabIndex = 193;
+            this.pbUserImage.TabStop = false;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.pbUserImage);
+            this.groupBox1.Location = new System.Drawing.Point(64, 73);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(497, 222);
+            this.groupBox1.TabIndex = 209;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // bthUpdate
+            // 
+            this.bthUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(128)))), ((int)(((byte)(45)))));
+            this.bthUpdate.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bthUpdate.FlatAppearance.BorderSize = 0;
+            this.bthUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bthUpdate.Font = new System.Drawing.Font("Exo 2 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bthUpdate.ForeColor = System.Drawing.Color.White;
+            this.bthUpdate.Location = new System.Drawing.Point(248, 576);
+            this.bthUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bthUpdate.Name = "bthUpdate";
+            this.bthUpdate.Size = new System.Drawing.Size(133, 39);
+            this.bthUpdate.TabIndex = 210;
+            this.bthUpdate.Text = "UPDATE 💾";
+            this.bthUpdate.UseVisualStyleBackColor = false;
             // 
             // EmployeeProfile
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
-            this.ClientSize = new System.Drawing.Size(713, 958);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.ClientSize = new System.Drawing.Size(624, 640);
+            this.Controls.Add(this.bthUpdate);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblID);
+            this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.lblPosition);
-            this.Controls.Add(this.tlpTelNumber);
             this.Controls.Add(this.lblTelNumber);
-            this.Controls.Add(this.tlpMobileNumber);
             this.Controls.Add(this.lblMobileNumber);
-            this.Controls.Add(this.pbUserImage);
-            this.Controls.Add(this.tlpLastName);
             this.Controls.Add(this.lblLastName);
-            this.Controls.Add(this.tlpFirstName);
             this.Controls.Add(this.lblFirstName);
             this.Controls.Add(this.lblRegister);
-            this.Controls.Add(this.tlpAddress);
             this.Controls.Add(this.lblAddress);
-            this.Controls.Add(this.tlpEmail);
             this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.btnDelete);
             this.ForeColor = System.Drawing.Color.White;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "EmployeeProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EmployeeProfile";
+            this.Load += new System.EventHandler(this.EmployeeProfile_Load);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.EmployeeProfile_MouseClick);
             ((System.ComponentModel.ISupportInitialize)(this.pbUserImage)).EndInit();
-            this.tlpLastName.ResumeLayout(false);
-            this.tlpLastName.PerformLayout();
-            this.tlpFirstName.ResumeLayout(false);
-            this.tlpFirstName.PerformLayout();
-            this.tlpAddress.ResumeLayout(false);
-            this.tlpAddress.PerformLayout();
-            this.tlpEmail.ResumeLayout(false);
-            this.tlpEmail.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -380,25 +297,22 @@
 
         #endregion
         private System.Windows.Forms.Label lblPosition;
-        private System.Windows.Forms.TableLayoutPanel tlpTelNumber;
         private System.Windows.Forms.Label lblTelNumber;
-        private System.Windows.Forms.TableLayoutPanel tlpMobileNumber;
         private System.Windows.Forms.Label lblMobileNumber;
-        private System.Windows.Forms.PictureBox pbUserImage;
-        private System.Windows.Forms.TextBox txtLastName;
-        private System.Windows.Forms.TableLayoutPanel tlpLastName;
         private System.Windows.Forms.Label lblLastName;
-        private System.Windows.Forms.TextBox txtFirstName;
-        private System.Windows.Forms.TableLayoutPanel tlpFirstName;
         private System.Windows.Forms.Label lblFirstName;
         private System.Windows.Forms.Label lblRegister;
-        private System.Windows.Forms.TextBox txtAddress;
-        private System.Windows.Forms.TableLayoutPanel tlpAddress;
         private System.Windows.Forms.Label lblAddress;
-        private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TableLayoutPanel tlpEmail;
         private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.Button btnRegister;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Label lblID;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pbUserImage;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button bthUpdate;
     }
 }

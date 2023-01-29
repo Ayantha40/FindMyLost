@@ -46,19 +46,21 @@
             this.MobileNum,
             this.Position});
             this.lvEmployeeList.Depth = 0;
-            this.lvEmployeeList.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lvEmployeeList.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lvEmployeeList.FullRowSelect = true;
             this.lvEmployeeList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lvEmployeeList.HideSelection = false;
-            this.lvEmployeeList.Location = new System.Drawing.Point(16, 70);
+            this.lvEmployeeList.Location = new System.Drawing.Point(14, 52);
+            this.lvEmployeeList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lvEmployeeList.MouseLocation = new System.Drawing.Point(-1, -1);
             this.lvEmployeeList.MouseState = MaterialSkin.MouseState.OUT;
             this.lvEmployeeList.Name = "lvEmployeeList";
             this.lvEmployeeList.OwnerDraw = true;
-            this.lvEmployeeList.Size = new System.Drawing.Size(850, 474);
+            this.lvEmployeeList.Size = new System.Drawing.Size(786, 356);
             this.lvEmployeeList.TabIndex = 0;
             this.lvEmployeeList.UseCompatibleStateImageBehavior = false;
             this.lvEmployeeList.View = System.Windows.Forms.View.Details;
+            this.lvEmployeeList.SelectedIndexChanged += new System.EventHandler(this.lvEmployeeList_SelectedIndexChanged);
             this.lvEmployeeList.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lvEmployeeList_MouseClick);
             // 
             // employeeID
@@ -88,10 +90,11 @@
             // 
             // EmployeeList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(885, 556);
+            this.ClientSize = new System.Drawing.Size(812, 417);
             this.Controls.Add(this.lvEmployeeList);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "EmployeeList";
             this.Text = "EMPLOYEE LIST";
             this.Load += new System.EventHandler(this.EmployeeList_Load);

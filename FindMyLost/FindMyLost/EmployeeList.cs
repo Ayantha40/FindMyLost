@@ -68,5 +68,10 @@ namespace FindMyLost
             EmployeeProfile employeeProfile = new EmployeeProfile();
             employeeProfile.Show();
         }
+
+        private void lvEmployeeList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

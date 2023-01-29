@@ -30,14 +30,11 @@ namespace FindMyLost
 
         private void EditLostItemDescription_Load(object sender, EventArgs e)
         {
-            //to check if color is getting retrieved
-            //it is 
-            //yay
             try
             {
                 byte[] imageBytes;
 
-                string sql = "SELECT * FROM Lost_Item WHERE item_id = '" + ItemProfile.itemID + "'";
+                string sql = "SELECT * FROM Lost_Item WHERE item_id = '" + ItemList.SelectedItemID + "'";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 conn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
@@ -184,7 +181,7 @@ namespace FindMyLost
                 {
                     int argb = pbColor.BackColor.ToArgb();
 
-                    string sql = "UPDATE Lost_Item SET item_category = '" + category + "', item_colour = '" + argb + "', item_picture =  @image , last_seen_location = '" + txtLocation.Text + "', item_brand = '" + txtBrand.Text + "', additional_info = '" + txtAdditional.Text + "' WHERE item_id = '" + ItemProfile.itemID + "'";
+                    string sql = "UPDATE Lost_Item SET item_category = '" + category + "', item_colour = '" + argb + "', item_picture =  @image , last_seen_location = '" + txtLocation.Text + "', item_brand = '" + txtBrand.Text + "', additional_info = '" + txtAdditional.Text + "' WHERE item_id = '" + ItemList.SelectedItemID + "'";
                     SqlCommand cmd = new SqlCommand(sql, conn);
 
                     var img = imgItem.Image;
