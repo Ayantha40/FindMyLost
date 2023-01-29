@@ -45,6 +45,7 @@
             this.Color,
             this.Brand,
             this.LastSeen});
+            this.lvItemList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lvItemList.Depth = 0;
             this.lvItemList.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lvItemList.FullRowSelect = true;
