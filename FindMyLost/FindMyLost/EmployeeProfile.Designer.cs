@@ -37,7 +37,7 @@
             this.lblRegister = new System.Windows.Forms.Label();
             this.lblAddress = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.btnRegister = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.lblID = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,6 +46,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pbUserImage = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.bthUpdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbUserImage)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -136,22 +137,22 @@
             this.lblEmail.Size = new System.Drawing.Size(0, 18);
             this.lblEmail.TabIndex = 180;
             // 
-            // btnRegister
+            // btnDelete
             // 
-            this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(128)))), ((int)(((byte)(45)))));
-            this.btnRegister.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnRegister.FlatAppearance.BorderSize = 0;
-            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegister.Font = new System.Drawing.Font("Exo 2 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnRegister.ForeColor = System.Drawing.Color.White;
-            this.btnRegister.Location = new System.Drawing.Point(347, 582);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(214, 39);
-            this.btnRegister.TabIndex = 179;
-            this.btnRegister.Text = "DELETE ACCOUNT  ❌";
-            this.btnRegister.UseVisualStyleBackColor = false;
-            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(128)))), ((int)(((byte)(45)))));
+            this.btnDelete.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnDelete.FlatAppearance.BorderSize = 0;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Exo 2 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Location = new System.Drawing.Point(428, 576);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(133, 39);
+            this.btnDelete.TabIndex = 179;
+            this.btnDelete.Text = "DELETE  👤";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // btnEdit
             // 
@@ -161,12 +162,12 @@
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.Font = new System.Drawing.Font("Exo 2 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Location = new System.Drawing.Point(64, 582);
+            this.btnEdit.Location = new System.Drawing.Point(64, 576);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(214, 39);
+            this.btnEdit.Size = new System.Drawing.Size(133, 39);
             this.btnEdit.TabIndex = 203;
-            this.btnEdit.Text = "UPDATE  ✒️";
+            this.btnEdit.Text = "EDIT  ✒️";
             this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -240,12 +241,29 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // bthUpdate
+            // 
+            this.bthUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(128)))), ((int)(((byte)(45)))));
+            this.bthUpdate.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bthUpdate.FlatAppearance.BorderSize = 0;
+            this.bthUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bthUpdate.Font = new System.Drawing.Font("Exo 2 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bthUpdate.ForeColor = System.Drawing.Color.White;
+            this.bthUpdate.Location = new System.Drawing.Point(248, 576);
+            this.bthUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bthUpdate.Name = "bthUpdate";
+            this.bthUpdate.Size = new System.Drawing.Size(133, 39);
+            this.bthUpdate.TabIndex = 210;
+            this.bthUpdate.Text = "UPDATE 💾";
+            this.bthUpdate.UseVisualStyleBackColor = false;
+            // 
             // EmployeeProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
             this.ClientSize = new System.Drawing.Size(624, 640);
+            this.Controls.Add(this.bthUpdate);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -261,13 +279,13 @@
             this.Controls.Add(this.lblRegister);
             this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.btnDelete);
             this.ForeColor = System.Drawing.Color.White;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EmployeeProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "EmployeeProfile";
+            this.Text = "|\"";
             this.Load += new System.EventHandler(this.EmployeeProfile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbUserImage)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -285,7 +303,7 @@
         private System.Windows.Forms.Label lblRegister;
         private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.Label label1;
@@ -294,5 +312,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pbUserImage;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button bthUpdate;
     }
 }

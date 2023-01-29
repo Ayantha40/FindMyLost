@@ -56,10 +56,11 @@
             this.lvEmployeeList.MouseState = MaterialSkin.MouseState.OUT;
             this.lvEmployeeList.Name = "lvEmployeeList";
             this.lvEmployeeList.OwnerDraw = true;
-            this.lvEmployeeList.Size = new System.Drawing.Size(744, 356);
+            this.lvEmployeeList.Size = new System.Drawing.Size(786, 356);
             this.lvEmployeeList.TabIndex = 0;
             this.lvEmployeeList.UseCompatibleStateImageBehavior = false;
             this.lvEmployeeList.View = System.Windows.Forms.View.Details;
+            this.lvEmployeeList.SelectedIndexChanged += new System.EventHandler(this.lvEmployeeList_SelectedIndexChanged);
             this.lvEmployeeList.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lvEmployeeList_MouseClick);
             // 
             // employeeID
@@ -91,7 +92,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(774, 417);
+            this.ClientSize = new System.Drawing.Size(812, 417);
             this.Controls.Add(this.lvEmployeeList);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "EmployeeList";
