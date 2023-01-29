@@ -100,10 +100,16 @@ namespace FindMyLost
 
         private void ItemProfile_FormClosed(object sender, FormClosedEventArgs e)
         {
-            
+            ItemList itemList = new ItemList();
+            itemList.Show();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pbItemPic_Click(object sender, EventArgs e)
         {
 
         }
