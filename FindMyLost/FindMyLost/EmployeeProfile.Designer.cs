@@ -107,11 +107,11 @@
             // lblRegister
             // 
             this.lblRegister.AutoSize = true;
-            this.lblRegister.Font = new System.Drawing.Font("Exo 2", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblRegister.Font = new System.Drawing.Font("Exo 2", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblRegister.ForeColor = System.Drawing.Color.White;
             this.lblRegister.Location = new System.Drawing.Point(73, 52);
             this.lblRegister.Name = "lblRegister";
-            this.lblRegister.Size = new System.Drawing.Size(103, 28);
+            this.lblRegister.Size = new System.Drawing.Size(111, 28);
             this.lblRegister.TabIndex = 186;
             this.lblRegister.Text = " PROFILE";
             // 

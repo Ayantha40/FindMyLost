@@ -254,11 +254,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label1.Font = new System.Drawing.Font("Exo 2", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Exo 2", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(38, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(328, 28);
+            this.label1.Size = new System.Drawing.Size(355, 28);
             this.label1.TabIndex = 169;
             this.label1.Text = " EDIT LOST ITEM INFORMATION";
             this.label1.Click += new System.EventHandler(this.label1_Click);
