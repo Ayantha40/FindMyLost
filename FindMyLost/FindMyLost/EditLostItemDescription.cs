@@ -30,9 +30,6 @@ namespace FindMyLost
 
         private void EditLostItemDescription_Load(object sender, EventArgs e)
         {
-            //to check if color is getting retrieved
-            //it is 
-            //yay
             try
             {
                 byte[] imageBytes;
@@ -229,6 +226,12 @@ namespace FindMyLost
         private void txtCategory_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void EditLostItemDescription_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            ItemProfile ip = new ItemProfile();
+            ip.Show();
         }
     }
 }

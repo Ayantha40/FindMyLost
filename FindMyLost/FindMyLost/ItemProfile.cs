@@ -39,7 +39,6 @@ namespace FindMyLost
 
                 if (dr.Read())
                 {
-
                     var myColor = Color.FromArgb(Convert.ToInt32(dr["item_colour"]));
                     pbColor.BackColor = myColor;
 
@@ -77,6 +76,7 @@ namespace FindMyLost
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
+            this.Hide();
             EditLostItemDescription ed = new EditLostItemDescription();
             ed.Show();
         }
@@ -101,10 +101,16 @@ namespace FindMyLost
 
         private void ItemProfile_FormClosed(object sender, FormClosedEventArgs e)
         {
-            
+            ItemList itemList = new ItemList();
+            itemList.Show();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pbItemPic_Click(object sender, EventArgs e)
         {
 
         }
