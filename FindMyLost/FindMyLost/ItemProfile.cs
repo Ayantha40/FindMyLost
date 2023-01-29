@@ -46,7 +46,9 @@ namespace FindMyLost
                     lblCategory.Text = dr["item_category"].ToString();
                     lblID.Text = dr["item_id"].ToString();
                     lblBrand.Text = dr["item_brand"].ToString();
-                    
+                    lblLocation.Text = dr["last_seen_location"].ToString();
+                    lblAdditionInfo.Text = dr["additional_info"].ToString();
+
 
                     imageBytes = (byte[])dr["item_picture"];
                     MemoryStream ms = new MemoryStream(imageBytes);
@@ -71,9 +73,7 @@ namespace FindMyLost
             }
         }
 
-        private void btnEdit2_Click(object sender, EventArgs e)
-        {
-        }
+
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
@@ -99,14 +99,9 @@ namespace FindMyLost
             }
         }
 
-        private void label8_Click(object sender, EventArgs e)
+        private void ItemProfile_FormClosed(object sender, FormClosedEventArgs e)
         {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
+            
         }
     }
 }

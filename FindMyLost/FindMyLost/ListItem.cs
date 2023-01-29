@@ -18,7 +18,6 @@ namespace FindMyLost
     {
         public static PictureBox pb1;
         public static string form;
-        //public TextBox tb1;
 
         SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConString"].ToString());
 
