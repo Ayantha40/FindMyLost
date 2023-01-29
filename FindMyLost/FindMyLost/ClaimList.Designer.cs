@@ -99,6 +99,7 @@
             this.ClientSize = new System.Drawing.Size(1032, 781);
             this.Controls.Add(this.lvClaimList);
             this.Name = "ClaimList";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CLAIM LIST";
             this.Load += new System.EventHandler(this.ClaimList_Load);
             this.ResumeLayout(false);

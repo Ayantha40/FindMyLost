@@ -64,19 +64,12 @@ namespace FindMyLost
         
         private void lvItemList_MouseClick(object sender, MouseEventArgs e)
         {
-            lvItemList.Refresh(); //doesn't work
             ListViewItem item = lvItemList.SelectedItems[0];
             SelectedItemID = item.SubItems[0].Text;
             this.Hide();
             ItemProfile itemProfile = new ItemProfile();
             itemProfile.Show();
-            
-         
         }
 
-        private void lvItemList_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

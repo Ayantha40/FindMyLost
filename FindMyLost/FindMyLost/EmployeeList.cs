@@ -70,9 +70,5 @@ namespace FindMyLost
             employeeProfile.Show();
         }
 
-        private void lvEmployeeList_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

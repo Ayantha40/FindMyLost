@@ -89,11 +89,11 @@
             // lblPosition
             // 
             this.lblPosition.AutoSize = true;
-            this.lblPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPosition.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblPosition.ForeColor = System.Drawing.Color.White;
             this.lblPosition.Location = new System.Drawing.Point(72, 593);
             this.lblPosition.Name = "lblPosition";
-            this.lblPosition.Size = new System.Drawing.Size(62, 18);
+            this.lblPosition.Size = new System.Drawing.Size(70, 21);
             this.lblPosition.TabIndex = 176;
             this.lblPosition.Text = "Position";
             // 
@@ -126,11 +126,11 @@
             // 
             this.lblTelNumber.AutoSize = true;
             this.lblTelNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.lblTelNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTelNumber.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTelNumber.ForeColor = System.Drawing.Color.White;
             this.lblTelNumber.Location = new System.Drawing.Point(359, 501);
             this.lblTelNumber.Name = "lblTelNumber";
-            this.lblTelNumber.Size = new System.Drawing.Size(131, 18);
+            this.lblTelNumber.Size = new System.Drawing.Size(153, 21);
             this.lblTelNumber.TabIndex = 173;
             this.lblTelNumber.Text = "Telephone number";
             // 
@@ -163,11 +163,11 @@
             // 
             this.lblMobileNumber.AutoSize = true;
             this.lblMobileNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.lblMobileNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMobileNumber.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblMobileNumber.ForeColor = System.Drawing.Color.White;
             this.lblMobileNumber.Location = new System.Drawing.Point(72, 501);
             this.lblMobileNumber.Name = "lblMobileNumber";
-            this.lblMobileNumber.Size = new System.Drawing.Size(106, 18);
+            this.lblMobileNumber.Size = new System.Drawing.Size(125, 21);
             this.lblMobileNumber.TabIndex = 170;
             this.lblMobileNumber.Text = "Mobile number";
             // 
@@ -225,11 +225,11 @@
             // lblLastName
             // 
             this.lblLastName.AutoSize = true;
-            this.lblLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblLastName.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblLastName.ForeColor = System.Drawing.Color.White;
             this.lblLastName.Location = new System.Drawing.Point(251, 232);
             this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(80, 18);
+            this.lblLastName.Size = new System.Drawing.Size(91, 21);
             this.lblLastName.TabIndex = 165;
             this.lblLastName.Text = "Last Name";
             // 
@@ -261,22 +261,22 @@
             // lblFirstName
             // 
             this.lblFirstName.AutoSize = true;
-            this.lblFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblFirstName.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblFirstName.ForeColor = System.Drawing.Color.White;
             this.lblFirstName.Location = new System.Drawing.Point(251, 141);
             this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(81, 18);
+            this.lblFirstName.Size = new System.Drawing.Size(93, 21);
             this.lblFirstName.TabIndex = 162;
             this.lblFirstName.Text = "First Name";
             // 
             // lblRegister
             // 
             this.lblRegister.AutoSize = true;
-            this.lblRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblRegister.Font = new System.Drawing.Font("Exo 2", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblRegister.ForeColor = System.Drawing.Color.White;
             this.lblRegister.Location = new System.Drawing.Point(72, 76);
             this.lblRegister.Name = "lblRegister";
-            this.lblRegister.Size = new System.Drawing.Size(307, 29);
+            this.lblRegister.Size = new System.Drawing.Size(261, 28);
             this.lblRegister.TabIndex = 161;
             this.lblRegister.Text = "REGISTER EMPLOYEES";
             // 
@@ -308,11 +308,11 @@
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
-            this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAddress.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblAddress.ForeColor = System.Drawing.Color.White;
             this.lblAddress.Location = new System.Drawing.Point(72, 412);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(62, 18);
+            this.lblAddress.Size = new System.Drawing.Size(70, 21);
             this.lblAddress.TabIndex = 158;
             this.lblAddress.Text = "Address";
             // 
@@ -344,11 +344,11 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblEmail.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblEmail.ForeColor = System.Drawing.Color.White;
             this.lblEmail.Location = new System.Drawing.Point(72, 323);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(45, 18);
+            this.lblEmail.Size = new System.Drawing.Size(53, 21);
             this.lblEmail.TabIndex = 155;
             this.lblEmail.Text = "Email";
             // 
@@ -358,7 +358,7 @@
             this.btnRegister.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnRegister.FlatAppearance.BorderSize = 0;
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnRegister.Font = new System.Drawing.Font("Exo 2", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnRegister.ForeColor = System.Drawing.Color.White;
             this.btnRegister.Location = new System.Drawing.Point(72, 699);
             this.btnRegister.Name = "btnRegister";
