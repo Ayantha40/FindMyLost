@@ -46,7 +46,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pbUserImage = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.bthUpdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbUserImage)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -89,7 +88,7 @@
             this.lblLastName.AutoSize = true;
             this.lblLastName.Font = new System.Drawing.Font("Montserrat Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblLastName.ForeColor = System.Drawing.Color.White;
-            this.lblLastName.Location = new System.Drawing.Point(175, 324);
+            this.lblLastName.Location = new System.Drawing.Point(147, 324);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(0, 26);
             this.lblLastName.TabIndex = 190;
@@ -145,10 +144,10 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Exo 2 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(428, 576);
+            this.btnDelete.Location = new System.Drawing.Point(334, 577);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(133, 39);
+            this.btnDelete.Size = new System.Drawing.Size(227, 39);
             this.btnDelete.TabIndex = 179;
             this.btnDelete.Text = "DELETE  👤";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -162,10 +161,10 @@
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.Font = new System.Drawing.Font("Exo 2 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Location = new System.Drawing.Point(64, 576);
+            this.btnEdit.Location = new System.Drawing.Point(64, 577);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(133, 39);
+            this.btnEdit.Size = new System.Drawing.Size(227, 39);
             this.btnEdit.TabIndex = 203;
             this.btnEdit.Text = "EDIT  ✒️";
             this.btnEdit.UseVisualStyleBackColor = false;
@@ -241,29 +240,12 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // bthUpdate
-            // 
-            this.bthUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(128)))), ((int)(((byte)(45)))));
-            this.bthUpdate.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.bthUpdate.FlatAppearance.BorderSize = 0;
-            this.bthUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bthUpdate.Font = new System.Drawing.Font("Exo 2 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.bthUpdate.ForeColor = System.Drawing.Color.White;
-            this.bthUpdate.Location = new System.Drawing.Point(248, 576);
-            this.bthUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bthUpdate.Name = "bthUpdate";
-            this.bthUpdate.Size = new System.Drawing.Size(133, 39);
-            this.bthUpdate.TabIndex = 210;
-            this.bthUpdate.Text = "UPDATE 💾";
-            this.bthUpdate.UseVisualStyleBackColor = false;
-            // 
             // EmployeeProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
             this.ClientSize = new System.Drawing.Size(624, 640);
-            this.Controls.Add(this.bthUpdate);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -286,6 +268,7 @@
             this.Name = "EmployeeProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EmployeeProfile";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.EmployeeProfile_FormClosed);
             this.Load += new System.EventHandler(this.EmployeeProfile_Load);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.EmployeeProfile_MouseClick);
             ((System.ComponentModel.ISupportInitialize)(this.pbUserImage)).EndInit();
@@ -313,6 +296,5 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pbUserImage;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button bthUpdate;
     }
 }

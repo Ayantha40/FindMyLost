@@ -87,7 +87,7 @@ namespace FindMyLost
         {
             try
             {
-                string sql = "UPDATE Employee SET first_name = '" + txtFirstName.Text + "', last_name = '" + txtLastName.Text + "', email = '" + txtEmail.Text + "', address = '" + txtAddress.Text + "', mobile_number = '" + txtMobileNum.Text + "', telephone_number = '" + txtTelNumber.Text + "', picture = @image WHERE employee_id = '" + 100001 + "'";
+                string sql = "UPDATE Employee SET first_name = '" + txtFirstName.Text + "', last_name = '" + txtLastName.Text + "', email = '" + txtEmail.Text + "', address = '" + txtAddress.Text + "', mobile_number = '" + txtMobileNum.Text + "', telephone_number = '" + txtTelNumber.Text + "', picture = @image WHERE employee_id = '" + EmployeeList.SelectedEmployeeID + "'";
                 SqlCommand cmd = new SqlCommand(sql, conn);
 
                 var img = pbUserImage.Image;
@@ -110,6 +110,12 @@ namespace FindMyLost
             {
                 conn.Close();
             }
+        }
+
+        private void EditProfile_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            EmployeeProfile ep = new EmployeeProfile();
+            ep.Show();
         }
     }
 }

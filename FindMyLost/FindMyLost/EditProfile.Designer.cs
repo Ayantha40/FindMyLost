@@ -59,9 +59,10 @@
             this.txtTelNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtTelNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTelNumber.ForeColor = System.Drawing.Color.White;
-            this.txtTelNumber.Location = new System.Drawing.Point(350, 525);
+            this.txtTelNumber.Location = new System.Drawing.Point(306, 394);
+            this.txtTelNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTelNumber.Name = "txtTelNumber";
-            this.txtTelNumber.Size = new System.Drawing.Size(255, 20);
+            this.txtTelNumber.Size = new System.Drawing.Size(223, 16);
             this.txtTelNumber.TabIndex = 194;
             // 
             // tlpTelNumber
@@ -70,24 +71,25 @@
             this.tlpTelNumber.ColumnCount = 1;
             this.tlpTelNumber.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpTelNumber.ForeColor = System.Drawing.Color.White;
-            this.tlpTelNumber.Location = new System.Drawing.Point(339, 511);
+            this.tlpTelNumber.Location = new System.Drawing.Point(297, 383);
+            this.tlpTelNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tlpTelNumber.Name = "tlpTelNumber";
             this.tlpTelNumber.RowCount = 3;
             this.tlpTelNumber.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpTelNumber.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpTelNumber.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpTelNumber.Size = new System.Drawing.Size(281, 52);
+            this.tlpTelNumber.Size = new System.Drawing.Size(246, 39);
             this.tlpTelNumber.TabIndex = 193;
             // 
             // lblTelNumber
             // 
             this.lblTelNumber.AutoSize = true;
             this.lblTelNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.lblTelNumber.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTelNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTelNumber.ForeColor = System.Drawing.Color.White;
-            this.lblTelNumber.Location = new System.Drawing.Point(339, 490);
+            this.lblTelNumber.Location = new System.Drawing.Point(297, 368);
             this.lblTelNumber.Name = "lblTelNumber";
-            this.lblTelNumber.Size = new System.Drawing.Size(153, 21);
+            this.lblTelNumber.Size = new System.Drawing.Size(112, 15);
             this.lblTelNumber.TabIndex = 192;
             this.lblTelNumber.Text = "Telephone number";
             // 
@@ -96,9 +98,10 @@
             this.txtMobileNum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtMobileNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMobileNum.ForeColor = System.Drawing.Color.White;
-            this.txtMobileNum.Location = new System.Drawing.Point(63, 525);
+            this.txtMobileNum.Location = new System.Drawing.Point(55, 394);
+            this.txtMobileNum.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMobileNum.Name = "txtMobileNum";
-            this.txtMobileNum.Size = new System.Drawing.Size(255, 20);
+            this.txtMobileNum.Size = new System.Drawing.Size(223, 16);
             this.txtMobileNum.TabIndex = 191;
             // 
             // tlpMobileNumber
@@ -107,24 +110,25 @@
             this.tlpMobileNumber.ColumnCount = 1;
             this.tlpMobileNumber.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpMobileNumber.ForeColor = System.Drawing.Color.White;
-            this.tlpMobileNumber.Location = new System.Drawing.Point(52, 511);
+            this.tlpMobileNumber.Location = new System.Drawing.Point(46, 383);
+            this.tlpMobileNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tlpMobileNumber.Name = "tlpMobileNumber";
             this.tlpMobileNumber.RowCount = 3;
             this.tlpMobileNumber.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpMobileNumber.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpMobileNumber.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpMobileNumber.Size = new System.Drawing.Size(281, 52);
+            this.tlpMobileNumber.Size = new System.Drawing.Size(246, 39);
             this.tlpMobileNumber.TabIndex = 190;
             // 
             // lblMobileNumber
             // 
             this.lblMobileNumber.AutoSize = true;
             this.lblMobileNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.lblMobileNumber.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMobileNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblMobileNumber.ForeColor = System.Drawing.Color.White;
-            this.lblMobileNumber.Location = new System.Drawing.Point(52, 490);
+            this.lblMobileNumber.Location = new System.Drawing.Point(46, 368);
             this.lblMobileNumber.Name = "lblMobileNumber";
-            this.lblMobileNumber.Size = new System.Drawing.Size(125, 21);
+            this.lblMobileNumber.Size = new System.Drawing.Size(91, 15);
             this.lblMobileNumber.TabIndex = 189;
             this.lblMobileNumber.Text = "Mobile number";
             // 
@@ -134,9 +138,10 @@
             this.btnEditUserPic.FlatAppearance.BorderSize = 0;
             this.btnEditUserPic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditUserPic.ForeColor = System.Drawing.Color.White;
-            this.btnEditUserPic.Location = new System.Drawing.Point(180, 264);
+            this.btnEditUserPic.Location = new System.Drawing.Point(158, 198);
+            this.btnEditUserPic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEditUserPic.Name = "btnEditUserPic";
-            this.btnEditUserPic.Size = new System.Drawing.Size(31, 29);
+            this.btnEditUserPic.Size = new System.Drawing.Size(27, 22);
             this.btnEditUserPic.TabIndex = 188;
             this.btnEditUserPic.Text = "✏️";
             this.btnEditUserPic.UseVisualStyleBackColor = false;
@@ -147,9 +152,10 @@
             // pbUserImage
             // 
             this.pbUserImage.Image = ((System.Drawing.Image)(resources.GetObject("pbUserImage.Image")));
-            this.pbUserImage.Location = new System.Drawing.Point(52, 136);
+            this.pbUserImage.Location = new System.Drawing.Point(46, 102);
+            this.pbUserImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbUserImage.Name = "pbUserImage";
-            this.pbUserImage.Size = new System.Drawing.Size(159, 157);
+            this.pbUserImage.Size = new System.Drawing.Size(139, 118);
             this.pbUserImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbUserImage.TabIndex = 187;
             this.pbUserImage.TabStop = false;
@@ -159,9 +165,10 @@
             this.txtLastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtLastName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLastName.ForeColor = System.Drawing.Color.White;
-            this.txtLastName.Location = new System.Drawing.Point(242, 255);
+            this.txtLastName.Location = new System.Drawing.Point(212, 191);
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(363, 20);
+            this.txtLastName.Size = new System.Drawing.Size(318, 16);
             this.txtLastName.TabIndex = 186;
             // 
             // tlpLastName
@@ -170,24 +177,25 @@
             this.tlpLastName.ColumnCount = 1;
             this.tlpLastName.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpLastName.ForeColor = System.Drawing.Color.White;
-            this.tlpLastName.Location = new System.Drawing.Point(231, 241);
+            this.tlpLastName.Location = new System.Drawing.Point(202, 181);
+            this.tlpLastName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tlpLastName.Name = "tlpLastName";
             this.tlpLastName.RowCount = 3;
             this.tlpLastName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpLastName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpLastName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpLastName.Size = new System.Drawing.Size(389, 52);
+            this.tlpLastName.Size = new System.Drawing.Size(340, 39);
             this.tlpLastName.TabIndex = 185;
             // 
             // lblLastName
             // 
             this.lblLastName.AutoSize = true;
             this.lblLastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.lblLastName.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblLastName.ForeColor = System.Drawing.Color.White;
-            this.lblLastName.Location = new System.Drawing.Point(231, 220);
+            this.lblLastName.Location = new System.Drawing.Point(202, 165);
             this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(91, 21);
+            this.lblLastName.Size = new System.Drawing.Size(67, 15);
             this.lblLastName.TabIndex = 184;
             this.lblLastName.Text = "Last Name";
             // 
@@ -196,9 +204,10 @@
             this.txtFirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtFirstName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtFirstName.ForeColor = System.Drawing.Color.White;
-            this.txtFirstName.Location = new System.Drawing.Point(242, 165);
+            this.txtFirstName.Location = new System.Drawing.Point(212, 124);
+            this.txtFirstName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(363, 20);
+            this.txtFirstName.Size = new System.Drawing.Size(318, 16);
             this.txtFirstName.TabIndex = 183;
             // 
             // tlpFirstName
@@ -207,35 +216,36 @@
             this.tlpFirstName.ColumnCount = 1;
             this.tlpFirstName.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpFirstName.ForeColor = System.Drawing.Color.White;
-            this.tlpFirstName.Location = new System.Drawing.Point(231, 151);
+            this.tlpFirstName.Location = new System.Drawing.Point(202, 113);
+            this.tlpFirstName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tlpFirstName.Name = "tlpFirstName";
             this.tlpFirstName.RowCount = 3;
             this.tlpFirstName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpFirstName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpFirstName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpFirstName.Size = new System.Drawing.Size(389, 52);
+            this.tlpFirstName.Size = new System.Drawing.Size(340, 39);
             this.tlpFirstName.TabIndex = 182;
             // 
             // lblFirstName
             // 
             this.lblFirstName.AutoSize = true;
             this.lblFirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.lblFirstName.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblFirstName.ForeColor = System.Drawing.Color.White;
-            this.lblFirstName.Location = new System.Drawing.Point(231, 130);
+            this.lblFirstName.Location = new System.Drawing.Point(202, 98);
             this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(93, 21);
+            this.lblFirstName.Size = new System.Drawing.Size(67, 15);
             this.lblFirstName.TabIndex = 181;
             this.lblFirstName.Text = "First Name";
             // 
             // lblEditProfile
             // 
             this.lblEditProfile.AutoSize = true;
-            this.lblEditProfile.Font = new System.Drawing.Font("Exo 2", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblEditProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblEditProfile.ForeColor = System.Drawing.Color.White;
-            this.lblEditProfile.Location = new System.Drawing.Point(52, 64);
+            this.lblEditProfile.Location = new System.Drawing.Point(46, 48);
             this.lblEditProfile.Name = "lblEditProfile";
-            this.lblEditProfile.Size = new System.Drawing.Size(161, 28);
+            this.lblEditProfile.Size = new System.Drawing.Size(148, 24);
             this.lblEditProfile.TabIndex = 180;
             this.lblEditProfile.Text = "EDIT PROFILE";
             // 
@@ -244,9 +254,10 @@
             this.txtAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAddress.ForeColor = System.Drawing.Color.White;
-            this.txtAddress.Location = new System.Drawing.Point(63, 435);
+            this.txtAddress.Location = new System.Drawing.Point(55, 326);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(542, 20);
+            this.txtAddress.Size = new System.Drawing.Size(474, 16);
             this.txtAddress.TabIndex = 179;
             // 
             // tlpAddress
@@ -255,24 +266,25 @@
             this.tlpAddress.ColumnCount = 1;
             this.tlpAddress.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpAddress.ForeColor = System.Drawing.Color.White;
-            this.tlpAddress.Location = new System.Drawing.Point(52, 421);
+            this.tlpAddress.Location = new System.Drawing.Point(46, 316);
+            this.tlpAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tlpAddress.Name = "tlpAddress";
             this.tlpAddress.RowCount = 3;
             this.tlpAddress.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpAddress.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpAddress.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpAddress.Size = new System.Drawing.Size(568, 52);
+            this.tlpAddress.Size = new System.Drawing.Size(497, 39);
             this.tlpAddress.TabIndex = 178;
             // 
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
             this.lblAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.lblAddress.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblAddress.ForeColor = System.Drawing.Color.White;
-            this.lblAddress.Location = new System.Drawing.Point(52, 400);
+            this.lblAddress.Location = new System.Drawing.Point(46, 300);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(70, 21);
+            this.lblAddress.Size = new System.Drawing.Size(51, 15);
             this.lblAddress.TabIndex = 177;
             this.lblAddress.Text = "Address";
             // 
@@ -281,9 +293,10 @@
             this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmail.ForeColor = System.Drawing.Color.White;
-            this.txtEmail.Location = new System.Drawing.Point(63, 345);
+            this.txtEmail.Location = new System.Drawing.Point(55, 259);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(542, 20);
+            this.txtEmail.Size = new System.Drawing.Size(474, 16);
             this.txtEmail.TabIndex = 176;
             // 
             // tlpEmail
@@ -292,24 +305,25 @@
             this.tlpEmail.ColumnCount = 1;
             this.tlpEmail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpEmail.ForeColor = System.Drawing.Color.White;
-            this.tlpEmail.Location = new System.Drawing.Point(52, 331);
+            this.tlpEmail.Location = new System.Drawing.Point(46, 248);
+            this.tlpEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tlpEmail.Name = "tlpEmail";
             this.tlpEmail.RowCount = 3;
             this.tlpEmail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpEmail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpEmail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpEmail.Size = new System.Drawing.Size(568, 52);
+            this.tlpEmail.Size = new System.Drawing.Size(497, 39);
             this.tlpEmail.TabIndex = 175;
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.lblEmail.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblEmail.ForeColor = System.Drawing.Color.White;
-            this.lblEmail.Location = new System.Drawing.Point(52, 310);
+            this.lblEmail.Location = new System.Drawing.Point(46, 232);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(53, 21);
+            this.lblEmail.Size = new System.Drawing.Size(39, 15);
             this.lblEmail.TabIndex = 174;
             this.lblEmail.Text = "Email";
             // 
@@ -319,11 +333,12 @@
             this.btnUpdate.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnUpdate.FlatAppearance.BorderSize = 0;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Font = new System.Drawing.Font("Exo 2", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(52, 601);
+            this.btnUpdate.Location = new System.Drawing.Point(46, 451);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(568, 52);
+            this.btnUpdate.Size = new System.Drawing.Size(497, 39);
             this.btnUpdate.TabIndex = 173;
             this.btnUpdate.Text = "UPDATE";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -331,10 +346,10 @@
             // 
             // EditProfile
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.ClientSize = new System.Drawing.Size(676, 705);
+            this.ClientSize = new System.Drawing.Size(592, 529);
             this.Controls.Add(this.txtTelNumber);
             this.Controls.Add(this.tlpTelNumber);
             this.Controls.Add(this.lblTelNumber);
@@ -358,9 +373,11 @@
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.btnUpdate);
             this.ForeColor = System.Drawing.Color.White;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "EditProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edit Profile";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.EditProfile_FormClosed);
             this.Load += new System.EventHandler(this.EditProfile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbUserImage)).EndInit();
             this.ResumeLayout(false);

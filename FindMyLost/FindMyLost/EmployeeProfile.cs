@@ -121,6 +121,7 @@ namespace FindMyLost
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             EditProfile ed = new EditProfile();
             ed.Show();
         }
@@ -133,6 +134,12 @@ namespace FindMyLost
         private void EmployeeProfile_MouseClick(object sender, MouseEventArgs e)
         {
            
+        }
+
+        private void EmployeeProfile_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            EmployeeList el = new EmployeeList();
+            el.Show();
         }
     }
 }
