@@ -65,6 +65,7 @@ namespace FindMyLost
         {
             ListViewItem item = lvItemList.SelectedItems[0];
             SelectedItemID = item.SubItems[0].Text;
+            this.Hide();
             ItemProfile itemProfile = new ItemProfile();
             itemProfile.Show();
         }
