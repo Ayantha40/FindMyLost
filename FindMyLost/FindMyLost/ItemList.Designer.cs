@@ -46,7 +46,7 @@
             this.Brand,
             this.LastSeen});
             this.lvItemList.Depth = 0;
-            this.lvItemList.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lvItemList.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lvItemList.FullRowSelect = true;
             this.lvItemList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lvItemList.HideSelection = false;
@@ -60,6 +60,7 @@
             this.lvItemList.TabIndex = 1;
             this.lvItemList.UseCompatibleStateImageBehavior = false;
             this.lvItemList.View = System.Windows.Forms.View.Details;
+            this.lvItemList.SelectedIndexChanged += new System.EventHandler(this.lvItemList_SelectedIndexChanged);
             this.lvItemList.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lvItemList_MouseClick);
             // 
             // ItemID
@@ -89,11 +90,11 @@
             // 
             // ItemList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(879, 688);
             this.Controls.Add(this.lvItemList);
-            this.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ItemList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -73,6 +73,9 @@ namespace FindMyLost
              
         }
 
-        
+        private void lvItemList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

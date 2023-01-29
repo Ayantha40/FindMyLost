@@ -49,7 +49,7 @@ namespace FindMyLost
             {
                 byte[] imageBytes;
 
-                string sql = "SELECT * FROM Employee WHERE employee_id = '" + 100000 + "'";
+                string sql = "SELECT * FROM Employee WHERE employee_id = '" + EmployeeList.SelectedEmployeeID + "'";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 conn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
