@@ -61,6 +61,7 @@
             this.lvClaimList.TabIndex = 0;
             this.lvClaimList.UseCompatibleStateImageBehavior = false;
             this.lvClaimList.View = System.Windows.Forms.View.Details;
+            this.lvClaimList.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lvClaimList_MouseClick);
             // 
             // claimID
             // 

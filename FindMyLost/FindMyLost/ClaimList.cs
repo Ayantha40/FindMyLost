@@ -59,5 +59,16 @@ namespace FindMyLost
                 conn.Close();
             }
         }
+
+        public static string SelectedClaimID;
+
+        private void lvClaimList_MouseClick(object sender, MouseEventArgs e)
+        {
+            ListViewItem item = lvClaimList.SelectedItems[0];
+            SelectedClaimID = item.SubItems[0].Text;
+            this.Hide();
+            ClaimProfile claimProfile = new ClaimProfile();
+            claimProfile.Show();
+        }
     }
 }
