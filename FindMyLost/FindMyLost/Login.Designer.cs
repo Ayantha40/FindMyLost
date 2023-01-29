@@ -43,10 +43,11 @@
             this.txtpassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtpassword.Font = new System.Drawing.Font("Montserrat Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtpassword.ForeColor = System.Drawing.Color.White;
-            this.txtpassword.Location = new System.Drawing.Point(338, 260);
+            this.txtpassword.Location = new System.Drawing.Point(386, 347);
+            this.txtpassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.PasswordChar = '●';
-            this.txtpassword.Size = new System.Drawing.Size(262, 27);
+            this.txtpassword.Size = new System.Drawing.Size(299, 32);
             this.txtpassword.TabIndex = 10;
             this.txtpassword.TabStop = false;
             // 
@@ -56,11 +57,12 @@
             this.btnlogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnlogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnlogin.Font = new System.Drawing.Font("Exo 2 Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnlogin.Font = new System.Drawing.Font("Exo 2", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnlogin.ForeColor = System.Drawing.Color.White;
-            this.btnlogin.Location = new System.Drawing.Point(338, 382);
+            this.btnlogin.Location = new System.Drawing.Point(386, 509);
+            this.btnlogin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnlogin.Name = "btnlogin";
-            this.btnlogin.Size = new System.Drawing.Size(116, 44);
+            this.btnlogin.Size = new System.Drawing.Size(133, 59);
             this.btnlogin.TabIndex = 11;
             this.btnlogin.TabStop = false;
             this.btnlogin.Text = "LETS GO";
@@ -73,9 +75,9 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Montserrat Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(165, 263);
+            this.label3.Location = new System.Drawing.Point(189, 351);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 22);
+            this.label3.Size = new System.Drawing.Size(118, 28);
             this.label3.TabIndex = 8;
             this.label3.Text = "Password :";
             // 
@@ -86,9 +88,10 @@
             this.txtempid.Font = new System.Drawing.Font("Montserrat Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtempid.ForeColor = System.Drawing.Color.White;
             this.txtempid.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtempid.Location = new System.Drawing.Point(338, 191);
+            this.txtempid.Location = new System.Drawing.Point(386, 255);
+            this.txtempid.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtempid.Name = "txtempid";
-            this.txtempid.Size = new System.Drawing.Size(262, 27);
+            this.txtempid.Size = new System.Drawing.Size(299, 32);
             this.txtempid.TabIndex = 9;
             this.txtempid.TabStop = false;
             // 
@@ -98,9 +101,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Montserrat Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(165, 194);
+            this.label2.Location = new System.Drawing.Point(189, 259);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 22);
+            this.label2.Size = new System.Drawing.Size(149, 28);
             this.label2.TabIndex = 7;
             this.label2.Text = "Employee ID :";
             // 
@@ -108,20 +111,20 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Exo 2 Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Exo 2", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(338, 72);
+            this.label1.Location = new System.Drawing.Point(386, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 33);
+            this.label1.Size = new System.Drawing.Size(80, 28);
             this.label1.TabIndex = 6;
             this.label1.Text = "LOGIN";
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
-            this.ClientSize = new System.Drawing.Size(765, 499);
+            this.ClientSize = new System.Drawing.Size(874, 665);
             this.Controls.Add(this.txtpassword);
             this.Controls.Add(this.btnlogin);
             this.Controls.Add(this.label3);
@@ -129,6 +132,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

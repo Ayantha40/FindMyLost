@@ -69,10 +69,10 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(244, 163);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(14, 21);
+            this.label6.Size = new System.Drawing.Size(13, 21);
             this.label6.TabIndex = 156;
             this.label6.Text = ":";
             // 
@@ -83,7 +83,7 @@
             this.btnEdit.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnEdit.FlatAppearance.BorderSize = 0;
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnEdit.Font = new System.Drawing.Font("Exo 2", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnEdit.ForeColor = System.Drawing.Color.White;
             this.btnEdit.Location = new System.Drawing.Point(152, 657);
             this.btnEdit.Name = "btnEdit";
@@ -100,7 +100,7 @@
             this.btnDelete.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDelete.Font = new System.Drawing.Font("Exo 2", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.Location = new System.Drawing.Point(280, 657);
             this.btnDelete.Name = "btnDelete";
@@ -140,103 +140,107 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label17.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label17.Location = new System.Drawing.Point(38, 248);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(171, 18);
+            this.label17.Size = new System.Drawing.Size(179, 21);
             this.label17.TabIndex = 217;
             this.label17.Text = "Additional information";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label20.Location = new System.Drawing.Point(244, 246);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(12, 20);
+            this.label20.Size = new System.Drawing.Size(13, 21);
             this.label20.TabIndex = 216;
             this.label20.Text = ":";
             // 
             // lblAdditionInfo
             // 
             this.lblAdditionInfo.AutoSize = true;
-            this.lblAdditionInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lblAdditionInfo.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblAdditionInfo.Location = new System.Drawing.Point(301, 248);
             this.lblAdditionInfo.Name = "lblAdditionInfo";
-            this.lblAdditionInfo.Size = new System.Drawing.Size(0, 18);
+            this.lblAdditionInfo.Size = new System.Drawing.Size(0, 21);
             this.lblAdditionInfo.TabIndex = 215;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label10.Location = new System.Drawing.Point(38, 204);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(146, 18);
+            this.label10.Size = new System.Drawing.Size(143, 21);
             this.label10.TabIndex = 214;
             this.label10.Text = "Last seen location";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label14.Location = new System.Drawing.Point(244, 202);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(12, 20);
+            this.label14.Size = new System.Drawing.Size(13, 21);
             this.label14.TabIndex = 213;
             this.label14.Text = ":";
             // 
             // lblLocation
             // 
             this.lblLocation.AutoSize = true;
-            this.lblLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lblLocation.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblLocation.Location = new System.Drawing.Point(301, 203);
             this.lblLocation.Name = "lblLocation";
-            this.lblLocation.Size = new System.Drawing.Size(0, 18);
+            this.lblLocation.Size = new System.Drawing.Size(0, 21);
             this.lblLocation.TabIndex = 212;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label8.Location = new System.Drawing.Point(38, 166);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(52, 18);
+            this.label8.Size = new System.Drawing.Size(56, 21);
             this.label8.TabIndex = 211;
             this.label8.Text = "Brand";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(38, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(24, 18);
+            this.label1.Size = new System.Drawing.Size(27, 21);
             this.label1.TabIndex = 210;
             this.label1.Text = "ID";
             // 
             // lblBrand
             // 
             this.lblBrand.AutoSize = true;
-            this.lblBrand.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lblBrand.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblBrand.Location = new System.Drawing.Point(301, 166);
             this.lblBrand.Name = "lblBrand";
-            this.lblBrand.Size = new System.Drawing.Size(0, 18);
+            this.lblBrand.Size = new System.Drawing.Size(0, 21);
             this.lblBrand.TabIndex = 207;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(244, 90);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(12, 20);
+            this.label4.Size = new System.Drawing.Size(13, 21);
             this.label4.TabIndex = 206;
             this.label4.Text = ":";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(244, 51);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(12, 20);
+            this.label2.Size = new System.Drawing.Size(13, 21);
             this.label2.TabIndex = 205;
             this.label2.Text = ":";
             // 
@@ -252,43 +256,44 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(38, 127);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 18);
+            this.label5.Size = new System.Drawing.Size(59, 21);
             this.label5.TabIndex = 203;
             this.label5.Text = "Colour";
             // 
             // lblCategory
             // 
             this.lblCategory.AutoSize = true;
-            this.lblCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lblCategory.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblCategory.Location = new System.Drawing.Point(301, 92);
             this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(0, 18);
+            this.lblCategory.Size = new System.Drawing.Size(0, 21);
             this.lblCategory.TabIndex = 202;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(38, 92);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 18);
+            this.label3.Size = new System.Drawing.Size(78, 21);
             this.label3.TabIndex = 201;
             this.label3.Text = "Category";
             // 
             // lblID
             // 
             this.lblID.AutoSize = true;
-            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lblID.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblID.Location = new System.Drawing.Point(301, 53);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(0, 18);
+            this.lblID.Size = new System.Drawing.Size(0, 21);
             this.lblID.TabIndex = 200;
             // 
             // label7
             // 
+            this.label7.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(244, 126);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(17, 31);
