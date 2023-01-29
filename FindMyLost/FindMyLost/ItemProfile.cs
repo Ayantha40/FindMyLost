@@ -39,7 +39,6 @@ namespace FindMyLost
 
                 if (dr.Read())
                 {
-
                     var myColor = Color.FromArgb(Convert.ToInt32(dr["item_colour"]));
                     pbColor.BackColor = myColor;
 

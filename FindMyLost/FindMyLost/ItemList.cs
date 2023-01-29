@@ -70,7 +70,7 @@ namespace FindMyLost
             ItemProfile itemProfile = new ItemProfile();
             itemProfile.Show();
             
-             
+         
         }
 
         private void lvItemList_SelectedIndexChanged(object sender, EventArgs e)

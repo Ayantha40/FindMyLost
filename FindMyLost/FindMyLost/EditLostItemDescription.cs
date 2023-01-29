@@ -30,9 +30,6 @@ namespace FindMyLost
 
         private void EditLostItemDescription_Load(object sender, EventArgs e)
         {
-            //to check if color is getting retrieved
-            //it is 
-            //yay
             try
             {
                 byte[] imageBytes;
