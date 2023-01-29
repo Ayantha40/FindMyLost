@@ -76,6 +76,7 @@ namespace FindMyLost
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
+            this.Hide();
             EditLostItemDescription ed = new EditLostItemDescription();
             ed.Show();
         }

@@ -227,6 +227,12 @@ namespace FindMyLost
         {
 
         }
+
+        private void EditLostItemDescription_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            ItemProfile ip = new ItemProfile();
+            ip.Show();
+        }
     }
 }
 

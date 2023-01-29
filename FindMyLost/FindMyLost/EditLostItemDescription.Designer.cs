@@ -476,6 +476,7 @@
             this.Name = "EditLostItemDescription";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditLostItemDescription";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.EditLostItemDescription_FormClosed);
             this.Load += new System.EventHandler(this.EditLostItemDescription_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
