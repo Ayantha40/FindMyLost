@@ -89,7 +89,7 @@
             // 
             // ItemList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(879, 688);
             this.Controls.Add(this.lvItemList);
@@ -104,12 +104,11 @@
         }
 
         #endregion
-
-        private MaterialSkin.Controls.MaterialListView lvItemList;
         private System.Windows.Forms.ColumnHeader ItemID;
         private System.Windows.Forms.ColumnHeader Category;
         private System.Windows.Forms.ColumnHeader Color;
         private System.Windows.Forms.ColumnHeader Brand;
         private System.Windows.Forms.ColumnHeader LastSeen;
+        public MaterialSkin.Controls.MaterialListView lvItemList;
     }
 }
