@@ -571,7 +571,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.ClientSize = new System.Drawing.Size(1285, 749);
+            this.ClientSize = new System.Drawing.Size(1285, 785);
             this.Controls.Add(this.LostItemInfo);
             this.Controls.Add(this.btnPublishClaim);
             this.Controls.Add(this.lblClaimItem);
