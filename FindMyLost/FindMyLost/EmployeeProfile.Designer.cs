@@ -53,11 +53,11 @@
             // lblPosition
             // 
             this.lblPosition.AutoSize = true;
-            this.lblPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPosition.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblPosition.ForeColor = System.Drawing.Color.White;
-            this.lblPosition.Location = new System.Drawing.Point(64, 358);
+            this.lblPosition.Location = new System.Drawing.Point(73, 477);
             this.lblPosition.Name = "lblPosition";
-            this.lblPosition.Size = new System.Drawing.Size(0, 15);
+            this.lblPosition.Size = new System.Drawing.Size(0, 24);
             this.lblPosition.TabIndex = 201;
             this.lblPosition.Click += new System.EventHandler(this.lblPosition_Click);
             // 
@@ -65,75 +65,75 @@
             // 
             this.lblTelNumber.AutoSize = true;
             this.lblTelNumber.BackColor = System.Drawing.Color.Transparent;
-            this.lblTelNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTelNumber.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTelNumber.ForeColor = System.Drawing.Color.White;
-            this.lblTelNumber.Location = new System.Drawing.Point(93, 505);
+            this.lblTelNumber.Location = new System.Drawing.Point(106, 673);
             this.lblTelNumber.Name = "lblTelNumber";
-            this.lblTelNumber.Size = new System.Drawing.Size(0, 15);
+            this.lblTelNumber.Size = new System.Drawing.Size(0, 24);
             this.lblTelNumber.TabIndex = 198;
             // 
             // lblMobileNumber
             // 
             this.lblMobileNumber.AutoSize = true;
             this.lblMobileNumber.BackColor = System.Drawing.Color.Transparent;
-            this.lblMobileNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMobileNumber.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblMobileNumber.ForeColor = System.Drawing.Color.White;
-            this.lblMobileNumber.Location = new System.Drawing.Point(93, 533);
+            this.lblMobileNumber.Location = new System.Drawing.Point(106, 711);
             this.lblMobileNumber.Name = "lblMobileNumber";
-            this.lblMobileNumber.Size = new System.Drawing.Size(0, 15);
+            this.lblMobileNumber.Size = new System.Drawing.Size(0, 24);
             this.lblMobileNumber.TabIndex = 195;
             // 
             // lblLastName
             // 
             this.lblLastName.AutoSize = true;
-            this.lblLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblLastName.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblLastName.ForeColor = System.Drawing.Color.White;
-            this.lblLastName.Location = new System.Drawing.Point(130, 324);
+            this.lblLastName.Location = new System.Drawing.Point(149, 432);
             this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(0, 15);
+            this.lblLastName.Size = new System.Drawing.Size(0, 24);
             this.lblLastName.TabIndex = 190;
             this.lblLastName.Click += new System.EventHandler(this.lblLastName_Click);
             // 
             // lblFirstName
             // 
             this.lblFirstName.AutoSize = true;
-            this.lblFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblFirstName.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblFirstName.ForeColor = System.Drawing.Color.White;
-            this.lblFirstName.Location = new System.Drawing.Point(64, 324);
+            this.lblFirstName.Location = new System.Drawing.Point(73, 432);
             this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(0, 15);
+            this.lblFirstName.Size = new System.Drawing.Size(0, 24);
             this.lblFirstName.TabIndex = 187;
             // 
             // lblRegister
             // 
             this.lblRegister.AutoSize = true;
-            this.lblRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblRegister.Font = new System.Drawing.Font("Exo 2", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblRegister.ForeColor = System.Drawing.Color.White;
-            this.lblRegister.Location = new System.Drawing.Point(64, 39);
+            this.lblRegister.Location = new System.Drawing.Point(73, 52);
             this.lblRegister.Name = "lblRegister";
-            this.lblRegister.Size = new System.Drawing.Size(99, 22);
+            this.lblRegister.Size = new System.Drawing.Size(111, 28);
             this.lblRegister.TabIndex = 186;
             this.lblRegister.Text = " PROFILE";
             // 
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
-            this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAddress.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblAddress.ForeColor = System.Drawing.Color.White;
-            this.lblAddress.Location = new System.Drawing.Point(93, 476);
+            this.lblAddress.Location = new System.Drawing.Point(106, 635);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(0, 15);
+            this.lblAddress.Size = new System.Drawing.Size(0, 24);
             this.lblAddress.TabIndex = 183;
             this.lblAddress.Click += new System.EventHandler(this.lblAddress_Click);
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblEmail.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblEmail.ForeColor = System.Drawing.Color.White;
-            this.lblEmail.Location = new System.Drawing.Point(93, 441);
+            this.lblEmail.Location = new System.Drawing.Point(106, 588);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(0, 15);
+            this.lblEmail.Size = new System.Drawing.Size(0, 24);
             this.lblEmail.TabIndex = 180;
             // 
             // btnDelete
@@ -142,12 +142,11 @@
             this.btnDelete.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDelete.Font = new System.Drawing.Font("Exo 2", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(334, 577);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDelete.Location = new System.Drawing.Point(382, 769);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(227, 39);
+            this.btnDelete.Size = new System.Drawing.Size(259, 52);
             this.btnDelete.TabIndex = 179;
             this.btnDelete.Text = "DELETE  👤";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -159,12 +158,11 @@
             this.btnEdit.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnEdit.FlatAppearance.BorderSize = 0;
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEdit.Font = new System.Drawing.Font("Exo 2", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Location = new System.Drawing.Point(64, 577);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEdit.Location = new System.Drawing.Point(73, 769);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(227, 39);
+            this.btnEdit.Size = new System.Drawing.Size(259, 52);
             this.btnEdit.TabIndex = 203;
             this.btnEdit.Text = "EDIT  ✒️";
             this.btnEdit.UseVisualStyleBackColor = false;
@@ -173,19 +171,19 @@
             // lblID
             // 
             this.lblID.AutoSize = true;
-            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblID.Location = new System.Drawing.Point(64, 393);
+            this.lblID.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblID.Location = new System.Drawing.Point(73, 524);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(0, 15);
+            this.lblID.Size = new System.Drawing.Size(0, 24);
             this.lblID.TabIndex = 204;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(61, 442);
+            this.label1.Location = new System.Drawing.Point(70, 589);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(26, 17);
+            this.label1.Size = new System.Drawing.Size(33, 23);
             this.label1.TabIndex = 205;
             this.label1.Text = "📧";
             // 
@@ -193,9 +191,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(61, 476);
+            this.label2.Location = new System.Drawing.Point(70, 635);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(26, 17);
+            this.label2.Size = new System.Drawing.Size(33, 23);
             this.label2.TabIndex = 206;
             this.label2.Text = "📫";
             // 
@@ -203,9 +201,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(61, 505);
+            this.label3.Location = new System.Drawing.Point(70, 673);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(26, 17);
+            this.label3.Size = new System.Drawing.Size(33, 23);
             this.label3.TabIndex = 207;
             this.label3.Text = "📱";
             // 
@@ -213,19 +211,18 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(61, 533);
+            this.label4.Location = new System.Drawing.Point(70, 711);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(26, 17);
+            this.label4.Size = new System.Drawing.Size(33, 23);
             this.label4.TabIndex = 208;
             this.label4.Text = "☎️";
             // 
             // pbUserImage
             // 
             this.pbUserImage.Image = ((System.Drawing.Image)(resources.GetObject("pbUserImage.Image")));
-            this.pbUserImage.Location = new System.Drawing.Point(162, 21);
-            this.pbUserImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbUserImage.Location = new System.Drawing.Point(185, 28);
             this.pbUserImage.Name = "pbUserImage";
-            this.pbUserImage.Size = new System.Drawing.Size(186, 186);
+            this.pbUserImage.Size = new System.Drawing.Size(213, 248);
             this.pbUserImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbUserImage.TabIndex = 193;
             this.pbUserImage.TabStop = false;
@@ -233,19 +230,21 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.pbUserImage);
-            this.groupBox1.Location = new System.Drawing.Point(64, 73);
+            this.groupBox1.Location = new System.Drawing.Point(73, 97);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(497, 222);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Size = new System.Drawing.Size(568, 296);
             this.groupBox1.TabIndex = 209;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // EmployeeProfile
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
-            this.ClientSize = new System.Drawing.Size(624, 633);
+            this.ClientSize = new System.Drawing.Size(713, 844);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -264,6 +263,7 @@
             this.Controls.Add(this.btnDelete);
             this.ForeColor = System.Drawing.Color.White;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "EmployeeProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

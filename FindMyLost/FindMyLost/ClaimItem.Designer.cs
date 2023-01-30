@@ -353,7 +353,7 @@
             this.btnPublishClaim.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnPublishClaim.FlatAppearance.BorderSize = 0;
             this.btnPublishClaim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPublishClaim.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPublishClaim.Font = new System.Drawing.Font("Exo 2", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPublishClaim.ForeColor = System.Drawing.Color.White;
             this.btnPublishClaim.Location = new System.Drawing.Point(655, 651);
             this.btnPublishClaim.Name = "btnPublishClaim";
