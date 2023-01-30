@@ -52,5 +52,17 @@ namespace FindMyLost
         {
 
         }
+
+        private void btnViewPassword_Click(object sender, EventArgs e)
+        {
+            if (txtpassword.PasswordChar == '●')
+            {
+                txtpassword.PasswordChar = '\0';
+            }
+            else
+            {
+                txtpassword.PasswordChar = '●';
+            }
+        }
     }
 }
