@@ -104,7 +104,7 @@ namespace FindMyLost
             panelForm.Controls.Clear();
             panelForm.Controls.Add(panelMenu);
             register.FormBorderStyle = FormBorderStyle.None;
-            this.Size = new Size(1071, 822);
+            this.Size = new Size(1028, 933);
             panelForm.Controls.Add(register);
             register.Show();
         }
@@ -119,7 +119,7 @@ namespace FindMyLost
             panelForm.Controls.Clear();
             panelForm.Controls.Add(panelMenu);
             claimItem.FormBorderStyle = FormBorderStyle.None;
-            this.Size = new Size(1071, 822);
+            this.Size = new Size(1596, 897);
             panelForm.Controls.Add(claimItem);
             claimItem.Show();
         }
@@ -134,7 +134,8 @@ namespace FindMyLost
             panelForm.Controls.Clear();
             panelForm.Controls.Add(panelMenu);
             itemList.FormBorderStyle = FormBorderStyle.None;
-            this.Size = new Size(1071, 822);
+            itemList.ControlBox = false;
+            this.Size = new Size(1209, 850);
             panelForm.Controls.Add(itemList);
             itemList.Show();
         }
@@ -148,8 +149,8 @@ namespace FindMyLost
             EmployeeList empList = new EmployeeList() { TopLevel = false, TopMost = true };
             panelForm.Controls.Clear();
             panelForm.Controls.Add(panelMenu);
-            empList.FormBorderStyle = FormBorderStyle.None;
-            this.Size = new Size(1071, 822);
+            empList.ControlBox = false;
+            this.Size = new Size(1197, 836);
             panelForm.Controls.Add(empList);
             empList.Show();
         }
@@ -163,8 +164,8 @@ namespace FindMyLost
             ClaimList claimList = new ClaimList() { TopLevel = false, TopMost = true };
             panelForm.Controls.Clear();
             panelForm.Controls.Add(panelMenu);
-            claimList.FormBorderStyle = FormBorderStyle.None;
-            this.Size = new Size(1071, 822);
+            claimList.ControlBox = false;
+            this.Size = new Size(1343, 846);
             panelForm.Controls.Add(claimList);
             claimList.Show();
         }
@@ -179,7 +180,7 @@ namespace FindMyLost
             panelForm.Controls.Clear();
             panelForm.Controls.Add(panelMenu);
             listItem.FormBorderStyle = FormBorderStyle.None;
-            this.Size = new Size(1071, 822);
+            this.Size = new Size(1335, 1035);
             panelForm.Controls.Add(listItem);
             listItem.Show();
         }
@@ -195,7 +196,7 @@ namespace FindMyLost
             panelForm.Controls.Clear();
             panelForm.Controls.Add(panelMenu);
             editProfile.FormBorderStyle = FormBorderStyle.None;
-            this.Size = new Size(1071, 822);
+            this.Size = new Size(1013, 817);
             panelForm.Controls.Add(editProfile);
             editProfile.Show();
         }
@@ -211,7 +212,7 @@ namespace FindMyLost
             panelForm.Controls.Clear();
             panelForm.Controls.Add(panelMenu);
             changePassword.FormBorderStyle = FormBorderStyle.None;
-            this.Size = new Size(1071, 822);
+            this.Size = new Size(1301, 656);
             panelForm.Controls.Add(changePassword);
             changePassword.Show();
         }

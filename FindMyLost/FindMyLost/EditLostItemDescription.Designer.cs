@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditLostItemDescription));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtCategory = new System.Windows.Forms.TextBox();
+            this.tlpFirstName = new System.Windows.Forms.TableLayoutPanel();
             this.radioOther = new System.Windows.Forms.RadioButton();
             this.radioDocuments = new System.Windows.Forms.RadioButton();
             this.radioClothing = new System.Windows.Forms.RadioButton();
@@ -58,8 +60,6 @@
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.tlpFirstName = new System.Windows.Forms.TableLayoutPanel();
-            this.txtCategory = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbColor)).BeginInit();
@@ -92,6 +92,32 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Category *";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // txtCategory
+            // 
+            this.txtCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.txtCategory.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCategory.ForeColor = System.Drawing.Color.White;
+            this.txtCategory.Location = new System.Drawing.Point(362, 229);
+            this.txtCategory.Name = "txtCategory";
+            this.txtCategory.Size = new System.Drawing.Size(186, 19);
+            this.txtCategory.TabIndex = 167;
+            this.txtCategory.TabStop = false;
+            // 
+            // tlpFirstName
+            // 
+            this.tlpFirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.tlpFirstName.ColumnCount = 1;
+            this.tlpFirstName.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpFirstName.ForeColor = System.Drawing.Color.White;
+            this.tlpFirstName.Location = new System.Drawing.Point(350, 211);
+            this.tlpFirstName.Name = "tlpFirstName";
+            this.tlpFirstName.RowCount = 3;
+            this.tlpFirstName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tlpFirstName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpFirstName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tlpFirstName.Size = new System.Drawing.Size(213, 52);
+            this.tlpFirstName.TabIndex = 166;
             // 
             // radioOther
             // 
@@ -216,7 +242,7 @@
             "Pink",
             "Beige",
             "Brown",
-            "Grey",
+            "Gray",
             "Black",
             "White"});
             this.cmbColor.Location = new System.Drawing.Point(358, 48);
@@ -494,32 +520,6 @@
             this.textBox1.Size = new System.Drawing.Size(180, 20);
             this.textBox1.TabIndex = 167;
             this.textBox1.TabStop = false;
-            // 
-            // tlpFirstName
-            // 
-            this.tlpFirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.tlpFirstName.ColumnCount = 1;
-            this.tlpFirstName.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpFirstName.ForeColor = System.Drawing.Color.White;
-            this.tlpFirstName.Location = new System.Drawing.Point(350, 211);
-            this.tlpFirstName.Name = "tlpFirstName";
-            this.tlpFirstName.RowCount = 3;
-            this.tlpFirstName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpFirstName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpFirstName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpFirstName.Size = new System.Drawing.Size(213, 52);
-            this.tlpFirstName.TabIndex = 166;
-            // 
-            // txtCategory
-            // 
-            this.txtCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.txtCategory.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCategory.ForeColor = System.Drawing.Color.White;
-            this.txtCategory.Location = new System.Drawing.Point(362, 229);
-            this.txtCategory.Name = "txtCategory";
-            this.txtCategory.Size = new System.Drawing.Size(186, 19);
-            this.txtCategory.TabIndex = 167;
-            this.txtCategory.TabStop = false;
             // 
             // EditLostItemDescription
             // 

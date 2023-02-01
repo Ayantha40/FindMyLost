@@ -38,6 +38,7 @@
             // 
             // lvItemList
             // 
+            this.lvItemList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.lvItemList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lvItemList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.ItemID,
@@ -51,13 +52,13 @@
             this.lvItemList.FullRowSelect = true;
             this.lvItemList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lvItemList.HideSelection = false;
-            this.lvItemList.Location = new System.Drawing.Point(16, 70);
+            this.lvItemList.Location = new System.Drawing.Point(22, 0);
             this.lvItemList.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.lvItemList.MouseLocation = new System.Drawing.Point(-1, -1);
             this.lvItemList.MouseState = MaterialSkin.MouseState.OUT;
             this.lvItemList.Name = "lvItemList";
             this.lvItemList.OwnerDraw = true;
-            this.lvItemList.Size = new System.Drawing.Size(850, 600);
+            this.lvItemList.Size = new System.Drawing.Size(850, 692);
             this.lvItemList.TabIndex = 1;
             this.lvItemList.UseCompatibleStateImageBehavior = false;
             this.lvItemList.View = System.Windows.Forms.View.Details;
@@ -92,7 +93,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(879, 688);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.ClientSize = new System.Drawing.Size(898, 738);
             this.Controls.Add(this.lvItemList);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(4);

@@ -13,7 +13,7 @@ using System.Data.SqlClient;
 
 namespace FindMyLost
 {
-    public partial class ItemList : MaterialSkin.Controls.MaterialForm
+    public partial class ItemList : Form //MaterialSkin.Controls.MaterialForm
     {
         MaterialSkinManager skinManager;
         SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConString"].ToString());
@@ -22,9 +22,9 @@ namespace FindMyLost
         {
             InitializeComponent();
             skinManager = MaterialSkinManager.Instance;
-            skinManager.AddFormToManage(this);
+            //skinManager.AddFormToManage(this);
             skinManager.Theme = MaterialSkinManager.Themes.DARK;
-            skinManager.ColorScheme = new ColorScheme(Primary.Green800, Primary.Green700, Primary.Green700, Accent.LightBlue100, TextShade.WHITE);
+            skinManager.ColorScheme = new ColorScheme(Primary.Green800, Primary.Green700, Primary.Green700, Accent.Green700, TextShade.WHITE);
         }
 
         private void ItemList_Load(object sender, EventArgs e)

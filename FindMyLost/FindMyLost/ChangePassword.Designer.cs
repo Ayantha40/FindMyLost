@@ -198,7 +198,7 @@
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnCancel.Location = new System.Drawing.Point(613, 457);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(287, 45);
+            this.btnCancel.Size = new System.Drawing.Size(296, 45);
             this.btnCancel.TabIndex = 43;
             this.btnCancel.TabStop = false;
             this.btnCancel.Text = "CANCEL";
@@ -214,7 +214,7 @@
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Location = new System.Drawing.Point(613, 401);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(287, 48);
+            this.btnSave.Size = new System.Drawing.Size(296, 48);
             this.btnSave.TabIndex = 42;
             this.btnSave.TabStop = false;
             this.btnSave.Text = "SAVE";
@@ -248,7 +248,7 @@
             this.lblWrong0.AutoSize = true;
             this.lblWrong0.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblWrong0.ForeColor = System.Drawing.Color.Red;
-            this.lblWrong0.Location = new System.Drawing.Point(914, 125);
+            this.lblWrong0.Location = new System.Drawing.Point(917, 125);
             this.lblWrong0.Name = "lblWrong0";
             this.lblWrong0.Size = new System.Drawing.Size(33, 23);
             this.lblWrong0.TabIndex = 37;
@@ -312,7 +312,7 @@
             this.lblOld.AutoSize = true;
             this.lblOld.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblOld.ForeColor = System.Drawing.Color.White;
-            this.lblOld.Location = new System.Drawing.Point(613, 76);
+            this.lblOld.Location = new System.Drawing.Point(613, 82);
             this.lblOld.Name = "lblOld";
             this.lblOld.Size = new System.Drawing.Size(113, 21);
             this.lblOld.TabIndex = 166;
@@ -357,7 +357,7 @@
             this.lblNewPassword.AutoSize = true;
             this.lblNewPassword.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblNewPassword.ForeColor = System.Drawing.Color.White;
-            this.lblNewPassword.Location = new System.Drawing.Point(613, 178);
+            this.lblNewPassword.Location = new System.Drawing.Point(613, 185);
             this.lblNewPassword.Name = "lblNewPassword";
             this.lblNewPassword.Size = new System.Drawing.Size(120, 21);
             this.lblNewPassword.TabIndex = 171;
@@ -409,7 +409,7 @@
             this.lblWrong.AutoSize = true;
             this.lblWrong.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblWrong.ForeColor = System.Drawing.Color.Red;
-            this.lblWrong.Location = new System.Drawing.Point(914, 228);
+            this.lblWrong.Location = new System.Drawing.Point(917, 228);
             this.lblWrong.Name = "lblWrong";
             this.lblWrong.Size = new System.Drawing.Size(33, 23);
             this.lblWrong.TabIndex = 39;
@@ -437,7 +437,7 @@
             this.lblConfirmNew.AutoSize = true;
             this.lblConfirmNew.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblConfirmNew.ForeColor = System.Drawing.Color.White;
-            this.lblConfirmNew.Location = new System.Drawing.Point(617, 276);
+            this.lblConfirmNew.Location = new System.Drawing.Point(613, 282);
             this.lblConfirmNew.Name = "lblConfirmNew";
             this.lblConfirmNew.Size = new System.Drawing.Size(186, 21);
             this.lblConfirmNew.TabIndex = 174;
@@ -450,13 +450,13 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Controls.Add(this.txtCNP, 0, 1);
             this.tableLayoutPanel2.ForeColor = System.Drawing.Color.White;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(617, 309);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(613, 309);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(241, 52);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(245, 52);
             this.tableLayoutPanel2.TabIndex = 173;
             // 
             // txtCNP

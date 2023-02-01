@@ -93,7 +93,6 @@
             this.ClientSize = new System.Drawing.Size(886, 771);
             this.Controls.Add(this.lvEmployeeList);
             this.Name = "EmployeeList";
-            this.Text = "EMPLOYEE LIST";
             this.Load += new System.EventHandler(this.EmployeeList_Load);
             this.ResumeLayout(false);
 
