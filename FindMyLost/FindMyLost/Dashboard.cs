@@ -1,0 +1,213 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using FontAwesome.Sharp;
+using System.Runtime.InteropServices;
+
+namespace FindMyLost
+{
+    public partial class Dashboard : Form
+    {
+        public Dashboard()
+        {
+            InitializeComponent();
+            leftBorder = new Panel();
+            leftBorder.Size = new Size(7, 75);
+            SideMenu.Controls.Add(leftBorder);
+            this.Text = String.Empty;
+            this.ControlBox = false;
+            this.DoubleBuffered = true;
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+        }
+
+        readonly bool isITAdmin = true;
+        private IconButton currentbtn;
+        private Panel leftBorder;
+        string currentPage;
+
+        private void BtnSelect(object btn)
+        {
+            if (btn != null)
+            {
+                BtnUnselect();
+                currentbtn = (IconButton)btn;
+                currentbtn.BackColor = Color.FromArgb(20, 20, 20);
+                leftBorder.BackColor = Color.FromArgb(50, 128, 45);
+                leftBorder.Location = new Point(0, currentbtn.Location.Y);
+                leftBorder.Visible = true;
+                leftBorder.BringToFront();
+                iconCurrentPage.IconChar = currentbtn.IconChar;
+                lblCurrentPage.Text = currentPage;
+            }
+        }
+
+        private void BtnUnselect()
+        {
+            if (currentbtn != null)
+            {
+                currentbtn.BackColor = Color.FromArgb(15, 15, 15);
+            }
+        }
+
+        private void CloseMenu()
+        {
+            panelMenu.Visible = false;
+            btnMenu.BackColor = Color.FromArgb(10, 10, 10);
+        }
+
+        private void Reset()
+        {
+            BtnUnselect();
+            leftBorder.Visible = false;
+            iconCurrentPage.IconChar = IconChar.Home;
+            lblCurrentPage.Text = "HOME";
+            CloseMenu();
+            panelForm.Controls.Clear();
+            panelForm.Controls.Add(panelMenu);
+        }
+
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+            //panelTheme.Visible = false;
+            //panelMenu.Size = new Size(318, 389);
+            panelMenu.Visible = false;
+            if (isITAdmin == true)
+            {
+                btnListItem.Visible = false;
+            }
+            else
+            {
+                btnRegister.Visible = false;
+                btnEmployeeList.Visible = false;
+            }
+        }
+
+        private void Dashboard_Resize(object sender, EventArgs e)
+        {
+            panelMenu.Location = new Point((btnMenu.Location.X - 236), 0);
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            currentPage = "REGISTER EMPLOYEES";
+            BtnSelect(sender);
+            CloseMenu();
+
+            RegisterEmployees register = new RegisterEmployees() { TopLevel = false, TopMost = true };
+            panelForm.Controls.Clear();
+            panelForm.Controls.Add(panelMenu);
+            register.FormBorderStyle = FormBorderStyle.None;
+            this.Size = new Size(1071, 822);
+            panelForm.Controls.Add(register);
+            register.Show();
+        }
+
+        private void btnClaimItem_Click(object sender, EventArgs e)
+        {
+            currentPage = "CLAIM AN ITEM";
+            BtnSelect(sender);
+            CloseMenu();
+        }
+
+        private void btnItemList_Click(object sender, EventArgs e)
+        {
+            currentPage = "ITEM LIST";
+            BtnSelect(sender);
+            CloseMenu();
+
+        }
+
+        private void btnEmployeeList_Click(object sender, EventArgs e)
+        {
+            currentPage = "EMPLOYEE LIST";
+            BtnSelect(sender);
+            CloseMenu();
+        }
+
+        private void btnClaimList_Click(object sender, EventArgs e)
+        {
+            currentPage = "CLAIM LIST";
+            BtnSelect(sender);
+            CloseMenu();
+        }
+
+        private void btnListItem_Click(object sender, EventArgs e)
+        {
+            currentPage = "LIST A LOST ITEM";
+            BtnSelect(sender);
+            CloseMenu();
+        }
+
+        private void btnEditProfile_Click(object sender, EventArgs e)
+        {
+            currentPage = "EDIT PROFILE";
+            BtnSelect(sender);
+            leftBorder.Visible = false;
+            CloseMenu();
+        }
+
+        private void btnChangePassword_Click(object sender, EventArgs e)
+        {
+            currentPage = "CHANGE PASSWORD";
+            BtnSelect(sender);
+            leftBorder.Visible = false;
+            CloseMenu();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbLogo_Click(object sender, EventArgs e)
+        {
+            Reset();
+        }
+
+        private void SideMenu_Click(object sender, EventArgs e)
+        {
+            CloseMenu();
+        }
+
+        private void panelForm_Click(object sender, EventArgs e)
+        {
+            CloseMenu();
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            if (panelMenu.Visible == false)
+            {
+                panelMenu.Location = new Point((btnMenu.Location.X - 236), 0);
+                panelMenu.Visible = true;
+                btnMenu.BackColor = Color.FromArgb(20, 20, 20);
+            }
+            else
+            {
+                CloseMenu();
+            }
+        }
+
+        //Drag Form
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+
+        private extern static void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        private void panelTaskBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+    }
+}
