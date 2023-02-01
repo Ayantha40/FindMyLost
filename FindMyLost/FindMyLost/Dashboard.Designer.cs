@@ -507,6 +507,7 @@
             this.Controls.Add(this.SideMenu);
             this.MinimumSize = new System.Drawing.Size(1000, 750);
             this.Name = "Dashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.Resize += new System.EventHandler(this.Dashboard_Resize);

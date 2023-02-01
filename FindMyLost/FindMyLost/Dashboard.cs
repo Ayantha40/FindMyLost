@@ -219,9 +219,14 @@ namespace FindMyLost
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
-            this.Hide();
-            login.Show();
+            DialogResult res = MessageBox.Show("Are you sure you want to Logout?", "FindMyLost", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (res == DialogResult.Yes)
+            {
+                Login login = new Login();
+                this.Hide();
+                login.Show();
+            }
+
         }
 
         private void pbLogo_Click(object sender, EventArgs e)
