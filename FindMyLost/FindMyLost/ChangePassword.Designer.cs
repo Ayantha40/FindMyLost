@@ -324,12 +324,12 @@
             this.btnViewOP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnViewOP.FlatAppearance.BorderSize = 0;
             this.btnViewOP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewOP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnViewOP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnViewOP.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnViewOP.Location = new System.Drawing.Point(851, 109);
+            this.btnViewOP.Location = new System.Drawing.Point(849, 109);
             this.btnViewOP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnViewOP.Name = "btnViewOP";
-            this.btnViewOP.Size = new System.Drawing.Size(58, 55);
+            this.btnViewOP.Size = new System.Drawing.Size(58, 52);
             this.btnViewOP.TabIndex = 167;
             this.btnViewOP.Text = "👁";
             this.btnViewOP.UseVisualStyleBackColor = false;
@@ -341,9 +341,9 @@
             this.btnViewNP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnViewNP.FlatAppearance.BorderSize = 0;
             this.btnViewNP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewNP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnViewNP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnViewNP.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnViewNP.Location = new System.Drawing.Point(851, 213);
+            this.btnViewNP.Location = new System.Drawing.Point(851, 212);
             this.btnViewNP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnViewNP.Name = "btnViewNP";
             this.btnViewNP.Size = new System.Drawing.Size(56, 52);
@@ -421,7 +421,7 @@
             this.btnViewCNP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnViewCNP.FlatAppearance.BorderSize = 0;
             this.btnViewCNP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewCNP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnViewCNP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnViewCNP.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnViewCNP.Location = new System.Drawing.Point(851, 309);
             this.btnViewCNP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
