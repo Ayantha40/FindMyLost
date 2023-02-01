@@ -233,6 +233,18 @@ namespace FindMyLost
             ItemProfile ip = new ItemProfile();
             ip.Show();
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string item_color = cmbColor.Text;
+            Color colour = Color.FromName(item_color);
+            pbColor.BackColor = colour;
+        }
+
+        private void pbColor_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
