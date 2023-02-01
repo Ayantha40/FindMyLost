@@ -87,8 +87,9 @@ namespace FindMyLost
                 if (dr.Read())
                 {
 
-                    lblFirstName.Text = dr["first_name"].ToString();
-                    lblLastName.Text = dr["last_name"].ToString();
+                    string firstName = dr["first_name"].ToString();
+                    string lastName = dr["last_name"].ToString();
+                    lblName.Text = firstName + " " + lastName;
                     lblPosition.Text = dr["position"].ToString();
                     lblID.Text = dr["employee_id"].ToString();
                     lblEmail.Text = dr["email"].ToString();

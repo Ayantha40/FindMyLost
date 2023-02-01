@@ -32,8 +32,7 @@
             this.lblPosition = new System.Windows.Forms.Label();
             this.lblTelNumber = new System.Windows.Forms.Label();
             this.lblMobileNumber = new System.Windows.Forms.Label();
-            this.lblLastName = new System.Windows.Forms.Label();
-            this.lblFirstName = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
             this.lblRegister = new System.Windows.Forms.Label();
             this.lblAddress = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
@@ -57,8 +56,9 @@
             this.lblPosition.ForeColor = System.Drawing.Color.White;
             this.lblPosition.Location = new System.Drawing.Point(64, 358);
             this.lblPosition.Name = "lblPosition";
-            this.lblPosition.Size = new System.Drawing.Size(0, 17);
+            this.lblPosition.Size = new System.Drawing.Size(58, 17);
             this.lblPosition.TabIndex = 201;
+            this.lblPosition.Text = "Position";
             this.lblPosition.Click += new System.EventHandler(this.lblPosition_Click);
             // 
             // lblTelNumber
@@ -69,8 +69,9 @@
             this.lblTelNumber.ForeColor = System.Drawing.Color.White;
             this.lblTelNumber.Location = new System.Drawing.Point(93, 505);
             this.lblTelNumber.Name = "lblTelNumber";
-            this.lblTelNumber.Size = new System.Drawing.Size(0, 17);
+            this.lblTelNumber.Size = new System.Drawing.Size(130, 17);
             this.lblTelNumber.TabIndex = 198;
+            this.lblTelNumber.Text = "Telephone Number";
             // 
             // lblMobileNumber
             // 
@@ -80,29 +81,20 @@
             this.lblMobileNumber.ForeColor = System.Drawing.Color.White;
             this.lblMobileNumber.Location = new System.Drawing.Point(93, 533);
             this.lblMobileNumber.Name = "lblMobileNumber";
-            this.lblMobileNumber.Size = new System.Drawing.Size(0, 17);
+            this.lblMobileNumber.Size = new System.Drawing.Size(103, 17);
             this.lblMobileNumber.TabIndex = 195;
+            this.lblMobileNumber.Text = "Mobile Number";
             // 
-            // lblLastName
+            // lblName
             // 
-            this.lblLastName.AutoSize = true;
-            this.lblLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblLastName.ForeColor = System.Drawing.Color.White;
-            this.lblLastName.Location = new System.Drawing.Point(130, 324);
-            this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(0, 17);
-            this.lblLastName.TabIndex = 190;
-            this.lblLastName.Click += new System.EventHandler(this.lblLastName_Click);
-            // 
-            // lblFirstName
-            // 
-            this.lblFirstName.AutoSize = true;
-            this.lblFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblFirstName.ForeColor = System.Drawing.Color.White;
-            this.lblFirstName.Location = new System.Drawing.Point(64, 324);
-            this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(0, 17);
-            this.lblFirstName.TabIndex = 187;
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblName.ForeColor = System.Drawing.Color.White;
+            this.lblName.Location = new System.Drawing.Point(64, 324);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(45, 17);
+            this.lblName.TabIndex = 187;
+            this.lblName.Text = "Name";
             // 
             // lblRegister
             // 
@@ -122,8 +114,9 @@
             this.lblAddress.ForeColor = System.Drawing.Color.White;
             this.lblAddress.Location = new System.Drawing.Point(93, 476);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(0, 17);
+            this.lblAddress.Size = new System.Drawing.Size(60, 17);
             this.lblAddress.TabIndex = 183;
+            this.lblAddress.Text = "Address";
             this.lblAddress.Click += new System.EventHandler(this.lblAddress_Click);
             // 
             // lblEmail
@@ -133,8 +126,9 @@
             this.lblEmail.ForeColor = System.Drawing.Color.White;
             this.lblEmail.Location = new System.Drawing.Point(93, 441);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(0, 17);
+            this.lblEmail.Size = new System.Drawing.Size(42, 17);
             this.lblEmail.TabIndex = 180;
+            this.lblEmail.Text = "Email";
             // 
             // btnDelete
             // 
@@ -176,8 +170,9 @@
             this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblID.Location = new System.Drawing.Point(64, 393);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(0, 17);
+            this.lblID.Size = new System.Drawing.Size(87, 17);
             this.lblID.TabIndex = 204;
+            this.lblID.Text = "Employee ID";
             // 
             // label1
             // 
@@ -245,7 +240,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
-            this.ClientSize = new System.Drawing.Size(606, 562);
+            this.ClientSize = new System.Drawing.Size(606, 639);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -256,8 +251,7 @@
             this.Controls.Add(this.lblPosition);
             this.Controls.Add(this.lblTelNumber);
             this.Controls.Add(this.lblMobileNumber);
-            this.Controls.Add(this.lblLastName);
-            this.Controls.Add(this.lblFirstName);
+            this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblRegister);
             this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.lblEmail);
@@ -282,8 +276,7 @@
         private System.Windows.Forms.Label lblPosition;
         private System.Windows.Forms.Label lblTelNumber;
         private System.Windows.Forms.Label lblMobileNumber;
-        private System.Windows.Forms.Label lblLastName;
-        private System.Windows.Forms.Label lblFirstName;
+        private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblRegister;
         private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.Label lblEmail;
