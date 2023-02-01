@@ -114,6 +114,14 @@ namespace FindMyLost
             currentPage = "CLAIM AN ITEM";
             BtnSelect(sender);
             CloseMenu();
+
+            ClaimItem claimItem = new ClaimItem() { TopLevel = false, TopMost = true };
+            panelForm.Controls.Clear();
+            panelForm.Controls.Add(panelMenu);
+            claimItem.FormBorderStyle = FormBorderStyle.None;
+            this.Size = new Size(1071, 822);
+            panelForm.Controls.Add(claimItem);
+            claimItem.Show();
         }
 
         private void btnItemList_Click(object sender, EventArgs e)
@@ -122,6 +130,13 @@ namespace FindMyLost
             BtnSelect(sender);
             CloseMenu();
 
+            ItemList itemList = new ItemList() { TopLevel = false, TopMost = true };
+            panelForm.Controls.Clear();
+            panelForm.Controls.Add(panelMenu);
+            itemList.FormBorderStyle = FormBorderStyle.None;
+            this.Size = new Size(1071, 822);
+            panelForm.Controls.Add(itemList);
+            itemList.Show();
         }
 
         private void btnEmployeeList_Click(object sender, EventArgs e)
@@ -129,6 +144,14 @@ namespace FindMyLost
             currentPage = "EMPLOYEE LIST";
             BtnSelect(sender);
             CloseMenu();
+
+            EmployeeList empList = new EmployeeList() { TopLevel = false, TopMost = true };
+            panelForm.Controls.Clear();
+            panelForm.Controls.Add(panelMenu);
+            empList.FormBorderStyle = FormBorderStyle.None;
+            this.Size = new Size(1071, 822);
+            panelForm.Controls.Add(empList);
+            empList.Show();
         }
 
         private void btnClaimList_Click(object sender, EventArgs e)
@@ -136,6 +159,14 @@ namespace FindMyLost
             currentPage = "CLAIM LIST";
             BtnSelect(sender);
             CloseMenu();
+
+            ClaimList claimList = new ClaimList() { TopLevel = false, TopMost = true };
+            panelForm.Controls.Clear();
+            panelForm.Controls.Add(panelMenu);
+            claimList.FormBorderStyle = FormBorderStyle.None;
+            this.Size = new Size(1071, 822);
+            panelForm.Controls.Add(claimList);
+            claimList.Show();
         }
 
         private void btnListItem_Click(object sender, EventArgs e)
@@ -143,6 +174,14 @@ namespace FindMyLost
             currentPage = "LIST A LOST ITEM";
             BtnSelect(sender);
             CloseMenu();
+
+            ListItem listItem = new ListItem() { TopLevel = false, TopMost = true };
+            panelForm.Controls.Clear();
+            panelForm.Controls.Add(panelMenu);
+            listItem.FormBorderStyle = FormBorderStyle.None;
+            this.Size = new Size(1071, 822);
+            panelForm.Controls.Add(listItem);
+            listItem.Show();
         }
 
         private void btnEditProfile_Click(object sender, EventArgs e)
@@ -151,6 +190,14 @@ namespace FindMyLost
             BtnSelect(sender);
             leftBorder.Visible = false;
             CloseMenu();
+
+            EditProfile editProfile = new EditProfile() { TopLevel = false, TopMost = true };
+            panelForm.Controls.Clear();
+            panelForm.Controls.Add(panelMenu);
+            editProfile.FormBorderStyle = FormBorderStyle.None;
+            this.Size = new Size(1071, 822);
+            panelForm.Controls.Add(editProfile);
+            editProfile.Show();
         }
 
         private void btnChangePassword_Click(object sender, EventArgs e)
@@ -159,11 +206,21 @@ namespace FindMyLost
             BtnSelect(sender);
             leftBorder.Visible = false;
             CloseMenu();
+
+            ChangePassword changePassword = new ChangePassword() { TopLevel = false, TopMost = true };
+            panelForm.Controls.Clear();
+            panelForm.Controls.Add(panelMenu);
+            changePassword.FormBorderStyle = FormBorderStyle.None;
+            this.Size = new Size(1071, 822);
+            panelForm.Controls.Add(changePassword);
+            changePassword.Show();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-
+            Login login = new Login();
+            this.Hide();
+            login.Show();
         }
 
         private void pbLogo_Click(object sender, EventArgs e)
