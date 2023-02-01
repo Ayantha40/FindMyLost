@@ -157,7 +157,7 @@ namespace FindMyLost
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if ((category != "") && (txtBrand.Text != "") && (pbColor.BackColor != Color.Empty))
+            if ((category != "") && (txtBrand.Text != "") && (cmbColor.Text != ""))
             {
                 try
                 {
