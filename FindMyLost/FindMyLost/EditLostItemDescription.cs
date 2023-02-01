@@ -162,9 +162,7 @@ namespace FindMyLost
             category = radioOther.Text;
         }
 
-        private void picPick_Click(object sender, EventArgs e)
-        {
-           
+            cp.Show();
         }
         private void txtColor_TextChanged(object sender, EventArgs e)
         {

@@ -27,10 +27,6 @@ namespace FindMyLost
             Colour = pbColor;
         }
 
-        private void pbColorPicker_Click(object sender, EventArgs e)
-        {
-            
-        }
 
         private void btnEditItemPic_Click(object sender, EventArgs e)
         {
