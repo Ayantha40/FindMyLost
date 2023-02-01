@@ -375,7 +375,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.ClientSize = new System.Drawing.Size(713, 822);
+            this.ClientSize = new System.Drawing.Size(705, 822);
             this.Controls.Add(this.cbPosition);
             this.Controls.Add(this.tlpPosition);
             this.Controls.Add(this.lblPosition);
