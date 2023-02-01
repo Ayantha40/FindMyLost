@@ -132,9 +132,7 @@ namespace FindMyLost
 
         private void picPick_Click(object sender, EventArgs e)
         {
-            form = "ListItem";
-            colorPick cp = new colorPick();
-            cp.Show();
+           
         }
 
         private void txtColor_TextChanged(object sender, EventArgs e)

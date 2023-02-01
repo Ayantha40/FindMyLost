@@ -29,9 +29,7 @@ namespace FindMyLost
 
         private void pbColorPicker_Click(object sender, EventArgs e)
         {
-            form = "ClaimItem";
-            colorPick cp = new colorPick();
-            cp.Show();
+            
         }
 
         private void btnEditItemPic_Click(object sender, EventArgs e)
