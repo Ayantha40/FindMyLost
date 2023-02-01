@@ -270,7 +270,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Exo 2", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(60, 73);
+            this.label1.Location = new System.Drawing.Point(37, 79);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(205, 24);
             this.label1.TabIndex = 32;
