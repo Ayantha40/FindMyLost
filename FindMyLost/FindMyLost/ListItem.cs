@@ -157,11 +157,6 @@ namespace FindMyLost
 
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnBrowse_MouseEnter(object sender, EventArgs e)
         {
             btnBrowse.ForeColor = Color.Black;
@@ -171,6 +166,13 @@ namespace FindMyLost
         private void btnBrowse_MouseLeave(object sender, EventArgs e)
         {
             btnBrowse.ForeColor = Color.White;
+        }
+
+        private void cmbColor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string item_color = cmbColor.Text;
+            Color colour = Color.FromName(item_color);
+            pbColor.BackColor = colour;
         }
     }
 }
