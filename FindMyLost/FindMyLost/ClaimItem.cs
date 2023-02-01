@@ -83,9 +83,8 @@ namespace FindMyLost
 
         private void btnPublishClaim_Click(object sender, EventArgs e)
         {
-            string item_color = pbColor.BackColor.ToString();
 
-            if (txtName.Text == "" || txtAddress.Text == "" || txtPhoneNum.Text == "" || category == "" || item_color == "Transparent")
+            if (txtName.Text == "" || txtAddress.Text == "" || txtPhoneNum.Text == "" || category == "" || cbColor.Text == "")
             {
                 MessageBox.Show("Please fill in all the employee details!", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
@@ -101,7 +100,7 @@ namespace FindMyLost
 
 
 
-                    string sql = "INSERT INTO Claim (claimer_name, claimer_address, claimer_phone_number, item_category, item_colour, item_picture, last_seen_location, item_brand, additional_info) VALUES ('" + txtName.Text + "', '" + txtAddress.Text + "', '" + txtPhoneNum.Text + "', '" + category + "', '" + item_color + "', @image, '" + txtLocation.Text + "', '" + txtBrand.Text + "', '" + txtAddInfo.Text + "')";
+                    string sql = "INSERT INTO Claim (claimer_name, claimer_address, claimer_phone_number, item_category, item_colour, item_picture, last_seen_location, item_brand, additional_info) VALUES ('" + txtName.Text + "', '" + txtAddress.Text + "', '" + txtPhoneNum.Text + "', '" + category + "', '" + cbColor.Text + "', @image, '" + txtLocation.Text + "', '" + txtBrand.Text + "', '" + txtAddInfo.Text + "')";
                     SqlCommand cmd = new SqlCommand(sql, conn);
                     cmd.Parameters.AddWithValue("@image", imageBytes);
                     conn.Open();
@@ -127,6 +126,13 @@ namespace FindMyLost
         private void btnEditItemPic_MouseLeave(object sender, EventArgs e)
         {
             btnEditItemPic.ForeColor = Color.White;
+        }
+
+        private void cbColor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string item_color = cbColor.Text;
+            Color colour = Color.FromName(item_color);
+            pbColor.BackColor = colour;
         }
     }
 }

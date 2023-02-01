@@ -33,18 +33,18 @@
             this.radioOther = new System.Windows.Forms.RadioButton();
             this.radioElec = new System.Windows.Forms.RadioButton();
             this.LostItemInfo = new System.Windows.Forms.GroupBox();
+            this.pbColor = new System.Windows.Forms.PictureBox();
+            this.cbColor = new System.Windows.Forms.ComboBox();
+            this.tlpColor = new System.Windows.Forms.TableLayoutPanel();
             this.lblAddInfo = new System.Windows.Forms.Label();
             this.txtAddInfo = new System.Windows.Forms.TextBox();
             this.tlpAddInfo = new System.Windows.Forms.TableLayoutPanel();
             this.txtLocation = new System.Windows.Forms.TextBox();
             this.tlpLocation = new System.Windows.Forms.TableLayoutPanel();
-            this.panelColorPicker = new System.Windows.Forms.Panel();
-            this.pbColorPicker = new System.Windows.Forms.PictureBox();
             this.lblLocation = new System.Windows.Forms.Label();
             this.txtBrand = new System.Windows.Forms.TextBox();
             this.tlpBrand = new System.Windows.Forms.TableLayoutPanel();
             this.lblBrand = new System.Windows.Forms.Label();
-            this.pbColor = new System.Windows.Forms.PictureBox();
             this.lblColor = new System.Windows.Forms.Label();
             this.lblPic = new System.Windows.Forms.Label();
             this.btnEditItemPic = new System.Windows.Forms.Button();
@@ -67,8 +67,6 @@
             this.LostItemCategory = new System.Windows.Forms.GroupBox();
             this.radioBag = new System.Windows.Forms.RadioButton();
             this.LostItemInfo.SuspendLayout();
-            this.panelColorPicker.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbColorPicker)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbColor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbItemPic)).BeginInit();
             this.ClaimerInfo.SuspendLayout();
@@ -116,17 +114,18 @@
             // 
             // LostItemInfo
             // 
+            this.LostItemInfo.Controls.Add(this.pbColor);
+            this.LostItemInfo.Controls.Add(this.cbColor);
+            this.LostItemInfo.Controls.Add(this.tlpColor);
             this.LostItemInfo.Controls.Add(this.lblAddInfo);
             this.LostItemInfo.Controls.Add(this.txtAddInfo);
             this.LostItemInfo.Controls.Add(this.tlpAddInfo);
             this.LostItemInfo.Controls.Add(this.txtLocation);
             this.LostItemInfo.Controls.Add(this.tlpLocation);
-            this.LostItemInfo.Controls.Add(this.panelColorPicker);
             this.LostItemInfo.Controls.Add(this.lblLocation);
             this.LostItemInfo.Controls.Add(this.txtBrand);
             this.LostItemInfo.Controls.Add(this.tlpBrand);
             this.LostItemInfo.Controls.Add(this.lblBrand);
-            this.LostItemInfo.Controls.Add(this.pbColor);
             this.LostItemInfo.Controls.Add(this.lblColor);
             this.LostItemInfo.Controls.Add(this.lblPic);
             this.LostItemInfo.Controls.Add(this.btnEditItemPic);
@@ -141,6 +140,55 @@
             this.LostItemInfo.TabIndex = 191;
             this.LostItemInfo.TabStop = false;
             this.LostItemInfo.Text = "Lost Item Description";
+            // 
+            // pbColor
+            // 
+            this.pbColor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbColor.Location = new System.Drawing.Point(206, 73);
+            this.pbColor.Name = "pbColor";
+            this.pbColor.Size = new System.Drawing.Size(80, 52);
+            this.pbColor.TabIndex = 188;
+            this.pbColor.TabStop = false;
+            // 
+            // cbColor
+            // 
+            this.cbColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.cbColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbColor.ForeColor = System.Drawing.Color.White;
+            this.cbColor.FormattingEnabled = true;
+            this.cbColor.Items.AddRange(new object[] {
+            "Red",
+            "Orange",
+            "Yellow",
+            "Green",
+            "Blue",
+            "Purple",
+            "Pink",
+            "Beige",
+            "Brown",
+            "Gray",
+            "Black",
+            "White"});
+            this.cbColor.Location = new System.Drawing.Point(35, 85);
+            this.cbColor.Name = "cbColor";
+            this.cbColor.Size = new System.Drawing.Size(155, 29);
+            this.cbColor.TabIndex = 187;
+            this.cbColor.SelectedIndexChanged += new System.EventHandler(this.cbColor_SelectedIndexChanged);
+            // 
+            // tlpColor
+            // 
+            this.tlpColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.tlpColor.ColumnCount = 1;
+            this.tlpColor.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpColor.ForeColor = System.Drawing.Color.White;
+            this.tlpColor.Location = new System.Drawing.Point(24, 73);
+            this.tlpColor.Name = "tlpColor";
+            this.tlpColor.RowCount = 3;
+            this.tlpColor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tlpColor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpColor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tlpColor.Size = new System.Drawing.Size(176, 52);
+            this.tlpColor.TabIndex = 186;
             // 
             // lblAddInfo
             // 
@@ -205,29 +253,6 @@
             this.tlpLocation.Size = new System.Drawing.Size(517, 52);
             this.tlpLocation.TabIndex = 64;
             // 
-            // panelColorPicker
-            // 
-            this.panelColorPicker.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.panelColorPicker.Controls.Add(this.pbColorPicker);
-            this.panelColorPicker.Location = new System.Drawing.Point(215, 73);
-            this.panelColorPicker.Name = "panelColorPicker";
-            this.panelColorPicker.Size = new System.Drawing.Size(58, 52);
-            this.panelColorPicker.TabIndex = 154;
-            // 
-            // pbColorPicker
-            // 
-            this.pbColorPicker.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.pbColorPicker.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbColorPicker.Image = ((System.Drawing.Image)(resources.GetObject("pbColorPicker.Image")));
-            this.pbColorPicker.Location = new System.Drawing.Point(11, 11);
-            this.pbColorPicker.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pbColorPicker.Name = "pbColorPicker";
-            this.pbColorPicker.Size = new System.Drawing.Size(30, 29);
-            this.pbColorPicker.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbColorPicker.TabIndex = 150;
-            this.pbColorPicker.TabStop = false;
-            this.pbColorPicker.Click += new System.EventHandler(this.pbColorPicker_Click);
-            // 
             // lblLocation
             // 
             this.lblLocation.AutoSize = true;
@@ -275,16 +300,6 @@
             this.lblBrand.Size = new System.Drawing.Size(56, 21);
             this.lblBrand.TabIndex = 151;
             this.lblBrand.Text = "Brand";
-            // 
-            // pbColor
-            // 
-            this.pbColor.BackColor = System.Drawing.Color.Transparent;
-            this.pbColor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbColor.Location = new System.Drawing.Point(25, 73);
-            this.pbColor.Name = "pbColor";
-            this.pbColor.Size = new System.Drawing.Size(184, 53);
-            this.pbColor.TabIndex = 149;
-            this.pbColor.TabStop = false;
             // 
             // lblColor
             // 
@@ -583,8 +598,6 @@
             this.Text = "Claim a Lost Item";
             this.LostItemInfo.ResumeLayout(false);
             this.LostItemInfo.PerformLayout();
-            this.panelColorPicker.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbColorPicker)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbColor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbItemPic)).EndInit();
             this.ClaimerInfo.ResumeLayout(false);
@@ -607,13 +620,10 @@
         private System.Windows.Forms.TableLayoutPanel tlpAddInfo;
         private System.Windows.Forms.TextBox txtLocation;
         private System.Windows.Forms.TableLayoutPanel tlpLocation;
-        private System.Windows.Forms.Panel panelColorPicker;
-        private System.Windows.Forms.PictureBox pbColorPicker;
         private System.Windows.Forms.Label lblLocation;
         private System.Windows.Forms.TextBox txtBrand;
         private System.Windows.Forms.TableLayoutPanel tlpBrand;
         private System.Windows.Forms.Label lblBrand;
-        private System.Windows.Forms.PictureBox pbColor;
         private System.Windows.Forms.Label lblColor;
         private System.Windows.Forms.Label lblPic;
         private System.Windows.Forms.Button btnEditItemPic;
@@ -635,5 +645,8 @@
         private System.Windows.Forms.RadioButton radioClothing;
         private System.Windows.Forms.GroupBox LostItemCategory;
         private System.Windows.Forms.RadioButton radioBag;
+        private System.Windows.Forms.PictureBox pbColor;
+        private System.Windows.Forms.ComboBox cbColor;
+        private System.Windows.Forms.TableLayoutPanel tlpColor;
     }
 }
