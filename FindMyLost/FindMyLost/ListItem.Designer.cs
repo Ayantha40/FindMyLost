@@ -67,7 +67,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbColor)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.tableLayoutPanel6.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -165,10 +164,10 @@
             this.txtAdditional.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtAdditional.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAdditional.ForeColor = System.Drawing.Color.White;
-            this.txtAdditional.Location = new System.Drawing.Point(101, 72);
+            this.txtAdditional.Location = new System.Drawing.Point(101, 45);
             this.txtAdditional.Multiline = true;
             this.txtAdditional.Name = "txtAdditional";
-            this.txtAdditional.Size = new System.Drawing.Size(256, 133);
+            this.txtAdditional.Size = new System.Drawing.Size(256, 162);
             this.txtAdditional.TabIndex = 167;
             // 
             // tableLayoutPanel5
@@ -279,6 +278,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.cmbColor);
             this.groupBox2.Controls.Add(this.tableLayoutPanel6);
             this.groupBox2.Controls.Add(this.pbColor);
             this.groupBox2.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -297,7 +297,6 @@
             this.tableLayoutPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.tableLayoutPanel6.ColumnCount = 1;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.Controls.Add(this.cmbColor, 0, 1);
             this.tableLayoutPanel6.ForeColor = System.Drawing.Color.White;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(350, 23);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
@@ -327,10 +326,10 @@
             "Gray",
             "Black",
             "White"});
-            this.cmbColor.Location = new System.Drawing.Point(3, 22);
+            this.cmbColor.Location = new System.Drawing.Point(363, 44);
             this.cmbColor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbColor.Name = "cmbColor";
-            this.cmbColor.Size = new System.Drawing.Size(135, 29);
+            this.cmbColor.Size = new System.Drawing.Size(115, 29);
             this.cmbColor.TabIndex = 31;
             this.cmbColor.TabStop = false;
             this.cmbColor.SelectedIndexChanged += new System.EventHandler(this.cmbColor_SelectedIndexChanged);
@@ -539,7 +538,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbColor)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            this.tableLayoutPanel6.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
