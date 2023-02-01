@@ -162,6 +162,8 @@ namespace FindMyLost
             category = radioOther.Text;
         }
 
+            cp.Show();
+        }
         private void txtColor_TextChanged(object sender, EventArgs e)
         {
             
