@@ -54,7 +54,7 @@ namespace FindMyLost
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            if ((category != "") && (txtBrand.Text != "") && (pbColor.BackColor != Color.Empty))
+            if ((category != "") && (txtBrand.Text != "") && (cmbColor.Text != ""))
             {
                     try
                     {
@@ -64,10 +64,7 @@ namespace FindMyLost
                         item_image.Save(ms, ImageFormat.Jpeg);
                         imageBytes = ms.ToArray();
 
-                        int argb = pbColor.BackColor.ToArgb();
-
-
-                        string sql = "INSERT INTO Lost_Item (item_category, item_colour, item_picture, last_seen_location, item_brand, additional_info) VALUES ('" + category + "', '" + argb + "', @image,'" + txtLocation.Text + "','" + txtBrand.Text + "','" + txtAdditional.Text + "')";
+                        string sql = "INSERT INTO Lost_Item (item_category, item_colour, item_picture, last_seen_location, item_brand, additional_info) VALUES ('" + category + "', '" + cmbColor.Text + "', @image,'" + txtLocation.Text + "','" + txtBrand.Text + "','" + txtAdditional.Text + "')";
                         SqlCommand cmd = new SqlCommand(sql, conn);
                         cmd.Parameters.AddWithValue("@image", imageBytes);
                         conn.Open();
@@ -131,20 +128,12 @@ namespace FindMyLost
         }
 
 
-        private void txtColor_TextChanged(object sender, EventArgs e)
-        {
-           //pictureBox3.BackColor = Color.Empty;
-        }
 
         private void ListItem_Load(object sender, EventArgs e)
         {
             pbColor.BackColor = Color.Empty;
         }
 
-        private void tlpFirstName_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void txtBrand_TextChanged(object sender, EventArgs e)
         {
