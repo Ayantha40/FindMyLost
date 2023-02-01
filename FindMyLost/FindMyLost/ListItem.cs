@@ -133,7 +133,7 @@ namespace FindMyLost
 
         private void txtColor_TextChanged(object sender, EventArgs e)
         {
-           // pictureBox3.BackColor = Color.Empty;
+           //pictureBox3.BackColor = Color.Empty;
         }
 
         private void ListItem_Load(object sender, EventArgs e)
