@@ -17,6 +17,7 @@ namespace FindMyLost
     public partial class EditProfile : Form
     {
         SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConString"].ToString());
+        string employeeID = Login.empId;
 
         public EditProfile()
         {
@@ -47,9 +48,14 @@ namespace FindMyLost
         {
             try
             {
+                if (EmployeeList.initialForm == "EmployeeList")
+                {
+                    employeeID = EmployeeList.SelectedEmployeeID;
+                }
+                
                 byte[] imageBytes;
 
-                string sql = "SELECT * FROM Employee WHERE employee_id = '" + EmployeeList.SelectedEmployeeID + "'";
+                string sql = "SELECT * FROM Employee WHERE employee_id = '" + employeeID + "'";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 conn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();

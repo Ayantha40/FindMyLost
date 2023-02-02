@@ -60,11 +60,13 @@ namespace FindMyLost
         }
 
         public static string SelectedEmployeeID;
+        public static string initialForm;
 
         private void lvEmployeeList_MouseClick(object sender, MouseEventArgs e)
         {
             ListViewItem item = lvEmployeeList.SelectedItems[0];
             SelectedEmployeeID = item.SubItems[0].Text;
+            initialForm = "EmployeeList";
             this.Hide();
             EmployeeProfile employeeProfile = new EmployeeProfile();
             employeeProfile.Show();

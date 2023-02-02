@@ -40,8 +40,6 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.txtpassword = new System.Windows.Forms.TextBox();
             this.btnViewPassword = new System.Windows.Forms.Button();
-            this.tlpFirstName.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnlogin
@@ -103,7 +101,6 @@
             this.tlpFirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.tlpFirstName.ColumnCount = 1;
             this.tlpFirstName.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpFirstName.Controls.Add(this.txtempid, 0, 1);
             this.tlpFirstName.ForeColor = System.Drawing.Color.White;
             this.tlpFirstName.Location = new System.Drawing.Point(317, 243);
             this.tlpFirstName.Name = "tlpFirstName";
@@ -120,9 +117,9 @@
             this.txtempid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtempid.Font = new System.Drawing.Font("Montserrat Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtempid.ForeColor = System.Drawing.Color.White;
-            this.txtempid.Location = new System.Drawing.Point(3, 20);
+            this.txtempid.Location = new System.Drawing.Point(332, 265);
             this.txtempid.Name = "txtempid";
-            this.txtempid.Size = new System.Drawing.Size(381, 25);
+            this.txtempid.Size = new System.Drawing.Size(370, 25);
             this.txtempid.TabIndex = 167;
             this.txtempid.TabStop = false;
             // 
@@ -159,7 +156,6 @@
             this.tableLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.txtpassword, 0, 1);
             this.tableLayoutPanel2.ForeColor = System.Drawing.Color.White;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(317, 345);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -176,10 +172,10 @@
             this.txtpassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtpassword.Font = new System.Drawing.Font("Montserrat Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtpassword.ForeColor = System.Drawing.Color.White;
-            this.txtpassword.Location = new System.Drawing.Point(3, 20);
+            this.txtpassword.Location = new System.Drawing.Point(332, 367);
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.PasswordChar = '●';
-            this.txtpassword.Size = new System.Drawing.Size(325, 25);
+            this.txtpassword.Size = new System.Drawing.Size(313, 25);
             this.txtpassword.TabIndex = 167;
             this.txtpassword.TabStop = false;
             // 
@@ -189,7 +185,7 @@
             this.btnViewPassword.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnViewPassword.FlatAppearance.BorderSize = 0;
             this.btnViewPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnViewPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnViewPassword.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnViewPassword.Location = new System.Drawing.Point(651, 345);
             this.btnViewPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -206,6 +202,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
             this.ClientSize = new System.Drawing.Size(874, 665);
+            this.Controls.Add(this.txtempid);
+            this.Controls.Add(this.txtpassword);
             this.Controls.Add(this.btnViewPassword);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tlpFirstName);
@@ -219,11 +217,6 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.Login_Load);
-            this.tlpFirstName.ResumeLayout(false);
-            this.tlpFirstName.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

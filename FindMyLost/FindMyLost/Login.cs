@@ -54,13 +54,6 @@ namespace FindMyLost
             }
             conn.Close();
 
-            string sql1 = "SELECT position FROM Employee WHERE employee_id = '" + txtempid.Text + "'";
-
-        }
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btnViewPassword_Click(object sender, EventArgs e)

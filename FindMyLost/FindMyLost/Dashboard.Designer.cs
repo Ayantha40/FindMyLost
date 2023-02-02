@@ -73,7 +73,7 @@
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblEmail.ForeColor = System.Drawing.Color.White;
-            this.lblEmail.Location = new System.Drawing.Point(133, 91);
+            this.lblEmail.Location = new System.Drawing.Point(124, 91);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(55, 18);
             this.lblEmail.TabIndex = 3;
@@ -84,7 +84,7 @@
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblName.ForeColor = System.Drawing.Color.White;
-            this.lblName.Location = new System.Drawing.Point(133, 63);
+            this.lblName.Location = new System.Drawing.Point(124, 35);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(57, 18);
             this.lblName.TabIndex = 2;
@@ -109,7 +109,7 @@
             this.panelEmployeeDetails.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelEmployeeDetails.Location = new System.Drawing.Point(0, 0);
             this.panelEmployeeDetails.Name = "panelEmployeeDetails";
-            this.panelEmployeeDetails.Size = new System.Drawing.Size(318, 152);
+            this.panelEmployeeDetails.Size = new System.Drawing.Size(333, 152);
             this.panelEmployeeDetails.TabIndex = 1;
             // 
             // lblEmployeeID
@@ -117,7 +117,7 @@
             this.lblEmployeeID.AutoSize = true;
             this.lblEmployeeID.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblEmployeeID.ForeColor = System.Drawing.Color.White;
-            this.lblEmployeeID.Location = new System.Drawing.Point(133, 35);
+            this.lblEmployeeID.Location = new System.Drawing.Point(124, 63);
             this.lblEmployeeID.Name = "lblEmployeeID";
             this.lblEmployeeID.Size = new System.Drawing.Size(101, 18);
             this.lblEmployeeID.TabIndex = 1;
@@ -169,7 +169,7 @@
             this.btnLogout.Location = new System.Drawing.Point(0, 363);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnLogout.Size = new System.Drawing.Size(318, 75);
+            this.btnLogout.Size = new System.Drawing.Size(333, 75);
             this.btnLogout.TabIndex = 161;
             this.btnLogout.Text = "     Logout";
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -192,7 +192,7 @@
             this.btnChangePassword.Location = new System.Drawing.Point(0, 288);
             this.btnChangePassword.Name = "btnChangePassword";
             this.btnChangePassword.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnChangePassword.Size = new System.Drawing.Size(318, 75);
+            this.btnChangePassword.Size = new System.Drawing.Size(333, 75);
             this.btnChangePassword.TabIndex = 160;
             this.btnChangePassword.Text = "     Change Password";
             this.btnChangePassword.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -215,7 +215,7 @@
             this.btnEditProfile.Location = new System.Drawing.Point(0, 213);
             this.btnEditProfile.Name = "btnEditProfile";
             this.btnEditProfile.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnEditProfile.Size = new System.Drawing.Size(318, 75);
+            this.btnEditProfile.Size = new System.Drawing.Size(333, 75);
             this.btnEditProfile.TabIndex = 159;
             this.btnEditProfile.Text = "     Edit Profile";
             this.btnEditProfile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -230,7 +230,7 @@
             this.panelTheme.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTheme.Location = new System.Drawing.Point(0, 152);
             this.panelTheme.Name = "panelTheme";
-            this.panelTheme.Size = new System.Drawing.Size(318, 61);
+            this.panelTheme.Size = new System.Drawing.Size(333, 61);
             this.panelTheme.TabIndex = 158;
             // 
             // panelMenu
@@ -241,9 +241,9 @@
             this.panelMenu.Controls.Add(this.btnEditProfile);
             this.panelMenu.Controls.Add(this.panelTheme);
             this.panelMenu.Controls.Add(this.panelEmployeeDetails);
-            this.panelMenu.Location = new System.Drawing.Point(440, 0);
+            this.panelMenu.Location = new System.Drawing.Point(428, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(318, 450);
+            this.panelMenu.Size = new System.Drawing.Size(333, 450);
             this.panelMenu.TabIndex = 11;
             // 
             // panelForm

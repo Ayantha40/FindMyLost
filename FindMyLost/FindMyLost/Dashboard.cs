@@ -9,11 +9,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 using System.Runtime.InteropServices;
+using System.Configuration;
+using System.Data.SqlClient;
+using System.IO;
+using System.Drawing.Imaging;
 
 namespace FindMyLost
 {
     public partial class Dashboard : Form
     {
+        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConString"].ToString());
+
         public Dashboard()
         {
             InitializeComponent();
@@ -27,6 +33,7 @@ namespace FindMyLost
         }
 
         bool isITAdmin = Login.isITAdmin;
+        string employeeID = Login.empId;
         private IconButton currentbtn;
         private Panel leftBorder;
         string currentPage;
@@ -77,15 +84,49 @@ namespace FindMyLost
         {
             //panelTheme.Visible = false;
             //panelMenu.Size = new Size(318, 389);
-            panelMenu.Visible = false;
-            if (isITAdmin == true)
+            try
             {
-                btnListItem.Visible = false;
+                panelMenu.Visible = false;
+                if (isITAdmin == true)
+                {
+                    btnListItem.Visible = false;
+                }
+                else
+                {
+                    btnRegister.Visible = false;
+                    btnEmployeeList.Visible = false;
+                }
+
+                byte[] imageBytes;
+
+                string sql = "SELECT * FROM Employee WHERE employee_id = '" + employeeID + "'";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                conn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                if (dr.Read())
+                {
+                    lblEmployeeID.Text = employeeID;
+                    lblName.Text = dr["first_name"].ToString() + " " + dr["last_name"].ToString();
+                    lblEmail.Text = dr["email"].ToString();
+
+                    imageBytes = (byte[])dr["picture"];
+                    MemoryStream ms = new MemoryStream(imageBytes);
+                    Image img = Image.FromStream(ms);
+                    pbUser.Image = img;
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Employee ID.", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                btnRegister.Visible = false;
-                btnEmployeeList.Visible = false;
+                MessageBox.Show(ex.Message, "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
             }
         }
 
