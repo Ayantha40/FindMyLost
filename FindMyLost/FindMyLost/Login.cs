@@ -45,7 +45,7 @@ namespace FindMyLost
                 }
                 Dashboard db= new Dashboard();
                 db.Show();
-
+                this.Hide();
             }
 
             else

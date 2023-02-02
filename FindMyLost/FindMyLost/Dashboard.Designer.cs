@@ -253,7 +253,7 @@
             this.panelForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelForm.Location = new System.Drawing.Point(293, 95);
             this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(762, 632);
+            this.panelForm.Size = new System.Drawing.Size(766, 632);
             this.panelForm.TabIndex = 7;
             this.panelForm.Click += new System.EventHandler(this.panelForm_Click);
             // 
@@ -263,7 +263,7 @@
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelShadow.Location = new System.Drawing.Point(293, 88);
             this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(762, 7);
+            this.panelShadow.Size = new System.Drawing.Size(766, 7);
             this.panelShadow.TabIndex = 6;
             // 
             // btnMenu
@@ -278,7 +278,7 @@
             this.btnMenu.IconColor = System.Drawing.Color.White;
             this.btnMenu.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMenu.IconSize = 45;
-            this.btnMenu.Location = new System.Drawing.Point(680, 0);
+            this.btnMenu.Location = new System.Drawing.Point(684, 0);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.btnMenu.Size = new System.Drawing.Size(82, 88);
@@ -307,7 +307,7 @@
             this.panelTaskBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTaskBar.Location = new System.Drawing.Point(293, 0);
             this.panelTaskBar.Name = "panelTaskBar";
-            this.panelTaskBar.Size = new System.Drawing.Size(762, 88);
+            this.panelTaskBar.Size = new System.Drawing.Size(766, 88);
             this.panelTaskBar.TabIndex = 5;
             this.panelTaskBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTaskBar_MouseDown);
             // 
@@ -507,8 +507,8 @@
             this.Controls.Add(this.SideMenu);
             this.MinimumSize = new System.Drawing.Size(1000, 750);
             this.Name = "Dashboard";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Dashboard";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.Resize += new System.EventHandler(this.Dashboard_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).EndInit();
