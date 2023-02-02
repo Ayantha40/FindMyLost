@@ -185,7 +185,7 @@
             this.btnViewPassword.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnViewPassword.FlatAppearance.BorderSize = 0;
             this.btnViewPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnViewPassword.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnViewPassword.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnViewPassword.Location = new System.Drawing.Point(651, 345);
             this.btnViewPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);

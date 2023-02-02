@@ -293,9 +293,9 @@
             // tlpFirstName
             // 
             this.tlpFirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.tlpFirstName.ColumnCount = 2;
+            this.tlpFirstName.ColumnCount = 1;
             this.tlpFirstName.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpFirstName.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 23F));
+            this.tlpFirstName.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tlpFirstName.Controls.Add(this.txtOldPassword, 0, 1);
             this.tlpFirstName.ForeColor = System.Drawing.Color.White;
             this.tlpFirstName.Location = new System.Drawing.Point(613, 109);
