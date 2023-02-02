@@ -92,8 +92,6 @@ namespace FindMyLost
                     item_image.Save(ms, ImageFormat.Jpeg);
                     imageBytes = ms.ToArray();
 
-
-
                     string sql = "INSERT INTO Claim (claimer_name, claimer_address, claimer_phone_number, item_category, item_colour, item_picture, last_seen_location, item_brand, additional_info) VALUES ('" + txtName.Text + "', '" + txtAddress.Text + "', '" + txtPhoneNum.Text + "', '" + category + "', '" + cbColor.Text + "', @image, '" + txtLocation.Text + "', '" + txtBrand.Text + "', '" + txtAddInfo.Text + "')";
                     SqlCommand cmd = new SqlCommand(sql, conn);
                     cmd.Parameters.AddWithValue("@image", imageBytes);
