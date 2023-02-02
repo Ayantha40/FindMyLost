@@ -26,7 +26,7 @@ namespace FindMyLost
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
-        readonly bool isITAdmin = true;
+        bool isITAdmin = Login.isITAdmin;
         private IconButton currentbtn;
         private Panel leftBorder;
         string currentPage;

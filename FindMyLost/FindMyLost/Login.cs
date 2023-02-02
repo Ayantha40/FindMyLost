@@ -22,23 +22,30 @@ namespace FindMyLost
         }
 
         public static string empId = "";
+        public static bool isITAdmin;
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
             empId = txtempid.Text;
             string sql = "select * from Employee where employee_id = '" + txtempid.Text + "' and password = '" + txtpassword.Text + "' ";
             SqlCommand cmd = new SqlCommand(sql, conn);
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataSet ds = new DataSet();
-            da.Fill(ds);
             conn.Open();
-            cmd.ExecuteNonQuery();
+            SqlDataReader dr = cmd.ExecuteReader();
 
-            if ((ds.Tables[0].Rows.Count != 0) && (txtpassword.Text != "") && (txtempid.Text != ""))
+            if (dr.Read() && (txtpassword.Text != "") && (txtempid.Text != ""))
             {
-         
-                ChangePassword cp = new ChangePassword();
-                cp.Show();
+
+                if (dr["position"].ToString() == "Employee")
+                {
+                    isITAdmin = false;
+                }
+                else
+                {
+                    isITAdmin = true;
+                }
+                Dashboard db= new Dashboard();
+                db.Show();
+
             }
 
             else
@@ -46,6 +53,9 @@ namespace FindMyLost
                 MessageBox.Show("Invalid Employee ID or Password", "FindMyLost", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
             }
             conn.Close();
+
+            string sql1 = "SELECT position FROM Employee WHERE employee_id = '" + txtempid.Text + "'";
+
         }
 
         private void Login_Load(object sender, EventArgs e)
