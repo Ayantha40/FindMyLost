@@ -67,5 +67,10 @@ namespace FindMyLost
                 txtpassword.PasswordChar = '●';
             }
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
