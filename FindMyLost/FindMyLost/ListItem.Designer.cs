@@ -76,11 +76,9 @@
             this.groupBox6.Controls.Add(this.tableLayoutPanel4);
             this.groupBox6.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox6.Location = new System.Drawing.Point(613, 441);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox6.Location = new System.Drawing.Point(536, 331);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox6.Size = new System.Drawing.Size(385, 108);
+            this.groupBox6.Size = new System.Drawing.Size(337, 81);
             this.groupBox6.TabIndex = 30;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Last seen location";
@@ -90,9 +88,10 @@
             this.txtLocation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtLocation.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLocation.ForeColor = System.Drawing.Color.White;
-            this.txtLocation.Location = new System.Drawing.Point(101, 48);
+            this.txtLocation.Location = new System.Drawing.Point(88, 36);
+            this.txtLocation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLocation.Name = "txtLocation";
-            this.txtLocation.Size = new System.Drawing.Size(256, 19);
+            this.txtLocation.Size = new System.Drawing.Size(224, 15);
             this.txtLocation.TabIndex = 167;
             // 
             // tableLayoutPanel4
@@ -101,13 +100,14 @@
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.ForeColor = System.Drawing.Color.White;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(83, 32);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(73, 24);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 3;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(295, 52);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(258, 39);
             this.tableLayoutPanel4.TabIndex = 167;
             // 
             // btnReset
@@ -118,10 +118,9 @@
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.Font = new System.Drawing.Font("Exo 2", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnReset.ForeColor = System.Drawing.Color.White;
-            this.btnReset.Location = new System.Drawing.Point(727, 817);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnReset.Location = new System.Drawing.Point(636, 613);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(127, 57);
+            this.btnReset.Size = new System.Drawing.Size(111, 43);
             this.btnReset.TabIndex = 29;
             this.btnReset.Text = "RESET";
             this.btnReset.UseVisualStyleBackColor = false;
@@ -135,10 +134,9 @@
             this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubmit.Font = new System.Drawing.Font("Exo 2", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSubmit.ForeColor = System.Drawing.Color.White;
-            this.btnSubmit.Location = new System.Drawing.Point(871, 817);
-            this.btnSubmit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSubmit.Location = new System.Drawing.Point(762, 613);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(127, 57);
+            this.btnSubmit.Size = new System.Drawing.Size(111, 43);
             this.btnSubmit.TabIndex = 25;
             this.btnSubmit.Text = "SUBMIT";
             this.btnSubmit.UseVisualStyleBackColor = false;
@@ -150,11 +148,9 @@
             this.groupBox5.Controls.Add(this.tableLayoutPanel5);
             this.groupBox5.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox5.Location = new System.Drawing.Point(613, 557);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox5.Location = new System.Drawing.Point(536, 418);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox5.Size = new System.Drawing.Size(385, 244);
+            this.groupBox5.Size = new System.Drawing.Size(337, 183);
             this.groupBox5.TabIndex = 27;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Additional Information";
@@ -164,10 +160,11 @@
             this.txtAdditional.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtAdditional.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAdditional.ForeColor = System.Drawing.Color.White;
-            this.txtAdditional.Location = new System.Drawing.Point(101, 45);
+            this.txtAdditional.Location = new System.Drawing.Point(88, 34);
+            this.txtAdditional.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAdditional.Multiline = true;
             this.txtAdditional.Name = "txtAdditional";
-            this.txtAdditional.Size = new System.Drawing.Size(256, 162);
+            this.txtAdditional.Size = new System.Drawing.Size(224, 122);
             this.txtAdditional.TabIndex = 167;
             // 
             // tableLayoutPanel5
@@ -176,13 +173,14 @@
             this.tableLayoutPanel5.ColumnCount = 1;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel5.ForeColor = System.Drawing.Color.White;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(83, 28);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(73, 21);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 3;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(295, 197);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(258, 148);
             this.tableLayoutPanel5.TabIndex = 167;
             // 
             // groupBox4
@@ -191,11 +189,9 @@
             this.groupBox4.Controls.Add(this.imgItem);
             this.groupBox4.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(24, 557);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox4.Location = new System.Drawing.Point(21, 418);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox4.Size = new System.Drawing.Size(582, 244);
+            this.groupBox4.Size = new System.Drawing.Size(509, 183);
             this.groupBox4.TabIndex = 28;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Upload Image";
@@ -207,9 +203,10 @@
             this.btnBrowse.FlatAppearance.BorderSize = 0;
             this.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBrowse.ForeColor = System.Drawing.Color.White;
-            this.btnBrowse.Location = new System.Drawing.Point(527, 172);
+            this.btnBrowse.Location = new System.Drawing.Point(461, 129);
+            this.btnBrowse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(34, 35);
+            this.btnBrowse.Size = new System.Drawing.Size(30, 26);
             this.btnBrowse.TabIndex = 147;
             this.btnBrowse.Text = "✏️";
             this.btnBrowse.UseVisualStyleBackColor = false;
@@ -220,9 +217,10 @@
             // imgItem
             // 
             this.imgItem.Image = ((System.Drawing.Image)(resources.GetObject("imgItem.Image")));
-            this.imgItem.Location = new System.Drawing.Point(350, 28);
+            this.imgItem.Location = new System.Drawing.Point(306, 21);
+            this.imgItem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.imgItem.Name = "imgItem";
-            this.imgItem.Size = new System.Drawing.Size(213, 179);
+            this.imgItem.Size = new System.Drawing.Size(186, 134);
             this.imgItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgItem.TabIndex = 146;
             this.imgItem.TabStop = false;
@@ -230,9 +228,10 @@
             // pbColor
             // 
             this.pbColor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbColor.Location = new System.Drawing.Point(499, 30);
+            this.pbColor.Location = new System.Drawing.Point(437, 22);
+            this.pbColor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbColor.Name = "pbColor";
-            this.pbColor.Size = new System.Drawing.Size(61, 57);
+            this.pbColor.Size = new System.Drawing.Size(54, 43);
             this.pbColor.TabIndex = 22;
             this.pbColor.TabStop = false;
             // 
@@ -241,11 +240,9 @@
             this.groupBox3.Controls.Add(this.tableLayoutPanel3);
             this.groupBox3.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox3.Location = new System.Drawing.Point(24, 441);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox3.Location = new System.Drawing.Point(21, 331);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox3.Size = new System.Drawing.Size(582, 108);
+            this.groupBox3.Size = new System.Drawing.Size(509, 81);
             this.groupBox3.TabIndex = 26;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Brand *";
@@ -256,13 +253,14 @@
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.ForeColor = System.Drawing.Color.White;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(350, 31);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(306, 23);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 3;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(213, 52);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(186, 39);
             this.tableLayoutPanel3.TabIndex = 167;
             // 
             // txtBrand
@@ -270,9 +268,10 @@
             this.txtBrand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtBrand.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBrand.ForeColor = System.Drawing.Color.White;
-            this.txtBrand.Location = new System.Drawing.Point(387, 483);
+            this.txtBrand.Location = new System.Drawing.Point(339, 362);
+            this.txtBrand.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBrand.Name = "txtBrand";
-            this.txtBrand.Size = new System.Drawing.Size(187, 20);
+            this.txtBrand.Size = new System.Drawing.Size(164, 16);
             this.txtBrand.TabIndex = 167;
             this.txtBrand.TextChanged += new System.EventHandler(this.txtBrand_TextChanged);
             // 
@@ -283,11 +282,9 @@
             this.groupBox2.Controls.Add(this.pbColor);
             this.groupBox2.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox2.Location = new System.Drawing.Point(24, 317);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox2.Location = new System.Drawing.Point(21, 238);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox2.Size = new System.Drawing.Size(582, 116);
+            this.groupBox2.Size = new System.Drawing.Size(509, 87);
             this.groupBox2.TabIndex = 24;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Color *";
@@ -311,10 +308,9 @@
             "Gray",
             "Black",
             "White"});
-            this.cmbColor.Location = new System.Drawing.Point(363, 44);
-            this.cmbColor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cmbColor.Location = new System.Drawing.Point(318, 33);
             this.cmbColor.Name = "cmbColor";
-            this.cmbColor.Size = new System.Drawing.Size(115, 29);
+            this.cmbColor.Size = new System.Drawing.Size(101, 24);
             this.cmbColor.TabIndex = 31;
             this.cmbColor.TabStop = false;
             this.cmbColor.SelectedIndexChanged += new System.EventHandler(this.cmbColor_SelectedIndexChanged);
@@ -325,13 +321,14 @@
             this.tableLayoutPanel6.ColumnCount = 1;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel6.ForeColor = System.Drawing.Color.White;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(350, 30);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(306, 22);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 3;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(143, 57);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(125, 43);
             this.tableLayoutPanel6.TabIndex = 168;
             // 
             // label1
@@ -340,9 +337,9 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label1.Font = new System.Drawing.Font("Exo 2", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(24, 45);
+            this.label1.Location = new System.Drawing.Point(21, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(293, 28);
+            this.label1.Size = new System.Drawing.Size(236, 23);
             this.label1.TabIndex = 22;
             this.label1.Text = "LOST ITEM INFORMATION";
             // 
@@ -350,10 +347,9 @@
             // 
             this.radioOther.AutoSize = true;
             this.radioOther.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioOther.Location = new System.Drawing.Point(230, 163);
-            this.radioOther.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioOther.Location = new System.Drawing.Point(201, 122);
             this.radioOther.Name = "radioOther";
-            this.radioOther.Size = new System.Drawing.Size(75, 25);
+            this.radioOther.Size = new System.Drawing.Size(60, 20);
             this.radioOther.TabIndex = 13;
             this.radioOther.Text = "Other";
             this.radioOther.UseVisualStyleBackColor = true;
@@ -363,10 +359,9 @@
             // 
             this.radioDocuments.AutoSize = true;
             this.radioDocuments.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioDocuments.Location = new System.Drawing.Point(419, 103);
-            this.radioDocuments.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioDocuments.Location = new System.Drawing.Point(367, 77);
             this.radioDocuments.Name = "radioDocuments";
-            this.radioDocuments.Size = new System.Drawing.Size(118, 25);
+            this.radioDocuments.Size = new System.Drawing.Size(96, 20);
             this.radioDocuments.TabIndex = 12;
             this.radioDocuments.Text = "Documents";
             this.radioDocuments.UseVisualStyleBackColor = true;
@@ -375,10 +370,9 @@
             // radioClothing
             // 
             this.radioClothing.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioClothing.Location = new System.Drawing.Point(22, 36);
-            this.radioClothing.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioClothing.Location = new System.Drawing.Point(19, 27);
             this.radioClothing.Name = "radioClothing";
-            this.radioClothing.Size = new System.Drawing.Size(126, 48);
+            this.radioClothing.Size = new System.Drawing.Size(110, 36);
             this.radioClothing.TabIndex = 7;
             this.radioClothing.Text = "Clothing";
             this.radioClothing.UseVisualStyleBackColor = true;
@@ -389,10 +383,9 @@
             // 
             this.radioBag.AutoSize = true;
             this.radioBag.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioBag.Location = new System.Drawing.Point(419, 45);
-            this.radioBag.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioBag.Location = new System.Drawing.Point(367, 34);
             this.radioBag.Name = "radioBag";
-            this.radioBag.Size = new System.Drawing.Size(144, 25);
+            this.radioBag.Size = new System.Drawing.Size(115, 20);
             this.radioBag.TabIndex = 11;
             this.radioBag.Text = "Bags/ Luggage";
             this.radioBag.UseVisualStyleBackColor = true;
@@ -402,10 +395,9 @@
             // 
             this.radioAccessories.AutoSize = true;
             this.radioAccessories.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioAccessories.Location = new System.Drawing.Point(22, 103);
-            this.radioAccessories.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioAccessories.Location = new System.Drawing.Point(19, 77);
             this.radioAccessories.Name = "radioAccessories";
-            this.radioAccessories.Size = new System.Drawing.Size(116, 25);
+            this.radioAccessories.Size = new System.Drawing.Size(94, 20);
             this.radioAccessories.TabIndex = 8;
             this.radioAccessories.Text = "Accessories";
             this.radioAccessories.UseVisualStyleBackColor = true;
@@ -415,10 +407,9 @@
             // 
             this.radioAnimal.AutoSize = true;
             this.radioAnimal.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioAnimal.Location = new System.Drawing.Point(230, 103);
-            this.radioAnimal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioAnimal.Location = new System.Drawing.Point(201, 77);
             this.radioAnimal.Name = "radioAnimal";
-            this.radioAnimal.Size = new System.Drawing.Size(134, 25);
+            this.radioAnimal.Size = new System.Drawing.Size(107, 20);
             this.radioAnimal.TabIndex = 10;
             this.radioAnimal.Text = "Animals/ Pets";
             this.radioAnimal.UseVisualStyleBackColor = true;
@@ -428,10 +419,9 @@
             // 
             this.radioElec.AutoSize = true;
             this.radioElec.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioElec.Location = new System.Drawing.Point(230, 45);
-            this.radioElec.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioElec.Location = new System.Drawing.Point(201, 34);
             this.radioElec.Name = "radioElec";
-            this.radioElec.Size = new System.Drawing.Size(112, 25);
+            this.radioElec.Size = new System.Drawing.Size(91, 20);
             this.radioElec.TabIndex = 9;
             this.radioElec.Text = "Electronics";
             this.radioElec.UseVisualStyleBackColor = true;
@@ -448,11 +438,9 @@
             this.groupBox1.Controls.Add(this.radioElec);
             this.groupBox1.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox1.Location = new System.Drawing.Point(24, 96);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Location = new System.Drawing.Point(21, 72);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox1.Size = new System.Drawing.Size(582, 213);
+            this.groupBox1.Size = new System.Drawing.Size(509, 160);
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Category *";
@@ -481,7 +469,7 @@
             this.textBox1.Location = new System.Drawing.Point(3, 2);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 20);
+            this.textBox1.Size = new System.Drawing.Size(194, 16);
             this.textBox1.TabIndex = 167;
             // 
             // tableLayoutPanel2
@@ -505,15 +493,15 @@
             this.textBox2.Location = new System.Drawing.Point(3, 2);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(180, 20);
+            this.textBox2.Size = new System.Drawing.Size(180, 16);
             this.textBox2.TabIndex = 167;
             // 
             // ListItem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.ClientSize = new System.Drawing.Size(1024, 923);
+            this.ClientSize = new System.Drawing.Size(896, 562);
             this.Controls.Add(this.txtBrand);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.btnReset);
@@ -524,10 +512,9 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ListItem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ListItem";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.ListItem_Load);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
