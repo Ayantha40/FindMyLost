@@ -142,5 +142,10 @@ namespace FindMyLost
             EmployeeList el = new EmployeeList();
             el.Show();
         }
+
+        private void lblEmail_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

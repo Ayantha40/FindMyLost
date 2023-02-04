@@ -30,6 +30,7 @@ namespace FindMyLost
             this.ControlBox = false;
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            tlp = tlpList;
         }
 
         bool isITAdmin = Login.isITAdmin;
@@ -37,6 +38,8 @@ namespace FindMyLost
         private IconButton currentbtn;
         private Panel leftBorder;
         string currentPage;
+        public static TableLayoutPanel tlp;
+        private Panel border;
 
         private void BtnSelect(object btn)
         {
@@ -82,8 +85,7 @@ namespace FindMyLost
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-            //panelTheme.Visible = false;
-            //panelMenu.Size = new Size(318, 389);
+            tlpList.Visible = false;
             try
             {
                 panelMenu.Visible = false;
@@ -144,8 +146,9 @@ namespace FindMyLost
             RegisterEmployees register = new RegisterEmployees() { TopLevel = false, TopMost = true };
             panelForm.Controls.Clear();
             panelForm.Controls.Add(panelMenu);
+            panelForm.Controls.Add(tlpList);
+            tlpList.Visible = false;
             register.FormBorderStyle = FormBorderStyle.None;
-            this.Size = new Size(1028, 933);
             panelForm.Controls.Add(register);
             register.Show();
         }
@@ -159,8 +162,9 @@ namespace FindMyLost
             ClaimItem claimItem = new ClaimItem() { TopLevel = false, TopMost = true };
             panelForm.Controls.Clear();
             panelForm.Controls.Add(panelMenu);
+            panelForm.Controls.Add(tlpList);
+            tlpList.Visible = false;
             claimItem.FormBorderStyle = FormBorderStyle.None;
-            this.Size = new Size(1596, 897);
             panelForm.Controls.Add(claimItem);
             claimItem.Show();
         }
@@ -170,15 +174,26 @@ namespace FindMyLost
             currentPage = "ITEM LIST";
             BtnSelect(sender);
             CloseMenu();
+            tlpList.Visible = true;
 
             ItemList itemList = new ItemList() { TopLevel = false, TopMost = true };
-            panelForm.Controls.Clear();
-            panelForm.Controls.Add(panelMenu);
+            tlpList.Controls.Clear();
             itemList.FormBorderStyle = FormBorderStyle.None;
             itemList.ControlBox = false;
-            this.Size = new Size(1209, 850);
-            panelForm.Controls.Add(itemList);
+            tlpList.Controls.Add(itemList, 0, 0);
             itemList.Show();
+        }
+
+        public static void ShowItemProfile()
+        {
+            if (tlp.GetControlFromPosition(1, 0) != null)
+            {
+                tlp.GetControlFromPosition(1, 0).Hide();
+            }
+            ItemProfile itemProfile = new ItemProfile() { TopLevel = false, TopMost = true };
+            itemProfile.FormBorderStyle = FormBorderStyle.None;
+            tlp.Controls.Add(itemProfile, 1, 0);
+            itemProfile.Show();
         }
 
         private void btnEmployeeList_Click(object sender, EventArgs e)
@@ -186,14 +201,25 @@ namespace FindMyLost
             currentPage = "EMPLOYEE LIST";
             BtnSelect(sender);
             CloseMenu();
+            tlpList.Visible = true;
 
             EmployeeList empList = new EmployeeList() { TopLevel = false, TopMost = true };
-            panelForm.Controls.Clear();
-            panelForm.Controls.Add(panelMenu);
+            tlpList.Controls.Clear();
             empList.ControlBox = false;
-            this.Size = new Size(1197, 836);
-            panelForm.Controls.Add(empList);
+            tlpList.Controls.Add(empList, 0, 0);
             empList.Show();
+        }
+
+        public static void ShowEmployeeProfile()
+        {
+            if (tlp.GetControlFromPosition(1, 0) != null)
+            {
+                tlp.GetControlFromPosition(1, 0).Hide();
+            }
+            EmployeeProfile employeeProfile = new EmployeeProfile() { TopLevel = false, TopMost = true };
+            employeeProfile.FormBorderStyle = FormBorderStyle.None;
+            tlp.Controls.Add(employeeProfile, 1, 0);
+            employeeProfile.Show();
         }
 
         private void btnClaimList_Click(object sender, EventArgs e)
@@ -201,14 +227,25 @@ namespace FindMyLost
             currentPage = "CLAIM LIST";
             BtnSelect(sender);
             CloseMenu();
+            tlpList.Visible = true;
 
             ClaimList claimList = new ClaimList() { TopLevel = false, TopMost = true };
-            panelForm.Controls.Clear();
-            panelForm.Controls.Add(panelMenu);
+            tlpList.Controls.Clear();
             claimList.ControlBox = false;
-            this.Size = new Size(1343, 846);
-            panelForm.Controls.Add(claimList);
+            tlpList.Controls.Add(claimList, 0, 0);
             claimList.Show();
+        }
+
+        public static void ShowClaimProfile()
+        {
+            if (tlp.GetControlFromPosition(1, 0) != null)
+            {
+                tlp.GetControlFromPosition(1, 0).Hide();
+            }
+            Claim claimProfile = new Claim() { TopLevel = false, TopMost = true };
+            claimProfile.FormBorderStyle = FormBorderStyle.None;
+            tlp.Controls.Add(claimProfile, 1, 0);
+            claimProfile.Show();
         }
 
         private void btnListItem_Click(object sender, EventArgs e)
@@ -220,8 +257,9 @@ namespace FindMyLost
             ListItem listItem = new ListItem() { TopLevel = false, TopMost = true };
             panelForm.Controls.Clear();
             panelForm.Controls.Add(panelMenu);
+            panelForm.Controls.Add(tlpList);
+            tlpList.Visible = false;
             listItem.FormBorderStyle = FormBorderStyle.None;
-            this.Size = new Size(1335, 1035);
             panelForm.Controls.Add(listItem);
             listItem.Show();
         }
@@ -236,8 +274,9 @@ namespace FindMyLost
             EditProfile editProfile = new EditProfile() { TopLevel = false, TopMost = true };
             panelForm.Controls.Clear();
             panelForm.Controls.Add(panelMenu);
+            panelForm.Controls.Add(tlpList);
+            tlpList.Visible = false;
             editProfile.FormBorderStyle = FormBorderStyle.None;
-            this.Size = new Size(1013, 817);
             panelForm.Controls.Add(editProfile);
             editProfile.Show();
         }
@@ -252,8 +291,9 @@ namespace FindMyLost
             ChangePassword changePassword = new ChangePassword() { TopLevel = false, TopMost = true };
             panelForm.Controls.Clear();
             panelForm.Controls.Add(panelMenu);
+            panelForm.Controls.Add(tlpList);
+            tlpList.Visible = false;
             changePassword.FormBorderStyle = FormBorderStyle.None;
-            this.Size = new Size(1301, 656);
             panelForm.Controls.Add(changePassword);
             changePassword.Show();
         }

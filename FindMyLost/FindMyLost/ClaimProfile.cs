@@ -14,11 +14,11 @@ using System.Drawing.Imaging;
 
 namespace FindMyLost
 {
-    public partial class ClaimProfile : Form
+    public partial class Claim : Form
     {
         SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConString"].ToString());
 
-        public ClaimProfile()
+        public Claim()
         {
             InitializeComponent();
         }
@@ -38,14 +38,15 @@ namespace FindMyLost
 
                 if (dr.Read())
                 {
-                    txtCategory.Text = dr["item_category"].ToString();
-                    txtColour.Text = dr["item_colour"].ToString();
-                    txtLastSeen.Text = dr["last_seen_location"].ToString();
-                    txtBrand.Text = dr["item_brand"].ToString();
-                    txtAddInfo.Text = dr["additional_info"].ToString();
-                    txtName.Text = dr["claimer_name"].ToString();
-                    txtPhoneNum.Text = dr["claimer_phone_number"].ToString();
-                    txtAddress.Text = dr["claimer_address"].ToString();
+                    lblID.Text = dr["claim_id"].ToString();
+                    lblCategory.Text = dr["item_category"].ToString();
+                    lblColour.Text = dr["item_colour"].ToString();
+                    lblLastSeen.Text = dr["last_seen_location"].ToString();
+                    lblBrand.Text = dr["item_brand"].ToString();
+                    lblAddInfo.Text = dr["additional_info"].ToString();
+                    lblName.Text = dr["claimer_name"].ToString();
+                    lblPhoneNum.Text = dr["claimer_phone_number"].ToString();
+                    lblAddress.Text = dr["claimer_address"].ToString();
 
                     imageBytes = (byte[])dr["item_picture"];
                     MemoryStream ms = new MemoryStream(imageBytes);
@@ -109,5 +110,6 @@ namespace FindMyLost
             ClaimList claimList = new ClaimList();
             claimList.Show();
         }
+
     }
 }

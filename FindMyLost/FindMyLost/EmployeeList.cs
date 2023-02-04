@@ -67,9 +67,7 @@ namespace FindMyLost
             ListViewItem item = lvEmployeeList.SelectedItems[0];
             SelectedEmployeeID = item.SubItems[0].Text;
             initialForm = "EmployeeList";
-            this.Hide();
-            EmployeeProfile employeeProfile = new EmployeeProfile();
-            employeeProfile.Show();
+            Dashboard.ShowEmployeeProfile();
         }
 
     }

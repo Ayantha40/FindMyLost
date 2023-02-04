@@ -1,6 +1,6 @@
 ﻿namespace FindMyLost
 {
-    partial class EditLostItemDescription
+    partial class EditLostItem
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditLostItemDescription));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditLostItem));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtCategory = new System.Windows.Forms.TextBox();
             this.tlpFirstName = new System.Windows.Forms.TableLayoutPanel();
@@ -164,9 +164,9 @@
             this.radioBag.Location = new System.Drawing.Point(419, 45);
             this.radioBag.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioBag.Name = "radioBag";
-            this.radioBag.Size = new System.Drawing.Size(144, 25);
+            this.radioBag.Size = new System.Drawing.Size(148, 25);
             this.radioBag.TabIndex = 11;
-            this.radioBag.Text = "Bags/ Luggage";
+            this.radioBag.Text = "Bags / Luggage";
             this.radioBag.UseVisualStyleBackColor = true;
             this.radioBag.CheckedChanged += new System.EventHandler(this.radioBag_CheckedChanged);
             // 
@@ -190,9 +190,9 @@
             this.radioAnimal.Location = new System.Drawing.Point(230, 103);
             this.radioAnimal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioAnimal.Name = "radioAnimal";
-            this.radioAnimal.Size = new System.Drawing.Size(134, 25);
+            this.radioAnimal.Size = new System.Drawing.Size(138, 25);
             this.radioAnimal.TabIndex = 10;
-            this.radioAnimal.Text = "Animals/ Pets";
+            this.radioAnimal.Text = "Animals / Pets";
             this.radioAnimal.UseVisualStyleBackColor = true;
             this.radioAnimal.CheckedChanged += new System.EventHandler(this.radioAnimal_CheckedChanged);
             // 
@@ -521,7 +521,7 @@
             this.textBox1.TabIndex = 167;
             this.textBox1.TabStop = false;
             // 
-            // EditLostItemDescription
+            // EditLostItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -539,10 +539,9 @@
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox6);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
-            this.Name = "EditLostItemDescription";
+            this.Name = "EditLostItem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditLostItemDescription";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.EditLostItemDescription_FormClosed);

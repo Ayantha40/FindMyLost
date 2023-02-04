@@ -41,17 +41,6 @@ namespace FindMyLost
             lblWrong2.Hide();
             lblCorrect0.Hide();
             lblWrong0.Hide();
-
-            string sql = "SELECT * FROM Employee WHERE employee_id = '" + empID + "'";
-            SqlCommand cmd = new SqlCommand(sql, conn);
-            conn.Open();
-            SqlDataReader dr = cmd.ExecuteReader();
-
-            if (dr.Read())
-            {
-                txtOldPassword.Text = dr["password"].ToString();
-            }
-
         }   
 
  

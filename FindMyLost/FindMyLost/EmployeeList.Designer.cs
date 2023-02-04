@@ -38,6 +38,7 @@
             // 
             // lvEmployeeList
             // 
+            this.lvEmployeeList.BackColor = System.Drawing.SystemColors.Control;
             this.lvEmployeeList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lvEmployeeList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.employeeID,
@@ -50,12 +51,12 @@
             this.lvEmployeeList.FullRowSelect = true;
             this.lvEmployeeList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lvEmployeeList.HideSelection = false;
-            this.lvEmployeeList.Location = new System.Drawing.Point(16, 69);
+            this.lvEmployeeList.Location = new System.Drawing.Point(25, 69);
             this.lvEmployeeList.MouseLocation = new System.Drawing.Point(-1, -1);
             this.lvEmployeeList.MouseState = MaterialSkin.MouseState.OUT;
             this.lvEmployeeList.Name = "lvEmployeeList";
             this.lvEmployeeList.OwnerDraw = true;
-            this.lvEmployeeList.Size = new System.Drawing.Size(850, 664);
+            this.lvEmployeeList.Size = new System.Drawing.Size(750, 857);
             this.lvEmployeeList.TabIndex = 0;
             this.lvEmployeeList.UseCompatibleStateImageBehavior = false;
             this.lvEmployeeList.View = System.Windows.Forms.View.Details;
@@ -74,23 +75,23 @@
             // LastName
             // 
             this.LastName.Text = "Last Name";
-            this.LastName.Width = 200;
+            this.LastName.Width = 160;
             // 
             // MobileNum
             // 
             this.MobileNum.Text = "Mobile Number";
-            this.MobileNum.Width = 200;
+            this.MobileNum.Width = 170;
             // 
             // Position
             // 
             this.Position.Text = "Position";
-            this.Position.Width = 150;
+            this.Position.Width = 120;
             // 
             // EmployeeList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(886, 771);
+            this.ClientSize = new System.Drawing.Size(800, 950);
             this.Controls.Add(this.lvEmployeeList);
             this.Name = "EmployeeList";
             this.Load += new System.EventHandler(this.EmployeeList_Load);

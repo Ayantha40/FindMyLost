@@ -42,6 +42,7 @@
             this.panelTheme = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelForm = new System.Windows.Forms.Panel();
+            this.tlpList = new System.Windows.Forms.TableLayoutPanel();
             this.panelShadow = new System.Windows.Forms.Panel();
             this.btnMenu = new FontAwesome.Sharp.IconButton();
             this.lblCurrentPage = new System.Windows.Forms.Label();
@@ -250,12 +251,29 @@
             // 
             this.panelForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.panelForm.Controls.Add(this.panelMenu);
+            this.panelForm.Controls.Add(this.tlpList);
             this.panelForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelForm.Location = new System.Drawing.Point(293, 95);
             this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(766, 632);
+            this.panelForm.Size = new System.Drawing.Size(762, 632);
             this.panelForm.TabIndex = 7;
             this.panelForm.Click += new System.EventHandler(this.panelForm_Click);
+            // 
+            // tlpList
+            // 
+            this.tlpList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.tlpList.ColumnCount = 2;
+            this.tlpList.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpList.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlpList.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.tlpList.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.tlpList.Location = new System.Drawing.Point(0, 0);
+            this.tlpList.Name = "tlpList";
+            this.tlpList.RowCount = 1;
+            this.tlpList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpList.Size = new System.Drawing.Size(762, 632);
+            this.tlpList.TabIndex = 12;
             // 
             // panelShadow
             // 
@@ -263,7 +281,7 @@
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelShadow.Location = new System.Drawing.Point(293, 88);
             this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(766, 7);
+            this.panelShadow.Size = new System.Drawing.Size(762, 7);
             this.panelShadow.TabIndex = 6;
             // 
             // btnMenu
@@ -278,7 +296,7 @@
             this.btnMenu.IconColor = System.Drawing.Color.White;
             this.btnMenu.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMenu.IconSize = 45;
-            this.btnMenu.Location = new System.Drawing.Point(684, 0);
+            this.btnMenu.Location = new System.Drawing.Point(680, 0);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.btnMenu.Size = new System.Drawing.Size(82, 88);
@@ -307,7 +325,7 @@
             this.panelTaskBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTaskBar.Location = new System.Drawing.Point(293, 0);
             this.panelTaskBar.Name = "panelTaskBar";
-            this.panelTaskBar.Size = new System.Drawing.Size(766, 88);
+            this.panelTaskBar.Size = new System.Drawing.Size(762, 88);
             this.panelTaskBar.TabIndex = 5;
             this.panelTaskBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTaskBar_MouseDown);
             // 
@@ -556,5 +574,6 @@
         private FontAwesome.Sharp.IconButton btnRegister;
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Panel SideMenu;
+        public System.Windows.Forms.TableLayoutPanel tlpList;
     }
 }

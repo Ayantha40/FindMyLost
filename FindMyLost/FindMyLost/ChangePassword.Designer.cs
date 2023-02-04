@@ -285,7 +285,7 @@
             this.txtOldPassword.Location = new System.Drawing.Point(3, 16);
             this.txtOldPassword.Multiline = true;
             this.txtOldPassword.Name = "txtOldPassword";
-            this.txtOldPassword.PasswordChar = '●';
+            this.txtOldPassword.PasswordChar = '⁕';
             this.txtOldPassword.Size = new System.Drawing.Size(211, 20);
             this.txtOldPassword.TabIndex = 166;
             this.txtOldPassword.TextChanged += new System.EventHandler(this.txtOldPassword_TextChanged);
@@ -388,7 +388,7 @@
             this.txtNP.Location = new System.Drawing.Point(3, 16);
             this.txtNP.Multiline = true;
             this.txtNP.Name = "txtNP";
-            this.txtNP.PasswordChar = '●';
+            this.txtNP.PasswordChar = '⁕';
             this.txtNP.Size = new System.Drawing.Size(217, 20);
             this.txtNP.TabIndex = 166;
             this.txtNP.TextChanged += new System.EventHandler(this.txtNP_TextChanged);
@@ -468,7 +468,7 @@
             this.txtCNP.Location = new System.Drawing.Point(3, 16);
             this.txtCNP.Multiline = true;
             this.txtCNP.Name = "txtCNP";
-            this.txtCNP.PasswordChar = '●';
+            this.txtCNP.PasswordChar = '⁕';
             this.txtCNP.Size = new System.Drawing.Size(221, 20);
             this.txtCNP.TabIndex = 166;
             this.txtCNP.TextChanged += new System.EventHandler(this.txtCNP_TextChanged);

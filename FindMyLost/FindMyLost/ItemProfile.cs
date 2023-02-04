@@ -39,14 +39,12 @@ namespace FindMyLost
 
                 if (dr.Read())
                 {
-                    var myColor = Color.FromArgb(Convert.ToInt32(dr["item_colour"]));
-                    pbColor.BackColor = myColor;
-
                     lblCategory.Text = dr["item_category"].ToString();
+                    lblColour.Text = dr["item_colour"].ToString();
                     lblID.Text = dr["item_id"].ToString();
                     lblBrand.Text = dr["item_brand"].ToString();
-                    lblLocation.Text = dr["last_seen_location"].ToString();
-                    lblAdditionInfo.Text = dr["additional_info"].ToString();
+                    lblLastSeen.Text = dr["last_seen_location"].ToString();
+                    lblAddInfo.Text = dr["additional_info"].ToString();
 
 
                     imageBytes = (byte[])dr["item_picture"];
@@ -77,7 +75,7 @@ namespace FindMyLost
         private void btnEdit_Click(object sender, EventArgs e)
         {
             this.Hide();
-            EditLostItemDescription ed = new EditLostItemDescription();
+            EditLostItem ed = new EditLostItem();
             ed.Show();
         }
 
@@ -93,26 +91,12 @@ namespace FindMyLost
                 MessageBox.Show("Item deleted.", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Close();
             }
-            else
-            {
-
-            }
         }
 
         private void ItemProfile_FormClosed(object sender, FormClosedEventArgs e)
         {
-            ItemList itemList = new ItemList();
-            itemList.Show();
+            
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pbItemPic_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

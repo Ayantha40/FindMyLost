@@ -68,6 +68,8 @@ namespace FindMyLost
                     txtAddress.Text = dr["address"].ToString();
                     txtMobileNum.Text = dr["mobile_number"].ToString();
                     txtTelNumber.Text = dr["telephone_number"].ToString();
+                    cbGender.Text = dr["gender"].ToString();
+                    dtpDOB.Value = Convert.ToDateTime(dr["DOB"]);
 
                     imageBytes = (byte[])dr["picture"];
                     MemoryStream ms = new MemoryStream(imageBytes);
@@ -93,7 +95,7 @@ namespace FindMyLost
         {
             try
             {
-                string sql = "UPDATE Employee SET first_name = '" + txtFirstName.Text + "', last_name = '" + txtLastName.Text + "', email = '" + txtEmail.Text + "', address = '" + txtAddress.Text + "', mobile_number = '" + txtMobileNum.Text + "', telephone_number = '" + txtTelNumber.Text + "', picture = @image WHERE employee_id = '" + EmployeeList.SelectedEmployeeID + "'";
+                string sql = "UPDATE Employee SET first_name = '" + txtFirstName.Text + "', last_name = '" + txtLastName.Text + "', email = '" + txtEmail.Text + "', address = '" + txtAddress.Text + "', mobile_number = '" + txtMobileNum.Text + "', telephone_number = '" + txtTelNumber.Text + "', picture = @image, gender = '" + cbGender.Text + "', DOB = '" + dtpDOB.Value + "WHERE employee_id = '" + employeeID + "'";
                 SqlCommand cmd = new SqlCommand(sql, conn);
 
                 var img = pbUserImage.Image;
@@ -120,8 +122,9 @@ namespace FindMyLost
 
         private void EditProfile_FormClosed(object sender, FormClosedEventArgs e)
         {
-            EmployeeProfile ep = new EmployeeProfile();
-            ep.Show();
+           /*EmployeeProfile ep = new EmployeeProfile();
+            ep.Show();*/
         }
+
     }
 }

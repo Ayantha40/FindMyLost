@@ -30,7 +30,6 @@
         {
             this.lvClaimList = new MaterialSkin.Controls.MaterialListView();
             this.claimID = new System.Windows.Forms.ColumnHeader();
-            this.ClaimerName = new System.Windows.Forms.ColumnHeader();
             this.ItemCategory = new System.Windows.Forms.ColumnHeader();
             this.ItemColour = new System.Windows.Forms.ColumnHeader();
             this.ItemBrand = new System.Windows.Forms.ColumnHeader();
@@ -39,10 +38,10 @@
             // 
             // lvClaimList
             // 
+            this.lvClaimList.BackColor = System.Drawing.SystemColors.Control;
             this.lvClaimList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lvClaimList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.claimID,
-            this.ClaimerName,
             this.ItemCategory,
             this.ItemColour,
             this.ItemBrand,
@@ -52,12 +51,12 @@
             this.lvClaimList.FullRowSelect = true;
             this.lvClaimList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lvClaimList.HideSelection = false;
-            this.lvClaimList.Location = new System.Drawing.Point(16, 70);
+            this.lvClaimList.Location = new System.Drawing.Point(24, 70);
             this.lvClaimList.MouseLocation = new System.Drawing.Point(-1, -1);
             this.lvClaimList.MouseState = MaterialSkin.MouseState.OUT;
             this.lvClaimList.Name = "lvClaimList";
             this.lvClaimList.OwnerDraw = true;
-            this.lvClaimList.Size = new System.Drawing.Size(1000, 699);
+            this.lvClaimList.Size = new System.Drawing.Size(750, 855);
             this.lvClaimList.TabIndex = 0;
             this.lvClaimList.UseCompatibleStateImageBehavior = false;
             this.lvClaimList.View = System.Windows.Forms.View.Details;
@@ -67,11 +66,6 @@
             // 
             this.claimID.Text = "Claim ID";
             this.claimID.Width = 120;
-            // 
-            // ClaimerName
-            // 
-            this.ClaimerName.Text = "Name";
-            this.ClaimerName.Width = 200;
             // 
             // ItemCategory
             // 
@@ -86,18 +80,18 @@
             // ItemBrand
             // 
             this.ItemBrand.Text = "Brand";
-            this.ItemBrand.Width = 180;
+            this.ItemBrand.Width = 150;
             // 
             // LastSeen
             // 
             this.LastSeen.Text = "Last Seen Location";
-            this.LastSeen.Width = 230;
+            this.LastSeen.Width = 210;
             // 
             // ClaimList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1032, 781);
+            this.ClientSize = new System.Drawing.Size(800, 950);
             this.Controls.Add(this.lvClaimList);
             this.Name = "ClaimList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -111,7 +105,6 @@
 
         private MaterialSkin.Controls.MaterialListView lvClaimList;
         private System.Windows.Forms.ColumnHeader claimID;
-        private System.Windows.Forms.ColumnHeader ClaimerName;
         private System.Windows.Forms.ColumnHeader ItemCategory;
         private System.Windows.Forms.ColumnHeader ItemColour;
         private System.Windows.Forms.ColumnHeader ItemBrand;

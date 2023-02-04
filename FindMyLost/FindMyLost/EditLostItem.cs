@@ -14,7 +14,7 @@ using System.Drawing.Imaging;
 
 namespace FindMyLost
 {
-    public partial class EditLostItemDescription : Form
+    public partial class EditLostItem : Form
     {
         public static PictureBox pb1;
         public static string form;
@@ -22,7 +22,7 @@ namespace FindMyLost
 
         SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConString"].ToString());
 
-        public EditLostItemDescription()
+        public EditLostItem()
         {
             InitializeComponent();
             pb1 = pbColor;

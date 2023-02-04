@@ -52,7 +52,6 @@
             this.radioDocuments = new System.Windows.Forms.RadioButton();
             this.btnPublishClaim = new System.Windows.Forms.Button();
             this.radioAccessories = new System.Windows.Forms.RadioButton();
-            this.lblClaimItem = new System.Windows.Forms.Label();
             this.ClaimerInfo = new System.Windows.Forms.GroupBox();
             this.txtPhoneNum = new System.Windows.Forms.TextBox();
             this.tlpPhoneNum = new System.Windows.Forms.TableLayoutPanel();
@@ -77,7 +76,7 @@
             // 
             this.radioAnimal.AutoSize = true;
             this.radioAnimal.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioAnimal.Location = new System.Drawing.Point(202, 103);
+            this.radioAnimal.Location = new System.Drawing.Point(249, 104);
             this.radioAnimal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioAnimal.Name = "radioAnimal";
             this.radioAnimal.Size = new System.Drawing.Size(138, 25);
@@ -90,7 +89,7 @@
             // 
             this.radioOther.AutoSize = true;
             this.radioOther.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioOther.Location = new System.Drawing.Point(202, 149);
+            this.radioOther.Location = new System.Drawing.Point(249, 153);
             this.radioOther.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioOther.Name = "radioOther";
             this.radioOther.Size = new System.Drawing.Size(75, 25);
@@ -103,7 +102,7 @@
             // 
             this.radioElec.AutoSize = true;
             this.radioElec.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioElec.Location = new System.Drawing.Point(202, 55);
+            this.radioElec.Location = new System.Drawing.Point(249, 55);
             this.radioElec.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioElec.Name = "radioElec";
             this.radioElec.Size = new System.Drawing.Size(112, 25);
@@ -132,11 +131,11 @@
             this.LostItemInfo.Controls.Add(this.pbItemPic);
             this.LostItemInfo.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.LostItemInfo.ForeColor = System.Drawing.Color.White;
-            this.LostItemInfo.Location = new System.Drawing.Point(655, 140);
+            this.LostItemInfo.Location = new System.Drawing.Point(823, 134);
             this.LostItemInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.LostItemInfo.Name = "LostItemInfo";
             this.LostItemInfo.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.LostItemInfo.Size = new System.Drawing.Size(568, 473);
+            this.LostItemInfo.Size = new System.Drawing.Size(655, 521);
             this.LostItemInfo.TabIndex = 191;
             this.LostItemInfo.TabStop = false;
             this.LostItemInfo.Text = "Lost Item Description";
@@ -144,7 +143,7 @@
             // pbColor
             // 
             this.pbColor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbColor.Location = new System.Drawing.Point(206, 73);
+            this.pbColor.Location = new System.Drawing.Point(249, 73);
             this.pbColor.Name = "pbColor";
             this.pbColor.Size = new System.Drawing.Size(80, 52);
             this.pbColor.TabIndex = 188;
@@ -171,7 +170,7 @@
             "White"});
             this.cbColor.Location = new System.Drawing.Point(35, 85);
             this.cbColor.Name = "cbColor";
-            this.cbColor.Size = new System.Drawing.Size(155, 29);
+            this.cbColor.Size = new System.Drawing.Size(196, 29);
             this.cbColor.TabIndex = 187;
             this.cbColor.SelectedIndexChanged += new System.EventHandler(this.cbColor_SelectedIndexChanged);
             // 
@@ -187,7 +186,7 @@
             this.tlpColor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpColor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpColor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpColor.Size = new System.Drawing.Size(176, 52);
+            this.tlpColor.Size = new System.Drawing.Size(219, 52);
             this.tlpColor.TabIndex = 186;
             // 
             // lblAddInfo
@@ -195,7 +194,7 @@
             this.lblAddInfo.AutoSize = true;
             this.lblAddInfo.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblAddInfo.ForeColor = System.Drawing.Color.White;
-            this.lblAddInfo.Location = new System.Drawing.Point(215, 241);
+            this.lblAddInfo.Location = new System.Drawing.Point(245, 243);
             this.lblAddInfo.Name = "lblAddInfo";
             this.lblAddInfo.Size = new System.Drawing.Size(180, 21);
             this.lblAddInfo.TabIndex = 170;
@@ -206,10 +205,10 @@
             this.txtAddInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtAddInfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAddInfo.ForeColor = System.Drawing.Color.White;
-            this.txtAddInfo.Location = new System.Drawing.Point(230, 281);
+            this.txtAddInfo.Location = new System.Drawing.Point(259, 282);
             this.txtAddInfo.Multiline = true;
             this.txtAddInfo.Name = "txtAddInfo";
-            this.txtAddInfo.Size = new System.Drawing.Size(297, 133);
+            this.txtAddInfo.Size = new System.Drawing.Size(361, 173);
             this.txtAddInfo.TabIndex = 168;
             // 
             // tlpAddInfo
@@ -218,13 +217,13 @@
             this.tlpAddInfo.ColumnCount = 1;
             this.tlpAddInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpAddInfo.ForeColor = System.Drawing.Color.White;
-            this.tlpAddInfo.Location = new System.Drawing.Point(215, 264);
+            this.tlpAddInfo.Location = new System.Drawing.Point(245, 264);
             this.tlpAddInfo.Name = "tlpAddInfo";
             this.tlpAddInfo.RowCount = 3;
             this.tlpAddInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tlpAddInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tlpAddInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tlpAddInfo.Size = new System.Drawing.Size(326, 171);
+            this.tlpAddInfo.Size = new System.Drawing.Size(389, 205);
             this.tlpAddInfo.TabIndex = 169;
             // 
             // txtLocation
@@ -236,7 +235,7 @@
             this.txtLocation.Location = new System.Drawing.Point(35, 185);
             this.txtLocation.Margin = new System.Windows.Forms.Padding(21, 3, 3, 3);
             this.txtLocation.Name = "txtLocation";
-            this.txtLocation.Size = new System.Drawing.Size(494, 15);
+            this.txtLocation.Size = new System.Drawing.Size(585, 15);
             this.txtLocation.TabIndex = 65;
             // 
             // tlpLocation
@@ -250,7 +249,7 @@
             this.tlpLocation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpLocation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpLocation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpLocation.Size = new System.Drawing.Size(517, 52);
+            this.tlpLocation.Size = new System.Drawing.Size(608, 52);
             this.tlpLocation.TabIndex = 64;
             // 
             // lblLocation
@@ -270,10 +269,10 @@
             this.txtBrand.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBrand.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtBrand.ForeColor = System.Drawing.Color.White;
-            this.txtBrand.Location = new System.Drawing.Point(304, 91);
+            this.txtBrand.Location = new System.Drawing.Point(356, 91);
             this.txtBrand.Margin = new System.Windows.Forms.Padding(21, 3, 3, 3);
             this.txtBrand.Name = "txtBrand";
-            this.txtBrand.Size = new System.Drawing.Size(225, 15);
+            this.txtBrand.Size = new System.Drawing.Size(264, 15);
             this.txtBrand.TabIndex = 153;
             // 
             // tlpBrand
@@ -281,13 +280,13 @@
             this.tlpBrand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.tlpBrand.ColumnCount = 1;
             this.tlpBrand.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpBrand.Location = new System.Drawing.Point(293, 73);
+            this.tlpBrand.Location = new System.Drawing.Point(345, 73);
             this.tlpBrand.Name = "tlpBrand";
             this.tlpBrand.RowCount = 3;
             this.tlpBrand.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpBrand.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpBrand.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpBrand.Size = new System.Drawing.Size(248, 52);
+            this.tlpBrand.Size = new System.Drawing.Size(287, 52);
             this.tlpBrand.TabIndex = 152;
             // 
             // lblBrand
@@ -295,7 +294,7 @@
             this.lblBrand.AutoSize = true;
             this.lblBrand.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblBrand.ForeColor = System.Drawing.Color.White;
-            this.lblBrand.Location = new System.Drawing.Point(293, 53);
+            this.lblBrand.Location = new System.Drawing.Point(345, 53);
             this.lblBrand.Name = "lblBrand";
             this.lblBrand.Size = new System.Drawing.Size(56, 21);
             this.lblBrand.TabIndex = 151;
@@ -329,9 +328,9 @@
             this.btnEditItemPic.FlatAppearance.BorderSize = 0;
             this.btnEditItemPic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditItemPic.ForeColor = System.Drawing.Color.White;
-            this.btnEditItemPic.Location = new System.Drawing.Point(153, 400);
+            this.btnEditItemPic.Location = new System.Drawing.Point(195, 433);
             this.btnEditItemPic.Name = "btnEditItemPic";
-            this.btnEditItemPic.Size = new System.Drawing.Size(34, 35);
+            this.btnEditItemPic.Size = new System.Drawing.Size(36, 36);
             this.btnEditItemPic.TabIndex = 146;
             this.btnEditItemPic.Text = "✏️";
             this.btnEditItemPic.UseVisualStyleBackColor = false;
@@ -344,7 +343,7 @@
             this.pbItemPic.Image = ((System.Drawing.Image)(resources.GetObject("pbItemPic.Image")));
             this.pbItemPic.Location = new System.Drawing.Point(25, 264);
             this.pbItemPic.Name = "pbItemPic";
-            this.pbItemPic.Size = new System.Drawing.Size(162, 171);
+            this.pbItemPic.Size = new System.Drawing.Size(206, 205);
             this.pbItemPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbItemPic.TabIndex = 145;
             this.pbItemPic.TabStop = false;
@@ -353,7 +352,7 @@
             // 
             this.radioDocuments.AutoSize = true;
             this.radioDocuments.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioDocuments.Location = new System.Drawing.Point(384, 103);
+            this.radioDocuments.Location = new System.Drawing.Point(470, 104);
             this.radioDocuments.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioDocuments.Name = "radioDocuments";
             this.radioDocuments.Size = new System.Drawing.Size(118, 25);
@@ -370,9 +369,9 @@
             this.btnPublishClaim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPublishClaim.Font = new System.Drawing.Font("Exo 2", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPublishClaim.ForeColor = System.Drawing.Color.White;
-            this.btnPublishClaim.Location = new System.Drawing.Point(655, 651);
+            this.btnPublishClaim.Location = new System.Drawing.Point(823, 686);
             this.btnPublishClaim.Name = "btnPublishClaim";
-            this.btnPublishClaim.Size = new System.Drawing.Size(568, 52);
+            this.btnPublishClaim.Size = new System.Drawing.Size(655, 52);
             this.btnPublishClaim.TabIndex = 193;
             this.btnPublishClaim.Text = "PUBLISH CLAIM";
             this.btnPublishClaim.UseVisualStyleBackColor = false;
@@ -382,7 +381,7 @@
             // 
             this.radioAccessories.AutoSize = true;
             this.radioAccessories.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioAccessories.Location = new System.Drawing.Point(34, 103);
+            this.radioAccessories.Location = new System.Drawing.Point(36, 104);
             this.radioAccessories.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioAccessories.Name = "radioAccessories";
             this.radioAccessories.Size = new System.Drawing.Size(116, 25);
@@ -390,18 +389,6 @@
             this.radioAccessories.Text = "Accessories";
             this.radioAccessories.UseVisualStyleBackColor = true;
             this.radioAccessories.CheckedChanged += new System.EventHandler(this.radioAccessories_CheckedChanged);
-            // 
-            // lblClaimItem
-            // 
-            this.lblClaimItem.AutoSize = true;
-            this.lblClaimItem.Font = new System.Drawing.Font("Exo 2", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblClaimItem.ForeColor = System.Drawing.Color.White;
-            this.lblClaimItem.Location = new System.Drawing.Point(64, 76);
-            this.lblClaimItem.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lblClaimItem.Name = "lblClaimItem";
-            this.lblClaimItem.Size = new System.Drawing.Size(209, 28);
-            this.lblClaimItem.TabIndex = 189;
-            this.lblClaimItem.Text = "Claim a Lost Item";
             // 
             // ClaimerInfo
             // 
@@ -416,11 +403,11 @@
             this.ClaimerInfo.Controls.Add(this.lblName);
             this.ClaimerInfo.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ClaimerInfo.ForeColor = System.Drawing.Color.White;
-            this.ClaimerInfo.Location = new System.Drawing.Point(64, 140);
+            this.ClaimerInfo.Location = new System.Drawing.Point(134, 134);
             this.ClaimerInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ClaimerInfo.Name = "ClaimerInfo";
             this.ClaimerInfo.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ClaimerInfo.Size = new System.Drawing.Size(568, 333);
+            this.ClaimerInfo.Size = new System.Drawing.Size(655, 388);
             this.ClaimerInfo.TabIndex = 190;
             this.ClaimerInfo.TabStop = false;
             this.ClaimerInfo.Text = "Claimer Information*";
@@ -431,10 +418,10 @@
             this.txtPhoneNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPhoneNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtPhoneNum.ForeColor = System.Drawing.Color.White;
-            this.txtPhoneNum.Location = new System.Drawing.Point(34, 261);
+            this.txtPhoneNum.Location = new System.Drawing.Point(34, 307);
             this.txtPhoneNum.Margin = new System.Windows.Forms.Padding(21, 3, 3, 3);
             this.txtPhoneNum.Name = "txtPhoneNum";
-            this.txtPhoneNum.Size = new System.Drawing.Size(494, 15);
+            this.txtPhoneNum.Size = new System.Drawing.Size(582, 15);
             this.txtPhoneNum.TabIndex = 62;
             // 
             // tlpPhoneNum
@@ -442,13 +429,13 @@
             this.tlpPhoneNum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.tlpPhoneNum.ColumnCount = 1;
             this.tlpPhoneNum.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpPhoneNum.Location = new System.Drawing.Point(23, 245);
+            this.tlpPhoneNum.Location = new System.Drawing.Point(23, 291);
             this.tlpPhoneNum.Name = "tlpPhoneNum";
             this.tlpPhoneNum.RowCount = 3;
             this.tlpPhoneNum.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpPhoneNum.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpPhoneNum.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpPhoneNum.Size = new System.Drawing.Size(517, 52);
+            this.tlpPhoneNum.Size = new System.Drawing.Size(605, 52);
             this.tlpPhoneNum.TabIndex = 61;
             // 
             // lblPhoneNum
@@ -456,7 +443,7 @@
             this.lblPhoneNum.AutoSize = true;
             this.lblPhoneNum.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblPhoneNum.ForeColor = System.Drawing.Color.White;
-            this.lblPhoneNum.Location = new System.Drawing.Point(23, 225);
+            this.lblPhoneNum.Location = new System.Drawing.Point(23, 271);
             this.lblPhoneNum.Name = "lblPhoneNum";
             this.lblPhoneNum.Size = new System.Drawing.Size(126, 21);
             this.lblPhoneNum.TabIndex = 60;
@@ -468,10 +455,11 @@
             this.txtAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtAddress.ForeColor = System.Drawing.Color.White;
-            this.txtAddress.Location = new System.Drawing.Point(34, 176);
+            this.txtAddress.Location = new System.Drawing.Point(34, 168);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(21, 3, 3, 3);
+            this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(494, 15);
+            this.txtAddress.Size = new System.Drawing.Size(582, 70);
             this.txtAddress.TabIndex = 59;
             // 
             // tlpAddress
@@ -479,13 +467,13 @@
             this.tlpAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.tlpAddress.ColumnCount = 1;
             this.tlpAddress.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpAddress.Location = new System.Drawing.Point(23, 159);
+            this.tlpAddress.Location = new System.Drawing.Point(23, 151);
             this.tlpAddress.Name = "tlpAddress";
             this.tlpAddress.RowCount = 3;
             this.tlpAddress.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpAddress.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpAddress.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpAddress.Size = new System.Drawing.Size(517, 52);
+            this.tlpAddress.Size = new System.Drawing.Size(605, 105);
             this.tlpAddress.TabIndex = 58;
             // 
             // lblAddress
@@ -493,7 +481,7 @@
             this.lblAddress.AutoSize = true;
             this.lblAddress.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblAddress.ForeColor = System.Drawing.Color.White;
-            this.lblAddress.Location = new System.Drawing.Point(23, 139);
+            this.lblAddress.Location = new System.Drawing.Point(23, 131);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(70, 21);
             this.lblAddress.TabIndex = 57;
@@ -505,10 +493,10 @@
             this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtName.ForeColor = System.Drawing.Color.White;
-            this.txtName.Location = new System.Drawing.Point(34, 91);
+            this.txtName.Location = new System.Drawing.Point(34, 83);
             this.txtName.Margin = new System.Windows.Forms.Padding(21, 3, 3, 3);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(494, 15);
+            this.txtName.Size = new System.Drawing.Size(582, 15);
             this.txtName.TabIndex = 56;
             // 
             // tlpName
@@ -516,13 +504,13 @@
             this.tlpName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.tlpName.ColumnCount = 1;
             this.tlpName.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpName.Location = new System.Drawing.Point(23, 73);
+            this.tlpName.Location = new System.Drawing.Point(23, 65);
             this.tlpName.Name = "tlpName";
             this.tlpName.RowCount = 3;
             this.tlpName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpName.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpName.Size = new System.Drawing.Size(517, 52);
+            this.tlpName.Size = new System.Drawing.Size(605, 52);
             this.tlpName.TabIndex = 55;
             // 
             // lblName
@@ -530,7 +518,7 @@
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblName.ForeColor = System.Drawing.Color.White;
-            this.lblName.Location = new System.Drawing.Point(23, 53);
+            this.lblName.Location = new System.Drawing.Point(23, 45);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(56, 21);
             this.lblName.TabIndex = 54;
@@ -539,7 +527,7 @@
             // radioClothing
             // 
             this.radioClothing.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioClothing.Location = new System.Drawing.Point(34, 53);
+            this.radioClothing.Location = new System.Drawing.Point(36, 53);
             this.radioClothing.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioClothing.Name = "radioClothing";
             this.radioClothing.Size = new System.Drawing.Size(99, 24);
@@ -559,11 +547,11 @@
             this.LostItemCategory.Controls.Add(this.radioBag);
             this.LostItemCategory.Font = new System.Drawing.Font("Montserrat Light", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.LostItemCategory.ForeColor = System.Drawing.Color.White;
-            this.LostItemCategory.Location = new System.Drawing.Point(64, 491);
+            this.LostItemCategory.Location = new System.Drawing.Point(134, 547);
             this.LostItemCategory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.LostItemCategory.Name = "LostItemCategory";
             this.LostItemCategory.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.LostItemCategory.Size = new System.Drawing.Size(568, 212);
+            this.LostItemCategory.Size = new System.Drawing.Size(655, 215);
             this.LostItemCategory.TabIndex = 192;
             this.LostItemCategory.TabStop = false;
             this.LostItemCategory.Text = "Lost Item Category*";
@@ -572,7 +560,7 @@
             // 
             this.radioBag.AutoSize = true;
             this.radioBag.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioBag.Location = new System.Drawing.Point(384, 55);
+            this.radioBag.Location = new System.Drawing.Point(470, 55);
             this.radioBag.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioBag.Name = "radioBag";
             this.radioBag.Size = new System.Drawing.Size(148, 25);
@@ -586,10 +574,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.ClientSize = new System.Drawing.Size(1285, 785);
+            this.ClientSize = new System.Drawing.Size(1608, 906);
             this.Controls.Add(this.LostItemInfo);
             this.Controls.Add(this.btnPublishClaim);
-            this.Controls.Add(this.lblClaimItem);
             this.Controls.Add(this.ClaimerInfo);
             this.Controls.Add(this.LostItemCategory);
             this.ForeColor = System.Drawing.Color.White;
@@ -605,7 +592,6 @@
             this.LostItemCategory.ResumeLayout(false);
             this.LostItemCategory.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -631,7 +617,6 @@
         private System.Windows.Forms.RadioButton radioDocuments;
         private System.Windows.Forms.Button btnPublishClaim;
         private System.Windows.Forms.RadioButton radioAccessories;
-        private System.Windows.Forms.Label lblClaimItem;
         private System.Windows.Forms.GroupBox ClaimerInfo;
         private System.Windows.Forms.TextBox txtPhoneNum;
         private System.Windows.Forms.TableLayoutPanel tlpPhoneNum;

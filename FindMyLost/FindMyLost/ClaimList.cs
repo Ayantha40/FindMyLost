@@ -44,7 +44,6 @@ namespace FindMyLost
                     item.SubItems.Add(dr.GetString(2));
                     item.SubItems.Add(dr.GetString(3));
                     item.SubItems.Add(dr.GetString(4));
-                    item.SubItems.Add(dr.GetString(5));
 
                     lvClaimList.Items.Add(item);
                 }
@@ -66,9 +65,7 @@ namespace FindMyLost
         {
             ListViewItem item = lvClaimList.SelectedItems[0];
             SelectedClaimID = item.SubItems[0].Text;
-            this.Hide();
-            ClaimProfile claimProfile = new ClaimProfile();
-            claimProfile.Show();
+            Dashboard.ShowClaimProfile();
         }
     }
 }

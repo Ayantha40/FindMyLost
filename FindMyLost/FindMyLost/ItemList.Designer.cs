@@ -38,7 +38,7 @@
             // 
             // lvItemList
             // 
-            this.lvItemList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.lvItemList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.lvItemList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lvItemList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.ItemID,
@@ -52,13 +52,13 @@
             this.lvItemList.FullRowSelect = true;
             this.lvItemList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lvItemList.HideSelection = false;
-            this.lvItemList.Location = new System.Drawing.Point(22, 0);
+            this.lvItemList.Location = new System.Drawing.Point(25, 23);
             this.lvItemList.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.lvItemList.MouseLocation = new System.Drawing.Point(-1, -1);
             this.lvItemList.MouseState = MaterialSkin.MouseState.OUT;
             this.lvItemList.Name = "lvItemList";
             this.lvItemList.OwnerDraw = true;
-            this.lvItemList.Size = new System.Drawing.Size(850, 692);
+            this.lvItemList.Size = new System.Drawing.Size(750, 849);
             this.lvItemList.TabIndex = 1;
             this.lvItemList.UseCompatibleStateImageBehavior = false;
             this.lvItemList.View = System.Windows.Forms.View.Details;
@@ -67,12 +67,12 @@
             // ItemID
             // 
             this.ItemID.Text = "Item ID";
-            this.ItemID.Width = 110;
+            this.ItemID.Width = 120;
             // 
             // Category
             // 
             this.Category.Text = "Category";
-            this.Category.Width = 170;
+            this.Category.Width = 150;
             // 
             // Color
             // 
@@ -82,19 +82,19 @@
             // Brand
             // 
             this.Brand.Text = "Brand";
-            this.Brand.Width = 180;
+            this.Brand.Width = 150;
             // 
             // LastSeen
             // 
             this.LastSeen.Text = "Last Seen Location";
-            this.LastSeen.Width = 270;
+            this.LastSeen.Width = 210;
             // 
             // ItemList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(898, 738);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.ClientSize = new System.Drawing.Size(800, 950);
             this.Controls.Add(this.lvItemList);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(4);
