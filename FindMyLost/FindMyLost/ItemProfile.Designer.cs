@@ -335,7 +335,6 @@
             this.Name = "ItemProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ItemProfile";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ItemProfile_FormClosed);
             this.Load += new System.EventHandler(this.ItemProfile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbItemPic)).EndInit();
             this.groupBox1.ResumeLayout(false);

@@ -111,7 +111,6 @@
             this.groupBox1.Size = new System.Drawing.Size(640, 722);
             this.groupBox1.TabIndex = 209;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label3
             // 
@@ -220,7 +219,6 @@
             this.lblEmail.Size = new System.Drawing.Size(63, 21);
             this.lblEmail.TabIndex = 209;
             this.lblEmail.Text = "[Email]";
-            this.lblEmail.Click += new System.EventHandler(this.lblEmail_Click);
             // 
             // label4
             // 
@@ -257,9 +255,7 @@
             this.Name = "EmployeeProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EmployeeProfile";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.EmployeeProfile_FormClosed);
             this.Load += new System.EventHandler(this.EmployeeProfile_Load);
-            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.EmployeeProfile_MouseClick);
             ((System.ComponentModel.ISupportInitialize)(this.pbUserImage)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -134,8 +134,6 @@ namespace FindMyLost
             category = radioOther.Text;
         }
 
-
-
         private void ListItem_Load(object sender, EventArgs e)
         {
             pbColor.BackColor = Color.Empty;

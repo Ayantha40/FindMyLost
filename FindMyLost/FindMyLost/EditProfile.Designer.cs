@@ -470,7 +470,6 @@
             this.Name = "EditProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edit Profile";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.EditProfile_FormClosed);
             this.Load += new System.EventHandler(this.EditProfile_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

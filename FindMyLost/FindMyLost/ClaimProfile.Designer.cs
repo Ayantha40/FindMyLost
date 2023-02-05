@@ -467,7 +467,6 @@
             this.Name = "Claim";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Claim Profile";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ClaimProfile_FormClosed);
             this.Load += new System.EventHandler(this.ClaimProfile_Load);
             this.ItemInfo.ResumeLayout(false);
             this.ItemInfo.PerformLayout();

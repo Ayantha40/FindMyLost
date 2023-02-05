@@ -26,7 +26,6 @@ namespace FindMyLost
         {
             InitializeComponent();
             pb1 = pbColor;
-         
         }
 
         private void EditLostItemDescription_Load(object sender, EventArgs e)
@@ -101,23 +100,6 @@ namespace FindMyLost
                 conn.Close();
             }
         }
-
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtLocation_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox5_Enter(object sender, EventArgs e)
-        {
-
-        }
-
 
         private void btnBrowse_MouseEnter(object sender, EventArgs e)
         {
@@ -223,13 +205,6 @@ namespace FindMyLost
             }
         }
 
-
-
-        private void EditLostItemDescription_FormClosed(object sender, FormClosedEventArgs e)
-        {
-
-        }
-
         private void cmbColor_SelectedIndexChanged(object sender, EventArgs e)
         {
             string item_color = cmbColor.Text;
@@ -281,11 +256,6 @@ namespace FindMyLost
             {
                 pbColor.BackColor = Color.FromArgb(255, 255, 255);
             }
-        }
-
-        private void txtBrand_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

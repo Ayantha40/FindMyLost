@@ -118,8 +118,6 @@ namespace FindMyLost
             }
         }
 
-
-
         private void btnEdit_Click(object sender, EventArgs e)
         {
             Dashboard.DisplayEditItem();
@@ -140,11 +138,5 @@ namespace FindMyLost
                 Dashboard.ShowDefault();
             }
         }
-
-        private void ItemProfile_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            
-        }
-
     }
 }

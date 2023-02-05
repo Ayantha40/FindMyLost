@@ -230,20 +230,16 @@ namespace FindMyLost
             {
                 MessageBox.Show("Passwords do not match", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-
             else
             {
                 try
                 {
-                    
-
                     string sql = "UPDATE Employee SET password = '" + txtNP.Text + "' WHERE employee_id = '" + empID + "'";
                     SqlCommand cmd = new SqlCommand(sql, conn);
                     conn.Open();
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Your password has been changed successfully", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
-
                 }
                 catch (Exception ex)
                 {

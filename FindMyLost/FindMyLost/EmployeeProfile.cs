@@ -42,11 +42,6 @@ namespace FindMyLost
             }
         }
 
-        private void lblAddress_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void EmployeeProfile_Load(object sender, EventArgs e)
         {
             try
@@ -97,25 +92,6 @@ namespace FindMyLost
         private void btnEdit_Click(object sender, EventArgs e)
         {
             Dashboard.DisplayEditProfile();
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-       
-        private void EmployeeProfile_MouseClick(object sender, MouseEventArgs e)
-        {
-           
-        }
-
-        private void EmployeeProfile_FormClosed(object sender, FormClosedEventArgs e)
-        {
-        }
-
-        private void lblEmail_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

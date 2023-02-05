@@ -61,7 +61,6 @@ namespace FindMyLost
 
         public static string SelectedItemID;
 
-        
         private void lvItemList_MouseClick(object sender, MouseEventArgs e)
         {
             ListViewItem item = lvItemList.SelectedItems[0];

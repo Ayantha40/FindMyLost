@@ -134,10 +134,6 @@ namespace FindMyLost
             }
         }
 
-        private void EditProfile_FormClosed(object sender, FormClosedEventArgs e)
-        {
-        }
-
         private void btnCancel_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Cancel editting?", "FindMyLost", MessageBoxButtons.YesNo, MessageBoxIcon.Question);

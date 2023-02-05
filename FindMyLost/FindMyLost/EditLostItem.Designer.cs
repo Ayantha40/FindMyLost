@@ -86,7 +86,6 @@
             this.groupBox1.TabIndex = 170;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Category *";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // radioOther
             // 
@@ -257,7 +256,6 @@
             this.txtBrand.Size = new System.Drawing.Size(262, 19);
             this.txtBrand.TabIndex = 167;
             this.txtBrand.TabStop = false;
-            this.txtBrand.TextChanged += new System.EventHandler(this.txtBrand_TextChanged);
             // 
             // tableLayoutPanel3
             // 
@@ -408,7 +406,6 @@
             this.groupBox5.TabIndex = 174;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Additional Information";
-            this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
             // 
             // txtLocation
             // 
@@ -420,7 +417,6 @@
             this.txtLocation.Size = new System.Drawing.Size(262, 19);
             this.txtLocation.TabIndex = 167;
             this.txtLocation.TabStop = false;
-            this.txtLocation.TextChanged += new System.EventHandler(this.txtLocation_TextChanged);
             // 
             // tableLayoutPanel4
             // 
@@ -500,7 +496,6 @@
             this.Name = "EditLostItem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditLostItemDescription";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.EditLostItemDescription_FormClosed);
             this.Load += new System.EventHandler(this.EditLostItemDescription_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

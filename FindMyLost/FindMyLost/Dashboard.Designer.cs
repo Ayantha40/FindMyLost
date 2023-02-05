@@ -559,7 +559,6 @@
             this.lbl.Size = new System.Drawing.Size(155, 12);
             this.lbl.TabIndex = 209;
             this.lbl.Text = "LOST IT? LIST IT! FIND IT!";
-            this.lbl.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblFML
             // 
@@ -582,6 +581,7 @@
             this.lblTag.Size = new System.Drawing.Size(187, 16);
             this.lblTag.TabIndex = 208;
             this.lblTag.Text = "LOST IT? LIST IT! FIND IT!";
+            this.lblTag.Visible = false;
             // 
             // SideMenu
             // 
