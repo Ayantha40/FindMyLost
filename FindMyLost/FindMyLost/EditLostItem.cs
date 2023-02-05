@@ -43,13 +43,44 @@ namespace FindMyLost
                 if (dr.Read())
                 {
 
-                    var myColor = Color.FromArgb(Convert.ToInt32(dr["item_colour"]));
-                    pbColor.BackColor = myColor;
+                    var myColor = dr["item_colour"].ToString();
+                    cmbColor.Text = myColor;
+                    pbColor.BackColor = Color.FromName(myColor);
 
-                    txtCategory.Text = dr["item_category"].ToString();
                     txtLocation.Text = dr["last_seen_location"].ToString();
                     txtBrand.Text = dr["item_brand"].ToString();
                     txtAdditional.Text = dr["additional_info"].ToString();
+
+                    string txtcategory = dr["item_category"].ToString();
+
+                    if (txtcategory == radioClothing.Text)
+                    {
+                        radioClothing.Checked = true;
+                    }
+                    else if (txtcategory == radioElec.Text)
+                    {
+                        radioElec.Checked = true;
+                    }
+                    else if (txtcategory == radioBag.Text)
+                    {
+                        radioBag.Checked = true;
+                    }
+                    else if (txtcategory == radioAccessories.Text)
+                    {
+                        radioAccessories.Checked = true;
+                    }
+                    else if (txtcategory == radioAnimal.Text)
+                    {
+                        radioAnimal.Checked = true;
+                    }
+                    else if (txtcategory == radioDocuments.Text)
+                    {
+                        radioDocuments.Checked = true;
+                    }
+                    else if (txtcategory == radioOther.Text)
+                    {
+                        radioOther.Checked = true;
+                    }
 
                     imageBytes = (byte[])dr["item_picture"];
                     MemoryStream ms = new MemoryStream(imageBytes);
@@ -71,10 +102,6 @@ namespace FindMyLost
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
@@ -101,7 +128,7 @@ namespace FindMyLost
         private void btnBrowse_MouseLeave(object sender, EventArgs e)
         {
             btnBrowse.ForeColor = Color.White;
-            btnBrowse.BackColor = Color.Black;
+            btnBrowse.BackColor = Color.FromArgb(23, 23, 23);
         }
 
         private void btnBrowse_Click(object sender, EventArgs e)
@@ -184,12 +211,15 @@ namespace FindMyLost
                 finally
                 {
                     conn.Close();
+                    Dashboard.tlp.Visible = true;
+                    Dashboard.ShowItemList();
+                    Dashboard.ShowDefault();
                 }
 
             }
             else
             {
-                MessageBox.Show("Please fill all in fields marked with a * ", "FindMyLost");
+                MessageBox.Show("Please fill all in fields marked with a * ", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -197,23 +227,78 @@ namespace FindMyLost
 
         private void EditLostItemDescription_FormClosed(object sender, FormClosedEventArgs e)
         {
-            ItemProfile ip = new ItemProfile();
-            ip.Show();
-        }
 
-        private void btnReset_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Details update process cancelled", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            this.Close();
         }
 
         private void cmbColor_SelectedIndexChanged(object sender, EventArgs e)
         {
             string item_color = cmbColor.Text;
-            Color colour = Color.FromName(item_color);
-            pbColor.BackColor = colour;
+            if (item_color == "Red")
+            {
+                pbColor.BackColor = Color.FromArgb(80, 0, 0);
+            }
+            else if (item_color == "Orange")
+            {
+                pbColor.BackColor = Color.FromArgb(203, 92, 12);
+            }
+            else if (item_color == "Yellow")
+            {
+                pbColor.BackColor = Color.FromArgb(217, 181, 30);
+            }
+            else if (item_color == "Green")
+            {
+                pbColor.BackColor = Color.FromArgb(73, 94, 53);
+            }
+            else if (item_color == "Blue")
+            {
+                pbColor.BackColor = Color.FromArgb(0, 51, 102);
+            }
+            else if (item_color == "Purple")
+            {
+                pbColor.BackColor = Color.FromArgb(52, 32, 72);
+            }
+            else if (item_color == "Pink")
+            {
+                pbColor.BackColor = Color.FromArgb(241, 145, 155);
+            }
+            else if (item_color == "Beige")
+            {
+                pbColor.BackColor = Color.FromArgb(145, 121, 77);
+            }
+            else if (item_color == "Brown")
+            {
+                pbColor.BackColor = Color.FromArgb(68, 33, 18);
+            }
+            else if (item_color == "Gray")
+            {
+                pbColor.BackColor = Color.FromArgb(50, 50, 50);
+            }
+            else if (item_color == "Black")
+            {
+                pbColor.BackColor = Color.FromArgb(0, 0, 0);
+            }
+            else if (item_color == "White")
+            {
+                pbColor.BackColor = Color.FromArgb(255, 255, 255);
+            }
         }
 
+        private void txtBrand_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Cancel editting?", "FindMyLost", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                Close();
+                Dashboard.tlp.Visible = true;
+                Dashboard.ShowItemList();
+                Dashboard.ShowDefault();
+            }
+        }
     }
 }
 

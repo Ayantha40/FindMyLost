@@ -17,7 +17,7 @@ namespace FindMyLost
     public partial class EditProfile : Form
     {
         SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConString"].ToString());
-        string employeeID = Login.empId;
+        string employeeID;
 
         public EditProfile()
         {
@@ -48,11 +48,15 @@ namespace FindMyLost
         {
             try
             {
-                if (EmployeeList.initialForm == "EmployeeList")
+                if (EmployeeList.initialForm == "EmployeeList" && Dashboard.initialForm != "Dashboard")
                 {
                     employeeID = EmployeeList.SelectedEmployeeID;
                 }
-                
+                else
+                {
+                    employeeID = Login.empId;
+                }
+
                 byte[] imageBytes;
 
                 string sql = "SELECT * FROM Employee WHERE employee_id = '" + employeeID + "'";
@@ -87,7 +91,7 @@ namespace FindMyLost
             }
             finally
             {
-                conn.Close();
+                conn.Close(); 
             }
         }
 
@@ -95,7 +99,7 @@ namespace FindMyLost
         {
             try
             {
-                string sql = "UPDATE Employee SET first_name = '" + txtFirstName.Text + "', last_name = '" + txtLastName.Text + "', email = '" + txtEmail.Text + "', address = '" + txtAddress.Text + "', mobile_number = '" + txtMobileNum.Text + "', telephone_number = '" + txtTelNumber.Text + "', picture = @image, gender = '" + cbGender.Text + "', DOB = '" + dtpDOB.Value + "WHERE employee_id = '" + employeeID + "'";
+                string sql = "UPDATE Employee SET first_name = '" + txtFirstName.Text + "', last_name = '" + txtLastName.Text + "', email = '" + txtEmail.Text + "', address = '" + txtAddress.Text + "', mobile_number = '" + txtMobileNum.Text + "', telephone_number = '" + txtTelNumber.Text + "', picture = @image, gender = '" + cbGender.Text + "', DOB = '" + dtpDOB.Value + "' WHERE employee_id = '" + employeeID + "'";
                 SqlCommand cmd = new SqlCommand(sql, conn);
 
                 var img = pbUserImage.Image;
@@ -117,14 +121,39 @@ namespace FindMyLost
             finally
             {
                 conn.Close();
+                if (EmployeeList.initialForm == "EmployeeList" && Dashboard.initialForm != "DB")
+                {
+                    Dashboard.tlp.Visible = true;
+                    Dashboard.ShowEmployeeList();
+                    Dashboard.ShowDefault();
+                }
+                else
+                {
+                    Dashboard.DisplayHome();
+                }
             }
         }
 
         private void EditProfile_FormClosed(object sender, FormClosedEventArgs e)
         {
-           /*EmployeeProfile ep = new EmployeeProfile();
-            ep.Show();*/
         }
 
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Cancel editting?", "FindMyLost", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                if (EmployeeList.initialForm == "EmployeeList" && Dashboard.initialForm != "DB")
+                {
+                    Dashboard.tlp.Visible = true;
+                    Dashboard.ShowEmployeeList();
+                    Dashboard.ShowDefault();
+                }
+                else
+                {
+                    Dashboard.DisplayHome();
+                }
+            }
+        }
     }
 }

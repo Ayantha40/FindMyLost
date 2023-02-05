@@ -44,6 +44,7 @@
             this.lblAddress = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pbUserImage)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -78,7 +79,7 @@
             this.btnEdit.TabIndex = 203;
             this.btnEdit.Text = "EDIT";
             this.btnEdit.UseVisualStyleBackColor = false;
-            this.btnEdit.Click += new System.EventHandler(this.button1_Click);
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // pbUserImage
             // 
@@ -231,12 +232,21 @@
             this.label4.TabIndex = 219;
             this.label4.Text = "☎️";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Location = new System.Drawing.Point(30, 35);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1, 790);
+            this.panel1.TabIndex = 211;
+            // 
             // EmployeeProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.ClientSize = new System.Drawing.Size(802, 903);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pbUserImage);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnDelete);
@@ -273,5 +283,6 @@
         private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel1;
     }
 }

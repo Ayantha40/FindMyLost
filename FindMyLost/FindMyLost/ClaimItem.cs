@@ -106,6 +106,22 @@ namespace FindMyLost
                 finally
                 {
                     conn.Close();
+                    txtName.Clear();
+                    txtPhoneNum.Clear();
+                    txtAddress.Clear();
+                    txtBrand.Clear();
+                    txtAddInfo.Clear();
+                    txtLocation.Clear();
+                    cbColor.SelectedIndex = -1;
+                    pbItemPic.Image = Properties.Resources.item_placeholder;
+                    pbColor.BackColor = Color.Empty;
+                    radioClothing.Checked = false;
+                    radioElec.Checked = false;
+                    radioBag.Checked = false;
+                    radioAnimal.Checked = false;
+                    radioDocuments.Checked = false;
+                    radioAccessories.Checked = false;
+                    radioOther.Checked = false;
                 }
             }
         }
@@ -123,8 +139,63 @@ namespace FindMyLost
         private void cbColor_SelectedIndexChanged(object sender, EventArgs e)
         {
             string item_color = cbColor.Text;
-            Color colour = Color.FromName(item_color);
-            pbColor.BackColor = colour;
+            if (item_color == "Red")
+            {
+                pbColor.BackColor = Color.FromArgb(80, 0, 0);
+            }
+            else if (item_color == "Orange")
+            {
+                pbColor.BackColor = Color.FromArgb(203, 92, 12);
+            }
+            else if (item_color == "Yellow")
+            {
+                pbColor.BackColor = Color.FromArgb(217, 181, 30);
+            }
+            else if (item_color == "Green")
+            {
+                pbColor.BackColor = Color.FromArgb(73, 94, 53);
+            }
+            else if (item_color == "Blue")
+            {
+                pbColor.BackColor = Color.FromArgb(0, 51, 102);
+            }
+            else if (item_color == "Purple")
+            {
+                pbColor.BackColor = Color.FromArgb(52, 32, 72);
+            }
+            else if (item_color == "Pink")
+            {
+                pbColor.BackColor = Color.FromArgb(241, 145, 155);
+            }
+            else if (item_color == "Beige")
+            {
+                pbColor.BackColor = Color.FromArgb(145, 121, 77);
+            }
+            else if (item_color == "Brown")
+            {
+                pbColor.BackColor = Color.FromArgb(68, 33, 18);
+            }
+            else if (item_color == "Gray")
+            {
+                pbColor.BackColor = Color.FromArgb(50, 50, 50);
+            }
+            else if (item_color == "Black")
+            {
+                pbColor.BackColor = Color.FromArgb(0, 0, 0);
+            }
+            else if (item_color == "White")
+            {
+                pbColor.BackColor = Color.FromArgb(255, 255, 255);
+            }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Cancel Claim?", "FindMyLost", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                Dashboard.DisplayHome();
+            }
         }
     }
 }

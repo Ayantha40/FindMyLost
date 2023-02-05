@@ -38,7 +38,7 @@
             // 
             // lvEmployeeList
             // 
-            this.lvEmployeeList.BackColor = System.Drawing.SystemColors.Control;
+            this.lvEmployeeList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.lvEmployeeList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lvEmployeeList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.employeeID,
@@ -51,7 +51,7 @@
             this.lvEmployeeList.FullRowSelect = true;
             this.lvEmployeeList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lvEmployeeList.HideSelection = false;
-            this.lvEmployeeList.Location = new System.Drawing.Point(25, 69);
+            this.lvEmployeeList.Location = new System.Drawing.Point(24, 45);
             this.lvEmployeeList.MouseLocation = new System.Drawing.Point(-1, -1);
             this.lvEmployeeList.MouseState = MaterialSkin.MouseState.OUT;
             this.lvEmployeeList.Name = "lvEmployeeList";
@@ -91,6 +91,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.ClientSize = new System.Drawing.Size(800, 950);
             this.Controls.Add(this.lvEmployeeList);
             this.Name = "EmployeeList";

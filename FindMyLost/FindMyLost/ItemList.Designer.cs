@@ -52,7 +52,7 @@
             this.lvItemList.FullRowSelect = true;
             this.lvItemList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lvItemList.HideSelection = false;
-            this.lvItemList.Location = new System.Drawing.Point(25, 23);
+            this.lvItemList.Location = new System.Drawing.Point(23, 51);
             this.lvItemList.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.lvItemList.MouseLocation = new System.Drawing.Point(-1, -1);
             this.lvItemList.MouseState = MaterialSkin.MouseState.OUT;

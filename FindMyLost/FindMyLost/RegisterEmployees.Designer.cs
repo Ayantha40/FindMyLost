@@ -35,13 +35,11 @@
             this.lblPosition = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblMobileNumber = new System.Windows.Forms.Label();
-            this.tlpMobileNumber = new System.Windows.Forms.TableLayoutPanel();
             this.tlpEmail = new System.Windows.Forms.TableLayoutPanel();
             this.txtMobileNum = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblTelNumber = new System.Windows.Forms.Label();
             this.lblAddress = new System.Windows.Forms.Label();
-            this.tlpTelNumber = new System.Windows.Forms.TableLayoutPanel();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtTelNumber = new System.Windows.Forms.TextBox();
             this.tlpAddress = new System.Windows.Forms.TableLayoutPanel();
@@ -60,12 +58,16 @@
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.tlpFirstName = new System.Windows.Forms.TableLayoutPanel();
             this.lblFirstName = new System.Windows.Forms.Label();
+            this.tlpMobileNumber = new System.Windows.Forms.TableLayoutPanel();
+            this.tlpTelNumber = new System.Windows.Forms.TableLayoutPanel();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUserImage)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnCancel);
             this.groupBox1.Controls.Add(this.cbPosition);
             this.groupBox1.Controls.Add(this.tlpPosition);
             this.groupBox1.Controls.Add(this.lblPosition);
@@ -96,16 +98,16 @@
             this.groupBox1.Controls.Add(this.lblFirstName);
             this.groupBox1.Controls.Add(this.tlpMobileNumber);
             this.groupBox1.Controls.Add(this.tlpTelNumber);
-            this.groupBox1.Location = new System.Drawing.Point(428, 49);
+            this.groupBox1.Location = new System.Drawing.Point(428, 36);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(760, 806);
+            this.groupBox1.Size = new System.Drawing.Size(760, 824);
             this.groupBox1.TabIndex = 230;
             this.groupBox1.TabStop = false;
             // 
             // cbPosition
             // 
-            this.cbPosition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.cbPosition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbPosition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.cbPosition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbPosition.ForeColor = System.Drawing.Color.White;
             this.cbPosition.FormattingEnabled = true;
             this.cbPosition.Items.AddRange(new object[] {
@@ -163,21 +165,6 @@
             this.lblMobileNumber.Size = new System.Drawing.Size(125, 21);
             this.lblMobileNumber.TabIndex = 265;
             this.lblMobileNumber.Text = "Mobile number";
-            // 
-            // tlpMobileNumber
-            // 
-            this.tlpMobileNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.tlpMobileNumber.ColumnCount = 1;
-            this.tlpMobileNumber.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpMobileNumber.ForeColor = System.Drawing.Color.White;
-            this.tlpMobileNumber.Location = new System.Drawing.Point(60, 422);
-            this.tlpMobileNumber.Name = "tlpMobileNumber";
-            this.tlpMobileNumber.RowCount = 3;
-            this.tlpMobileNumber.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpMobileNumber.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpMobileNumber.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpMobileNumber.Size = new System.Drawing.Size(314, 52);
-            this.tlpMobileNumber.TabIndex = 266;
             // 
             // tlpEmail
             // 
@@ -238,21 +225,6 @@
             this.lblAddress.TabIndex = 273;
             this.lblAddress.Text = "Address";
             // 
-            // tlpTelNumber
-            // 
-            this.tlpTelNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.tlpTelNumber.ColumnCount = 1;
-            this.tlpTelNumber.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpTelNumber.ForeColor = System.Drawing.Color.White;
-            this.tlpTelNumber.Location = new System.Drawing.Point(389, 422);
-            this.tlpTelNumber.Name = "tlpTelNumber";
-            this.tlpTelNumber.RowCount = 3;
-            this.tlpTelNumber.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpTelNumber.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpTelNumber.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpTelNumber.Size = new System.Drawing.Size(313, 52);
-            this.tlpTelNumber.TabIndex = 269;
-            // 
             // txtAddress
             // 
             this.txtAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
@@ -292,6 +264,7 @@
             // cbGender
             // 
             this.cbGender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.cbGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbGender.ForeColor = System.Drawing.Color.White;
             this.cbGender.FormattingEnabled = true;
             this.cbGender.Items.AddRange(new object[] {
@@ -380,9 +353,9 @@
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegister.Font = new System.Drawing.Font("Exo 2", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnRegister.ForeColor = System.Drawing.Color.White;
-            this.btnRegister.Location = new System.Drawing.Point(60, 716);
+            this.btnRegister.Location = new System.Drawing.Point(593, 722);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(642, 52);
+            this.btnRegister.Size = new System.Drawing.Size(109, 61);
             this.btnRegister.TabIndex = 258;
             this.btnRegister.Text = "REGISTER";
             this.btnRegister.UseVisualStyleBackColor = false;
@@ -486,6 +459,52 @@
             this.lblFirstName.TabIndex = 247;
             this.lblFirstName.Text = "First Name";
             // 
+            // tlpMobileNumber
+            // 
+            this.tlpMobileNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.tlpMobileNumber.ColumnCount = 1;
+            this.tlpMobileNumber.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpMobileNumber.ForeColor = System.Drawing.Color.White;
+            this.tlpMobileNumber.Location = new System.Drawing.Point(60, 422);
+            this.tlpMobileNumber.Name = "tlpMobileNumber";
+            this.tlpMobileNumber.RowCount = 3;
+            this.tlpMobileNumber.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tlpMobileNumber.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpMobileNumber.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tlpMobileNumber.Size = new System.Drawing.Size(314, 52);
+            this.tlpMobileNumber.TabIndex = 266;
+            // 
+            // tlpTelNumber
+            // 
+            this.tlpTelNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.tlpTelNumber.ColumnCount = 1;
+            this.tlpTelNumber.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpTelNumber.ForeColor = System.Drawing.Color.White;
+            this.tlpTelNumber.Location = new System.Drawing.Point(389, 422);
+            this.tlpTelNumber.Name = "tlpTelNumber";
+            this.tlpTelNumber.RowCount = 3;
+            this.tlpTelNumber.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tlpTelNumber.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpTelNumber.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tlpTelNumber.Size = new System.Drawing.Size(313, 52);
+            this.tlpTelNumber.TabIndex = 269;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(128)))), ((int)(((byte)(45)))));
+            this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Exo 2", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.Location = new System.Drawing.Point(478, 722);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(109, 61);
+            this.btnCancel.TabIndex = 280;
+            this.btnCancel.Text = "CANCEL";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
             // RegisterEmployees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -537,5 +556,6 @@
         private System.Windows.Forms.Label lblGender;
         private System.Windows.Forms.TableLayoutPanel tlpDOB;
         private System.Windows.Forms.Label lblDOB;
+        private System.Windows.Forms.Button btnCancel;
     }
 }

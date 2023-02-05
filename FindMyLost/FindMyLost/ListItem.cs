@@ -24,9 +24,7 @@ namespace FindMyLost
         public ListItem()
         {
             InitializeComponent();
-            //instance = this;
             pb1 = pbColor;
-            //tb1 = txtColor;
         }
 
         private void btnBrowse_Click(object sender, EventArgs e)
@@ -48,8 +46,16 @@ namespace FindMyLost
             txtBrand.Clear();
             txtAdditional.Clear();
             txtLocation.Clear();
-            imgItem.ImageLocation = "";
+            cmbColor.SelectedIndex = -1;
+            imgItem.Image = Properties.Resources.item_placeholder;
             pbColor.BackColor = Color.Empty;
+            radioClothing.Checked = false;
+            radioElec.Checked = false;
+            radioBag.Checked = false;
+            radioAnimal.Checked = false;
+            radioDocuments.Checked = false;
+            radioAccessories.Checked = false;
+            radioOther.Checked = false;
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
@@ -69,7 +75,7 @@ namespace FindMyLost
                         cmd.Parameters.AddWithValue("@image", imageBytes);
                         conn.Open();
                         cmd.ExecuteNonQuery();
-                        MessageBox.Show("Item Listed", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Item Listed!", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     catch (Exception ex)
                     {
@@ -78,11 +84,12 @@ namespace FindMyLost
                     finally
                     {
                         conn.Close();
+                        btnReset_Click(sender, e);
                     }              
             }
             else
             {
-                MessageBox.Show("Please fill all in fields marked with a *");
+                MessageBox.Show("Please fill all in fields marked with a *", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -149,13 +156,60 @@ namespace FindMyLost
         private void btnBrowse_MouseLeave(object sender, EventArgs e)
         {
             btnBrowse.ForeColor = Color.White;
+            btnBrowse.BackColor = Color.FromArgb(23, 23, 23);
         }
 
         private void cmbColor_SelectedIndexChanged(object sender, EventArgs e)
         {
             string item_color = cmbColor.Text;
-            Color colour = Color.FromName(item_color);
-            pbColor.BackColor = colour;
+            if (item_color == "Red")
+            {
+                pbColor.BackColor = Color.FromArgb(80, 0, 0);
+            }
+            else if (item_color == "Orange")
+            {
+                pbColor.BackColor = Color.FromArgb(203, 92, 12);
+            }
+            else if (item_color == "Yellow")
+            {
+                pbColor.BackColor = Color.FromArgb(217, 181, 30);
+            }
+            else if (item_color == "Green")
+            {
+                pbColor.BackColor = Color.FromArgb(73, 94, 53);
+            }
+            else if (item_color == "Blue")
+            {
+                pbColor.BackColor = Color.FromArgb(0, 51, 102);
+            }
+            else if (item_color == "Purple")
+            {
+                pbColor.BackColor = Color.FromArgb(52, 32, 72);
+            }
+            else if (item_color == "Pink")
+            {
+                pbColor.BackColor = Color.FromArgb(241, 145, 155);
+            }
+            else if (item_color == "Beige")
+            {
+                pbColor.BackColor = Color.FromArgb(145, 121, 77);
+            }
+            else if (item_color == "Brown")
+            {
+                pbColor.BackColor = Color.FromArgb(68, 33, 18);
+            }
+            else if (item_color == "Gray")
+            {
+                pbColor.BackColor = Color.FromArgb(50, 50, 50);
+            }
+            else if (item_color == "Black")
+            {
+                pbColor.BackColor = Color.FromArgb(0, 0, 0);
+            }
+            else if (item_color == "White")
+            {
+                pbColor.BackColor = Color.FromArgb(255, 255, 255);
+            }
         }
     }
 }

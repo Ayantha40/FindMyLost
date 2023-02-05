@@ -33,13 +33,13 @@
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pbColor = new System.Windows.Forms.PictureBox();
             this.lblID = new System.Windows.Forms.Label();
             this.lblAddInfo = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.lblBrand = new System.Windows.Forms.Label();
             this.lblLastSeen = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.lblColour = new System.Windows.Forms.Label();
             this.lblCategory = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -51,8 +51,10 @@
             this.label27 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pbItemPic)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbColor)).BeginInit();
             this.SuspendLayout();
             // 
             // pbItemPic
@@ -101,13 +103,13 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.pbColor);
             this.groupBox1.Controls.Add(this.lblID);
             this.groupBox1.Controls.Add(this.lblAddInfo);
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.lblBrand);
             this.groupBox1.Controls.Add(this.lblLastSeen);
             this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.lblColour);
             this.groupBox1.Controls.Add(this.pbItemPic);
             this.groupBox1.Controls.Add(this.lblCategory);
             this.groupBox1.Controls.Add(this.label15);
@@ -125,6 +127,14 @@
             this.groupBox1.Size = new System.Drawing.Size(654, 712);
             this.groupBox1.TabIndex = 197;
             this.groupBox1.TabStop = false;
+            // 
+            // pbColor
+            // 
+            this.pbColor.Location = new System.Drawing.Point(338, 506);
+            this.pbColor.Name = "pbColor";
+            this.pbColor.Size = new System.Drawing.Size(143, 25);
+            this.pbColor.TabIndex = 237;
+            this.pbColor.TabStop = false;
             // 
             // lblID
             // 
@@ -189,17 +199,6 @@
             this.label13.Size = new System.Drawing.Size(179, 21);
             this.label13.TabIndex = 235;
             this.label13.Text = "Additional information";
-            // 
-            // lblColour
-            // 
-            this.lblColour.AutoSize = true;
-            this.lblColour.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblColour.ForeColor = System.Drawing.Color.White;
-            this.lblColour.Location = new System.Drawing.Point(338, 506);
-            this.lblColour.Name = "lblColour";
-            this.lblColour.Size = new System.Drawing.Size(69, 21);
-            this.lblColour.TabIndex = 199;
-            this.lblColour.Text = "[Colour]";
             // 
             // lblCategory
             // 
@@ -312,12 +311,21 @@
             this.label31.TabIndex = 219;
             this.label31.Text = ":";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Location = new System.Drawing.Point(30, 35);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1, 790);
+            this.panel1.TabIndex = 198;
+            // 
             // ItemProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.ClientSize = new System.Drawing.Size(802, 903);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
@@ -332,6 +340,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbItemPic)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbColor)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -366,7 +375,8 @@
         private System.Windows.Forms.Label lblAddInfo;
         private System.Windows.Forms.Label lblBrand;
         private System.Windows.Forms.Label lblLastSeen;
-        private System.Windows.Forms.Label lblColour;
         private System.Windows.Forms.Label lblCategory;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pbColor;
     }
 }

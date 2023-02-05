@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClaimItem));
             this.radioAnimal = new System.Windows.Forms.RadioButton();
             this.radioOther = new System.Windows.Forms.RadioButton();
             this.radioElec = new System.Windows.Forms.RadioButton();
@@ -65,6 +64,7 @@
             this.radioClothing = new System.Windows.Forms.RadioButton();
             this.LostItemCategory = new System.Windows.Forms.GroupBox();
             this.radioBag = new System.Windows.Forms.RadioButton();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.LostItemInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbColor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbItemPic)).BeginInit();
@@ -152,6 +152,7 @@
             // cbColor
             // 
             this.cbColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.cbColor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbColor.ForeColor = System.Drawing.Color.White;
             this.cbColor.FormattingEnabled = true;
@@ -340,7 +341,7 @@
             // 
             // pbItemPic
             // 
-            this.pbItemPic.Image = ((System.Drawing.Image)(resources.GetObject("pbItemPic.Image")));
+            this.pbItemPic.Image = global::FindMyLost.Properties.Resources.item_placeholder;
             this.pbItemPic.Location = new System.Drawing.Point(25, 264);
             this.pbItemPic.Name = "pbItemPic";
             this.pbItemPic.Size = new System.Drawing.Size(206, 205);
@@ -369,11 +370,11 @@
             this.btnPublishClaim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPublishClaim.Font = new System.Drawing.Font("Exo 2", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPublishClaim.ForeColor = System.Drawing.Color.White;
-            this.btnPublishClaim.Location = new System.Drawing.Point(823, 686);
+            this.btnPublishClaim.Location = new System.Drawing.Point(1369, 682);
             this.btnPublishClaim.Name = "btnPublishClaim";
-            this.btnPublishClaim.Size = new System.Drawing.Size(655, 52);
+            this.btnPublishClaim.Size = new System.Drawing.Size(109, 61);
             this.btnPublishClaim.TabIndex = 193;
-            this.btnPublishClaim.Text = "PUBLISH CLAIM";
+            this.btnPublishClaim.Text = "CLAIM";
             this.btnPublishClaim.UseVisualStyleBackColor = false;
             this.btnPublishClaim.Click += new System.EventHandler(this.btnPublishClaim_Click);
             // 
@@ -569,12 +570,29 @@
             this.radioBag.UseVisualStyleBackColor = true;
             this.radioBag.CheckedChanged += new System.EventHandler(this.radioBag_CheckedChanged);
             // 
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(128)))), ((int)(((byte)(45)))));
+            this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Exo 2", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.Location = new System.Drawing.Point(1254, 682);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(109, 61);
+            this.btnCancel.TabIndex = 194;
+            this.btnCancel.Text = "CANCEL";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
             // ClaimItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.ClientSize = new System.Drawing.Size(1608, 906);
+            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.LostItemInfo);
             this.Controls.Add(this.btnPublishClaim);
             this.Controls.Add(this.ClaimerInfo);
@@ -633,5 +651,6 @@
         private System.Windows.Forms.PictureBox pbColor;
         private System.Windows.Forms.ComboBox cbColor;
         private System.Windows.Forms.TableLayoutPanel tlpColor;
+        private System.Windows.Forms.Button btnCancel;
     }
 }

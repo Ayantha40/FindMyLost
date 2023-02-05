@@ -32,6 +32,10 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnMatch = new System.Windows.Forms.Button();
             this.ItemInfo = new System.Windows.Forms.GroupBox();
+            this.pbColor = new System.Windows.Forms.PictureBox();
+            this.lblID = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ID = new System.Windows.Forms.Label();
             this.lblAddress = new System.Windows.Forms.Label();
             this.lblPhoneNum = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
@@ -42,7 +46,6 @@
             this.lblLastSeen = new System.Windows.Forms.Label();
             this.ClaimerName = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblColour = new System.Windows.Forms.Label();
             this.Address = new System.Windows.Forms.Label();
             this.lblCategory = new System.Windows.Forms.Label();
             this.PhoneNum = new System.Windows.Forms.Label();
@@ -57,10 +60,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.Colour = new System.Windows.Forms.Label();
             this.Category = new System.Windows.Forms.Label();
-            this.ID = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblID = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.ItemInfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbColor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbItemPic)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,6 +100,7 @@
             // 
             // ItemInfo
             // 
+            this.ItemInfo.Controls.Add(this.pbColor);
             this.ItemInfo.Controls.Add(this.lblID);
             this.ItemInfo.Controls.Add(this.label1);
             this.ItemInfo.Controls.Add(this.ID);
@@ -111,7 +114,6 @@
             this.ItemInfo.Controls.Add(this.lblLastSeen);
             this.ItemInfo.Controls.Add(this.ClaimerName);
             this.ItemInfo.Controls.Add(this.label2);
-            this.ItemInfo.Controls.Add(this.lblColour);
             this.ItemInfo.Controls.Add(this.Address);
             this.ItemInfo.Controls.Add(this.lblCategory);
             this.ItemInfo.Controls.Add(this.PhoneNum);
@@ -135,6 +137,47 @@
             this.ItemInfo.Size = new System.Drawing.Size(673, 738);
             this.ItemInfo.TabIndex = 194;
             this.ItemInfo.TabStop = false;
+            // 
+            // pbColor
+            // 
+            this.pbColor.Location = new System.Drawing.Point(335, 558);
+            this.pbColor.Name = "pbColor";
+            this.pbColor.Size = new System.Drawing.Size(143, 25);
+            this.pbColor.TabIndex = 238;
+            this.pbColor.TabStop = false;
+            // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblID.ForeColor = System.Drawing.Color.White;
+            this.lblID.Location = new System.Drawing.Point(335, 373);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(37, 21);
+            this.lblID.TabIndex = 87;
+            this.lblID.Text = "[ID]";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(293, 373);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(13, 21);
+            this.label1.TabIndex = 86;
+            this.label1.Text = ":";
+            // 
+            // ID
+            // 
+            this.ID.AutoSize = true;
+            this.ID.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ID.ForeColor = System.Drawing.Color.White;
+            this.ID.Location = new System.Drawing.Point(74, 373);
+            this.ID.Name = "ID";
+            this.ID.Size = new System.Drawing.Size(75, 21);
+            this.ID.TabIndex = 85;
+            this.ID.Text = "Claim ID";
             // 
             // lblAddress
             // 
@@ -245,17 +288,6 @@
             this.label2.Size = new System.Drawing.Size(13, 21);
             this.label2.TabIndex = 79;
             this.label2.Text = ":";
-            // 
-            // lblColour
-            // 
-            this.lblColour.AutoSize = true;
-            this.lblColour.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblColour.ForeColor = System.Drawing.Color.White;
-            this.lblColour.Location = new System.Drawing.Point(335, 558);
-            this.lblColour.Name = "lblColour";
-            this.lblColour.Size = new System.Drawing.Size(69, 21);
-            this.lblColour.TabIndex = 72;
-            this.lblColour.Text = "[Colour]";
             // 
             // Address
             // 
@@ -411,38 +443,13 @@
             this.Category.TabIndex = 54;
             this.Category.Text = "Category";
             // 
-            // ID
+            // panel1
             // 
-            this.ID.AutoSize = true;
-            this.ID.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ID.ForeColor = System.Drawing.Color.White;
-            this.ID.Location = new System.Drawing.Point(74, 373);
-            this.ID.Name = "ID";
-            this.ID.Size = new System.Drawing.Size(75, 21);
-            this.ID.TabIndex = 85;
-            this.ID.Text = "Claim ID";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(293, 373);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(13, 21);
-            this.label1.TabIndex = 86;
-            this.label1.Text = ":";
-            // 
-            // lblID
-            // 
-            this.lblID.AutoSize = true;
-            this.lblID.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblID.ForeColor = System.Drawing.Color.White;
-            this.lblID.Location = new System.Drawing.Point(335, 373);
-            this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(37, 21);
-            this.lblID.TabIndex = 87;
-            this.lblID.Text = "[ID]";
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Location = new System.Drawing.Point(23, 35);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1, 790);
+            this.panel1.TabIndex = 199;
             // 
             // Claim
             // 
@@ -450,6 +457,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.ClientSize = new System.Drawing.Size(802, 903);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.ItemInfo);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnMatch);
@@ -463,6 +471,7 @@
             this.Load += new System.EventHandler(this.ClaimProfile_Load);
             this.ItemInfo.ResumeLayout(false);
             this.ItemInfo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbColor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbItemPic)).EndInit();
             this.ResumeLayout(false);
 
@@ -483,7 +492,6 @@
         private System.Windows.Forms.Label lblLastSeen;
         private System.Windows.Forms.Label ClaimerName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblColour;
         private System.Windows.Forms.Label Address;
         private System.Windows.Forms.Label lblCategory;
         private System.Windows.Forms.Label PhoneNum;
@@ -501,5 +509,7 @@
         private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label ID;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pbColor;
     }
 }

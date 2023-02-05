@@ -31,6 +31,10 @@ namespace FindMyLost
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             tlp = tlpList;
+            formPanel = panelForm;
+            menuPanel = panelMenu;
+            title = lblCurrentPage;
+            icon = iconCurrentPage;
         }
 
         bool isITAdmin = Login.isITAdmin;
@@ -39,7 +43,10 @@ namespace FindMyLost
         private Panel leftBorder;
         string currentPage;
         public static TableLayoutPanel tlp;
-        private Panel border;
+        public static Panel formPanel;
+        public static Panel menuPanel;
+        public static Label title;
+        public static IconPictureBox icon;
 
         private void BtnSelect(object btn)
         {
@@ -80,6 +87,16 @@ namespace FindMyLost
             CloseMenu();
             panelForm.Controls.Clear();
             panelForm.Controls.Add(panelMenu);
+        }
+
+        public static void DisplayHome()
+        {
+            formPanel.Controls.Clear();
+            formPanel.Controls.Add(menuPanel);
+            formPanel.Controls.Add(tlp);
+            tlp.Visible = false;
+            title.Text = "HOME";
+            icon.IconChar = IconChar.Home;
         }
 
 
@@ -134,7 +151,7 @@ namespace FindMyLost
 
         private void Dashboard_Resize(object sender, EventArgs e)
         {
-            panelMenu.Location = new Point((btnMenu.Location.X - 236), 0);
+            panelMenu.Location = new Point((btnMenu.Location.X - 252), 0);
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
@@ -169,31 +186,90 @@ namespace FindMyLost
             claimItem.Show();
         }
 
+        public static string list;
+
+        //display FindMyLost2 in tlpList column 2
+        public static void ShowDefault()
+        {
+            if (tlp.GetControlFromPosition(1, 0) != null)
+            {
+                tlp.GetControlFromPosition(1, 0).Dispose();
+            }
+            FindMyLost2 f2 = new FindMyLost2() { TopLevel = false, TopMost = true };
+            f2.FormBorderStyle = FormBorderStyle.None;
+            tlp.Controls.Add(f2, 1, 0);
+            f2.Show();
+        }
+
+        //display ItemList in tlpList column 1
+        public static void ShowItemList()
+        {
+            if (tlp.GetControlFromPosition(0, 0) != null)
+            {
+                tlp.GetControlFromPosition(0, 0).Dispose();
+            }
+            ItemList itemList = new ItemList() { TopLevel = false, TopMost = true };
+            itemList.FormBorderStyle = FormBorderStyle.None;
+            tlp.Controls.Add(itemList, 0, 0);
+            itemList.Show();
+            title.Text = "ITEM LIST";
+            icon.IconChar = IconChar.Images;
+        }
+
         private void btnItemList_Click(object sender, EventArgs e)
         {
             currentPage = "ITEM LIST";
             BtnSelect(sender);
             CloseMenu();
             tlpList.Visible = true;
+            list = "item";
 
-            ItemList itemList = new ItemList() { TopLevel = false, TopMost = true };
             tlpList.Controls.Clear();
-            itemList.FormBorderStyle = FormBorderStyle.None;
-            itemList.ControlBox = false;
-            tlpList.Controls.Add(itemList, 0, 0);
-            itemList.Show();
+            ShowItemList();
+            ShowDefault();
         }
 
+        //display ItemProfile in tlpList column 2
         public static void ShowItemProfile()
         {
             if (tlp.GetControlFromPosition(1, 0) != null)
             {
-                tlp.GetControlFromPosition(1, 0).Hide();
+                tlp.GetControlFromPosition(1, 0).Dispose();
             }
             ItemProfile itemProfile = new ItemProfile() { TopLevel = false, TopMost = true };
             itemProfile.FormBorderStyle = FormBorderStyle.None;
             tlp.Controls.Add(itemProfile, 1, 0);
             itemProfile.Show();
+        }
+
+        //display EditLostItem in panelForm
+        public static void DisplayEditItem()
+        {
+            EditLostItem editLostItem = new EditLostItem() { TopLevel = false, TopMost = true };
+            formPanel.Controls.Clear();
+            formPanel.Controls.Add(menuPanel);
+            formPanel.Controls.Add(tlp);
+            tlp.Visible = false;
+            editLostItem.FormBorderStyle = FormBorderStyle.None;
+            formPanel.Controls.Add(editLostItem);
+            editLostItem.Show();
+            title.Text = "EDIT LOST ITEM";
+            icon.IconChar = IconChar.PenSquare;
+        }
+
+        //display EmployeeList in tlpList column 1
+        public static void ShowEmployeeList()
+        {
+            if (tlp.GetControlFromPosition(0, 0) != null)
+            {
+                tlp.GetControlFromPosition(0, 0).Dispose();
+            }
+            EmployeeList empList = new EmployeeList() { TopLevel = false, TopMost = true };
+            empList.FormBorderStyle = FormBorderStyle.None;
+            tlp.Controls.Add(empList, 0, 0);
+            empList.Show();
+            title.Text = "EMPLOYEE LIST";
+            icon.IconChar = IconChar.Users;
         }
 
         private void btnEmployeeList_Click(object sender, EventArgs e)
@@ -202,24 +278,54 @@ namespace FindMyLost
             BtnSelect(sender);
             CloseMenu();
             tlpList.Visible = true;
+            list = "employee";
 
-            EmployeeList empList = new EmployeeList() { TopLevel = false, TopMost = true };
             tlpList.Controls.Clear();
-            empList.ControlBox = false;
-            tlpList.Controls.Add(empList, 0, 0);
-            empList.Show();
+            ShowEmployeeList();
+            ShowDefault();
         }
 
+        //display EmployeeProfile in tlpList column 2
         public static void ShowEmployeeProfile()
         {
             if (tlp.GetControlFromPosition(1, 0) != null)
             {
-                tlp.GetControlFromPosition(1, 0).Hide();
+                tlp.GetControlFromPosition(1, 0).Dispose();
             }
             EmployeeProfile employeeProfile = new EmployeeProfile() { TopLevel = false, TopMost = true };
             employeeProfile.FormBorderStyle = FormBorderStyle.None;
             tlp.Controls.Add(employeeProfile, 1, 0);
             employeeProfile.Show();
+        }
+
+        //display EditProfile in panelForm
+        public static void DisplayEditProfile()
+        {
+            EditProfile editProfile = new EditProfile() { TopLevel = false, TopMost = true };
+            formPanel.Controls.Clear();
+            formPanel.Controls.Add(menuPanel);
+            formPanel.Controls.Add(tlp);
+            tlp.Visible = false;
+            editProfile.FormBorderStyle = FormBorderStyle.None;
+            formPanel.Controls.Add(editProfile);
+            editProfile.Show();
+            title.Text = "EDIT EMPLOYEE PROFILE";
+            icon.IconChar = IconChar.UserEdit;
+        }
+        
+        //display ClaimList in tlpList column 1
+        public static void ShowClaimList()
+        {
+            if (tlp.GetControlFromPosition(0, 0) != null)
+            {
+                tlp.GetControlFromPosition(0, 0).Dispose();
+            }
+            ClaimList claimList = new ClaimList() { TopLevel = false, TopMost = true };
+            claimList.FormBorderStyle = FormBorderStyle.None;
+            tlp.Controls.Add(claimList, 0, 0);
+            claimList.Show();
+            title.Text = "CLAIM LIST";
+            icon.IconChar = IconChar.ListUl;
         }
 
         private void btnClaimList_Click(object sender, EventArgs e)
@@ -228,19 +334,19 @@ namespace FindMyLost
             BtnSelect(sender);
             CloseMenu();
             tlpList.Visible = true;
+            list = "claim";
 
-            ClaimList claimList = new ClaimList() { TopLevel = false, TopMost = true };
             tlpList.Controls.Clear();
-            claimList.ControlBox = false;
-            tlpList.Controls.Add(claimList, 0, 0);
-            claimList.Show();
+            ShowClaimList();
+            ShowDefault();
         }
 
+        //display ClaimProfile in tlpList column 2
         public static void ShowClaimProfile()
         {
             if (tlp.GetControlFromPosition(1, 0) != null)
             {
-                tlp.GetControlFromPosition(1, 0).Hide();
+                tlp.GetControlFromPosition(1, 0).Dispose();
             }
             Claim claimProfile = new Claim() { TopLevel = false, TopMost = true };
             claimProfile.FormBorderStyle = FormBorderStyle.None;
@@ -264,12 +370,15 @@ namespace FindMyLost
             listItem.Show();
         }
 
+        public static string initialForm;
+
         private void btnEditProfile_Click(object sender, EventArgs e)
         {
             currentPage = "EDIT PROFILE";
             BtnSelect(sender);
             leftBorder.Visible = false;
             CloseMenu();
+            initialForm = "Dashboard";
 
             EditProfile editProfile = new EditProfile() { TopLevel = false, TopMost = true };
             panelForm.Controls.Clear();
@@ -279,6 +388,7 @@ namespace FindMyLost
             editProfile.FormBorderStyle = FormBorderStyle.None;
             panelForm.Controls.Add(editProfile);
             editProfile.Show();
+            initialForm = "DB";
         }
 
         private void btnChangePassword_Click(object sender, EventArgs e)

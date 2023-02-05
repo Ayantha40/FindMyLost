@@ -32,39 +32,48 @@ namespace FindMyLost
             conn.Open();
             SqlDataReader dr = cmd.ExecuteReader();
 
-            if (dr.Read() && (txtpassword.Text != "") && (txtempid.Text != ""))
+            try
             {
-
-                if (dr["position"].ToString() == "Employee")
+                if (dr.Read() && (txtpassword.Text != "") && (txtempid.Text != ""))
                 {
-                    isITAdmin = false;
+
+                    if (dr["position"].ToString() == "Employee")
+                    {
+                        isITAdmin = false;
+                    }
+                    else
+                    {
+                        isITAdmin = true;
+                    }
+                    Dashboard db = new Dashboard();
+                    db.Show();
+                    this.Hide();
                 }
+
                 else
                 {
-                    isITAdmin = true;
+                    MessageBox.Show("Invalid Employee ID or Password", "FindMyLost", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
                 }
-                Dashboard db= new Dashboard();
-                db.Show();
-                this.Hide();
             }
-
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Invalid Employee ID or Password", "FindMyLost", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            conn.Close();
-
+            finally
+            {
+                conn.Close();
+            }
         }
 
         private void btnViewPassword_Click(object sender, EventArgs e)
         {
-            if (txtpassword.PasswordChar == '●')
+            if (txtpassword.PasswordChar == '⁕')
             {
                 txtpassword.PasswordChar = '\0';
             }
             else
             {
-                txtpassword.PasswordChar = '●';
+                txtpassword.PasswordChar = '⁕';
             }
         }
 

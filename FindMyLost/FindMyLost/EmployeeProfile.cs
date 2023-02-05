@@ -25,30 +25,6 @@ namespace FindMyLost
         public static string EmployeeID = "";
         string SelectedEmployeeID = EmployeeList.SelectedEmployeeID;
 
-        private void lblPosition_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblTelNumber_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtFirstName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnEditUserPic_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblLastName_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
@@ -59,12 +35,10 @@ namespace FindMyLost
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 conn.Open();
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Account Deleted.", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Employee Account Deleted.", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Close();
-            }
-            else
-            {
-
+                Dashboard.ShowDefault();
+                Dashboard.ShowEmployeeList();
             }
         }
 
@@ -120,11 +94,9 @@ namespace FindMyLost
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnEdit_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            EditProfile ed = new EditProfile();
-            ed.Show();
+            Dashboard.DisplayEditProfile();
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -139,8 +111,6 @@ namespace FindMyLost
 
         private void EmployeeProfile_FormClosed(object sender, FormClosedEventArgs e)
         {
-            EmployeeList el = new EmployeeList();
-            el.Show();
         }
 
         private void lblEmail_Click(object sender, EventArgs e)

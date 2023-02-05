@@ -57,12 +57,14 @@
             this.cbGender = new System.Windows.Forms.ComboBox();
             this.tlpDOB = new System.Windows.Forms.TableLayoutPanel();
             this.tlpGender = new System.Windows.Forms.TableLayoutPanel();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUserImage)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnCancel);
             this.groupBox1.Controls.Add(this.btnUpdate);
             this.groupBox1.Controls.Add(this.btnEditUserPic);
             this.groupBox1.Controls.Add(this.txtMobileNum);
@@ -104,12 +106,13 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Exo 2", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(60, 655);
+            this.btnUpdate.Location = new System.Drawing.Point(593, 655);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(642, 52);
+            this.btnUpdate.Size = new System.Drawing.Size(109, 61);
             this.btnUpdate.TabIndex = 277;
             this.btnUpdate.Text = "UPDATE";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnEditUserPic
             // 
@@ -123,6 +126,9 @@
             this.btnEditUserPic.TabIndex = 254;
             this.btnEditUserPic.Text = "✏️";
             this.btnEditUserPic.UseVisualStyleBackColor = false;
+            this.btnEditUserPic.Click += new System.EventHandler(this.btnEditUserPic_Click);
+            this.btnEditUserPic.MouseEnter += new System.EventHandler(this.btnEditUserPic_MouseEnter);
+            this.btnEditUserPic.MouseLeave += new System.EventHandler(this.btnEditUserPic_MouseLeave);
             // 
             // txtMobileNum
             // 
@@ -395,6 +401,7 @@
             // cbGender
             // 
             this.cbGender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.cbGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbGender.ForeColor = System.Drawing.Color.White;
             this.cbGender.FormattingEnabled = true;
             this.cbGender.Items.AddRange(new object[] {
@@ -435,6 +442,22 @@
             this.tlpGender.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpGender.Size = new System.Drawing.Size(313, 52);
             this.tlpGender.TabIndex = 262;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(128)))), ((int)(((byte)(45)))));
+            this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Exo 2", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.Location = new System.Drawing.Point(478, 655);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(109, 61);
+            this.btnCancel.TabIndex = 278;
+            this.btnCancel.Text = "CANCEL";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // EditProfile
             // 
@@ -486,5 +509,6 @@
         private System.Windows.Forms.TableLayoutPanel tlpAddress;
         private System.Windows.Forms.DateTimePicker dtpDOB;
         private System.Windows.Forms.ComboBox cbGender;
+        private System.Windows.Forms.Button btnCancel;
     }
 }

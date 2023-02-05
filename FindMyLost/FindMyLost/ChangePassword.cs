@@ -30,8 +30,8 @@ namespace FindMyLost
 
             return new Regex(pattern, RegexOptions.IgnoreCase);
         }
-        static Regex vaildate_password = PasswordValidation();
 
+        static Regex vaildate_password = PasswordValidation();
 
         private void ChangePassword_Load(object sender, EventArgs e)
         {
@@ -42,8 +42,6 @@ namespace FindMyLost
             lblCorrect0.Hide();
             lblWrong0.Hide();
         }   
-
- 
 
         private void txtNP_TextChanged(object sender, EventArgs e)
         {
@@ -112,9 +110,6 @@ namespace FindMyLost
             }
 
 
-
-
-
             if (vaildate_password.IsMatch(txtNP.Text) != true)
             {
                 lblWrong.Show();
@@ -126,7 +121,6 @@ namespace FindMyLost
             {
                 lblWrong.Hide();
                 lblCorrect.Show();
-
             }
         }
 
@@ -147,49 +141,78 @@ namespace FindMyLost
 
         private void btnViewOP_Click(object sender, EventArgs e)
         {
-            if (txtOldPassword.PasswordChar == '●')
+            if (txtOldPassword.PasswordChar == '⁕')
             {
                 txtOldPassword.PasswordChar = '\0';
-                txtNP.PasswordChar = '●';
-                txtCNP.PasswordChar = '●';
+                txtNP.PasswordChar = '⁕';
+                txtCNP.PasswordChar = '⁕';
             }
             else
             {
-                txtOldPassword.PasswordChar = '●';
+                txtOldPassword.PasswordChar = '⁕';
             }
         }
 
         private void btnViewNP_Click(object sender, EventArgs e)
         {
-            if (txtNP.PasswordChar == '●')
+            if (txtNP.PasswordChar == '⁕')
             {
                 txtNP.PasswordChar = '\0';
-                txtOldPassword.PasswordChar = '●';
-                txtCNP.PasswordChar = '●';
+                txtOldPassword.PasswordChar = '⁕';
+                txtCNP.PasswordChar = '⁕';
             }
             else
             {
-                txtNP.PasswordChar = '●';
+                txtNP.PasswordChar = '⁕';
             }
         }
 
         private void btnViewCNP_Click(object sender, EventArgs e)
         {
-            if (txtCNP.PasswordChar == '●')
+            if (txtCNP.PasswordChar == '⁕')
             {
                 txtCNP.PasswordChar = '\0';
-                txtNP.PasswordChar = '●';
-                txtOldPassword.PasswordChar = '●';
+                txtNP.PasswordChar = '⁕';
+                txtOldPassword.PasswordChar = '⁕';
             }
             else
             {
-                txtCNP.PasswordChar = '●';
+                txtCNP.PasswordChar = '⁕';
             }
         }
-
+        string OldPassword;
         private void txtOldPassword_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
+                string sql = "SELECT password FROM Employee WHERE employee_id = '" + empID + "'";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                conn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
 
+                if (dr.Read())
+                {
+                    OldPassword = dr["password"].ToString();
+                    if (OldPassword == txtOldPassword.Text)
+                    {
+                        lblCorrect0.Show();
+                        lblWrong0.Hide();
+                    }
+                    else
+                    {
+                        lblWrong0.Show();
+                        lblCorrect0.Hide();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -197,11 +220,15 @@ namespace FindMyLost
 
             if ((vaildate_password.IsMatch(txtNP.Text) != true))
             {
-                MessageBox.Show("New password does not match criteria");
+                MessageBox.Show("New password does not match criteria", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (OldPassword != txtOldPassword.Text)
+            {
+                MessageBox.Show("Incorrect Old Password", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else if (txtNP.Text != txtCNP.Text)
             {
-                MessageBox.Show("Passwords do not match");
+                MessageBox.Show("Passwords do not match", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
             else
@@ -225,25 +252,21 @@ namespace FindMyLost
                 finally
                 {
                     conn.Close();
+                    Dashboard.DisplayHome();
                 }
-                
-                
-
             }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-           DialogResult result = MessageBox.Show("Cancel Change Password?", "FindMyLost", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+           DialogResult result = MessageBox.Show("Cancel Change Password?", "FindMyLost", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
                 Close();
-            }
-            else
-            {
-              
+                Dashboard.DisplayHome();
             }
            
         }
+
     }
 }

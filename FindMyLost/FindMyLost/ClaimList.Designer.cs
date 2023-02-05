@@ -38,7 +38,7 @@
             // 
             // lvClaimList
             // 
-            this.lvClaimList.BackColor = System.Drawing.SystemColors.Control;
+            this.lvClaimList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.lvClaimList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lvClaimList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.claimID,
@@ -51,7 +51,7 @@
             this.lvClaimList.FullRowSelect = true;
             this.lvClaimList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lvClaimList.HideSelection = false;
-            this.lvClaimList.Location = new System.Drawing.Point(24, 70);
+            this.lvClaimList.Location = new System.Drawing.Point(28, 38);
             this.lvClaimList.MouseLocation = new System.Drawing.Point(-1, -1);
             this.lvClaimList.MouseState = MaterialSkin.MouseState.OUT;
             this.lvClaimList.Name = "lvClaimList";
@@ -91,6 +91,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.ClientSize = new System.Drawing.Size(800, 950);
             this.Controls.Add(this.lvClaimList);
             this.Name = "ClaimList";

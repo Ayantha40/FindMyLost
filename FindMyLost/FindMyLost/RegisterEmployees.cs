@@ -74,9 +74,27 @@ namespace FindMyLost
                 finally
                 {
                     conn.Close();
+                    txtFirstName.Clear();
+                    txtLastName.Clear();
+                    dtpDOB.Value = Convert.ToDateTime("01 - Jan - 05");
+                    cbGender.SelectedIndex = -1;
+                    txtEmail.Clear();
+                    txtMobileNum.Clear();
+                    txtTelNumber.Clear();
+                    txtAddress.Clear();
+                    cbPosition.SelectedIndex = -1;
+                    pbUserImage.Image = Properties.Resources.user_avatar;
                 }
             }
         }
 
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Cancel Registering?", "FindMyLost", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                Dashboard.DisplayHome();
+            }
+        }
     }
 }
