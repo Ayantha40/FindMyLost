@@ -31,7 +31,6 @@
             this.lblFindMyLost = new System.Windows.Forms.Label();
             this.lblDetails = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblTagline = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -41,7 +40,7 @@
             this.lblFindMyLost.AutoSize = true;
             this.lblFindMyLost.Font = new System.Drawing.Font("MV Boli", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblFindMyLost.ForeColor = System.Drawing.Color.White;
-            this.lblFindMyLost.Location = new System.Drawing.Point(308, 552);
+            this.lblFindMyLost.Location = new System.Drawing.Point(308, 557);
             this.lblFindMyLost.Name = "lblFindMyLost";
             this.lblFindMyLost.Size = new System.Drawing.Size(222, 49);
             this.lblFindMyLost.TabIndex = 205;
@@ -52,7 +51,7 @@
             this.lblDetails.AutoSize = true;
             this.lblDetails.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblDetails.ForeColor = System.Drawing.Color.White;
-            this.lblDetails.Location = new System.Drawing.Point(250, 660);
+            this.lblDetails.Location = new System.Drawing.Point(253, 624);
             this.lblDetails.Name = "lblDetails";
             this.lblDetails.Size = new System.Drawing.Size(277, 25);
             this.lblDetails.TabIndex = 204;
@@ -65,17 +64,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1, 790);
             this.panel1.TabIndex = 203;
-            // 
-            // lblTagline
-            // 
-            this.lblTagline.AutoSize = true;
-            this.lblTagline.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTagline.ForeColor = System.Drawing.Color.White;
-            this.lblTagline.Location = new System.Drawing.Point(296, 611);
-            this.lblTagline.Name = "lblTagline";
-            this.lblTagline.Size = new System.Drawing.Size(243, 20);
-            this.lblTagline.TabIndex = 207;
-            this.lblTagline.Text = "LOST IT? LIST IT! FIND IT!";
             // 
             // pictureBox1
             // 
@@ -93,7 +81,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.ClientSize = new System.Drawing.Size(802, 903);
-            this.Controls.Add(this.lblTagline);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblFindMyLost);
             this.Controls.Add(this.lblDetails);
@@ -111,7 +98,6 @@
         private System.Windows.Forms.Label lblFindMyLost;
         private System.Windows.Forms.Label lblDetails;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lblTagline;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
