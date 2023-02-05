@@ -374,7 +374,7 @@
             this.btnPublishClaim.Name = "btnPublishClaim";
             this.btnPublishClaim.Size = new System.Drawing.Size(109, 61);
             this.btnPublishClaim.TabIndex = 193;
-            this.btnPublishClaim.Text = "CLAIM";
+            this.btnPublishClaim.Text = "SUBMIT";
             this.btnPublishClaim.UseVisualStyleBackColor = false;
             this.btnPublishClaim.Click += new System.EventHandler(this.btnPublishClaim_Click);
             // 
