@@ -35,6 +35,7 @@ namespace FindMyLost
             menuPanel = panelMenu;
             title = lblCurrentPage;
             icon = iconCurrentPage;
+            frontPanel = panelFront;
         }
 
         bool isITAdmin = Login.isITAdmin;
@@ -45,6 +46,7 @@ namespace FindMyLost
         public static TableLayoutPanel tlp;
         public static Panel formPanel;
         public static Panel menuPanel;
+        public static Panel frontPanel;
         public static Label title;
         public static IconPictureBox icon;
 
@@ -86,7 +88,11 @@ namespace FindMyLost
             lblCurrentPage.Text = "HOME";
             CloseMenu();
             panelForm.Controls.Clear();
+            formPanel.Controls.Add(tlp);
+            tlp.Visible = false;
             panelForm.Controls.Add(panelMenu);
+            panelForm.Controls.Add(panelFront);
+            panelFront.Visible = true;
         }
 
         public static void DisplayHome()
@@ -94,6 +100,8 @@ namespace FindMyLost
             formPanel.Controls.Clear();
             formPanel.Controls.Add(menuPanel);
             formPanel.Controls.Add(tlp);
+            formPanel.Controls.Add(frontPanel);
+            frontPanel.Visible = true;
             tlp.Visible = false;
             title.Text = "HOME";
             icon.IconChar = IconChar.Home;
@@ -165,6 +173,8 @@ namespace FindMyLost
             panelForm.Controls.Add(panelMenu);
             panelForm.Controls.Add(tlpList);
             tlpList.Visible = false;
+            panelForm.Controls.Add(panelFront);
+            frontPanel.Visible = false;
             register.FormBorderStyle = FormBorderStyle.None;
             panelForm.Controls.Add(register);
             register.Show();
@@ -181,6 +191,8 @@ namespace FindMyLost
             panelForm.Controls.Add(panelMenu);
             panelForm.Controls.Add(tlpList);
             tlpList.Visible = false;
+            panelForm.Controls.Add(panelFront);
+            frontPanel.Visible = false;
             claimItem.FormBorderStyle = FormBorderStyle.None;
             panelForm.Controls.Add(claimItem);
             claimItem.Show();
@@ -250,6 +262,8 @@ namespace FindMyLost
             formPanel.Controls.Add(menuPanel);
             formPanel.Controls.Add(tlp);
             tlp.Visible = false;
+            formPanel.Controls.Add(frontPanel);
+            frontPanel.Visible = false;
             editLostItem.FormBorderStyle = FormBorderStyle.None;
             formPanel.Controls.Add(editLostItem);
             editLostItem.Show();
@@ -306,6 +320,8 @@ namespace FindMyLost
             formPanel.Controls.Add(menuPanel);
             formPanel.Controls.Add(tlp);
             tlp.Visible = false;
+            formPanel.Controls.Add(frontPanel);
+            frontPanel.Visible = false;
             editProfile.FormBorderStyle = FormBorderStyle.None;
             formPanel.Controls.Add(editProfile);
             editProfile.Show();
@@ -365,6 +381,8 @@ namespace FindMyLost
             panelForm.Controls.Add(panelMenu);
             panelForm.Controls.Add(tlpList);
             tlpList.Visible = false;
+            formPanel.Controls.Add(frontPanel);
+            frontPanel.Visible = false;
             listItem.FormBorderStyle = FormBorderStyle.None;
             panelForm.Controls.Add(listItem);
             listItem.Show();
@@ -385,6 +403,8 @@ namespace FindMyLost
             panelForm.Controls.Add(panelMenu);
             panelForm.Controls.Add(tlpList);
             tlpList.Visible = false;
+            formPanel.Controls.Add(frontPanel);
+            frontPanel.Visible = false;
             editProfile.FormBorderStyle = FormBorderStyle.None;
             panelForm.Controls.Add(editProfile);
             editProfile.Show();
@@ -403,6 +423,8 @@ namespace FindMyLost
             panelForm.Controls.Add(panelMenu);
             panelForm.Controls.Add(tlpList);
             tlpList.Visible = false;
+            formPanel.Controls.Add(frontPanel);
+            frontPanel.Visible = false;
             changePassword.FormBorderStyle = FormBorderStyle.None;
             panelForm.Controls.Add(changePassword);
             changePassword.Show();
@@ -462,6 +484,11 @@ namespace FindMyLost
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

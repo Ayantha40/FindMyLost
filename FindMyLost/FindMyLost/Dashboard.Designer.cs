@@ -43,6 +43,10 @@
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelForm = new System.Windows.Forms.Panel();
             this.tlpList = new System.Windows.Forms.TableLayoutPanel();
+            this.panelFront = new System.Windows.Forms.Panel();
+            this.lblTagline = new System.Windows.Forms.Label();
+            this.lblFindMyLost = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelShadow = new System.Windows.Forms.Panel();
             this.btnMenu = new FontAwesome.Sharp.IconButton();
             this.lblCurrentPage = new System.Windows.Forms.Label();
@@ -56,12 +60,17 @@
             this.btnClaimItem = new FontAwesome.Sharp.IconButton();
             this.btnRegister = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.lbl = new System.Windows.Forms.Label();
+            this.lblFML = new System.Windows.Forms.Label();
+            this.lblTag = new System.Windows.Forms.Label();
             this.SideMenu = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit();
             this.panelEmployeeDetails.SuspendLayout();
             this.panelTheme.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.panelForm.SuspendLayout();
+            this.panelFront.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTaskBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentPage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
@@ -252,6 +261,7 @@
             this.panelForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.panelForm.Controls.Add(this.panelMenu);
             this.panelForm.Controls.Add(this.tlpList);
+            this.panelForm.Controls.Add(this.panelFront);
             this.panelForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelForm.Location = new System.Drawing.Point(293, 95);
             this.panelForm.Name = "panelForm";
@@ -274,6 +284,48 @@
             this.tlpList.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpList.Size = new System.Drawing.Size(1314, 808);
             this.tlpList.TabIndex = 12;
+            // 
+            // panelFront
+            // 
+            this.panelFront.Controls.Add(this.lblTagline);
+            this.panelFront.Controls.Add(this.lblFindMyLost);
+            this.panelFront.Controls.Add(this.pictureBox1);
+            this.panelFront.Location = new System.Drawing.Point(504, 91);
+            this.panelFront.Name = "panelFront";
+            this.panelFront.Size = new System.Drawing.Size(551, 622);
+            this.panelFront.TabIndex = 14;
+            // 
+            // lblTagline
+            // 
+            this.lblTagline.AutoSize = true;
+            this.lblTagline.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTagline.ForeColor = System.Drawing.Color.White;
+            this.lblTagline.Location = new System.Drawing.Point(148, 552);
+            this.lblTagline.Name = "lblTagline";
+            this.lblTagline.Size = new System.Drawing.Size(243, 20);
+            this.lblTagline.TabIndex = 207;
+            this.lblTagline.Text = "LOST IT? LIST IT! FIND IT!";
+            // 
+            // lblFindMyLost
+            // 
+            this.lblFindMyLost.AutoSize = true;
+            this.lblFindMyLost.Font = new System.Drawing.Font("MV Boli", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblFindMyLost.ForeColor = System.Drawing.Color.White;
+            this.lblFindMyLost.Location = new System.Drawing.Point(153, 483);
+            this.lblFindMyLost.Name = "lblFindMyLost";
+            this.lblFindMyLost.Size = new System.Drawing.Size(239, 52);
+            this.lblFindMyLost.TabIndex = 206;
+            this.lblFindMyLost.Text = "FindMyLost";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::FindMyLost.Properties.Resources.logo_white;
+            this.pictureBox1.Location = new System.Drawing.Point(43, 41);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(466, 419);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
             // 
             // panelShadow
             // 
@@ -344,10 +396,10 @@
             // 
             // pbLogo
             // 
-            this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
-            this.pbLogo.Location = new System.Drawing.Point(24, 20);
+            this.pbLogo.Image = global::FindMyLost.Properties.Resources.logo_white;
+            this.pbLogo.Location = new System.Drawing.Point(12, 35);
             this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(243, 131);
+            this.pbLogo.Size = new System.Drawing.Size(115, 117);
             this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbLogo.TabIndex = 2;
             this.pbLogo.TabStop = false;
@@ -364,7 +416,7 @@
             this.btnListItem.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnListItem.IconSize = 32;
             this.btnListItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnListItem.Location = new System.Drawing.Point(0, 545);
+            this.btnListItem.Location = new System.Drawing.Point(0, 535);
             this.btnListItem.Name = "btnListItem";
             this.btnListItem.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnListItem.Size = new System.Drawing.Size(293, 75);
@@ -386,7 +438,7 @@
             this.btnClaimList.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnClaimList.IconSize = 32;
             this.btnClaimList.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClaimList.Location = new System.Drawing.Point(0, 470);
+            this.btnClaimList.Location = new System.Drawing.Point(0, 460);
             this.btnClaimList.Name = "btnClaimList";
             this.btnClaimList.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnClaimList.Size = new System.Drawing.Size(293, 75);
@@ -408,7 +460,7 @@
             this.btnEmployeeList.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEmployeeList.IconSize = 32;
             this.btnEmployeeList.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmployeeList.Location = new System.Drawing.Point(0, 395);
+            this.btnEmployeeList.Location = new System.Drawing.Point(0, 385);
             this.btnEmployeeList.Name = "btnEmployeeList";
             this.btnEmployeeList.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnEmployeeList.Size = new System.Drawing.Size(293, 75);
@@ -430,7 +482,7 @@
             this.btnItemList.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnItemList.IconSize = 32;
             this.btnItemList.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnItemList.Location = new System.Drawing.Point(0, 320);
+            this.btnItemList.Location = new System.Drawing.Point(0, 310);
             this.btnItemList.Name = "btnItemList";
             this.btnItemList.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnItemList.Size = new System.Drawing.Size(293, 75);
@@ -452,7 +504,7 @@
             this.btnClaimItem.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnClaimItem.IconSize = 32;
             this.btnClaimItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClaimItem.Location = new System.Drawing.Point(0, 245);
+            this.btnClaimItem.Location = new System.Drawing.Point(0, 235);
             this.btnClaimItem.Name = "btnClaimItem";
             this.btnClaimItem.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnClaimItem.Size = new System.Drawing.Size(293, 75);
@@ -474,7 +526,7 @@
             this.btnRegister.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnRegister.IconSize = 32;
             this.btnRegister.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegister.Location = new System.Drawing.Point(0, 170);
+            this.btnRegister.Location = new System.Drawing.Point(0, 160);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnRegister.Size = new System.Drawing.Size(293, 75);
@@ -487,12 +539,49 @@
             // 
             // panelLogo
             // 
+            this.panelLogo.Controls.Add(this.lbl);
+            this.panelLogo.Controls.Add(this.lblFML);
+            this.panelLogo.Controls.Add(this.lblTag);
             this.panelLogo.Controls.Add(this.pbLogo);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(293, 170);
+            this.panelLogo.Size = new System.Drawing.Size(293, 160);
             this.panelLogo.TabIndex = 0;
+            // 
+            // lbl
+            // 
+            this.lbl.AutoSize = true;
+            this.lbl.Font = new System.Drawing.Font("Verdana", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl.ForeColor = System.Drawing.Color.White;
+            this.lbl.Location = new System.Drawing.Point(119, 103);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(155, 12);
+            this.lbl.TabIndex = 209;
+            this.lbl.Text = "LOST IT? LIST IT! FIND IT!";
+            this.lbl.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // lblFML
+            // 
+            this.lblFML.AutoSize = true;
+            this.lblFML.Font = new System.Drawing.Font("MV Boli", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblFML.ForeColor = System.Drawing.Color.White;
+            this.lblFML.Location = new System.Drawing.Point(125, 72);
+            this.lblFML.Name = "lblFML";
+            this.lblFML.Size = new System.Drawing.Size(139, 29);
+            this.lblFML.TabIndex = 206;
+            this.lblFML.Text = "FindMyLost";
+            // 
+            // lblTag
+            // 
+            this.lblTag.AutoSize = true;
+            this.lblTag.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTag.ForeColor = System.Drawing.Color.White;
+            this.lblTag.Location = new System.Drawing.Point(660, 0);
+            this.lblTag.Name = "lblTag";
+            this.lblTag.Size = new System.Drawing.Size(187, 16);
+            this.lblTag.TabIndex = 208;
+            this.lblTag.Text = "LOST IT? LIST IT! FIND IT!";
             // 
             // SideMenu
             // 
@@ -523,6 +612,7 @@
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelTaskBar);
             this.Controls.Add(this.SideMenu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1625, 950);
             this.Name = "Dashboard";
             this.Text = "Dashboard";
@@ -535,11 +625,15 @@
             this.panelTheme.ResumeLayout(false);
             this.panelMenu.ResumeLayout(false);
             this.panelForm.ResumeLayout(false);
+            this.panelFront.ResumeLayout(false);
+            this.panelFront.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelTaskBar.ResumeLayout(false);
             this.panelTaskBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentPage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.panelLogo.ResumeLayout(false);
+            this.panelLogo.PerformLayout();
             this.SideMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -575,5 +669,12 @@
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Panel SideMenu;
         public System.Windows.Forms.TableLayoutPanel tlpList;
+        private System.Windows.Forms.Panel panelFront;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblTagline;
+        private System.Windows.Forms.Label lblFindMyLost;
+        private System.Windows.Forms.Label lblTag;
+        private System.Windows.Forms.Label lblFML;
+        private System.Windows.Forms.Label lbl;
     }
 }
