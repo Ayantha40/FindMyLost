@@ -77,7 +77,6 @@ namespace FindMyLost
 
         private void btnPublishClaim_Click(object sender, EventArgs e)
         {
-
             if (txtName.Text == "" || txtAddress.Text == "" || txtPhoneNum.Text == "" || category == "" || cbColor.Text == "")
             {
                 MessageBox.Show("Please fill in all the employee details!", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
