@@ -11,6 +11,7 @@ using System.Configuration;
 using System.Data.SqlClient;
 using System.IO;
 using System.Drawing.Imaging;
+using Microsoft.VisualBasic;
 
 namespace FindMyLost
 {
@@ -143,6 +144,51 @@ namespace FindMyLost
                 ClaimItem.claimID = "";
                 Dashboard.ShowItemList();
                 Dashboard.ShowDefault();
+            }
+        }
+        string claimID;
+        private void btnMatch_Click(object sender, EventArgs e)
+        {
+            DialogResult res = MessageBox.Show("Are you Sure?", "FindMyLost", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (res == DialogResult.Yes)
+            {
+                if (ItemList.ToMatch == true)
+                {
+                    claimID = ClaimItem.claimID;
+                }
+                else
+                {
+                    claimID = Interaction.InputBox("Enter Claim ID. ", "FindMyLost");
+                    if (claimID == "")
+                    {
+                        MessageBox.Show("Invalid ID!", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                }
+
+                if (claimID != "")
+                {
+                    try
+                    {
+                        string sql = "INSERT INTO Found (claimer_name, claimer_address, claimer_phone_number, item_category, item_colour, item_picture, last_seen_location, item_brand, additional_info) SELECT claimer_name, claimer_address, claimer_phone_number, item_category, item_colour, item_picture, last_seen_location, item_brand, additional_info FROM Claim WHERE claim_id = '" + claimID + "'; DELETE FROM Claim WHERE claim_id = '" + claimID + "'; DELETE FROM Lost_Item WHERE item_id = '" + SelectedItemID + "';";
+                        SqlCommand cmd = new SqlCommand(sql, conn);
+                        conn.Open();
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("Ureka! Another lost item found.", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    finally
+                    {
+                        conn.Close();
+                        this.Hide();
+                        ClaimItem.claimID = "";
+                        Dashboard.ShowDefault();
+                        Dashboard.ShowItemList();
+                    }
+                }
+
             }
         }
     }

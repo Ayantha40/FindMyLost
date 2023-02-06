@@ -79,7 +79,6 @@ namespace FindMyLost
                         cmd.Parameters.AddWithValue("@image", imageBytes);
                         conn.Open();
                         cmd.ExecuteNonQuery();
-                        MessageBox.Show("Item Listed!", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     catch (Exception ex)
                     {
@@ -121,6 +120,7 @@ namespace FindMyLost
                         }
                         else
                         {
+                            MessageBox.Show("Item Listed!", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             btnReset_Click(sender, e);
                         }
                     }              

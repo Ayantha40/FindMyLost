@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic;
 
 namespace FindMyLost
 {
@@ -15,6 +16,17 @@ namespace FindMyLost
         public test()
         {
             InitializeComponent();
+        }
+
+        string m;
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            m = Interaction.InputBox("Enter name", "LMS");
+            if (m == "")
+            {
+                MessageBox.Show("Unable");
+            }
         }
     }
 }

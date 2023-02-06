@@ -153,7 +153,6 @@
             // 
             this.cbColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.cbColor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbColor.ForeColor = System.Drawing.Color.White;
             this.cbColor.FormattingEnabled = true;
             this.cbColor.Items.AddRange(new object[] {

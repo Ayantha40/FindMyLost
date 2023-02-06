@@ -101,7 +101,6 @@ namespace FindMyLost
                     cmd.Parameters.AddWithValue("@image", imageBytes);
                     conn.Open();
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Claim Published Successfully!", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)
                 {
@@ -143,6 +142,7 @@ namespace FindMyLost
                     }
                     else
                     {
+                        MessageBox.Show("Claim Published Successfully!", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         txtName.Clear();
                         txtPhoneNum.Clear();
                         txtAddress.Clear();

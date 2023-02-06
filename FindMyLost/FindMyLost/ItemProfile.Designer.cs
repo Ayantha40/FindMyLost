@@ -335,6 +335,7 @@
             this.btnMatch.TabIndex = 199;
             this.btnMatch.Text = "FOUND";
             this.btnMatch.UseVisualStyleBackColor = false;
+            this.btnMatch.Click += new System.EventHandler(this.btnMatch_Click);
             // 
             // ItemProfile
             // 

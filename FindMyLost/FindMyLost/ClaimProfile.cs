@@ -11,6 +11,7 @@ using System.Configuration;
 using System.Data.SqlClient;
 using System.IO;
 using System.Drawing.Imaging;
+using Microsoft.VisualBasic;
 
 namespace FindMyLost
 {
@@ -123,9 +124,49 @@ namespace FindMyLost
             }
         }
 
+        string itemID;
         private void btnMatch_Click(object sender, EventArgs e)
         {
+            DialogResult res = MessageBox.Show("Are you Sure?", "FindMyLost", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (res == DialogResult.Yes)
+            {
+                if (ClaimList.ToMatch == true)
+                {
+                    itemID = ListItem.itemID;
+                }
+                else
+                {
+                    itemID = Interaction.InputBox("Enter ID of the item claimed. ", "FindMyLost");
+                    if (itemID == "")
+                    {
+                        MessageBox.Show("Invalid ID!", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                }
 
+                if (itemID != "")
+                {
+                    try
+                    {
+                        string sql = "INSERT INTO Found (claimer_name, claimer_address, claimer_phone_number, item_category, item_colour, item_picture, last_seen_location, item_brand, additional_info) SELECT claimer_name, claimer_address, claimer_phone_number, item_category, item_colour, item_picture, last_seen_location, item_brand, additional_info FROM Claim WHERE claim_id = '" + SelectedClaimID + "'; DELETE FROM Claim WHERE claim_id = '" + SelectedClaimID + "'; DELETE FROM Lost_Item WHERE item_id = '" + itemID + "';";
+                        SqlCommand cmd = new SqlCommand(sql, conn);
+                        conn.Open();
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("Ureka! Another lost item found.", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    finally
+                    {
+                        conn.Close();
+                        this.Hide();
+                        ListItem.itemID = "";
+                        Dashboard.ShowDefault();
+                        Dashboard.ShowClaimList();
+                    }
+                }
+            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -139,11 +180,11 @@ namespace FindMyLost
                     SqlCommand cmd = new SqlCommand(sql, conn);
                     conn.Open();
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Claim deleted!", "Library Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Claim deleted!", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message, "Library Management System", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(ex.Message, "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 finally
                 {
