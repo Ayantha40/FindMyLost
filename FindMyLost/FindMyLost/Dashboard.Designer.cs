@@ -34,12 +34,9 @@
             this.pbUser = new System.Windows.Forms.PictureBox();
             this.panelEmployeeDetails = new System.Windows.Forms.Panel();
             this.lblEmployeeID = new System.Windows.Forms.Label();
-            this.btnDark = new System.Windows.Forms.Button();
-            this.btnLight = new System.Windows.Forms.Button();
             this.btnLogout = new FontAwesome.Sharp.IconButton();
             this.btnChangePassword = new FontAwesome.Sharp.IconButton();
             this.btnEditProfile = new FontAwesome.Sharp.IconButton();
-            this.panelTheme = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelForm = new System.Windows.Forms.Panel();
             this.tlpList = new System.Windows.Forms.TableLayoutPanel();
@@ -66,7 +63,6 @@
             this.SideMenu = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit();
             this.panelEmployeeDetails.SuspendLayout();
-            this.panelTheme.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.panelForm.SuspendLayout();
             this.panelFront.SuspendLayout();
@@ -133,38 +129,6 @@
             this.lblEmployeeID.TabIndex = 1;
             this.lblEmployeeID.Text = "[Employee ID]";
             // 
-            // btnDark
-            // 
-            this.btnDark.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.btnDark.FlatAppearance.BorderSize = 0;
-            this.btnDark.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDark.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnDark.ForeColor = System.Drawing.Color.White;
-            this.btnDark.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDark.Location = new System.Drawing.Point(153, 0);
-            this.btnDark.Name = "btnDark";
-            this.btnDark.Size = new System.Drawing.Size(73, 50);
-            this.btnDark.TabIndex = 155;
-            this.btnDark.Text = "Dark";
-            this.btnDark.UseVisualStyleBackColor = false;
-            this.btnDark.Click += new System.EventHandler(this.btnDark_Click);
-            // 
-            // btnLight
-            // 
-            this.btnLight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.btnLight.FlatAppearance.BorderSize = 0;
-            this.btnLight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLight.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnLight.ForeColor = System.Drawing.Color.White;
-            this.btnLight.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLight.Location = new System.Drawing.Point(80, 0);
-            this.btnLight.Name = "btnLight";
-            this.btnLight.Size = new System.Drawing.Size(73, 50);
-            this.btnLight.TabIndex = 156;
-            this.btnLight.Text = "Light";
-            this.btnLight.UseVisualStyleBackColor = false;
-            this.btnLight.Click += new System.EventHandler(this.btnLight_Click);
-            // 
             // btnLogout
             // 
             this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -178,7 +142,7 @@
             this.btnLogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnLogout.IconSize = 32;
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(0, 363);
+            this.btnLogout.Location = new System.Drawing.Point(0, 302);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnLogout.Size = new System.Drawing.Size(333, 75);
@@ -201,7 +165,7 @@
             this.btnChangePassword.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnChangePassword.IconSize = 32;
             this.btnChangePassword.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChangePassword.Location = new System.Drawing.Point(0, 288);
+            this.btnChangePassword.Location = new System.Drawing.Point(0, 227);
             this.btnChangePassword.Name = "btnChangePassword";
             this.btnChangePassword.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnChangePassword.Size = new System.Drawing.Size(333, 75);
@@ -224,7 +188,7 @@
             this.btnEditProfile.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEditProfile.IconSize = 32;
             this.btnEditProfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditProfile.Location = new System.Drawing.Point(0, 213);
+            this.btnEditProfile.Location = new System.Drawing.Point(0, 152);
             this.btnEditProfile.Name = "btnEditProfile";
             this.btnEditProfile.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnEditProfile.Size = new System.Drawing.Size(333, 75);
@@ -235,27 +199,16 @@
             this.btnEditProfile.UseVisualStyleBackColor = true;
             this.btnEditProfile.Click += new System.EventHandler(this.btnEditProfile_Click);
             // 
-            // panelTheme
-            // 
-            this.panelTheme.Controls.Add(this.btnDark);
-            this.panelTheme.Controls.Add(this.btnLight);
-            this.panelTheme.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTheme.Location = new System.Drawing.Point(0, 152);
-            this.panelTheme.Name = "panelTheme";
-            this.panelTheme.Size = new System.Drawing.Size(333, 61);
-            this.panelTheme.TabIndex = 158;
-            // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.panelMenu.Controls.Add(this.btnLogout);
             this.panelMenu.Controls.Add(this.btnChangePassword);
             this.panelMenu.Controls.Add(this.btnEditProfile);
-            this.panelMenu.Controls.Add(this.panelTheme);
             this.panelMenu.Controls.Add(this.panelEmployeeDetails);
             this.panelMenu.Location = new System.Drawing.Point(1273, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(333, 450);
+            this.panelMenu.Size = new System.Drawing.Size(333, 389);
             this.panelMenu.TabIndex = 11;
             // 
             // panelForm
@@ -624,7 +577,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).EndInit();
             this.panelEmployeeDetails.ResumeLayout(false);
             this.panelEmployeeDetails.PerformLayout();
-            this.panelTheme.ResumeLayout(false);
             this.panelMenu.ResumeLayout(false);
             this.panelForm.ResumeLayout(false);
             this.panelFront.ResumeLayout(false);
@@ -648,12 +600,9 @@
         private System.Windows.Forms.PictureBox pbUser;
         private System.Windows.Forms.Panel panelEmployeeDetails;
         private System.Windows.Forms.Label lblEmployeeID;
-        private System.Windows.Forms.Button btnDark;
-        private System.Windows.Forms.Button btnLight;
         private FontAwesome.Sharp.IconButton btnLogout;
         private FontAwesome.Sharp.IconButton btnChangePassword;
         private FontAwesome.Sharp.IconButton btnEditProfile;
-        private System.Windows.Forms.Panel panelTheme;
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panelForm;
         private System.Windows.Forms.Panel panelShadow;
