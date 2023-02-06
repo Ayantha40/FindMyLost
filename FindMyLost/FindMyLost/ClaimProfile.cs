@@ -29,6 +29,11 @@ namespace FindMyLost
         {
             try
             {
+                if (ClaimList.ToMatch == true)
+                {
+                    btnDelete.Visible = false;
+                }
+
                 byte[] imageBytes;
 
                 string sql = "SELECT * FROM Claim WHERE claim_id = '" + SelectedClaimID + "'";
@@ -144,6 +149,7 @@ namespace FindMyLost
                 {
                     conn.Close();
                     this.Hide();
+                    ListItem.itemID = "";
                     Dashboard.ShowDefault();
                     Dashboard.ShowClaimList();
                 }

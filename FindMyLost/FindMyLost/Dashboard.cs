@@ -49,6 +49,7 @@ namespace FindMyLost
         public static Panel frontPanel;
         public static Label title;
         public static IconPictureBox icon;
+        public static string darkOrLight;
 
         private void BtnSelect(object btn)
         {
@@ -235,10 +236,12 @@ namespace FindMyLost
             CloseMenu();
             tlpList.Visible = true;
             list = "item";
+            initialForm = "DB-I";
 
             tlpList.Controls.Clear();
             ShowItemList();
             ShowDefault();
+            initialForm = "Dash";
         }
 
         //display ItemProfile in tlpList column 2
@@ -351,10 +354,13 @@ namespace FindMyLost
             CloseMenu();
             tlpList.Visible = true;
             list = "claim";
+            initialForm = "dash";
+            ClaimList.ToMatch = false;
 
             tlpList.Controls.Clear();
             ShowClaimList();
             ShowDefault();
+            initialForm = "DB";
         }
 
         //display ClaimProfile in tlpList column 2
@@ -486,5 +492,15 @@ namespace FindMyLost
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
+
+        private void btnLight_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDark_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

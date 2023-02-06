@@ -369,7 +369,6 @@
             this.radioClothing.TabIndex = 7;
             this.radioClothing.Text = "Clothing";
             this.radioClothing.UseVisualStyleBackColor = true;
-            this.radioClothing.CheckedChanged += new System.EventHandler(this.radioClothing_CheckedChanged);
             this.radioClothing.Click += new System.EventHandler(this.radioClothing_Click);
             // 
             // radioBag
@@ -379,9 +378,9 @@
             this.radioBag.Location = new System.Drawing.Point(427, 45);
             this.radioBag.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioBag.Name = "radioBag";
-            this.radioBag.Size = new System.Drawing.Size(144, 25);
+            this.radioBag.Size = new System.Drawing.Size(148, 25);
             this.radioBag.TabIndex = 11;
-            this.radioBag.Text = "Bags/ Luggage";
+            this.radioBag.Text = "Bags / Luggage";
             this.radioBag.UseVisualStyleBackColor = true;
             this.radioBag.Click += new System.EventHandler(this.radioBag_Click);
             // 
@@ -405,9 +404,9 @@
             this.radioAnimal.Location = new System.Drawing.Point(238, 103);
             this.radioAnimal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioAnimal.Name = "radioAnimal";
-            this.radioAnimal.Size = new System.Drawing.Size(134, 25);
+            this.radioAnimal.Size = new System.Drawing.Size(138, 25);
             this.radioAnimal.TabIndex = 10;
-            this.radioAnimal.Text = "Animals/ Pets";
+            this.radioAnimal.Text = "Animals / Pets";
             this.radioAnimal.UseVisualStyleBackColor = true;
             this.radioAnimal.Click += new System.EventHandler(this.radioAnimal_Click);
             // 

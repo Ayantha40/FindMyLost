@@ -58,6 +58,10 @@ namespace FindMyLost
             radioOther.Checked = false;
         }
 
+        public static string itemID;
+        public static string itemCategory;
+        public static string itemColour;
+
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             if ((category != "") && (txtBrand.Text != "") && (cmbColor.Text != ""))
@@ -83,19 +87,48 @@ namespace FindMyLost
                     }
                     finally
                     {
-                        conn.Close();
-                        btnReset_Click(sender, e);
+                        conn.Close(); 
+                    
+                        DialogResult result = MessageBox.Show("Do you want to view claims that match this lost item?", "FindMyLost", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                        if (result == DialogResult.Yes)
+                        {
+                            try
+                            {
+                                string sql = "SELECT * FROM Lost_Item WHERE item_id = (select max(item_id) from Lost_Item);";
+                                SqlCommand cmd = new SqlCommand(sql, conn);
+                                conn.Open();
+                                SqlDataReader dr = cmd.ExecuteReader();
+
+                                if (dr.Read())
+                                {
+                                    itemID = dr["item_id"].ToString();
+                                    itemCategory = dr["item_category"].ToString();
+                                    itemColour = dr["item_colour"].ToString();
+                                }
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show(ex.Message, "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                            finally
+                            {
+                                conn.Close();
+                                Dashboard.tlp.Visible = true;
+                                Dashboard.ShowClaimList();
+                                Dashboard.ShowDefault();
+                            }
+                        }
+                        else
+                        {
+                            btnReset_Click(sender, e);
+                        }
                     }              
             }
             else
             {
                 MessageBox.Show("Please fill all in fields marked with a *", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-        }
-
-        private void radioClothing_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
 
         string category;

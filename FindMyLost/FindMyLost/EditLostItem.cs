@@ -193,6 +193,7 @@ namespace FindMyLost
                 finally
                 {
                     conn.Close();
+                    ClaimItem.claimID = "";
                     Dashboard.tlp.Visible = true;
                     Dashboard.ShowItemList();
                     Dashboard.ShowDefault();

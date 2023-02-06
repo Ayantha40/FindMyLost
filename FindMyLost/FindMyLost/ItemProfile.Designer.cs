@@ -52,6 +52,7 @@
             this.label29 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnMatch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbItemPic)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbColor)).BeginInit();
@@ -76,7 +77,7 @@
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.Font = new System.Drawing.Font("Exo 2", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Location = new System.Drawing.Point(634, 789);
+            this.btnEdit.Location = new System.Drawing.Point(519, 788);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(109, 61);
             this.btnEdit.TabIndex = 194;
@@ -93,7 +94,7 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Exo 2", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(519, 789);
+            this.btnDelete.Location = new System.Drawing.Point(404, 788);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(109, 61);
             this.btnDelete.TabIndex = 195;
@@ -319,12 +320,29 @@
             this.panel1.Size = new System.Drawing.Size(1, 790);
             this.panel1.TabIndex = 198;
             // 
+            // btnMatch
+            // 
+            this.btnMatch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(128)))), ((int)(((byte)(45)))));
+            this.btnMatch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMatch.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnMatch.FlatAppearance.BorderSize = 0;
+            this.btnMatch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMatch.Font = new System.Drawing.Font("Exo 2", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMatch.ForeColor = System.Drawing.Color.White;
+            this.btnMatch.Location = new System.Drawing.Point(634, 788);
+            this.btnMatch.Name = "btnMatch";
+            this.btnMatch.Size = new System.Drawing.Size(109, 61);
+            this.btnMatch.TabIndex = 199;
+            this.btnMatch.Text = "FOUND";
+            this.btnMatch.UseVisualStyleBackColor = false;
+            // 
             // ItemProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.ClientSize = new System.Drawing.Size(802, 903);
+            this.Controls.Add(this.btnMatch);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnDelete);
@@ -377,5 +395,6 @@
         private System.Windows.Forms.Label lblCategory;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pbColor;
+        private System.Windows.Forms.Button btnMatch;
     }
 }

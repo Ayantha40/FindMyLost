@@ -27,36 +27,71 @@ namespace FindMyLost
             skinManager.ColorScheme = new ColorScheme(Primary.Green800, Primary.Green700, Primary.Green700, Accent.LightBlue100, TextShade.WHITE);
         }
 
+        public static bool ToMatch = false;
         private void ClaimList_Load(object sender, EventArgs e)
         {
             lvClaimList.FullRowSelect = true;
 
-            try
+            if (ListItem.itemID != "" && Dashboard.initialForm != "dash")
             {
-                string sql = "SELECT claim_id, claimer_name, item_category, item_colour, item_brand, last_Seen_location FROM Claim";
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                conn.Open();
-                SqlDataReader dr = cmd.ExecuteReader();
-                while (dr.Read())
+                ToMatch = true;
+                try
                 {
-                    ListViewItem item = new ListViewItem(dr.GetInt32(0).ToString());
-                    item.SubItems.Add(dr.GetString(1));
-                    item.SubItems.Add(dr.GetString(2));
-                    item.SubItems.Add(dr.GetString(3));
-                    item.SubItems.Add(dr.GetString(4));
+                    string sql = "SELECT claim_id, item_category, item_colour, item_brand, last_Seen_location FROM Claim WHERE item_category = '" + ListItem.itemCategory + "' AND item_colour = '" + ListItem.itemColour + "'";
+                    SqlCommand cmd = new SqlCommand(sql, conn);
+                    conn.Open();
+                    SqlDataReader dr = cmd.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        ListViewItem item = new ListViewItem(dr.GetInt32(0).ToString());
+                        item.SubItems.Add(dr.GetString(1));
+                        item.SubItems.Add(dr.GetString(2));
+                        item.SubItems.Add(dr.GetString(3));
+                        item.SubItems.Add(dr.GetString(4));
 
-                    lvClaimList.Items.Add(item);
+                        lvClaimList.Items.Add(item);
+                    }
+
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    conn.Close();
+                }
+            }
+            else
+            {
+                try
+                {
+                    string sql = "SELECT claim_id, item_category, item_colour, item_brand, last_Seen_location FROM Claim";
+                    SqlCommand cmd = new SqlCommand(sql, conn);
+                    conn.Open();
+                    SqlDataReader dr = cmd.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        ListViewItem item = new ListViewItem(dr.GetInt32(0).ToString());
+                        item.SubItems.Add(dr.GetString(1));
+                        item.SubItems.Add(dr.GetString(2));
+                        item.SubItems.Add(dr.GetString(3));
+                        item.SubItems.Add(dr.GetString(4));
 
+                        lvClaimList.Items.Add(item);
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    conn.Close();
+                }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            finally
-            {
-                conn.Close();
-            }
+            
         }
 
         public static string SelectedClaimID;

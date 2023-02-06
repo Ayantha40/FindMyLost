@@ -75,6 +75,11 @@ namespace FindMyLost
             category = radioOther.Text;
         }
 
+        public static string claimID;
+        public static string claimCategory;
+        public static string claimColour;
+
+
         private void btnPublishClaim_Click(object sender, EventArgs e)
         {
             if (txtName.Text == "" || txtAddress.Text == "" || txtPhoneNum.Text == "" || category == "" || cbColor.Text == "")
@@ -105,22 +110,56 @@ namespace FindMyLost
                 finally
                 {
                     conn.Close();
-                    txtName.Clear();
-                    txtPhoneNum.Clear();
-                    txtAddress.Clear();
-                    txtBrand.Clear();
-                    txtAddInfo.Clear();
-                    txtLocation.Clear();
-                    cbColor.SelectedIndex = -1;
-                    pbItemPic.Image = Properties.Resources.item_placeholder;
-                    pbColor.BackColor = Color.Empty;
-                    radioClothing.Checked = false;
-                    radioElec.Checked = false;
-                    radioBag.Checked = false;
-                    radioAnimal.Checked = false;
-                    radioDocuments.Checked = false;
-                    radioAccessories.Checked = false;
-                    radioOther.Checked = false;
+
+                    DialogResult result = MessageBox.Show("Do you want to view lost items that match this claim?", "FindMyLost", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                    if (result == DialogResult.Yes)
+                    {
+                        try
+                        {
+                            string sql = "SELECT * FROM Claim WHERE claim_id = (select max(claim_id) from Claim);";
+                            SqlCommand cmd = new SqlCommand(sql, conn);
+                            conn.Open();
+                            SqlDataReader dr = cmd.ExecuteReader();
+
+                            if (dr.Read())
+                            {
+                                claimID = dr["claim_id"].ToString();
+                                claimCategory = dr["item_category"].ToString();
+                                claimColour = dr["item_colour"].ToString();
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message, "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        finally
+                        {
+                            conn.Close();
+                            Dashboard.tlp.Visible = true;
+                            Dashboard.ShowItemList();
+                            Dashboard.ShowDefault();
+                        }
+                    }
+                    else
+                    {
+                        txtName.Clear();
+                        txtPhoneNum.Clear();
+                        txtAddress.Clear();
+                        txtBrand.Clear();
+                        txtAddInfo.Clear();
+                        txtLocation.Clear();
+                        cbColor.SelectedIndex = -1;
+                        pbItemPic.Image = Properties.Resources.item_placeholder;
+                        pbColor.BackColor = Color.Empty;
+                        radioClothing.Checked = false;
+                        radioElec.Checked = false;
+                        radioBag.Checked = false;
+                        radioAnimal.Checked = false;
+                        radioDocuments.Checked = false;
+                        radioAccessories.Checked = false;
+                        radioOther.Checked = false;
+                    }
                 }
             }
         }

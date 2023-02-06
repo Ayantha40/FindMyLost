@@ -28,6 +28,12 @@ namespace FindMyLost
 
         private void ItemProfile_Load(object sender, EventArgs e)
         {
+            if (ItemList.ToMatch == true)
+            {
+                btnDelete.Visible = false;
+                btnEdit.Visible = false;
+            }
+
             try
             {
                 byte[] imageBytes;
@@ -134,6 +140,7 @@ namespace FindMyLost
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Item deleted.", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Close();
+                ClaimItem.claimID = "";
                 Dashboard.ShowItemList();
                 Dashboard.ShowDefault();
             }

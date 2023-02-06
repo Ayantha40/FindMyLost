@@ -147,6 +147,7 @@
             this.btnDark.TabIndex = 155;
             this.btnDark.Text = "Dark";
             this.btnDark.UseVisualStyleBackColor = false;
+            this.btnDark.Click += new System.EventHandler(this.btnDark_Click);
             // 
             // btnLight
             // 
@@ -162,6 +163,7 @@
             this.btnLight.TabIndex = 156;
             this.btnLight.Text = "Light";
             this.btnLight.UseVisualStyleBackColor = false;
+            this.btnLight.Click += new System.EventHandler(this.btnLight_Click);
             // 
             // btnLogout
             // 
@@ -251,7 +253,7 @@
             this.panelMenu.Controls.Add(this.btnEditProfile);
             this.panelMenu.Controls.Add(this.panelTheme);
             this.panelMenu.Controls.Add(this.panelEmployeeDetails);
-            this.panelMenu.Location = new System.Drawing.Point(980, 0);
+            this.panelMenu.Location = new System.Drawing.Point(1273, 0);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(333, 450);
             this.panelMenu.TabIndex = 11;
