@@ -140,7 +140,7 @@ namespace FindMyLost
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Item deleted.", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Close();
+                conn.Close();
                 ClaimItem.claimID = "";
                 Dashboard.ShowItemList();
                 Dashboard.ShowDefault();
@@ -162,6 +162,19 @@ namespace FindMyLost
                     if (claimID == "")
                     {
                         MessageBox.Show("Invalid ID!", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                    else
+                    {
+                        string sql = "SELECT * FROM Claim WHERE claim_id = '" + claimID + "'";
+                        SqlCommand cmd = new SqlCommand(sql, conn);
+                        conn.Open();
+                        SqlDataReader dr = cmd.ExecuteReader();
+                        if (!dr.Read())
+                        {
+                            MessageBox.Show("Invalid ID!", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            claimID = "";
+                        }
+                        conn.Close();
                     }
                 }
 

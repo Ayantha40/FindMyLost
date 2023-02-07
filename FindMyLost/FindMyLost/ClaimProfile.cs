@@ -141,6 +141,19 @@ namespace FindMyLost
                     {
                         MessageBox.Show("Invalid ID!", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
+                    else
+                    {
+                        string sql = "SELECT * FROM Lost_Item WHERE item_id = '" + itemID + "'";
+                        SqlCommand cmd = new SqlCommand(sql, conn);
+                        conn.Open();
+                        SqlDataReader dr = cmd.ExecuteReader();
+                        if (!dr.Read())
+                        {
+                            MessageBox.Show("Invalid ID!", "FindMyLost", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            itemID = "";
+                        }
+                        conn.Close();
+                    }
                 }
 
                 if (itemID != "")
