@@ -132,6 +132,7 @@
             // btnLogout
             // 
             this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogout.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnLogout.FlatAppearance.BorderSize = 0;
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -155,6 +156,7 @@
             // 
             // btnChangePassword
             // 
+            this.btnChangePassword.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnChangePassword.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnChangePassword.FlatAppearance.BorderSize = 0;
             this.btnChangePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -178,6 +180,7 @@
             // 
             // btnEditProfile
             // 
+            this.btnEditProfile.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEditProfile.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnEditProfile.FlatAppearance.BorderSize = 0;
             this.btnEditProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -230,6 +233,7 @@
             this.tlpList.ColumnCount = 2;
             this.tlpList.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpList.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tlpList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpList.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tlpList.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -294,6 +298,7 @@
             // btnMenu
             // 
             this.btnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMenu.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnMenu.FlatAppearance.BorderSize = 0;
             this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -351,6 +356,7 @@
             // 
             // pbLogo
             // 
+            this.pbLogo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbLogo.Image = global::FindMyLost.Properties.Resources.logo_white;
             this.pbLogo.Location = new System.Drawing.Point(12, 35);
             this.pbLogo.Name = "pbLogo";
@@ -362,6 +368,7 @@
             // 
             // btnListItem
             // 
+            this.btnListItem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnListItem.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnListItem.FlatAppearance.BorderSize = 0;
             this.btnListItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -384,6 +391,7 @@
             // 
             // btnClaimList
             // 
+            this.btnClaimList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClaimList.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnClaimList.FlatAppearance.BorderSize = 0;
             this.btnClaimList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -406,6 +414,7 @@
             // 
             // btnEmployeeList
             // 
+            this.btnEmployeeList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEmployeeList.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnEmployeeList.FlatAppearance.BorderSize = 0;
             this.btnEmployeeList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -428,6 +437,7 @@
             // 
             // btnItemList
             // 
+            this.btnItemList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnItemList.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnItemList.FlatAppearance.BorderSize = 0;
             this.btnItemList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -450,6 +460,7 @@
             // 
             // btnClaimItem
             // 
+            this.btnClaimItem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClaimItem.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnClaimItem.FlatAppearance.BorderSize = 0;
             this.btnClaimItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -472,6 +483,7 @@
             // 
             // btnRegister
             // 
+            this.btnRegister.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegister.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnRegister.FlatAppearance.BorderSize = 0;
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
