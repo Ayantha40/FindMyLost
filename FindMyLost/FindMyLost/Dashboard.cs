@@ -467,7 +467,7 @@ namespace FindMyLost
         {
             if (panelMenu.Visible == false)
             {
-                panelMenu.Location = new Point((btnMenu.Location.X - 236), 0);
+                panelMenu.Location = new Point((btnMenu.Location.X - 252), 0);
                 panelMenu.Visible = true;
                 btnMenu.BackColor = Color.FromArgb(20, 20, 20);
             }
